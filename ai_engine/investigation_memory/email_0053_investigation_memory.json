@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.291940+00:00",
+  "email_id": "email_0053",
+  "evidence": {
+    "file_name": "email_0053.eml",
+    "sha256": "24263e9e19b6fdbfecdc596941d8f3c2a59ed2fa7b169c2df2a32ec0cf777758",
+    "source_forensic_file": "email_0053_forensic.json"
+  },
+  "email": {
+    "from": "tara.soyal@enron.com",
+    "to": "lloyd.will@enron.com, w.duran@enron.com, douglas.clifford@enron.com, kevin.presto@enron.com, mark.davis@enron.com, robert.benson@enron.com, rogers.herndon@enron.com, fletcher.sturm@enron.com",
+    "cc": "henry.terech@enron.com, stan.jablonski@enron.com, nina.garcia@enron.com",
+    "bcc": "henry.terech@enron.com, stan.jablonski@enron.com, nina.garcia@enron.com",
+    "subject": "ECS Tour - Today",
+    "date": "Wed, 16 May 2001 05:21:00 -0700",
+    "normalized_date": "2001-05-16T05:21:00-07:00",
+    "message_id": "<27435486.1075855752076.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 213,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.602962,
+    "ml_score": 60.2962
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 36.1777,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0053_forensic.json",
+    "threat_intelligence": "email_0053_threat_intel.json",
+    "risk_assessment": "email_0053_risk.json",
+    "ml_hybrid": "email_0053_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

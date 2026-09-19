@@ -1,0 +1,208 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0044
+File Name: email_0044.eml
+SHA-256: addba9075b8eb002552836e115d87fa744dbef4786218858ee03e35187a2d7ef
+
+EMAIL METADATA
+--------------
+From: michael.l.matthews@rssmb.com
+To: whalley@enron.com
+Cc: 
+Bcc: 
+Subject: FW: Reiterate Buy; Merchant Energy Fundamentals Remain Strong
+Date: Fri, 08 Jun 2001 01:44:00 -0700
+Normalized Date: 2001-06-08T01:44:00-07:00
+Message-ID: <1817496.1075845442599.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Michael Matthews
+Salomon Smith Barney
+First Vice President- Investments
+Portfolio Manager
+1661 International Drive
+Suite 200
+Memphis, TN 38120
+(901)818-4224   (800)227-4146
+
+> ----------
+> From:  fclinx@ssmb.com[SMTP:fclinx@ssmb.com]
+> Sent:  Friday, June 08, 2001 7:43 AM
+> To:  Matthews, Michael L [PVTC]
+> Subject:  ENE: Reiterate Buy; Merchant Energy Fundamentals Remain
+> Strong
+>
+>  <<SBD42664FCR.pdf>>
+>
+>
+
+
+--------------------------------------------------------------
+Reminder:  E-mail sent through the Internet is not secure.
+Do not use e-mail to send us confidential information
+such as credit card numbers, changes of address, PIN
+numbers, passwords, or other important information.
+Do not e-mail orders to buy or sell securities, transfer
+funds, or send time sensitive instructions. We will not
+accept such orders or instructions.  This e-mail is not
+an official trade confirmation for transactions executed
+for your account.  Your e-mail message is not private in
+that it is subject to review by the Firm, its officers,
+agents and employees.
+--------------------------------------------------------------
+ - SBD42664FCR.pdf
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1138
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0044.eml",
+  "email_sha256": "addba9075b8eb002552836e115d87fa744dbef4786218858ee03e35187a2d7ef",
+  "subject": "FW: Reiterate Buy; Merchant Energy Fundamentals Remain Strong",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.671915
+ML Score: 67.1915
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 40.3149
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "FW: Reiterate Buy; Merchant Energy Fundamentals Remain Strong",
+  "from": "michael.l.matthews@rssmb.com",
+  "to": "whalley@enron.com",
+  "body_length": 1138,
+  "total_text_length": 1275
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0044_ml_hybrid.json
+
+Forensic File:
+email_0044_forensic.json
+
+Risk File:
+email_0044_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

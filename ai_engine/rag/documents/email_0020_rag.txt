@@ -1,0 +1,183 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0020
+File Name: email_0020.eml
+SHA-256: 8af5706a44b126ee43440946cefc66ef756327f458e84430bf3874a760733588
+
+EMAIL METADATA
+--------------
+From: abc111@mail.uole.com.ve
+To: undisclosed.recipients@mailman.enron.com
+Cc: 
+Bcc: 
+Subject: A Fantastic Gift For DVD Move Users!
+Date: Wed, 28 Nov 2001 09:03:10 -0800
+Normalized Date: 2001-11-28T09:03:10-08:00
+Message-ID: <1476100.1075862338556.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+
+COPY ANY DVD MOVIE!!
+With our revolutionary software you can copy virtually 
+any DVD Movie using your existing equipment!  
+Conventional DVD copying equipment can cost thousands of $$$
+ Our revolutionary software cost less than the price of 3 DVD Movies!  CLICK HERE FOR MORE INFO  
+ If you wish to be removed simply  Click Here  
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 332
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0020.eml",
+  "email_sha256": "8af5706a44b126ee43440946cefc66ef756327f458e84430bf3874a760733588",
+  "subject": "A Fantastic Gift For DVD Move Users!",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 3
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 3,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[
+  "Suspicious body indicators: click here"
+]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.866495
+ML Score: 86.6495
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 3.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 53.1897
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "A Fantastic Gift For DVD Move Users!",
+  "from": "abc111@mail.uole.com.ve",
+  "to": "undisclosed.recipients@mailman.enron.com",
+  "body_length": 332,
+  "total_text_length": 462
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0020_ml_hybrid.json
+
+Forensic File:
+email_0020_forensic.json
+
+Risk File:
+email_0020_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

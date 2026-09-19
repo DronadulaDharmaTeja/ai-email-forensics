@@ -1,0 +1,37 @@
+{
+  "step": "7.6",
+  "step_name": "Evidence Context Builder",
+  "created_utc": "2026-09-13T22:57:08.842567+00:00",
+  "statistics": {
+    "queries": 3,
+    "retrieved_results": 15,
+    "contexts_created": 15,
+    "forensic_available": 15,
+    "threat_intelligence_available": 15,
+    "risk_available": 15,
+    "ml_available": 15,
+    "rag_evidence_available": 15,
+    "errors": 0
+  },
+  "validation": {
+    "Hybrid results loaded": true,
+    "Queries processed": true,
+    "Retrieved results processed": true,
+    "Contexts created": true,
+    "Forensic evidence available": true,
+    "ML evidence available": true,
+    "Risk evidence available": true,
+    "RAG evidence available": true,
+    "No processing errors": true,
+    "Master context saved": true,
+    "Individual query files created": true
+  },
+  "all_passed": true,
+  "output_directory": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/evidence_context",
+  "master_output": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/evidence_context/master_evidence_context.json",
+  "individual_outputs": [
+    "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/evidence_context/query_1_evidence_context.json",
+    "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/evidence_context/query_2_evidence_context.json",
+    "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/evidence_context/query_3_evidence_context.json"
+  ]
+}

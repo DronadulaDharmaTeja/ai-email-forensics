@@ -1,0 +1,187 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0002
+File Name: email_0002.eml
+SHA-256: f48f1e0589b916e0144a002fc0489324b2e98092d945e8ffeff761895eeea2cb
+
+EMAIL METADATA
+--------------
+From: sharon.brown@enron.com
+To: e..anderson@enron.com, vicki.berg@enron.com, lynn.blair@enron.com, janet.bowers@enron.com, john.buchanan@enron.com, shelley.corman@enron.com, mary.darveaux@enron.com, rick.dietz@enron.com, jodie.floyd@enron.com, tom.gilbert@enron.com, bradley.holmes@enron.com, steven.january@enron.com, tim.johanson@enron.com, toby.kuehl@enron.com, karen.lagerstrom@enron.com, maggie.matheson@enron.com, danny.mccarty@enron.com, kent.miller@enron.com, kay.miller@enron.com, dave.neubauer@enron.com, dave.odneal@enron.com, chris.sebesta@enron.com, frank.semin@enron.com, gary.spraggins@enron.com, larry.steward@enron.com, linda.trevino@enron.com, steve.weller@enron.com, jo.williams@enron.com
+Cc: julie.armstrong@enron.com, linda.wehring@enron.com, ricki.winters@enron.com, sharon.solon@enron.com, judy.kudym@enron.com, rosemary.gracey@enron.com, deborah.cappiello@enron.com, ava.garcia@enron.com, alma.carrillo@enron.com
+Bcc: julie.armstrong@enron.com, linda.wehring@enron.com, ricki.winters@enron.com, sharon.solon@enron.com, judy.kudym@enron.com, rosemary.gracey@enron.com, deborah.cappiello@enron.com, ava.garcia@enron.com, alma.carrillo@enron.com
+Subject: Winter Ops - KC Hotel Information
+Date: Mon, 20 Aug 2001 12:34:19 -0700
+Normalized Date: 2001-08-20T12:34:19-07:00
+Message-ID: <15061964.1075853024388.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+	
+Below listed is the contact information for The Fairmont in Kansas for the September 6-7 meeting:
+
+	The Fairmont Kansas City
+	401 Ward Parkway
+	Kansas City, MO
+	Telephone:	816-756-1500
+	Guest Fax:	816-756-1635
+
+Your reservations are confirmed, see you in Kansas City!
+
+Sharon Brown
+ETS Gas Control
+713-853-5660
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 312
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0002.eml",
+  "email_sha256": "f48f1e0589b916e0144a002fc0489324b2e98092d945e8ffeff761895eeea2cb",
+  "subject": "Winter Ops - KC Hotel Information",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.654898
+ML Score: 65.4898
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 39.2939
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Winter Ops - KC Hotel Information",
+  "from": "sharon.brown@enron.com",
+  "to": "e..anderson@enron.com, vicki.berg@enron.com, lynn.blair@enron.com, janet.bowers@enron.com, john.buchanan@enron.com, shelley.corman@enron.com, mary.darveaux@enron.com, rick.dietz@enron.com, jodie.floyd@enron.com, tom.gilbert@enron.com, bradley.holmes@enron.com, steven.january@enron.com, tim.johanson@enron.com, toby.kuehl@enron.com, karen.lagerstrom@enron.com, maggie.matheson@enron.com, danny.mccarty@enron.com, kent.miller@enron.com, kay.miller@enron.com, dave.neubauer@enron.com, dave.odneal@enron.com, chris.sebesta@enron.com, frank.semin@enron.com, gary.spraggins@enron.com, larry.steward@enron.com, linda.trevino@enron.com, steve.weller@enron.com, jo.williams@enron.com",
+  "body_length": 312,
+  "total_text_length": 1073
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0002_ml_hybrid.json
+
+Forensic File:
+email_0002_forensic.json
+
+Risk File:
+email_0002_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

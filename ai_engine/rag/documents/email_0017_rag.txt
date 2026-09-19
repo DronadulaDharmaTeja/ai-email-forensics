@@ -1,0 +1,342 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0017
+File Name: email_0017.eml
+SHA-256: e25002711cf78397b28f4aeb673c9dd0d93cd23311932baba06b43680f15e21e
+
+EMAIL METADATA
+--------------
+From: intelhomecomputing.d1njhud.j@message.intel.com
+To: mcuilla@enron.com
+Cc: 
+Bcc: 
+Subject: News from Intel(R)
+Date: Wed, 13 Dec 2000 14:49:00 -0800
+Normalized Date: 2000-12-13T14:49:00-08:00
+Message-ID: <11055798.1075858071792.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+::::::::::::::::::::::::::::::::::::::::::::::::::
+     Delivering Intel technology to your inbox
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Dear Martin,
+
+We're contacting you because you signed up at
+Real.com a while ago to receive news about the
+Intel(R) Pentium(R) III processor and Intel(R)
+WebOutfitter(SM) Service.  This e-mail is to
+inform you that you will now receive updates
+on Intel's processors and products for the home,
+courtesy of the free Intel(R) Home Computing
+Newsletter.
+
+In the first issue, you'll hear about the brand
+new Intel(R) Pentium(R) 4 processor, a new
+generation of processor created to take
+advantage of tomorrow's Internet technology.  In
+future issues, you'll learn about our other
+products (yes, we do make more than processors)
+that are making the Internet a more interesting
+place to be, like the Intel(R) Wireless Game Pad,
+the Intel(R) Pocket PC Camera, and the Intel(R)
+AnyPoint(TM) Wireless Home Network.
+
+http://p0.com/t.d?LkABJ_j8=intel/wireless_2series/index.htm
+http://p0.com/t.d?BEABJ_j8=intel/pccamera/index.htm
+http://p0.com/t.d?akABJ_j8=intel/anypoint/index.htm
+
+You'll also receive general news and information
+about how our technology is changing your home
+computing experience.
+
+Keep an eye on your inbox.  You'll be receiving
+your first issue of the Intel Home Computing
+Newsletter shortly.
+
+
+Subscription Info
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Change your e-mail address for the Home Computing
+Newsletter.
+
+http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp
+
+Choose from HTML or text as your preferred format
+for receiving the Home Computing Newsletter.
+
+http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp
+
+Unsubscribe from this newsletter in one easy step.
+
+http://intel.p0.com/unsubscribe.dyn?i=224685188&s=4zWp
+
+For questions, or to make comments or suggestions,
+simply reply to this newsletter.
+
+*Legal Information and Privacy Policy
+(c) 2000 Intel Corporation
+
+http://p0.com/t.d?cEABJ_j8=intel/sites/corporate/tradmarx.htm
+http://p0.com/t.d?LkABJ_j8=intel/sites/corporate/privacy.htm
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 7
+
+URL Domains:
+[
+  "p0.com",
+  "intel.p0.com"
+]
+
+URL Items:
+[
+  "http://p0.com/t.d?LkABJ_j8=intel/wireless_2series/index.htm",
+  "http://p0.com/t.d?BEABJ_j8=intel/pccamera/index.htm",
+  "http://p0.com/t.d?akABJ_j8=intel/anypoint/index.htm",
+  "http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp",
+  "http://intel.p0.com/unsubscribe.dyn?i=224685188&s=4zWp",
+  "http://p0.com/t.d?cEABJ_j8=intel/sites/corporate/tradmarx.htm",
+  "http://p0.com/t.d?LkABJ_j8=intel/sites/corporate/privacy.htm"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2074
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0017.eml",
+  "email_sha256": "e25002711cf78397b28f4aeb673c9dd0d93cd23311932baba06b43680f15e21e",
+  "subject": "News from Intel(R)",
+  "url_count": 7,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 7,
+  "maximum_url_risk": 10,
+  "urls": [
+    {
+      "url": "http://p0.com/t.d?LkABJ_j8=intel/wireless_2series/index.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "p0.com",
+      "scheme": "http",
+      "path": "/t.d",
+      "query_present": true,
+      "domain_entropy": 2.585
+    },
+    {
+      "url": "http://p0.com/t.d?BEABJ_j8=intel/pccamera/index.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "p0.com",
+      "scheme": "http",
+      "path": "/t.d",
+      "query_present": true,
+      "domain_entropy": 2.585
+    },
+    {
+      "url": "http://p0.com/t.d?akABJ_j8=intel/anypoint/index.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "p0.com",
+      "scheme": "http",
+      "path": "/t.d",
+      "query_present": true,
+      "domain_entropy": 2.585
+    },
+    {
+      "url": "http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp",
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS",
+        "Suspicious keywords: update"
+      ],
+      "domain": "intel.p0.com",
+      "scheme": "http",
+      "path": "/hc_update.dyn",
+      "query_present": true,
+      "domain_entropy": 3.4183
+    },
+    {
+      "url": "http://intel.p0.com/unsubscribe.dyn?i=224685188&s=4zWp",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "intel.p0.com",
+      "scheme": "http",
+      "path": "/unsubscribe.dyn",
+      "query_present": true,
+      "domain_entropy": 3.4183
+    },
+    {
+      "url": "http://p0.com/t.d?cEABJ_j8=intel/sites/corporate/tradmarx.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "p0.com",
+      "scheme": "http",
+      "path": "/t.d",
+      "query_present": true,
+      "domain_entropy": 2.585
+    },
+    {
+      "url": "http://p0.com/t.d?LkABJ_j8=intel/sites/corporate/privacy.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "p0.com",
+      "scheme": "http",
+      "path": "/t.d",
+      "query_present": true,
+      "domain_entropy": 2.585
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.289396
+ML Score: 28.9396
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 17.3637
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "News from Intel(R)",
+  "from": "intelhomecomputing.d1njhud.j@message.intel.com",
+  "to": "mcuilla@enron.com",
+  "body_length": 2074,
+  "total_text_length": 2186
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0017_ml_hybrid.json
+
+Forensic File:
+email_0017_forensic.json
+
+Risk File:
+email_0017_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

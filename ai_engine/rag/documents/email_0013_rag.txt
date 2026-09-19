@@ -1,0 +1,205 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0013
+File Name: email_0013.eml
+SHA-256: 1b866ebd18c5076d96323a4991e8f1dea83d46fde96f85d2d1ea39a42f08fcb2
+
+EMAIL METADATA
+--------------
+From: james.copeland@enron.com
+To: denise.furey@enron.com
+Cc: richard.ring@enron.com
+Bcc: richard.ring@enron.com
+Subject: RE: A'Lones Group / Mirant Energy Americas, L.P
+Date: Wed, 22 Aug 2001 21:29:00 -0700
+Normalized Date: 2001-08-22T21:29:00-07:00
+Message-ID: <25479083.1075858652249.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Denise, I believe Will Frederking may be involved.
+
+ -----Original Message-----
+From: 	Furey, Denise  
+Sent:	Wednesday, August 22, 2001 4:28 PM
+To:	Copeland, James L.; Ring, Richard
+Subject:	RE: A'Lones Group / Mirant Energy Americas, L.P
+
+Richard who is the attorney drafting this document.   I need to ask him a few questions before I can give him the credit language. 
+
+ -----Original Message-----
+From: 	Copeland, James L.  
+Sent:	Wednesday, August 22, 2001 4:15 PM
+To:	Ring, Richard
+Cc:	Furey, Denise
+Subject:	RE: A'Lones Group / Mirant Energy Americas, L.P
+
+I spoke with Denise briefly and I believe she was looking into the EEI issue with Ed Sacks.  I would contact Denise directly on this one as I believe Dana has not been involved to date.
+
+ -----Original Message-----
+From: 	Ring, Richard  
+Sent:	Wednesday, August 22, 2001 4:12 PM
+To:	Copeland, James L.
+Subject:	A'Lones Group / Mirant Energy Americas, L.P
+
+James,
+
+Thanks for your help with A'Lones Group and Mirant Energy Americas, LP.  I have not heard anything from Denise Furey or Dana Smith regarding our conversation from Monday August 20th.  Do you have any additional information or should I contact Dana Smith?
+
+Regards,
+
+Richard
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1201
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0013.eml",
+  "email_sha256": "1b866ebd18c5076d96323a4991e8f1dea83d46fde96f85d2d1ea39a42f08fcb2",
+  "subject": "RE: A'Lones Group / Mirant Energy Americas, L.P",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.324748
+ML Score: 32.4748
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 19.4849
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "RE: A'Lones Group / Mirant Energy Americas, L.P",
+  "from": "james.copeland@enron.com",
+  "to": "denise.furey@enron.com",
+  "body_length": 1201,
+  "total_text_length": 1325
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0013_ml_hybrid.json
+
+Forensic File:
+email_0013_forensic.json
+
+Risk File:
+email_0013_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

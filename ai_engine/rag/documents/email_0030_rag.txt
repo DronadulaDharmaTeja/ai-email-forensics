@@ -1,0 +1,193 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0030
+File Name: email_0030.eml
+SHA-256: b7a96d3bc6350644b32cb91fa0d168ade0b28f1f906c7484a92ed56c56c19f9b
+
+EMAIL METADATA
+--------------
+From: frazier.king@enron.com
+To: morris.j@ei.com
+Cc: shelley.corman@enron.com
+Bcc: shelley.corman@enron.com
+Subject: INGAA Data Request for Northern Border
+Date: Wed, 20 Dec 2000 01:59:00 -0800
+Normalized Date: 2000-12-20T01:59:00-08:00
+Message-ID: <3014888.1075852055555.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+---------------------- Forwarded by Frazier King/FGT/Enron on 12/20/2000 
+10:01 AM ---------------------------
+
+
+Jody Warner
+12/20/2000 08:52 AM
+To: Frazier King/FGT/Enron@ENRON, Shelley Corman/ET&S/Enron@ENRON
+cc: Bambi Heckerman/NPNG/Enron@ENRON 
+
+Subject: INGAA Data Request for Northern Border
+
+
+
+Attached is Northern Border's response to the INGAA data request for volume 
+information at Compressor Station #17.
+
+JLW
+
+
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 424
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0030.eml",
+  "email_sha256": "b7a96d3bc6350644b32cb91fa0d168ade0b28f1f906c7484a92ed56c56c19f9b",
+  "subject": "INGAA Data Request for Northern Border",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.39514
+ML Score: 39.514
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 23.7084
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "INGAA Data Request for Northern Border",
+  "from": "frazier.king@enron.com",
+  "to": "morris.j@ei.com",
+  "body_length": 424,
+  "total_text_length": 530
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0030_ml_hybrid.json
+
+Forensic File:
+email_0030_forensic.json
+
+Risk File:
+email_0030_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "privacy_unit": "one_email_record",
+  "neighbor_definition": "Two datasets are neighboring when they differ by the inclusion or exclusion of one email record.",
+  "mechanism": "gaussian",
+  "l2_sensitivity": 1.0,
+  "epsilon": 1.0,
+  "delta": 1e-05,
+  "clipping_norm": 1.0,
+  "redaction_before_vectorization": true,
+  "formal_dp_status": "NOT_YET_PROVEN"
+}

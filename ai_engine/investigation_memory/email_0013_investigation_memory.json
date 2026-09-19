@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.821902+00:00",
+  "email_id": "email_0013",
+  "evidence": {
+    "file_name": "email_0013.eml",
+    "sha256": "1b866ebd18c5076d96323a4991e8f1dea83d46fde96f85d2d1ea39a42f08fcb2",
+    "source_forensic_file": "email_0013_forensic.json"
+  },
+  "email": {
+    "from": "james.copeland@enron.com",
+    "to": "denise.furey@enron.com",
+    "cc": "richard.ring@enron.com",
+    "bcc": "richard.ring@enron.com",
+    "subject": "RE: A'Lones Group / Mirant Energy Americas, L.P",
+    "date": "Wed, 22 Aug 2001 21:29:00 -0700",
+    "normalized_date": "2001-08-22T21:29:00-07:00",
+    "message_id": "<25479083.1075858652249.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 1201,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.324748,
+    "ml_score": 32.4748
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 19.4849,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0013_forensic.json",
+    "threat_intelligence": "email_0013_threat_intel.json",
+    "risk_assessment": "email_0013_risk.json",
+    "ml_hybrid": "email_0013_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

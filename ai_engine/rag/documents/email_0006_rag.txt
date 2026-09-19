@@ -1,0 +1,234 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0006
+File Name: email_0006.eml
+SHA-256: 10f321d1e6eeef5def8ba6085a264fd24addfe785d111f3824373c5304e9ccd5
+
+EMAIL METADATA
+--------------
+From: office.chairman@enron.com
+To: all.america@enron.com
+Cc: 
+Bcc: 
+Subject: The New Power Company
+Date: Wed, 17 May 2000 04:13:00 -0700
+Normalized Date: 2000-05-17T04:13:00-07:00
+Message-ID: <12296501.1075863603653.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+The New Power Company, the first national residential and small business 
+energy service provider in deregulated
+markets was launched today with strategic investors and partners including 
+Enron, IBM and America Online.
+
+H. Eugene Lockhart has been named President and Chief Executive Officer of 
+the company.  He was formerly President
+of AT&T Consumer Services and Chief Marketing Officer of AT&T, as well as 
+President of Bank America's Global Retail
+Bank and President and CEO of MasterCard International.  Lockhart is joined 
+by a number of high-level executives from
+the telecommunications and financial services sectors as well as several 
+former Enron executives specializing in energy
+commodity pricing, marketing, risk management and government regulatory 
+affairs.   
+
+The former Enron employees include Jim Badum, formerly Managing Director of 
+Consumer Services at EES, John Henderson, 
+formerly Vice President of Retail Risk Management for EES, Dave Eichinger, 
+formerly Vice President of Corporate Development
+for Enron Corp., and Kathleen Magruder, formerly Vice President of Government 
+Affairs for Enron Corp.  Lou Pai, Chairman and
+CEO for EES will serve as non-executive Chairman of The New Power Company. 
+
+Enron will provide The New Power Company with energy commodity pricing, risk 
+management, and government/
+regulatory affairs.  Ken Lay is quoted in the news release, "We've studied 
+the residential and small business market
+for several years and believe this is the optimal way to provide value to 
+these customers.  By assisting in setting up
+an independent company, Enron is able to leverage its core competencies of 
+energy and risk management, while
+partnering with other industry leaders to give The New Power Company 
+extraordinary and immediate depth and
+capability."  Ken will also serve on the Board of Directors.
+
+The New Power Company is scheduled to initially provide service in 
+Pennsylvania and New Jersey in the second half
+of 2000.  The company will be headquartered in Greenwich, Connecticut, with 
+some operations in Houston.  
+
+For more information, please log onto their website at 
+http://www.newpowercompany.com.
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 1
+
+URL Domains:
+[
+  "www.newpowercompany.com"
+]
+
+URL Items:
+[
+  "http://www.newpowercompany.com"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2162
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0006.eml",
+  "email_sha256": "10f321d1e6eeef5def8ba6085a264fd24addfe785d111f3824373c5304e9ccd5",
+  "subject": "The New Power Company",
+  "url_count": 1,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 1,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://www.newpowercompany.com",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www.newpowercompany.com",
+      "scheme": "http",
+      "path": "",
+      "query_present": false,
+      "domain_entropy": 3.2903
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.48853
+ML Score: 48.853
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 29.3118
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "The New Power Company",
+  "from": "office.chairman@enron.com",
+  "to": "all.america@enron.com",
+  "body_length": 2162,
+  "total_text_length": 2260
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0006_ml_hybrid.json
+
+Forensic File:
+email_0006_forensic.json
+
+Risk File:
+email_0006_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

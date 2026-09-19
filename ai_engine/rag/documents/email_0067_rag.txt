@@ -1,0 +1,179 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0067
+File Name: email_0067.eml
+SHA-256: 2fb78f914ab44030c31ea9b0e6c7a4b8e9d9d0d16d2ff934c487ee2107154c16
+
+EMAIL METADATA
+--------------
+From: bob.lee@enron.com
+To: larry.may@enron.com
+Cc: 
+Bcc: 
+Subject: Vol Skew
+Date: Wed, 18 Apr 2001 05:54:00 -0700
+Normalized Date: 2001-04-18T05:54:00-07:00
+Message-ID: <31386551.1075857936618.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Larry,
+
+I already had a meeting scheduled at 2:30 tomorrow.  Can we meet (your desk) 
+at 3:45PM?
+
+Bob
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 101
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0067.eml",
+  "email_sha256": "2fb78f914ab44030c31ea9b0e6c7a4b8e9d9d0d16d2ff934c487ee2107154c16",
+  "subject": "Vol Skew",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.810192
+ML Score: 81.0192
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 48.6115
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Vol Skew",
+  "from": "bob.lee@enron.com",
+  "to": "larry.may@enron.com",
+  "body_length": 101,
+  "total_text_length": 176
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0067_ml_hybrid.json
+
+Forensic File:
+email_0067_forensic.json
+
+Risk File:
+email_0067_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.690839+00:00",
+  "email_id": "email_0005",
+  "evidence": {
+    "file_name": "email_0005.eml",
+    "sha256": "a9bf0029b6924b49f03b6ee9d8bde4f029543b7cb0906722f56d0ca28f34ae64",
+    "source_forensic_file": "email_0005_forensic.json"
+  },
+  "email": {
+    "from": "casey@mercatorpartners.com",
+    "to": "bromberg@cgalaska.uscg.mil, balgeo@rpw200.com, bill.pond@garden.com, robert.badeer@enron.com, bfogel@hbs.edu, ccorl@cga.uscg.mil, dallman@ballston.uscg.mil, dostergaard@lantd5.uscg.mil, kmbourdon@aol.com, dspade65@aol.com, dev.braganza@garden.com, dontrone@email.msn.com, dfears@comdt.uscg.mil, dwhitmer@d11.uscg.mil, phndh@rpnet.net, garret.guinn@kaisertwd.com, h.schmidt@internet.uscg.mil, james.roth@whiting-turner.com, jddow@shore.net, jpiche@kpmg.com, jandrews@rdc.uscg.mil, j.vorbach@worldnet.att.net, jcoburn@whoi.edu, jsanto@mba.2001.hbs.edu, jrwhitehead@msoboston.uscg.mil, jgalo@mit.edu, jdheller@cga.uscg.mil, jjaskot@jwlaw.com, jmcderm926@aol.com, jnolan@d9.uscg.mil, crossley.mw@pg.com, miltr@houxchange.ckor.com, njarmstrong@avondale.com, akflynn@alaska.com, pboynton@d1.uscg.mil, rich@beutel-usa.com, richard.lerudis@level3.com, rlsco@sprynet.com, haymort78@aol.com, rwalther@tuskercorp.com, rblendu@aol.com, kirkpat@mit.edu, steve@taxpayer.net, jfsf@mindspring.com, tlindstrom@pacnorwest.uscg.mil, tim_atkin@sra.com, timothy.noonan.wg97@wharton.upenn.edu, abaginski@cga.uscg.mil, tripp14@aol.com, jdsbridge@aol.com, gronlund@ctol.net, yale.peebles@bain.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "GOOD ADVICE",
+    "date": "Wed, 07 Jun 2000 16:17:00 -0700",
+    "normalized_date": "2000-06-07T16:17:00-07:00",
+    "message_id": "<11344073.1075863603583.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 343,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.557766,
+    "ml_score": 55.7766
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 33.466,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0005_forensic.json",
+    "threat_intelligence": "email_0005_threat_intel.json",
+    "risk_assessment": "email_0005_risk.json",
+    "ml_hybrid": "email_0005_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

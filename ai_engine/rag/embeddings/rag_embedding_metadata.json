@@ -1,0 +1,4986 @@
+[
+  {
+    "vector_index": 0,
+    "chunk_id": "email_0000_chunk_0000",
+    "email_id": "email_0000",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0000_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 1,
+    "chunk_id": "email_0000_chunk_0001",
+    "email_id": "email_0000",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0000_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 2,
+    "chunk_id": "email_0000_chunk_0002",
+    "email_id": "email_0000",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0000_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 3,
+    "chunk_id": "email_0000_chunk_0003",
+    "email_id": "email_0000",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0000_rag.txt",
+    "character_count": 927
+  },
+  {
+    "vector_index": 4,
+    "chunk_id": "email_0001_chunk_0000",
+    "email_id": "email_0001",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0001_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 5,
+    "chunk_id": "email_0001_chunk_0001",
+    "email_id": "email_0001",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0001_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 6,
+    "chunk_id": "email_0001_chunk_0002",
+    "email_id": "email_0001",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0001_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 7,
+    "chunk_id": "email_0001_chunk_0003",
+    "email_id": "email_0001",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0001_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 8,
+    "chunk_id": "email_0001_chunk_0004",
+    "email_id": "email_0001",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0001_rag.txt",
+    "character_count": 281
+  },
+  {
+    "vector_index": 9,
+    "chunk_id": "email_0002_chunk_0000",
+    "email_id": "email_0002",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 10,
+    "chunk_id": "email_0002_chunk_0001",
+    "email_id": "email_0002",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 11,
+    "chunk_id": "email_0002_chunk_0002",
+    "email_id": "email_0002",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 12,
+    "chunk_id": "email_0002_chunk_0003",
+    "email_id": "email_0002",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 13,
+    "chunk_id": "email_0002_chunk_0004",
+    "email_id": "email_0002",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 14,
+    "chunk_id": "email_0002_chunk_0005",
+    "email_id": "email_0002",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0002_rag.txt",
+    "character_count": 401
+  },
+  {
+    "vector_index": 15,
+    "chunk_id": "email_0003_chunk_0000",
+    "email_id": "email_0003",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0003_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 16,
+    "chunk_id": "email_0003_chunk_0001",
+    "email_id": "email_0003",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0003_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 17,
+    "chunk_id": "email_0003_chunk_0002",
+    "email_id": "email_0003",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0003_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 18,
+    "chunk_id": "email_0003_chunk_0003",
+    "email_id": "email_0003",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0003_rag.txt",
+    "character_count": 731
+  },
+  {
+    "vector_index": 19,
+    "chunk_id": "email_0004_chunk_0000",
+    "email_id": "email_0004",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0004_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 20,
+    "chunk_id": "email_0004_chunk_0001",
+    "email_id": "email_0004",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0004_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 21,
+    "chunk_id": "email_0004_chunk_0002",
+    "email_id": "email_0004",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0004_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 22,
+    "chunk_id": "email_0004_chunk_0003",
+    "email_id": "email_0004",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0004_rag.txt",
+    "character_count": 1176
+  },
+  {
+    "vector_index": 23,
+    "chunk_id": "email_0005_chunk_0000",
+    "email_id": "email_0005",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 24,
+    "chunk_id": "email_0005_chunk_0001",
+    "email_id": "email_0005",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 25,
+    "chunk_id": "email_0005_chunk_0002",
+    "email_id": "email_0005",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 26,
+    "chunk_id": "email_0005_chunk_0003",
+    "email_id": "email_0005",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 27,
+    "chunk_id": "email_0005_chunk_0004",
+    "email_id": "email_0005",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 28,
+    "chunk_id": "email_0005_chunk_0005",
+    "email_id": "email_0005",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0005_rag.txt",
+    "character_count": 919
+  },
+  {
+    "vector_index": 29,
+    "chunk_id": "email_0006_chunk_0000",
+    "email_id": "email_0006",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 30,
+    "chunk_id": "email_0006_chunk_0001",
+    "email_id": "email_0006",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 31,
+    "chunk_id": "email_0006_chunk_0002",
+    "email_id": "email_0006",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 32,
+    "chunk_id": "email_0006_chunk_0003",
+    "email_id": "email_0006",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 33,
+    "chunk_id": "email_0006_chunk_0004",
+    "email_id": "email_0006",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 34,
+    "chunk_id": "email_0006_chunk_0005",
+    "email_id": "email_0006",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0006_rag.txt",
+    "character_count": 848
+  },
+  {
+    "vector_index": 35,
+    "chunk_id": "email_0007_chunk_0000",
+    "email_id": "email_0007",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 36,
+    "chunk_id": "email_0007_chunk_0001",
+    "email_id": "email_0007",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 37,
+    "chunk_id": "email_0007_chunk_0002",
+    "email_id": "email_0007",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 38,
+    "chunk_id": "email_0007_chunk_0003",
+    "email_id": "email_0007",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 39,
+    "chunk_id": "email_0007_chunk_0004",
+    "email_id": "email_0007",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 40,
+    "chunk_id": "email_0007_chunk_0005",
+    "email_id": "email_0007",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0007_rag.txt",
+    "character_count": 422
+  },
+  {
+    "vector_index": 41,
+    "chunk_id": "email_0008_chunk_0000",
+    "email_id": "email_0008",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 42,
+    "chunk_id": "email_0008_chunk_0001",
+    "email_id": "email_0008",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 43,
+    "chunk_id": "email_0008_chunk_0002",
+    "email_id": "email_0008",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 44,
+    "chunk_id": "email_0008_chunk_0003",
+    "email_id": "email_0008",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 45,
+    "chunk_id": "email_0008_chunk_0004",
+    "email_id": "email_0008",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 46,
+    "chunk_id": "email_0008_chunk_0005",
+    "email_id": "email_0008",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0008_rag.txt",
+    "character_count": 952
+  },
+  {
+    "vector_index": 47,
+    "chunk_id": "email_0009_chunk_0000",
+    "email_id": "email_0009",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 48,
+    "chunk_id": "email_0009_chunk_0001",
+    "email_id": "email_0009",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 49,
+    "chunk_id": "email_0009_chunk_0002",
+    "email_id": "email_0009",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 50,
+    "chunk_id": "email_0009_chunk_0003",
+    "email_id": "email_0009",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 51,
+    "chunk_id": "email_0009_chunk_0004",
+    "email_id": "email_0009",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 52,
+    "chunk_id": "email_0009_chunk_0005",
+    "email_id": "email_0009",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+    "character_count": 814
+  },
+  {
+    "vector_index": 53,
+    "chunk_id": "email_0010_chunk_0000",
+    "email_id": "email_0010",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 54,
+    "chunk_id": "email_0010_chunk_0001",
+    "email_id": "email_0010",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 55,
+    "chunk_id": "email_0010_chunk_0002",
+    "email_id": "email_0010",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 56,
+    "chunk_id": "email_0010_chunk_0003",
+    "email_id": "email_0010",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 57,
+    "chunk_id": "email_0010_chunk_0004",
+    "email_id": "email_0010",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 58,
+    "chunk_id": "email_0010_chunk_0005",
+    "email_id": "email_0010",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 59,
+    "chunk_id": "email_0010_chunk_0006",
+    "email_id": "email_0010",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 60,
+    "chunk_id": "email_0010_chunk_0007",
+    "email_id": "email_0010",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 61,
+    "chunk_id": "email_0010_chunk_0008",
+    "email_id": "email_0010",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0010_rag.txt",
+    "character_count": 641
+  },
+  {
+    "vector_index": 62,
+    "chunk_id": "email_0011_chunk_0000",
+    "email_id": "email_0011",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 63,
+    "chunk_id": "email_0011_chunk_0001",
+    "email_id": "email_0011",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 64,
+    "chunk_id": "email_0011_chunk_0002",
+    "email_id": "email_0011",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 65,
+    "chunk_id": "email_0011_chunk_0003",
+    "email_id": "email_0011",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 66,
+    "chunk_id": "email_0011_chunk_0004",
+    "email_id": "email_0011",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 67,
+    "chunk_id": "email_0011_chunk_0005",
+    "email_id": "email_0011",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 68,
+    "chunk_id": "email_0011_chunk_0006",
+    "email_id": "email_0011",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0011_rag.txt",
+    "character_count": 1058
+  },
+  {
+    "vector_index": 69,
+    "chunk_id": "email_0012_chunk_0000",
+    "email_id": "email_0012",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 70,
+    "chunk_id": "email_0012_chunk_0001",
+    "email_id": "email_0012",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 71,
+    "chunk_id": "email_0012_chunk_0002",
+    "email_id": "email_0012",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 72,
+    "chunk_id": "email_0012_chunk_0003",
+    "email_id": "email_0012",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 73,
+    "chunk_id": "email_0012_chunk_0004",
+    "email_id": "email_0012",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 74,
+    "chunk_id": "email_0012_chunk_0005",
+    "email_id": "email_0012",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 75,
+    "chunk_id": "email_0012_chunk_0006",
+    "email_id": "email_0012",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0012_rag.txt",
+    "character_count": 541
+  },
+  {
+    "vector_index": 76,
+    "chunk_id": "email_0013_chunk_0000",
+    "email_id": "email_0013",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0013_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 77,
+    "chunk_id": "email_0013_chunk_0001",
+    "email_id": "email_0013",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0013_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 78,
+    "chunk_id": "email_0013_chunk_0002",
+    "email_id": "email_0013",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0013_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 79,
+    "chunk_id": "email_0013_chunk_0003",
+    "email_id": "email_0013",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0013_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 80,
+    "chunk_id": "email_0013_chunk_0004",
+    "email_id": "email_0013",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0013_rag.txt",
+    "character_count": 626
+  },
+  {
+    "vector_index": 81,
+    "chunk_id": "email_0014_chunk_0000",
+    "email_id": "email_0014",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0014_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 82,
+    "chunk_id": "email_0014_chunk_0001",
+    "email_id": "email_0014",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0014_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 83,
+    "chunk_id": "email_0014_chunk_0002",
+    "email_id": "email_0014",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0014_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 84,
+    "chunk_id": "email_0014_chunk_0003",
+    "email_id": "email_0014",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0014_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 85,
+    "chunk_id": "email_0014_chunk_0004",
+    "email_id": "email_0014",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0014_rag.txt",
+    "character_count": 404
+  },
+  {
+    "vector_index": 86,
+    "chunk_id": "email_0015_chunk_0000",
+    "email_id": "email_0015",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 87,
+    "chunk_id": "email_0015_chunk_0001",
+    "email_id": "email_0015",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 88,
+    "chunk_id": "email_0015_chunk_0002",
+    "email_id": "email_0015",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 89,
+    "chunk_id": "email_0015_chunk_0003",
+    "email_id": "email_0015",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 90,
+    "chunk_id": "email_0015_chunk_0004",
+    "email_id": "email_0015",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 91,
+    "chunk_id": "email_0015_chunk_0005",
+    "email_id": "email_0015",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 92,
+    "chunk_id": "email_0015_chunk_0006",
+    "email_id": "email_0015",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 93,
+    "chunk_id": "email_0015_chunk_0007",
+    "email_id": "email_0015",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 94,
+    "chunk_id": "email_0015_chunk_0008",
+    "email_id": "email_0015",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0015_rag.txt",
+    "character_count": 1190
+  },
+  {
+    "vector_index": 95,
+    "chunk_id": "email_0016_chunk_0000",
+    "email_id": "email_0016",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0016_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 96,
+    "chunk_id": "email_0016_chunk_0001",
+    "email_id": "email_0016",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0016_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 97,
+    "chunk_id": "email_0016_chunk_0002",
+    "email_id": "email_0016",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0016_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 98,
+    "chunk_id": "email_0016_chunk_0003",
+    "email_id": "email_0016",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0016_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 99,
+    "chunk_id": "email_0016_chunk_0004",
+    "email_id": "email_0016",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0016_rag.txt",
+    "character_count": 477
+  },
+  {
+    "vector_index": 100,
+    "chunk_id": "email_0017_chunk_0000",
+    "email_id": "email_0017",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 101,
+    "chunk_id": "email_0017_chunk_0001",
+    "email_id": "email_0017",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 102,
+    "chunk_id": "email_0017_chunk_0002",
+    "email_id": "email_0017",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 103,
+    "chunk_id": "email_0017_chunk_0003",
+    "email_id": "email_0017",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 104,
+    "chunk_id": "email_0017_chunk_0004",
+    "email_id": "email_0017",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 105,
+    "chunk_id": "email_0017_chunk_0005",
+    "email_id": "email_0017",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1196
+  },
+  {
+    "vector_index": 106,
+    "chunk_id": "email_0017_chunk_0006",
+    "email_id": "email_0017",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 107,
+    "chunk_id": "email_0017_chunk_0007",
+    "email_id": "email_0017",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 108,
+    "chunk_id": "email_0017_chunk_0008",
+    "email_id": "email_0017",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0017_rag.txt",
+    "character_count": 246
+  },
+  {
+    "vector_index": 109,
+    "chunk_id": "email_0018_chunk_0000",
+    "email_id": "email_0018",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 110,
+    "chunk_id": "email_0018_chunk_0001",
+    "email_id": "email_0018",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 111,
+    "chunk_id": "email_0018_chunk_0002",
+    "email_id": "email_0018",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 112,
+    "chunk_id": "email_0018_chunk_0003",
+    "email_id": "email_0018",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 113,
+    "chunk_id": "email_0018_chunk_0004",
+    "email_id": "email_0018",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 114,
+    "chunk_id": "email_0018_chunk_0005",
+    "email_id": "email_0018",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 115,
+    "chunk_id": "email_0018_chunk_0006",
+    "email_id": "email_0018",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 116,
+    "chunk_id": "email_0018_chunk_0007",
+    "email_id": "email_0018",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 117,
+    "chunk_id": "email_0018_chunk_0008",
+    "email_id": "email_0018",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 118,
+    "chunk_id": "email_0018_chunk_0009",
+    "email_id": "email_0018",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 119,
+    "chunk_id": "email_0018_chunk_0010",
+    "email_id": "email_0018",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 120,
+    "chunk_id": "email_0018_chunk_0011",
+    "email_id": "email_0018",
+    "chunk_index": 11,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 121,
+    "chunk_id": "email_0018_chunk_0012",
+    "email_id": "email_0018",
+    "chunk_index": 12,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 122,
+    "chunk_id": "email_0018_chunk_0013",
+    "email_id": "email_0018",
+    "chunk_index": 13,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0018_rag.txt",
+    "character_count": 282
+  },
+  {
+    "vector_index": 123,
+    "chunk_id": "email_0019_chunk_0000",
+    "email_id": "email_0019",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0019_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 124,
+    "chunk_id": "email_0019_chunk_0001",
+    "email_id": "email_0019",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0019_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 125,
+    "chunk_id": "email_0019_chunk_0002",
+    "email_id": "email_0019",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0019_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 126,
+    "chunk_id": "email_0019_chunk_0003",
+    "email_id": "email_0019",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0019_rag.txt",
+    "character_count": 985
+  },
+  {
+    "vector_index": 127,
+    "chunk_id": "email_0020_chunk_0000",
+    "email_id": "email_0020",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0020_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 128,
+    "chunk_id": "email_0020_chunk_0001",
+    "email_id": "email_0020",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0020_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 129,
+    "chunk_id": "email_0020_chunk_0002",
+    "email_id": "email_0020",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0020_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 130,
+    "chunk_id": "email_0020_chunk_0003",
+    "email_id": "email_0020",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0020_rag.txt",
+    "character_count": 756
+  },
+  {
+    "vector_index": 131,
+    "chunk_id": "email_0021_chunk_0000",
+    "email_id": "email_0021",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 132,
+    "chunk_id": "email_0021_chunk_0001",
+    "email_id": "email_0021",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 133,
+    "chunk_id": "email_0021_chunk_0002",
+    "email_id": "email_0021",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 134,
+    "chunk_id": "email_0021_chunk_0003",
+    "email_id": "email_0021",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 135,
+    "chunk_id": "email_0021_chunk_0004",
+    "email_id": "email_0021",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 136,
+    "chunk_id": "email_0021_chunk_0005",
+    "email_id": "email_0021",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 137,
+    "chunk_id": "email_0021_chunk_0006",
+    "email_id": "email_0021",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 138,
+    "chunk_id": "email_0021_chunk_0007",
+    "email_id": "email_0021",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 139,
+    "chunk_id": "email_0021_chunk_0008",
+    "email_id": "email_0021",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+    "character_count": 243
+  },
+  {
+    "vector_index": 140,
+    "chunk_id": "email_0022_chunk_0000",
+    "email_id": "email_0022",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 141,
+    "chunk_id": "email_0022_chunk_0001",
+    "email_id": "email_0022",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 142,
+    "chunk_id": "email_0022_chunk_0002",
+    "email_id": "email_0022",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 143,
+    "chunk_id": "email_0022_chunk_0003",
+    "email_id": "email_0022",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 144,
+    "chunk_id": "email_0022_chunk_0004",
+    "email_id": "email_0022",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1196
+  },
+  {
+    "vector_index": 145,
+    "chunk_id": "email_0022_chunk_0005",
+    "email_id": "email_0022",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 146,
+    "chunk_id": "email_0022_chunk_0006",
+    "email_id": "email_0022",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 147,
+    "chunk_id": "email_0022_chunk_0007",
+    "email_id": "email_0022",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0022_rag.txt",
+    "character_count": 749
+  },
+  {
+    "vector_index": 148,
+    "chunk_id": "email_0023_chunk_0000",
+    "email_id": "email_0023",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 1192
+  },
+  {
+    "vector_index": 149,
+    "chunk_id": "email_0023_chunk_0001",
+    "email_id": "email_0023",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 150,
+    "chunk_id": "email_0023_chunk_0002",
+    "email_id": "email_0023",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 151,
+    "chunk_id": "email_0023_chunk_0003",
+    "email_id": "email_0023",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 152,
+    "chunk_id": "email_0023_chunk_0004",
+    "email_id": "email_0023",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 153,
+    "chunk_id": "email_0023_chunk_0005",
+    "email_id": "email_0023",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0023_rag.txt",
+    "character_count": 869
+  },
+  {
+    "vector_index": 154,
+    "chunk_id": "email_0024_chunk_0000",
+    "email_id": "email_0024",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0024_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 155,
+    "chunk_id": "email_0024_chunk_0001",
+    "email_id": "email_0024",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0024_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 156,
+    "chunk_id": "email_0024_chunk_0002",
+    "email_id": "email_0024",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0024_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 157,
+    "chunk_id": "email_0024_chunk_0003",
+    "email_id": "email_0024",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0024_rag.txt",
+    "character_count": 883
+  },
+  {
+    "vector_index": 158,
+    "chunk_id": "email_0025_chunk_0000",
+    "email_id": "email_0025",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0025_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 159,
+    "chunk_id": "email_0025_chunk_0001",
+    "email_id": "email_0025",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0025_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 160,
+    "chunk_id": "email_0025_chunk_0002",
+    "email_id": "email_0025",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0025_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 161,
+    "chunk_id": "email_0025_chunk_0003",
+    "email_id": "email_0025",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0025_rag.txt",
+    "character_count": 319
+  },
+  {
+    "vector_index": 162,
+    "chunk_id": "email_0026_chunk_0000",
+    "email_id": "email_0026",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0026_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 163,
+    "chunk_id": "email_0026_chunk_0001",
+    "email_id": "email_0026",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0026_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 164,
+    "chunk_id": "email_0026_chunk_0002",
+    "email_id": "email_0026",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0026_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 165,
+    "chunk_id": "email_0026_chunk_0003",
+    "email_id": "email_0026",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0026_rag.txt",
+    "character_count": 402
+  },
+  {
+    "vector_index": 166,
+    "chunk_id": "email_0027_chunk_0000",
+    "email_id": "email_0027",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0027_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 167,
+    "chunk_id": "email_0027_chunk_0001",
+    "email_id": "email_0027",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0027_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 168,
+    "chunk_id": "email_0027_chunk_0002",
+    "email_id": "email_0027",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0027_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 169,
+    "chunk_id": "email_0027_chunk_0003",
+    "email_id": "email_0027",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0027_rag.txt",
+    "character_count": 411
+  },
+  {
+    "vector_index": 170,
+    "chunk_id": "email_0028_chunk_0000",
+    "email_id": "email_0028",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 171,
+    "chunk_id": "email_0028_chunk_0001",
+    "email_id": "email_0028",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1165
+  },
+  {
+    "vector_index": 172,
+    "chunk_id": "email_0028_chunk_0002",
+    "email_id": "email_0028",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 173,
+    "chunk_id": "email_0028_chunk_0003",
+    "email_id": "email_0028",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 174,
+    "chunk_id": "email_0028_chunk_0004",
+    "email_id": "email_0028",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1187
+  },
+  {
+    "vector_index": 175,
+    "chunk_id": "email_0028_chunk_0005",
+    "email_id": "email_0028",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 176,
+    "chunk_id": "email_0028_chunk_0006",
+    "email_id": "email_0028",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1194
+  },
+  {
+    "vector_index": 177,
+    "chunk_id": "email_0028_chunk_0007",
+    "email_id": "email_0028",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 178,
+    "chunk_id": "email_0028_chunk_0008",
+    "email_id": "email_0028",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0028_rag.txt",
+    "character_count": 389
+  },
+  {
+    "vector_index": 179,
+    "chunk_id": "email_0029_chunk_0000",
+    "email_id": "email_0029",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0029_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 180,
+    "chunk_id": "email_0029_chunk_0001",
+    "email_id": "email_0029",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0029_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 181,
+    "chunk_id": "email_0029_chunk_0002",
+    "email_id": "email_0029",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0029_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 182,
+    "chunk_id": "email_0029_chunk_0003",
+    "email_id": "email_0029",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0029_rag.txt",
+    "character_count": 445
+  },
+  {
+    "vector_index": 183,
+    "chunk_id": "email_0030_chunk_0000",
+    "email_id": "email_0030",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0030_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 184,
+    "chunk_id": "email_0030_chunk_0001",
+    "email_id": "email_0030",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0030_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 185,
+    "chunk_id": "email_0030_chunk_0002",
+    "email_id": "email_0030",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0030_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 186,
+    "chunk_id": "email_0030_chunk_0003",
+    "email_id": "email_0030",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0030_rag.txt",
+    "character_count": 802
+  },
+  {
+    "vector_index": 187,
+    "chunk_id": "email_0031_chunk_0000",
+    "email_id": "email_0031",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 188,
+    "chunk_id": "email_0031_chunk_0001",
+    "email_id": "email_0031",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 189,
+    "chunk_id": "email_0031_chunk_0002",
+    "email_id": "email_0031",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 190,
+    "chunk_id": "email_0031_chunk_0003",
+    "email_id": "email_0031",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 191,
+    "chunk_id": "email_0031_chunk_0004",
+    "email_id": "email_0031",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 192,
+    "chunk_id": "email_0031_chunk_0005",
+    "email_id": "email_0031",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 193,
+    "chunk_id": "email_0031_chunk_0006",
+    "email_id": "email_0031",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 194,
+    "chunk_id": "email_0031_chunk_0007",
+    "email_id": "email_0031",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0031_rag.txt",
+    "character_count": 755
+  },
+  {
+    "vector_index": 195,
+    "chunk_id": "email_0032_chunk_0000",
+    "email_id": "email_0032",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0032_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 196,
+    "chunk_id": "email_0032_chunk_0001",
+    "email_id": "email_0032",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0032_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 197,
+    "chunk_id": "email_0032_chunk_0002",
+    "email_id": "email_0032",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0032_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 198,
+    "chunk_id": "email_0032_chunk_0003",
+    "email_id": "email_0032",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0032_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 199,
+    "chunk_id": "email_0032_chunk_0004",
+    "email_id": "email_0032",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0032_rag.txt",
+    "character_count": 895
+  },
+  {
+    "vector_index": 200,
+    "chunk_id": "email_0033_chunk_0000",
+    "email_id": "email_0033",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 201,
+    "chunk_id": "email_0033_chunk_0001",
+    "email_id": "email_0033",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 202,
+    "chunk_id": "email_0033_chunk_0002",
+    "email_id": "email_0033",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 203,
+    "chunk_id": "email_0033_chunk_0003",
+    "email_id": "email_0033",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 204,
+    "chunk_id": "email_0033_chunk_0004",
+    "email_id": "email_0033",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 205,
+    "chunk_id": "email_0033_chunk_0005",
+    "email_id": "email_0033",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0033_rag.txt",
+    "character_count": 340
+  },
+  {
+    "vector_index": 206,
+    "chunk_id": "email_0034_chunk_0000",
+    "email_id": "email_0034",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 207,
+    "chunk_id": "email_0034_chunk_0001",
+    "email_id": "email_0034",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 208,
+    "chunk_id": "email_0034_chunk_0002",
+    "email_id": "email_0034",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 209,
+    "chunk_id": "email_0034_chunk_0003",
+    "email_id": "email_0034",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 210,
+    "chunk_id": "email_0034_chunk_0004",
+    "email_id": "email_0034",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 211,
+    "chunk_id": "email_0034_chunk_0005",
+    "email_id": "email_0034",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 212,
+    "chunk_id": "email_0034_chunk_0006",
+    "email_id": "email_0034",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0034_rag.txt",
+    "character_count": 704
+  },
+  {
+    "vector_index": 213,
+    "chunk_id": "email_0035_chunk_0000",
+    "email_id": "email_0035",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0035_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 214,
+    "chunk_id": "email_0035_chunk_0001",
+    "email_id": "email_0035",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0035_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 215,
+    "chunk_id": "email_0035_chunk_0002",
+    "email_id": "email_0035",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0035_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 216,
+    "chunk_id": "email_0035_chunk_0003",
+    "email_id": "email_0035",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0035_rag.txt",
+    "character_count": 563
+  },
+  {
+    "vector_index": 217,
+    "chunk_id": "email_0036_chunk_0000",
+    "email_id": "email_0036",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0036_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 218,
+    "chunk_id": "email_0036_chunk_0001",
+    "email_id": "email_0036",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0036_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 219,
+    "chunk_id": "email_0036_chunk_0002",
+    "email_id": "email_0036",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0036_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 220,
+    "chunk_id": "email_0036_chunk_0003",
+    "email_id": "email_0036",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0036_rag.txt",
+    "character_count": 1196
+  },
+  {
+    "vector_index": 221,
+    "chunk_id": "email_0036_chunk_0004",
+    "email_id": "email_0036",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0036_rag.txt",
+    "character_count": 438
+  },
+  {
+    "vector_index": 222,
+    "chunk_id": "email_0037_chunk_0000",
+    "email_id": "email_0037",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0037_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 223,
+    "chunk_id": "email_0037_chunk_0001",
+    "email_id": "email_0037",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0037_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 224,
+    "chunk_id": "email_0037_chunk_0002",
+    "email_id": "email_0037",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0037_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 225,
+    "chunk_id": "email_0037_chunk_0003",
+    "email_id": "email_0037",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0037_rag.txt",
+    "character_count": 838
+  },
+  {
+    "vector_index": 226,
+    "chunk_id": "email_0038_chunk_0000",
+    "email_id": "email_0038",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0038_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 227,
+    "chunk_id": "email_0038_chunk_0001",
+    "email_id": "email_0038",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0038_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 228,
+    "chunk_id": "email_0038_chunk_0002",
+    "email_id": "email_0038",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0038_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 229,
+    "chunk_id": "email_0038_chunk_0003",
+    "email_id": "email_0038",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0038_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 230,
+    "chunk_id": "email_0038_chunk_0004",
+    "email_id": "email_0038",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0038_rag.txt",
+    "character_count": 492
+  },
+  {
+    "vector_index": 231,
+    "chunk_id": "email_0039_chunk_0000",
+    "email_id": "email_0039",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0039_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 232,
+    "chunk_id": "email_0039_chunk_0001",
+    "email_id": "email_0039",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0039_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 233,
+    "chunk_id": "email_0039_chunk_0002",
+    "email_id": "email_0039",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0039_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 234,
+    "chunk_id": "email_0039_chunk_0003",
+    "email_id": "email_0039",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0039_rag.txt",
+    "character_count": 1097
+  },
+  {
+    "vector_index": 235,
+    "chunk_id": "email_0040_chunk_0000",
+    "email_id": "email_0040",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0040_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 236,
+    "chunk_id": "email_0040_chunk_0001",
+    "email_id": "email_0040",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0040_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 237,
+    "chunk_id": "email_0040_chunk_0002",
+    "email_id": "email_0040",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0040_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 238,
+    "chunk_id": "email_0040_chunk_0003",
+    "email_id": "email_0040",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0040_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 239,
+    "chunk_id": "email_0040_chunk_0004",
+    "email_id": "email_0040",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0040_rag.txt",
+    "character_count": 418
+  },
+  {
+    "vector_index": 240,
+    "chunk_id": "email_0041_chunk_0000",
+    "email_id": "email_0041",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0041_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 241,
+    "chunk_id": "email_0041_chunk_0001",
+    "email_id": "email_0041",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0041_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 242,
+    "chunk_id": "email_0041_chunk_0002",
+    "email_id": "email_0041",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0041_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 243,
+    "chunk_id": "email_0041_chunk_0003",
+    "email_id": "email_0041",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0041_rag.txt",
+    "character_count": 979
+  },
+  {
+    "vector_index": 244,
+    "chunk_id": "email_0042_chunk_0000",
+    "email_id": "email_0042",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 245,
+    "chunk_id": "email_0042_chunk_0001",
+    "email_id": "email_0042",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 246,
+    "chunk_id": "email_0042_chunk_0002",
+    "email_id": "email_0042",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 247,
+    "chunk_id": "email_0042_chunk_0003",
+    "email_id": "email_0042",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 248,
+    "chunk_id": "email_0042_chunk_0004",
+    "email_id": "email_0042",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 249,
+    "chunk_id": "email_0042_chunk_0005",
+    "email_id": "email_0042",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 250,
+    "chunk_id": "email_0042_chunk_0006",
+    "email_id": "email_0042",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 251,
+    "chunk_id": "email_0042_chunk_0007",
+    "email_id": "email_0042",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 252,
+    "chunk_id": "email_0042_chunk_0008",
+    "email_id": "email_0042",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 253,
+    "chunk_id": "email_0042_chunk_0009",
+    "email_id": "email_0042",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 254,
+    "chunk_id": "email_0042_chunk_0010",
+    "email_id": "email_0042",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 255,
+    "chunk_id": "email_0042_chunk_0011",
+    "email_id": "email_0042",
+    "chunk_index": 11,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 256,
+    "chunk_id": "email_0042_chunk_0012",
+    "email_id": "email_0042",
+    "chunk_index": 12,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 257,
+    "chunk_id": "email_0042_chunk_0013",
+    "email_id": "email_0042",
+    "chunk_index": 13,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 258,
+    "chunk_id": "email_0042_chunk_0014",
+    "email_id": "email_0042",
+    "chunk_index": 14,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 259,
+    "chunk_id": "email_0042_chunk_0015",
+    "email_id": "email_0042",
+    "chunk_index": 15,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 260,
+    "chunk_id": "email_0042_chunk_0016",
+    "email_id": "email_0042",
+    "chunk_index": 16,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 261,
+    "chunk_id": "email_0042_chunk_0017",
+    "email_id": "email_0042",
+    "chunk_index": 17,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1193
+  },
+  {
+    "vector_index": 262,
+    "chunk_id": "email_0042_chunk_0018",
+    "email_id": "email_0042",
+    "chunk_index": 18,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 263,
+    "chunk_id": "email_0042_chunk_0019",
+    "email_id": "email_0042",
+    "chunk_index": 19,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 264,
+    "chunk_id": "email_0042_chunk_0020",
+    "email_id": "email_0042",
+    "chunk_index": 20,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 265,
+    "chunk_id": "email_0042_chunk_0021",
+    "email_id": "email_0042",
+    "chunk_index": 21,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 266,
+    "chunk_id": "email_0042_chunk_0022",
+    "email_id": "email_0042",
+    "chunk_index": 22,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1195
+  },
+  {
+    "vector_index": 267,
+    "chunk_id": "email_0042_chunk_0023",
+    "email_id": "email_0042",
+    "chunk_index": 23,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 268,
+    "chunk_id": "email_0042_chunk_0024",
+    "email_id": "email_0042",
+    "chunk_index": 24,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 269,
+    "chunk_id": "email_0042_chunk_0025",
+    "email_id": "email_0042",
+    "chunk_index": 25,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 270,
+    "chunk_id": "email_0042_chunk_0026",
+    "email_id": "email_0042",
+    "chunk_index": 26,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 1193
+  },
+  {
+    "vector_index": 271,
+    "chunk_id": "email_0042_chunk_0027",
+    "email_id": "email_0042",
+    "chunk_index": 27,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0042_rag.txt",
+    "character_count": 929
+  },
+  {
+    "vector_index": 272,
+    "chunk_id": "email_0043_chunk_0000",
+    "email_id": "email_0043",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 273,
+    "chunk_id": "email_0043_chunk_0001",
+    "email_id": "email_0043",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 274,
+    "chunk_id": "email_0043_chunk_0002",
+    "email_id": "email_0043",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 275,
+    "chunk_id": "email_0043_chunk_0003",
+    "email_id": "email_0043",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+    "character_count": 518
+  },
+  {
+    "vector_index": 276,
+    "chunk_id": "email_0044_chunk_0000",
+    "email_id": "email_0044",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0044_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 277,
+    "chunk_id": "email_0044_chunk_0001",
+    "email_id": "email_0044",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0044_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 278,
+    "chunk_id": "email_0044_chunk_0002",
+    "email_id": "email_0044",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0044_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 279,
+    "chunk_id": "email_0044_chunk_0003",
+    "email_id": "email_0044",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0044_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 280,
+    "chunk_id": "email_0044_chunk_0004",
+    "email_id": "email_0044",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0044_rag.txt",
+    "character_count": 560
+  },
+  {
+    "vector_index": 281,
+    "chunk_id": "email_0045_chunk_0000",
+    "email_id": "email_0045",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0045_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 282,
+    "chunk_id": "email_0045_chunk_0001",
+    "email_id": "email_0045",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0045_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 283,
+    "chunk_id": "email_0045_chunk_0002",
+    "email_id": "email_0045",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0045_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 284,
+    "chunk_id": "email_0045_chunk_0003",
+    "email_id": "email_0045",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0045_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 285,
+    "chunk_id": "email_0045_chunk_0004",
+    "email_id": "email_0045",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0045_rag.txt",
+    "character_count": 215
+  },
+  {
+    "vector_index": 286,
+    "chunk_id": "email_0046_chunk_0000",
+    "email_id": "email_0046",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0046_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 287,
+    "chunk_id": "email_0046_chunk_0001",
+    "email_id": "email_0046",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0046_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 288,
+    "chunk_id": "email_0046_chunk_0002",
+    "email_id": "email_0046",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0046_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 289,
+    "chunk_id": "email_0046_chunk_0003",
+    "email_id": "email_0046",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0046_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 290,
+    "chunk_id": "email_0046_chunk_0004",
+    "email_id": "email_0046",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0046_rag.txt",
+    "character_count": 862
+  },
+  {
+    "vector_index": 291,
+    "chunk_id": "email_0047_chunk_0000",
+    "email_id": "email_0047",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 292,
+    "chunk_id": "email_0047_chunk_0001",
+    "email_id": "email_0047",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 293,
+    "chunk_id": "email_0047_chunk_0002",
+    "email_id": "email_0047",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 294,
+    "chunk_id": "email_0047_chunk_0003",
+    "email_id": "email_0047",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 295,
+    "chunk_id": "email_0047_chunk_0004",
+    "email_id": "email_0047",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 296,
+    "chunk_id": "email_0047_chunk_0005",
+    "email_id": "email_0047",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0047_rag.txt",
+    "character_count": 663
+  },
+  {
+    "vector_index": 297,
+    "chunk_id": "email_0048_chunk_0000",
+    "email_id": "email_0048",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 298,
+    "chunk_id": "email_0048_chunk_0001",
+    "email_id": "email_0048",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 299,
+    "chunk_id": "email_0048_chunk_0002",
+    "email_id": "email_0048",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 300,
+    "chunk_id": "email_0048_chunk_0003",
+    "email_id": "email_0048",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 301,
+    "chunk_id": "email_0048_chunk_0004",
+    "email_id": "email_0048",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 302,
+    "chunk_id": "email_0048_chunk_0005",
+    "email_id": "email_0048",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 303,
+    "chunk_id": "email_0048_chunk_0006",
+    "email_id": "email_0048",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0048_rag.txt",
+    "character_count": 670
+  },
+  {
+    "vector_index": 304,
+    "chunk_id": "email_0049_chunk_0000",
+    "email_id": "email_0049",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0049_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 305,
+    "chunk_id": "email_0049_chunk_0001",
+    "email_id": "email_0049",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0049_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 306,
+    "chunk_id": "email_0049_chunk_0002",
+    "email_id": "email_0049",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0049_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 307,
+    "chunk_id": "email_0049_chunk_0003",
+    "email_id": "email_0049",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0049_rag.txt",
+    "character_count": 1058
+  },
+  {
+    "vector_index": 308,
+    "chunk_id": "email_0050_chunk_0000",
+    "email_id": "email_0050",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0050_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 309,
+    "chunk_id": "email_0050_chunk_0001",
+    "email_id": "email_0050",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0050_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 310,
+    "chunk_id": "email_0050_chunk_0002",
+    "email_id": "email_0050",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0050_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 311,
+    "chunk_id": "email_0050_chunk_0003",
+    "email_id": "email_0050",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0050_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 312,
+    "chunk_id": "email_0050_chunk_0004",
+    "email_id": "email_0050",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0050_rag.txt",
+    "character_count": 236
+  },
+  {
+    "vector_index": 313,
+    "chunk_id": "email_0051_chunk_0000",
+    "email_id": "email_0051",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 314,
+    "chunk_id": "email_0051_chunk_0001",
+    "email_id": "email_0051",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 315,
+    "chunk_id": "email_0051_chunk_0002",
+    "email_id": "email_0051",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 316,
+    "chunk_id": "email_0051_chunk_0003",
+    "email_id": "email_0051",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 317,
+    "chunk_id": "email_0051_chunk_0004",
+    "email_id": "email_0051",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 318,
+    "chunk_id": "email_0051_chunk_0005",
+    "email_id": "email_0051",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 319,
+    "chunk_id": "email_0051_chunk_0006",
+    "email_id": "email_0051",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0051_rag.txt",
+    "character_count": 1039
+  },
+  {
+    "vector_index": 320,
+    "chunk_id": "email_0052_chunk_0000",
+    "email_id": "email_0052",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0052_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 321,
+    "chunk_id": "email_0052_chunk_0001",
+    "email_id": "email_0052",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0052_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 322,
+    "chunk_id": "email_0052_chunk_0002",
+    "email_id": "email_0052",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0052_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 323,
+    "chunk_id": "email_0052_chunk_0003",
+    "email_id": "email_0052",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0052_rag.txt",
+    "character_count": 1010
+  },
+  {
+    "vector_index": 324,
+    "chunk_id": "email_0053_chunk_0000",
+    "email_id": "email_0053",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0053_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 325,
+    "chunk_id": "email_0053_chunk_0001",
+    "email_id": "email_0053",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0053_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 326,
+    "chunk_id": "email_0053_chunk_0002",
+    "email_id": "email_0053",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0053_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 327,
+    "chunk_id": "email_0053_chunk_0003",
+    "email_id": "email_0053",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0053_rag.txt",
+    "character_count": 970
+  },
+  {
+    "vector_index": 328,
+    "chunk_id": "email_0054_chunk_0000",
+    "email_id": "email_0054",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 329,
+    "chunk_id": "email_0054_chunk_0001",
+    "email_id": "email_0054",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 330,
+    "chunk_id": "email_0054_chunk_0002",
+    "email_id": "email_0054",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 331,
+    "chunk_id": "email_0054_chunk_0003",
+    "email_id": "email_0054",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 1192
+  },
+  {
+    "vector_index": 332,
+    "chunk_id": "email_0054_chunk_0004",
+    "email_id": "email_0054",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 333,
+    "chunk_id": "email_0054_chunk_0005",
+    "email_id": "email_0054",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0054_rag.txt",
+    "character_count": 266
+  },
+  {
+    "vector_index": 334,
+    "chunk_id": "email_0055_chunk_0000",
+    "email_id": "email_0055",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 335,
+    "chunk_id": "email_0055_chunk_0001",
+    "email_id": "email_0055",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 336,
+    "chunk_id": "email_0055_chunk_0002",
+    "email_id": "email_0055",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 337,
+    "chunk_id": "email_0055_chunk_0003",
+    "email_id": "email_0055",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 338,
+    "chunk_id": "email_0055_chunk_0004",
+    "email_id": "email_0055",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 339,
+    "chunk_id": "email_0055_chunk_0005",
+    "email_id": "email_0055",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 340,
+    "chunk_id": "email_0055_chunk_0006",
+    "email_id": "email_0055",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 341,
+    "chunk_id": "email_0055_chunk_0007",
+    "email_id": "email_0055",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0055_rag.txt",
+    "character_count": 270
+  },
+  {
+    "vector_index": 342,
+    "chunk_id": "email_0056_chunk_0000",
+    "email_id": "email_0056",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 343,
+    "chunk_id": "email_0056_chunk_0001",
+    "email_id": "email_0056",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 344,
+    "chunk_id": "email_0056_chunk_0002",
+    "email_id": "email_0056",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 345,
+    "chunk_id": "email_0056_chunk_0003",
+    "email_id": "email_0056",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 346,
+    "chunk_id": "email_0056_chunk_0004",
+    "email_id": "email_0056",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 347,
+    "chunk_id": "email_0056_chunk_0005",
+    "email_id": "email_0056",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1196
+  },
+  {
+    "vector_index": 348,
+    "chunk_id": "email_0056_chunk_0006",
+    "email_id": "email_0056",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 349,
+    "chunk_id": "email_0056_chunk_0007",
+    "email_id": "email_0056",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 350,
+    "chunk_id": "email_0056_chunk_0008",
+    "email_id": "email_0056",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 351,
+    "chunk_id": "email_0056_chunk_0009",
+    "email_id": "email_0056",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0056_rag.txt",
+    "character_count": 697
+  },
+  {
+    "vector_index": 352,
+    "chunk_id": "email_0057_chunk_0000",
+    "email_id": "email_0057",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 353,
+    "chunk_id": "email_0057_chunk_0001",
+    "email_id": "email_0057",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 354,
+    "chunk_id": "email_0057_chunk_0002",
+    "email_id": "email_0057",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 355,
+    "chunk_id": "email_0057_chunk_0003",
+    "email_id": "email_0057",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 356,
+    "chunk_id": "email_0057_chunk_0004",
+    "email_id": "email_0057",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 357,
+    "chunk_id": "email_0057_chunk_0005",
+    "email_id": "email_0057",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1193
+  },
+  {
+    "vector_index": 358,
+    "chunk_id": "email_0057_chunk_0006",
+    "email_id": "email_0057",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 359,
+    "chunk_id": "email_0057_chunk_0007",
+    "email_id": "email_0057",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 360,
+    "chunk_id": "email_0057_chunk_0008",
+    "email_id": "email_0057",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 361,
+    "chunk_id": "email_0057_chunk_0009",
+    "email_id": "email_0057",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 362,
+    "chunk_id": "email_0057_chunk_0010",
+    "email_id": "email_0057",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 363,
+    "chunk_id": "email_0057_chunk_0011",
+    "email_id": "email_0057",
+    "chunk_index": 11,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 364,
+    "chunk_id": "email_0057_chunk_0012",
+    "email_id": "email_0057",
+    "chunk_index": 12,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 365,
+    "chunk_id": "email_0057_chunk_0013",
+    "email_id": "email_0057",
+    "chunk_index": 13,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0057_rag.txt",
+    "character_count": 974
+  },
+  {
+    "vector_index": 366,
+    "chunk_id": "email_0058_chunk_0000",
+    "email_id": "email_0058",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 367,
+    "chunk_id": "email_0058_chunk_0001",
+    "email_id": "email_0058",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 368,
+    "chunk_id": "email_0058_chunk_0002",
+    "email_id": "email_0058",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 369,
+    "chunk_id": "email_0058_chunk_0003",
+    "email_id": "email_0058",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 370,
+    "chunk_id": "email_0058_chunk_0004",
+    "email_id": "email_0058",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 1192
+  },
+  {
+    "vector_index": 371,
+    "chunk_id": "email_0058_chunk_0005",
+    "email_id": "email_0058",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0058_rag.txt",
+    "character_count": 849
+  },
+  {
+    "vector_index": 372,
+    "chunk_id": "email_0059_chunk_0000",
+    "email_id": "email_0059",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 373,
+    "chunk_id": "email_0059_chunk_0001",
+    "email_id": "email_0059",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 374,
+    "chunk_id": "email_0059_chunk_0002",
+    "email_id": "email_0059",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 375,
+    "chunk_id": "email_0059_chunk_0003",
+    "email_id": "email_0059",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 376,
+    "chunk_id": "email_0059_chunk_0004",
+    "email_id": "email_0059",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 377,
+    "chunk_id": "email_0059_chunk_0005",
+    "email_id": "email_0059",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0059_rag.txt",
+    "character_count": 1123
+  },
+  {
+    "vector_index": 378,
+    "chunk_id": "email_0060_chunk_0000",
+    "email_id": "email_0060",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0060_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 379,
+    "chunk_id": "email_0060_chunk_0001",
+    "email_id": "email_0060",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0060_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 380,
+    "chunk_id": "email_0060_chunk_0002",
+    "email_id": "email_0060",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0060_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 381,
+    "chunk_id": "email_0060_chunk_0003",
+    "email_id": "email_0060",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0060_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 382,
+    "chunk_id": "email_0060_chunk_0004",
+    "email_id": "email_0060",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0060_rag.txt",
+    "character_count": 850
+  },
+  {
+    "vector_index": 383,
+    "chunk_id": "email_0061_chunk_0000",
+    "email_id": "email_0061",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0061_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 384,
+    "chunk_id": "email_0061_chunk_0001",
+    "email_id": "email_0061",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0061_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 385,
+    "chunk_id": "email_0061_chunk_0002",
+    "email_id": "email_0061",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0061_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 386,
+    "chunk_id": "email_0061_chunk_0003",
+    "email_id": "email_0061",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0061_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 387,
+    "chunk_id": "email_0061_chunk_0004",
+    "email_id": "email_0061",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0061_rag.txt",
+    "character_count": 1078
+  },
+  {
+    "vector_index": 388,
+    "chunk_id": "email_0062_chunk_0000",
+    "email_id": "email_0062",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 389,
+    "chunk_id": "email_0062_chunk_0001",
+    "email_id": "email_0062",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 390,
+    "chunk_id": "email_0062_chunk_0002",
+    "email_id": "email_0062",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 391,
+    "chunk_id": "email_0062_chunk_0003",
+    "email_id": "email_0062",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 392,
+    "chunk_id": "email_0062_chunk_0004",
+    "email_id": "email_0062",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 393,
+    "chunk_id": "email_0062_chunk_0005",
+    "email_id": "email_0062",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 394,
+    "chunk_id": "email_0062_chunk_0006",
+    "email_id": "email_0062",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0062_rag.txt",
+    "character_count": 345
+  },
+  {
+    "vector_index": 395,
+    "chunk_id": "email_0063_chunk_0000",
+    "email_id": "email_0063",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0063_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 396,
+    "chunk_id": "email_0063_chunk_0001",
+    "email_id": "email_0063",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0063_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 397,
+    "chunk_id": "email_0063_chunk_0002",
+    "email_id": "email_0063",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0063_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 398,
+    "chunk_id": "email_0063_chunk_0003",
+    "email_id": "email_0063",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0063_rag.txt",
+    "character_count": 807
+  },
+  {
+    "vector_index": 399,
+    "chunk_id": "email_0064_chunk_0000",
+    "email_id": "email_0064",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 400,
+    "chunk_id": "email_0064_chunk_0001",
+    "email_id": "email_0064",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 401,
+    "chunk_id": "email_0064_chunk_0002",
+    "email_id": "email_0064",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 402,
+    "chunk_id": "email_0064_chunk_0003",
+    "email_id": "email_0064",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 403,
+    "chunk_id": "email_0064_chunk_0004",
+    "email_id": "email_0064",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 404,
+    "chunk_id": "email_0064_chunk_0005",
+    "email_id": "email_0064",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 405,
+    "chunk_id": "email_0064_chunk_0006",
+    "email_id": "email_0064",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 406,
+    "chunk_id": "email_0064_chunk_0007",
+    "email_id": "email_0064",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0064_rag.txt",
+    "character_count": 1064
+  },
+  {
+    "vector_index": 407,
+    "chunk_id": "email_0065_chunk_0000",
+    "email_id": "email_0065",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 408,
+    "chunk_id": "email_0065_chunk_0001",
+    "email_id": "email_0065",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 409,
+    "chunk_id": "email_0065_chunk_0002",
+    "email_id": "email_0065",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 410,
+    "chunk_id": "email_0065_chunk_0003",
+    "email_id": "email_0065",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 411,
+    "chunk_id": "email_0065_chunk_0004",
+    "email_id": "email_0065",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 412,
+    "chunk_id": "email_0065_chunk_0005",
+    "email_id": "email_0065",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 413,
+    "chunk_id": "email_0065_chunk_0006",
+    "email_id": "email_0065",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0065_rag.txt",
+    "character_count": 774
+  },
+  {
+    "vector_index": 414,
+    "chunk_id": "email_0066_chunk_0000",
+    "email_id": "email_0066",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 415,
+    "chunk_id": "email_0066_chunk_0001",
+    "email_id": "email_0066",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 416,
+    "chunk_id": "email_0066_chunk_0002",
+    "email_id": "email_0066",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 417,
+    "chunk_id": "email_0066_chunk_0003",
+    "email_id": "email_0066",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 418,
+    "chunk_id": "email_0066_chunk_0004",
+    "email_id": "email_0066",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 419,
+    "chunk_id": "email_0066_chunk_0005",
+    "email_id": "email_0066",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 420,
+    "chunk_id": "email_0066_chunk_0006",
+    "email_id": "email_0066",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 421,
+    "chunk_id": "email_0066_chunk_0007",
+    "email_id": "email_0066",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 422,
+    "chunk_id": "email_0066_chunk_0008",
+    "email_id": "email_0066",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 423,
+    "chunk_id": "email_0066_chunk_0009",
+    "email_id": "email_0066",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1193
+  },
+  {
+    "vector_index": 424,
+    "chunk_id": "email_0066_chunk_0010",
+    "email_id": "email_0066",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0066_rag.txt",
+    "character_count": 1025
+  },
+  {
+    "vector_index": 425,
+    "chunk_id": "email_0067_chunk_0000",
+    "email_id": "email_0067",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 426,
+    "chunk_id": "email_0067_chunk_0001",
+    "email_id": "email_0067",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 427,
+    "chunk_id": "email_0067_chunk_0002",
+    "email_id": "email_0067",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 428,
+    "chunk_id": "email_0067_chunk_0003",
+    "email_id": "email_0067",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+    "character_count": 344
+  },
+  {
+    "vector_index": 429,
+    "chunk_id": "email_0068_chunk_0000",
+    "email_id": "email_0068",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0068_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 430,
+    "chunk_id": "email_0068_chunk_0001",
+    "email_id": "email_0068",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0068_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 431,
+    "chunk_id": "email_0068_chunk_0002",
+    "email_id": "email_0068",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0068_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 432,
+    "chunk_id": "email_0068_chunk_0003",
+    "email_id": "email_0068",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0068_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 433,
+    "chunk_id": "email_0068_chunk_0004",
+    "email_id": "email_0068",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0068_rag.txt",
+    "character_count": 786
+  },
+  {
+    "vector_index": 434,
+    "chunk_id": "email_0069_chunk_0000",
+    "email_id": "email_0069",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0069_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 435,
+    "chunk_id": "email_0069_chunk_0001",
+    "email_id": "email_0069",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0069_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 436,
+    "chunk_id": "email_0069_chunk_0002",
+    "email_id": "email_0069",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0069_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 437,
+    "chunk_id": "email_0069_chunk_0003",
+    "email_id": "email_0069",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0069_rag.txt",
+    "character_count": 640
+  },
+  {
+    "vector_index": 438,
+    "chunk_id": "email_0070_chunk_0000",
+    "email_id": "email_0070",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0070_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 439,
+    "chunk_id": "email_0070_chunk_0001",
+    "email_id": "email_0070",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0070_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 440,
+    "chunk_id": "email_0070_chunk_0002",
+    "email_id": "email_0070",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0070_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 441,
+    "chunk_id": "email_0070_chunk_0003",
+    "email_id": "email_0070",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0070_rag.txt",
+    "character_count": 645
+  },
+  {
+    "vector_index": 442,
+    "chunk_id": "email_0071_chunk_0000",
+    "email_id": "email_0071",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 443,
+    "chunk_id": "email_0071_chunk_0001",
+    "email_id": "email_0071",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 444,
+    "chunk_id": "email_0071_chunk_0002",
+    "email_id": "email_0071",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1196
+  },
+  {
+    "vector_index": 445,
+    "chunk_id": "email_0071_chunk_0003",
+    "email_id": "email_0071",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 446,
+    "chunk_id": "email_0071_chunk_0004",
+    "email_id": "email_0071",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1194
+  },
+  {
+    "vector_index": 447,
+    "chunk_id": "email_0071_chunk_0005",
+    "email_id": "email_0071",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0071_rag.txt",
+    "character_count": 1092
+  },
+  {
+    "vector_index": 448,
+    "chunk_id": "email_0072_chunk_0000",
+    "email_id": "email_0072",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0072_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 449,
+    "chunk_id": "email_0072_chunk_0001",
+    "email_id": "email_0072",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0072_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 450,
+    "chunk_id": "email_0072_chunk_0002",
+    "email_id": "email_0072",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0072_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 451,
+    "chunk_id": "email_0072_chunk_0003",
+    "email_id": "email_0072",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0072_rag.txt",
+    "character_count": 764
+  },
+  {
+    "vector_index": 452,
+    "chunk_id": "email_0073_chunk_0000",
+    "email_id": "email_0073",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0073_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 453,
+    "chunk_id": "email_0073_chunk_0001",
+    "email_id": "email_0073",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0073_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 454,
+    "chunk_id": "email_0073_chunk_0002",
+    "email_id": "email_0073",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0073_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 455,
+    "chunk_id": "email_0073_chunk_0003",
+    "email_id": "email_0073",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0073_rag.txt",
+    "character_count": 658
+  },
+  {
+    "vector_index": 456,
+    "chunk_id": "email_0074_chunk_0000",
+    "email_id": "email_0074",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0074_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 457,
+    "chunk_id": "email_0074_chunk_0001",
+    "email_id": "email_0074",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0074_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 458,
+    "chunk_id": "email_0074_chunk_0002",
+    "email_id": "email_0074",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0074_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 459,
+    "chunk_id": "email_0074_chunk_0003",
+    "email_id": "email_0074",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0074_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 460,
+    "chunk_id": "email_0074_chunk_0004",
+    "email_id": "email_0074",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0074_rag.txt",
+    "character_count": 809
+  },
+  {
+    "vector_index": 461,
+    "chunk_id": "email_0075_chunk_0000",
+    "email_id": "email_0075",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 462,
+    "chunk_id": "email_0075_chunk_0001",
+    "email_id": "email_0075",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 463,
+    "chunk_id": "email_0075_chunk_0002",
+    "email_id": "email_0075",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 464,
+    "chunk_id": "email_0075_chunk_0003",
+    "email_id": "email_0075",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 465,
+    "chunk_id": "email_0075_chunk_0004",
+    "email_id": "email_0075",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 466,
+    "chunk_id": "email_0075_chunk_0005",
+    "email_id": "email_0075",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 467,
+    "chunk_id": "email_0075_chunk_0006",
+    "email_id": "email_0075",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+    "character_count": 351
+  },
+  {
+    "vector_index": 468,
+    "chunk_id": "email_0076_chunk_0000",
+    "email_id": "email_0076",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0076_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 469,
+    "chunk_id": "email_0076_chunk_0001",
+    "email_id": "email_0076",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0076_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 470,
+    "chunk_id": "email_0076_chunk_0002",
+    "email_id": "email_0076",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0076_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 471,
+    "chunk_id": "email_0076_chunk_0003",
+    "email_id": "email_0076",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0076_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 472,
+    "chunk_id": "email_0076_chunk_0004",
+    "email_id": "email_0076",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0076_rag.txt",
+    "character_count": 548
+  },
+  {
+    "vector_index": 473,
+    "chunk_id": "email_0077_chunk_0000",
+    "email_id": "email_0077",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 474,
+    "chunk_id": "email_0077_chunk_0001",
+    "email_id": "email_0077",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 475,
+    "chunk_id": "email_0077_chunk_0002",
+    "email_id": "email_0077",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 476,
+    "chunk_id": "email_0077_chunk_0003",
+    "email_id": "email_0077",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 477,
+    "chunk_id": "email_0077_chunk_0004",
+    "email_id": "email_0077",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 478,
+    "chunk_id": "email_0077_chunk_0005",
+    "email_id": "email_0077",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 479,
+    "chunk_id": "email_0077_chunk_0006",
+    "email_id": "email_0077",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0077_rag.txt",
+    "character_count": 346
+  },
+  {
+    "vector_index": 480,
+    "chunk_id": "email_0078_chunk_0000",
+    "email_id": "email_0078",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0078_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 481,
+    "chunk_id": "email_0078_chunk_0001",
+    "email_id": "email_0078",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0078_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 482,
+    "chunk_id": "email_0078_chunk_0002",
+    "email_id": "email_0078",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0078_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 483,
+    "chunk_id": "email_0078_chunk_0003",
+    "email_id": "email_0078",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0078_rag.txt",
+    "character_count": 422
+  },
+  {
+    "vector_index": 484,
+    "chunk_id": "email_0079_chunk_0000",
+    "email_id": "email_0079",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0079_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 485,
+    "chunk_id": "email_0079_chunk_0001",
+    "email_id": "email_0079",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0079_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 486,
+    "chunk_id": "email_0079_chunk_0002",
+    "email_id": "email_0079",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0079_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 487,
+    "chunk_id": "email_0079_chunk_0003",
+    "email_id": "email_0079",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0079_rag.txt",
+    "character_count": 1112
+  },
+  {
+    "vector_index": 488,
+    "chunk_id": "email_0080_chunk_0000",
+    "email_id": "email_0080",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0080_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 489,
+    "chunk_id": "email_0080_chunk_0001",
+    "email_id": "email_0080",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0080_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 490,
+    "chunk_id": "email_0080_chunk_0002",
+    "email_id": "email_0080",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0080_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 491,
+    "chunk_id": "email_0080_chunk_0003",
+    "email_id": "email_0080",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0080_rag.txt",
+    "character_count": 1051
+  },
+  {
+    "vector_index": 492,
+    "chunk_id": "email_0081_chunk_0000",
+    "email_id": "email_0081",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0081_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 493,
+    "chunk_id": "email_0081_chunk_0001",
+    "email_id": "email_0081",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0081_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 494,
+    "chunk_id": "email_0081_chunk_0002",
+    "email_id": "email_0081",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0081_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 495,
+    "chunk_id": "email_0081_chunk_0003",
+    "email_id": "email_0081",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0081_rag.txt",
+    "character_count": 1155
+  },
+  {
+    "vector_index": 496,
+    "chunk_id": "email_0082_chunk_0000",
+    "email_id": "email_0082",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0082_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 497,
+    "chunk_id": "email_0082_chunk_0001",
+    "email_id": "email_0082",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0082_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 498,
+    "chunk_id": "email_0082_chunk_0002",
+    "email_id": "email_0082",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0082_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 499,
+    "chunk_id": "email_0082_chunk_0003",
+    "email_id": "email_0082",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0082_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 500,
+    "chunk_id": "email_0082_chunk_0004",
+    "email_id": "email_0082",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0082_rag.txt",
+    "character_count": 666
+  },
+  {
+    "vector_index": 501,
+    "chunk_id": "email_0083_chunk_0000",
+    "email_id": "email_0083",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 502,
+    "chunk_id": "email_0083_chunk_0001",
+    "email_id": "email_0083",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 503,
+    "chunk_id": "email_0083_chunk_0002",
+    "email_id": "email_0083",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 504,
+    "chunk_id": "email_0083_chunk_0003",
+    "email_id": "email_0083",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 505,
+    "chunk_id": "email_0083_chunk_0004",
+    "email_id": "email_0083",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1197
+  },
+  {
+    "vector_index": 506,
+    "chunk_id": "email_0083_chunk_0005",
+    "email_id": "email_0083",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 507,
+    "chunk_id": "email_0083_chunk_0006",
+    "email_id": "email_0083",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0083_rag.txt",
+    "character_count": 690
+  },
+  {
+    "vector_index": 508,
+    "chunk_id": "email_0084_chunk_0000",
+    "email_id": "email_0084",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0084_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 509,
+    "chunk_id": "email_0084_chunk_0001",
+    "email_id": "email_0084",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0084_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 510,
+    "chunk_id": "email_0084_chunk_0002",
+    "email_id": "email_0084",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0084_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 511,
+    "chunk_id": "email_0084_chunk_0003",
+    "email_id": "email_0084",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0084_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 512,
+    "chunk_id": "email_0084_chunk_0004",
+    "email_id": "email_0084",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0084_rag.txt",
+    "character_count": 607
+  },
+  {
+    "vector_index": 513,
+    "chunk_id": "email_0085_chunk_0000",
+    "email_id": "email_0085",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0085_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 514,
+    "chunk_id": "email_0085_chunk_0001",
+    "email_id": "email_0085",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0085_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 515,
+    "chunk_id": "email_0085_chunk_0002",
+    "email_id": "email_0085",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0085_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 516,
+    "chunk_id": "email_0085_chunk_0003",
+    "email_id": "email_0085",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0085_rag.txt",
+    "character_count": 702
+  },
+  {
+    "vector_index": 517,
+    "chunk_id": "email_0086_chunk_0000",
+    "email_id": "email_0086",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0086_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 518,
+    "chunk_id": "email_0086_chunk_0001",
+    "email_id": "email_0086",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0086_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 519,
+    "chunk_id": "email_0086_chunk_0002",
+    "email_id": "email_0086",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0086_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 520,
+    "chunk_id": "email_0086_chunk_0003",
+    "email_id": "email_0086",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0086_rag.txt",
+    "character_count": 819
+  },
+  {
+    "vector_index": 521,
+    "chunk_id": "email_0087_chunk_0000",
+    "email_id": "email_0087",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0087_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 522,
+    "chunk_id": "email_0087_chunk_0001",
+    "email_id": "email_0087",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0087_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 523,
+    "chunk_id": "email_0087_chunk_0002",
+    "email_id": "email_0087",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0087_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 524,
+    "chunk_id": "email_0087_chunk_0003",
+    "email_id": "email_0087",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0087_rag.txt",
+    "character_count": 658
+  },
+  {
+    "vector_index": 525,
+    "chunk_id": "email_0088_chunk_0000",
+    "email_id": "email_0088",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0088_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 526,
+    "chunk_id": "email_0088_chunk_0001",
+    "email_id": "email_0088",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0088_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 527,
+    "chunk_id": "email_0088_chunk_0002",
+    "email_id": "email_0088",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0088_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 528,
+    "chunk_id": "email_0088_chunk_0003",
+    "email_id": "email_0088",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0088_rag.txt",
+    "character_count": 918
+  },
+  {
+    "vector_index": 529,
+    "chunk_id": "email_0089_chunk_0000",
+    "email_id": "email_0089",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 530,
+    "chunk_id": "email_0089_chunk_0001",
+    "email_id": "email_0089",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 531,
+    "chunk_id": "email_0089_chunk_0002",
+    "email_id": "email_0089",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 532,
+    "chunk_id": "email_0089_chunk_0003",
+    "email_id": "email_0089",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 533,
+    "chunk_id": "email_0089_chunk_0004",
+    "email_id": "email_0089",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 534,
+    "chunk_id": "email_0089_chunk_0005",
+    "email_id": "email_0089",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 535,
+    "chunk_id": "email_0089_chunk_0006",
+    "email_id": "email_0089",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 536,
+    "chunk_id": "email_0089_chunk_0007",
+    "email_id": "email_0089",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 537,
+    "chunk_id": "email_0089_chunk_0008",
+    "email_id": "email_0089",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0089_rag.txt",
+    "character_count": 520
+  },
+  {
+    "vector_index": 538,
+    "chunk_id": "email_0090_chunk_0000",
+    "email_id": "email_0090",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 539,
+    "chunk_id": "email_0090_chunk_0001",
+    "email_id": "email_0090",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 540,
+    "chunk_id": "email_0090_chunk_0002",
+    "email_id": "email_0090",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 541,
+    "chunk_id": "email_0090_chunk_0003",
+    "email_id": "email_0090",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+    "character_count": 476
+  },
+  {
+    "vector_index": 542,
+    "chunk_id": "email_0091_chunk_0000",
+    "email_id": "email_0091",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0091_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 543,
+    "chunk_id": "email_0091_chunk_0001",
+    "email_id": "email_0091",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0091_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 544,
+    "chunk_id": "email_0091_chunk_0002",
+    "email_id": "email_0091",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0091_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 545,
+    "chunk_id": "email_0091_chunk_0003",
+    "email_id": "email_0091",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0091_rag.txt",
+    "character_count": 448
+  },
+  {
+    "vector_index": 546,
+    "chunk_id": "email_0092_chunk_0000",
+    "email_id": "email_0092",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0092_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 547,
+    "chunk_id": "email_0092_chunk_0001",
+    "email_id": "email_0092",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0092_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 548,
+    "chunk_id": "email_0092_chunk_0002",
+    "email_id": "email_0092",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0092_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 549,
+    "chunk_id": "email_0092_chunk_0003",
+    "email_id": "email_0092",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0092_rag.txt",
+    "character_count": 1047
+  },
+  {
+    "vector_index": 550,
+    "chunk_id": "email_0093_chunk_0000",
+    "email_id": "email_0093",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 551,
+    "chunk_id": "email_0093_chunk_0001",
+    "email_id": "email_0093",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 552,
+    "chunk_id": "email_0093_chunk_0002",
+    "email_id": "email_0093",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 553,
+    "chunk_id": "email_0093_chunk_0003",
+    "email_id": "email_0093",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+    "character_count": 282
+  },
+  {
+    "vector_index": 554,
+    "chunk_id": "email_0094_chunk_0000",
+    "email_id": "email_0094",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0094_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 555,
+    "chunk_id": "email_0094_chunk_0001",
+    "email_id": "email_0094",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0094_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 556,
+    "chunk_id": "email_0094_chunk_0002",
+    "email_id": "email_0094",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0094_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 557,
+    "chunk_id": "email_0094_chunk_0003",
+    "email_id": "email_0094",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0094_rag.txt",
+    "character_count": 553
+  },
+  {
+    "vector_index": 558,
+    "chunk_id": "email_0095_chunk_0000",
+    "email_id": "email_0095",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 559,
+    "chunk_id": "email_0095_chunk_0001",
+    "email_id": "email_0095",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1178
+  },
+  {
+    "vector_index": 560,
+    "chunk_id": "email_0095_chunk_0002",
+    "email_id": "email_0095",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1160
+  },
+  {
+    "vector_index": 561,
+    "chunk_id": "email_0095_chunk_0003",
+    "email_id": "email_0095",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1119
+  },
+  {
+    "vector_index": 562,
+    "chunk_id": "email_0095_chunk_0004",
+    "email_id": "email_0095",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1139
+  },
+  {
+    "vector_index": 563,
+    "chunk_id": "email_0095_chunk_0005",
+    "email_id": "email_0095",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1159
+  },
+  {
+    "vector_index": 564,
+    "chunk_id": "email_0095_chunk_0006",
+    "email_id": "email_0095",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1164
+  },
+  {
+    "vector_index": 565,
+    "chunk_id": "email_0095_chunk_0007",
+    "email_id": "email_0095",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1141
+  },
+  {
+    "vector_index": 566,
+    "chunk_id": "email_0095_chunk_0008",
+    "email_id": "email_0095",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1131
+  },
+  {
+    "vector_index": 567,
+    "chunk_id": "email_0095_chunk_0009",
+    "email_id": "email_0095",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1147
+  },
+  {
+    "vector_index": 568,
+    "chunk_id": "email_0095_chunk_0010",
+    "email_id": "email_0095",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1182
+  },
+  {
+    "vector_index": 569,
+    "chunk_id": "email_0095_chunk_0011",
+    "email_id": "email_0095",
+    "chunk_index": 11,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1160
+  },
+  {
+    "vector_index": 570,
+    "chunk_id": "email_0095_chunk_0012",
+    "email_id": "email_0095",
+    "chunk_index": 12,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1195
+  },
+  {
+    "vector_index": 571,
+    "chunk_id": "email_0095_chunk_0013",
+    "email_id": "email_0095",
+    "chunk_index": 13,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 572,
+    "chunk_id": "email_0095_chunk_0014",
+    "email_id": "email_0095",
+    "chunk_index": 14,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 573,
+    "chunk_id": "email_0095_chunk_0015",
+    "email_id": "email_0095",
+    "chunk_index": 15,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0095_rag.txt",
+    "character_count": 397
+  },
+  {
+    "vector_index": 574,
+    "chunk_id": "email_0096_chunk_0000",
+    "email_id": "email_0096",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0096_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 575,
+    "chunk_id": "email_0096_chunk_0001",
+    "email_id": "email_0096",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0096_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 576,
+    "chunk_id": "email_0096_chunk_0002",
+    "email_id": "email_0096",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0096_rag.txt",
+    "character_count": 1199
+  },
+  {
+    "vector_index": 577,
+    "chunk_id": "email_0096_chunk_0003",
+    "email_id": "email_0096",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0096_rag.txt",
+    "character_count": 660
+  },
+  {
+    "vector_index": 578,
+    "chunk_id": "email_0097_chunk_0000",
+    "email_id": "email_0097",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0097_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 579,
+    "chunk_id": "email_0097_chunk_0001",
+    "email_id": "email_0097",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0097_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 580,
+    "chunk_id": "email_0097_chunk_0002",
+    "email_id": "email_0097",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0097_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 581,
+    "chunk_id": "email_0097_chunk_0003",
+    "email_id": "email_0097",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0097_rag.txt",
+    "character_count": 953
+  },
+  {
+    "vector_index": 582,
+    "chunk_id": "email_0098_chunk_0000",
+    "email_id": "email_0098",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 839
+  },
+  {
+    "vector_index": 583,
+    "chunk_id": "email_0098_chunk_0001",
+    "email_id": "email_0098",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 584,
+    "chunk_id": "email_0098_chunk_0002",
+    "email_id": "email_0098",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 33
+  },
+  {
+    "vector_index": 585,
+    "chunk_id": "email_0098_chunk_0003",
+    "email_id": "email_0098",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 47
+  },
+  {
+    "vector_index": 586,
+    "chunk_id": "email_0098_chunk_0004",
+    "email_id": "email_0098",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 47
+  },
+  {
+    "vector_index": 587,
+    "chunk_id": "email_0098_chunk_0005",
+    "email_id": "email_0098",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 39
+  },
+  {
+    "vector_index": 588,
+    "chunk_id": "email_0098_chunk_0006",
+    "email_id": "email_0098",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 39
+  },
+  {
+    "vector_index": 589,
+    "chunk_id": "email_0098_chunk_0007",
+    "email_id": "email_0098",
+    "chunk_index": 7,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 71
+  },
+  {
+    "vector_index": 590,
+    "chunk_id": "email_0098_chunk_0008",
+    "email_id": "email_0098",
+    "chunk_index": 8,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 31
+  },
+  {
+    "vector_index": 591,
+    "chunk_id": "email_0098_chunk_0009",
+    "email_id": "email_0098",
+    "chunk_index": 9,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 592,
+    "chunk_id": "email_0098_chunk_0010",
+    "email_id": "email_0098",
+    "chunk_index": 10,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 109
+  },
+  {
+    "vector_index": 593,
+    "chunk_id": "email_0098_chunk_0011",
+    "email_id": "email_0098",
+    "chunk_index": 11,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 594,
+    "chunk_id": "email_0098_chunk_0012",
+    "email_id": "email_0098",
+    "chunk_index": 12,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 35
+  },
+  {
+    "vector_index": 595,
+    "chunk_id": "email_0098_chunk_0013",
+    "email_id": "email_0098",
+    "chunk_index": 13,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 29
+  },
+  {
+    "vector_index": 596,
+    "chunk_id": "email_0098_chunk_0014",
+    "email_id": "email_0098",
+    "chunk_index": 14,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 29
+  },
+  {
+    "vector_index": 597,
+    "chunk_id": "email_0098_chunk_0015",
+    "email_id": "email_0098",
+    "chunk_index": 15,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 598,
+    "chunk_id": "email_0098_chunk_0016",
+    "email_id": "email_0098",
+    "chunk_index": 16,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 27
+  },
+  {
+    "vector_index": 599,
+    "chunk_id": "email_0098_chunk_0017",
+    "email_id": "email_0098",
+    "chunk_index": 17,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 600,
+    "chunk_id": "email_0098_chunk_0018",
+    "email_id": "email_0098",
+    "chunk_index": 18,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 601,
+    "chunk_id": "email_0098_chunk_0019",
+    "email_id": "email_0098",
+    "chunk_index": 19,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 602,
+    "chunk_id": "email_0098_chunk_0020",
+    "email_id": "email_0098",
+    "chunk_index": 20,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 603,
+    "chunk_id": "email_0098_chunk_0021",
+    "email_id": "email_0098",
+    "chunk_index": 21,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 604,
+    "chunk_id": "email_0098_chunk_0022",
+    "email_id": "email_0098",
+    "chunk_index": 22,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 605,
+    "chunk_id": "email_0098_chunk_0023",
+    "email_id": "email_0098",
+    "chunk_index": 23,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 606,
+    "chunk_id": "email_0098_chunk_0024",
+    "email_id": "email_0098",
+    "chunk_index": 24,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 607,
+    "chunk_id": "email_0098_chunk_0025",
+    "email_id": "email_0098",
+    "chunk_index": 25,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 608,
+    "chunk_id": "email_0098_chunk_0026",
+    "email_id": "email_0098",
+    "chunk_index": 26,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 609,
+    "chunk_id": "email_0098_chunk_0027",
+    "email_id": "email_0098",
+    "chunk_index": 27,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 610,
+    "chunk_id": "email_0098_chunk_0028",
+    "email_id": "email_0098",
+    "chunk_index": 28,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 611,
+    "chunk_id": "email_0098_chunk_0029",
+    "email_id": "email_0098",
+    "chunk_index": 29,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1
+  },
+  {
+    "vector_index": 612,
+    "chunk_id": "email_0098_chunk_0030",
+    "email_id": "email_0098",
+    "chunk_index": 30,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 723
+  },
+  {
+    "vector_index": 613,
+    "chunk_id": "email_0098_chunk_0031",
+    "email_id": "email_0098",
+    "chunk_index": 31,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1198
+  },
+  {
+    "vector_index": 614,
+    "chunk_id": "email_0098_chunk_0032",
+    "email_id": "email_0098",
+    "chunk_index": 32,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 615,
+    "chunk_id": "email_0098_chunk_0033",
+    "email_id": "email_0098",
+    "chunk_index": 33,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0098_rag.txt",
+    "character_count": 251
+  },
+  {
+    "vector_index": 616,
+    "chunk_id": "email_0099_chunk_0000",
+    "email_id": "email_0099",
+    "chunk_index": 0,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 617,
+    "chunk_id": "email_0099_chunk_0001",
+    "email_id": "email_0099",
+    "chunk_index": 1,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 618,
+    "chunk_id": "email_0099_chunk_0002",
+    "email_id": "email_0099",
+    "chunk_index": 2,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 619,
+    "chunk_id": "email_0099_chunk_0003",
+    "email_id": "email_0099",
+    "chunk_index": 3,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 620,
+    "chunk_id": "email_0099_chunk_0004",
+    "email_id": "email_0099",
+    "chunk_index": 4,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 621,
+    "chunk_id": "email_0099_chunk_0005",
+    "email_id": "email_0099",
+    "chunk_index": 5,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 1200
+  },
+  {
+    "vector_index": 622,
+    "chunk_id": "email_0099_chunk_0006",
+    "email_id": "email_0099",
+    "chunk_index": 6,
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0099_rag.txt",
+    "character_count": 659
+  }
+]

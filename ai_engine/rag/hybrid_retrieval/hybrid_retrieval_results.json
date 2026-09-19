@@ -1,0 +1,705 @@
+{
+  "retrieval_system": "Hybrid RAG Retrieval",
+  "version": "1.0",
+  "created_utc": "2026-09-13T22:55:05.085637+00:00",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "vector_count": 623,
+  "vector_dimensions": 384,
+  "memory_records": 100,
+  "queries": {
+    "query_1": {
+      "query": "Find potentially phishing emails with suspicious links.",
+      "results": [
+        {
+          "email_id": "email_0021",
+          "semantic_rank": 10,
+          "semantic_similarity": 0.47294044494628906,
+          "final_hybrid_score": 0.497001,
+          "score_breakdown": {
+            "semantic_component": 0.23647,
+            "ml_component": 0.162832,
+            "risk_component": 0.097699,
+            "url_component": 0.0,
+            "final_score": 0.497001
+          },
+          "email": {
+            "from": "freepaysitepasss@yahoo.com",
+            "to": "undisclosed.recipients@mailman.enron.com",
+            "subject": "Adult Industry Secrets Revealed!                         14859",
+            "date": "Sat, 29 Dec 2001 02:29:46 -0800"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.81416,
+            "ml_score": 81.416
+          },
+          "hybrid_analysis": {
+            "score": 48.8496,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 131,
+            "text": "EMAIL FORENSICS INVESTIGATION DOCUMENT\n======================================\n\nCASE TYPE\n---------\nEmail Forensics\n\nEVIDENCE IDENTIFICATION\n-----------------------\nEmail ID: email_0021\nFile Name: email_0021.eml\nSHA-256: d4772b307187640312fa8124abd71fe3936cdfb106d85612ad4323920fdae8c4\n\nEMAIL METADATA\n--------------\nFrom: freepaysitepasss@yahoo.com\nTo: undisclosed.recipients@mailman.enron.com\nCc: \nBcc: \nSubject: Adult Industry Secrets Revealed!                         14859\nDate: Sat, 29 Dec 2001 02:29:46 -0800\nNormalized Date: 2001-12-29T02:29:46-08:00\nMessage-ID: <24936387.1075855416731.JavaMail.evans@thyme>\nReply-To: \nReturn-Path: \n\nEMAIL BODY\n----------\n\n\nUNLOCK THE SECRET OF A FREE PAYSITE PASSWORD\nThe secrets that the industry does'nt want you to know.\nWe believe each surfer needs to know how the adult industry operates so that they\nwont become a victim of a scam. Please bookmark this site as this will be your best reference\nto adult paysites on the web.\nThe info on this site was last updated on Decmber 14, 2001\n\nINDUSTRY FACTS\n1. The Adult Internet industry generated over $90 billion in revenues in 2000 accounting for 13%  of all revenue generated on the internet and making it",
+            "metadata": {
+              "vector_index": 131,
+              "chunk_id": "email_0021_chunk_0000",
+              "email_id": "email_0021",
+              "chunk_index": 0,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+              "character_count": 1200
+            }
+          }
+        },
+        {
+          "email_id": "email_0043",
+          "semantic_rank": 2,
+          "semantic_similarity": 0.49681293964385986,
+          "final_hybrid_score": 0.48912,
+          "score_breakdown": {
+            "semantic_component": 0.248406,
+            "ml_component": 0.150446,
+            "risk_component": 0.090268,
+            "url_component": 0.0,
+            "final_score": 0.48912
+          },
+          "email": {
+            "from": "liz.taylor@enron.com",
+            "to": "richard.lewis@enron.com",
+            "subject": "Whalley's Visit to London",
+            "date": "Mon, 04 Jun 2001 08:42:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.752231,
+            "ml_score": 75.2231
+          },
+          "hybrid_analysis": {
+            "score": 45.1338,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 275,
+            "text": "-------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 275,
+              "chunk_id": "email_0043_chunk_0003",
+              "email_id": "email_0043",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+              "character_count": 518
+            }
+          }
+        },
+        {
+          "email_id": "email_0009",
+          "semantic_rank": 20,
+          "semantic_similarity": 0.4515187740325928,
+          "final_hybrid_score": 0.470279,
+          "score_breakdown": {
+            "semantic_component": 0.225759,
+            "ml_component": 0.138825,
+            "risk_component": 0.085695,
+            "url_component": 0.02,
+            "final_score": 0.470279
+          },
+          "email": {
+            "from": "enron.announcements@enron.com",
+            "to": "all.worldwide@enron.com",
+            "subject": "2000 Chairman's Award",
+            "date": "Fri, 11 Aug 2000 18:20:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.694123,
+            "ml_score": 69.4123
+          },
+          "hybrid_analysis": {
+            "score": 42.8474,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 2,
+            "url_domains": [
+              "home.enron.com"
+            ],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 52,
+            "text": "n.announcements@enron.com\",\n  \"to\": \"all.worldwide@enron.com\",\n  \"body_length\": 1614,\n  \"total_text_length\": 1718\n}\n\nSOURCE FILES\n------------\nHybrid Analysis File:\nemail_0009_ml_hybrid.json\n\nForensic File:\nemail_0009_forensic.json\n\nRisk File:\nemail_0009_risk.json\n\nINVESTIGATION PURPOSE\n---------------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 52,
+              "chunk_id": "email_0009_chunk_0005",
+              "email_id": "email_0009",
+              "chunk_index": 5,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+              "character_count": 814
+            }
+          }
+        },
+        {
+          "email_id": "email_0078",
+          "semantic_rank": 16,
+          "semantic_similarity": 0.46076250076293945,
+          "final_hybrid_score": 0.462573,
+          "score_breakdown": {
+            "semantic_component": 0.230381,
+            "ml_component": 0.14512,
+            "risk_component": 0.087072,
+            "url_component": 0.0,
+            "final_score": 0.462573
+          },
+          "email": {
+            "from": "rosalee.fleming@enron.com",
+            "to": "lizard_ar@yahoo.com",
+            "subject": "KLL's e-mail address",
+            "date": "Thu, 10 Aug 2000 03:27:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.7256,
+            "ml_score": 72.56
+          },
+          "hybrid_analysis": {
+            "score": 43.536,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 482,
+            "text": "ts\": 0,\n  \"html\": 0,\n  \"routing\": 0\n}\n\nFindings:\n[]\n\nMACHINE LEARNING ANALYSIS\n-------------------------\nModel: TF-IDF + LogisticRegression\nPrediction: 1\nClassification: SPAM/PHISHING\nPhishing Probability: 0.7256\nML Score: 72.56\n\nFORENSIC ANALYSIS USED BY HYBRID ENGINE\n---------------------------------------\nForensic Score: 0.0\nForensic Level: LOW\nForensic Confidence: rule_based\n\nHYBRID RISK ANALYSIS\n--------------------\nML Weight: 0.6\nForensic Weight: 0.4\nHybrid Score: 43.536\nHybrid Risk Level: MEDIUM\n\nINVESTIGATION INPUT SUMMARY\n---------------------------\n{\n  \"subject\": \"KLL's e-mail address\",\n  \"from\": \"rosalee.fleming@enron.com\",\n  \"to\": \"lizard_ar@yahoo.com\",\n  \"body_length\": 133,\n  \"total_text_length\": 228\n}\n\nSOURCE FILES\n------------\nHybrid Analysis File:\nemail_0078_ml_hybrid.json\n\nForensic File:\nemail_0078_forensic.json\n\nRisk File:\nemail_0078_risk.json\n\nINVESTIGATION PURPOSE\n---------------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence",
+            "metadata": {
+              "vector_index": 482,
+              "chunk_id": "email_0078_chunk_0002",
+              "email_id": "email_0078",
+              "chunk_index": 2,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0078_rag.txt",
+              "character_count": 1199
+            }
+          }
+        },
+        {
+          "email_id": "email_0090",
+          "semantic_rank": 8,
+          "semantic_similarity": 0.4763225018978119,
+          "final_hybrid_score": 0.456925,
+          "score_breakdown": {
+            "semantic_component": 0.238161,
+            "ml_component": 0.136727,
+            "risk_component": 0.082036,
+            "url_component": 0.0,
+            "final_score": 0.456925
+          },
+          "email": {
+            "from": "pgerman@ong.com",
+            "to": "kpresto@enron.com",
+            "subject": "The List",
+            "date": "Wed, 25 Apr 2001 07:25:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.683637,
+            "ml_score": 68.3637
+          },
+          "hybrid_analysis": {
+            "score": 41.0182,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 541,
+            "text": "nal email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 541,
+              "chunk_id": "email_0090_chunk_0003",
+              "email_id": "email_0090",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+              "character_count": 476
+            }
+          }
+        }
+      ]
+    },
+    "query_2": {
+      "query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "results": [
+        {
+          "email_id": "email_0093",
+          "semantic_rank": 10,
+          "semantic_similarity": 0.6960799694061279,
+          "final_hybrid_score": 0.636784,
+          "score_breakdown": {
+            "semantic_component": 0.34804,
+            "ml_component": 0.180465,
+            "risk_component": 0.108279,
+            "url_component": 0.0,
+            "final_score": 0.636784
+          },
+          "email": {
+            "from": "tamara.black@enron.com",
+            "to": "",
+            "subject": "",
+            "date": "Wed, 17 Jan 2001 00:15:00 -0800"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.902326,
+            "ml_score": 90.2326
+          },
+          "hybrid_analysis": {
+            "score": 54.1395,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 553,
+            "text": "I-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 553,
+              "chunk_id": "email_0093_chunk_0003",
+              "email_id": "email_0093",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+              "character_count": 282
+            }
+          }
+        },
+        {
+          "email_id": "email_0043",
+          "semantic_rank": 2,
+          "semantic_similarity": 0.7448914051055908,
+          "final_hybrid_score": 0.61316,
+          "score_breakdown": {
+            "semantic_component": 0.372446,
+            "ml_component": 0.150446,
+            "risk_component": 0.090268,
+            "url_component": 0.0,
+            "final_score": 0.61316
+          },
+          "email": {
+            "from": "liz.taylor@enron.com",
+            "to": "richard.lewis@enron.com",
+            "subject": "Whalley's Visit to London",
+            "date": "Mon, 04 Jun 2001 08:42:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.752231,
+            "ml_score": 75.2231
+          },
+          "hybrid_analysis": {
+            "score": 45.1338,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 275,
+            "text": "-------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 275,
+              "chunk_id": "email_0043_chunk_0003",
+              "email_id": "email_0043",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+              "character_count": 518
+            }
+          }
+        },
+        {
+          "email_id": "email_0021",
+          "semantic_rank": 15,
+          "semantic_similarity": 0.6749542951583862,
+          "final_hybrid_score": 0.598008,
+          "score_breakdown": {
+            "semantic_component": 0.337477,
+            "ml_component": 0.162832,
+            "risk_component": 0.097699,
+            "url_component": 0.0,
+            "final_score": 0.598008
+          },
+          "email": {
+            "from": "freepaysitepasss@yahoo.com",
+            "to": "undisclosed.recipients@mailman.enron.com",
+            "subject": "Adult Industry Secrets Revealed!                         14859",
+            "date": "Sat, 29 Dec 2001 02:29:46 -0800"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.81416,
+            "ml_score": 81.416
+          },
+          "hybrid_analysis": {
+            "score": 48.8496,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 139,
+            "text": "inal email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 139,
+              "chunk_id": "email_0021_chunk_0008",
+              "email_id": "email_0021",
+              "chunk_index": 8,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+              "character_count": 243
+            }
+          }
+        },
+        {
+          "email_id": "email_0067",
+          "semantic_rank": 14,
+          "semantic_similarity": 0.6761363744735718,
+          "final_hybrid_score": 0.59733,
+          "score_breakdown": {
+            "semantic_component": 0.338068,
+            "ml_component": 0.162038,
+            "risk_component": 0.097223,
+            "url_component": 0.0,
+            "final_score": 0.59733
+          },
+          "email": {
+            "from": "bob.lee@enron.com",
+            "to": "larry.may@enron.com",
+            "subject": "Vol Skew",
+            "date": "Wed, 18 Apr 2001 05:54:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.810192,
+            "ml_score": 81.0192
+          },
+          "hybrid_analysis": {
+            "score": 48.6115,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 428,
+            "text": "s.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 428,
+              "chunk_id": "email_0067_chunk_0003",
+              "email_id": "email_0067",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+              "character_count": 344
+            }
+          }
+        },
+        {
+          "email_id": "email_0075",
+          "semantic_rank": 19,
+          "semantic_similarity": 0.662729024887085,
+          "final_hybrid_score": 0.587017,
+          "score_breakdown": {
+            "semantic_component": 0.331365,
+            "ml_component": 0.159783,
+            "risk_component": 0.09587,
+            "url_component": 0.0,
+            "final_score": 0.587017
+          },
+          "email": {
+            "from": "brenda.anderson@enron.com",
+            "to": "kenneth.lay@enron.com",
+            "subject": "FW: Reforestation projects at Panama - Mr.Kenneth Lay",
+            "date": "Tue, 17 Oct 2000 03:39:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.798914,
+            "ml_score": 79.8914
+          },
+          "hybrid_analysis": {
+            "score": 47.9349,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 467,
+            "text": "analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 467,
+              "chunk_id": "email_0075_chunk_0006",
+              "email_id": "email_0075",
+              "chunk_index": 6,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+              "character_count": 351
+            }
+          }
+        }
+      ]
+    },
+    "query_3": {
+      "query": "Find emails with URLs and elevated investigation risk.",
+      "results": [
+        {
+          "email_id": "email_0021",
+          "semantic_rank": 14,
+          "semantic_similarity": 0.5542961359024048,
+          "final_hybrid_score": 0.537679,
+          "score_breakdown": {
+            "semantic_component": 0.277148,
+            "ml_component": 0.162832,
+            "risk_component": 0.097699,
+            "url_component": 0.0,
+            "final_score": 0.537679
+          },
+          "email": {
+            "from": "freepaysitepasss@yahoo.com",
+            "to": "undisclosed.recipients@mailman.enron.com",
+            "subject": "Adult Industry Secrets Revealed!                         14859",
+            "date": "Sat, 29 Dec 2001 02:29:46 -0800"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.81416,
+            "ml_score": 81.416
+          },
+          "hybrid_analysis": {
+            "score": 48.8496,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 137,
+            "text": "\"has_html\": false,\n  \"has_received_headers\": false,\n  \"has_authentication_results\": false,\n  \"has_dkim_signature\": false,\n  \"has_return_path\": false\n}\n\nTHREAT INTELLIGENCE\n-------------------\n{\n  \"email_file\": \"email_0021.eml\",\n  \"email_sha256\": \"d4772b307187640312fa8124abd71fe3936cdfb106d85612ad4323920fdae8c4\",\n  \"subject\": \"Adult Industry Secrets Revealed!                         14859\",\n  \"url_count\": 0,\n  \"high_risk_urls\": 0,\n  \"medium_risk_urls\": 0,\n  \"low_risk_urls\": 0,\n  \"maximum_url_risk\": 0,\n  \"urls\": []\n}\n\nRULE-BASED RISK ASSESSMENT\n--------------------------\nRisk Score: 0\n\nRisk Level: LOW\n\nRisk Confidence: rule_based\n\nComponent Scores:\n{\n  \"authentication\": 0,\n  \"sender\": 0,\n  \"subject\": 0,\n  \"body\": 0,\n  \"urls\": 0,\n  \"attachments\": 0,\n  \"html\": 0,\n  \"routing\": 0\n}\n\nFindings:\n[]\n\nMACHINE LEARNING ANALYSIS\n-------------------------\nModel: TF-IDF + LogisticRegression\nPrediction: 1\nClassification: SPAM/PHISHING\nPhishing Probability: 0.81416\nML Score: 81.416\n\nFORENSIC ANALYSIS USED BY HYBRID ENGINE\n---------------------------------------\nForensic Score: 0.0\nForensic Level: LOW\nForensic Confidence: rule_based\n\nHYBRID RISK ANALYSIS\n--------------------\nML Weight: 0.6\nForensi",
+            "metadata": {
+              "vector_index": 137,
+              "chunk_id": "email_0021_chunk_0006",
+              "email_id": "email_0021",
+              "chunk_index": 6,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+              "character_count": 1198
+            }
+          }
+        },
+        {
+          "email_id": "email_0043",
+          "semantic_rank": 5,
+          "semantic_similarity": 0.5761706829071045,
+          "final_hybrid_score": 0.528799,
+          "score_breakdown": {
+            "semantic_component": 0.288085,
+            "ml_component": 0.150446,
+            "risk_component": 0.090268,
+            "url_component": 0.0,
+            "final_score": 0.528799
+          },
+          "email": {
+            "from": "liz.taylor@enron.com",
+            "to": "richard.lewis@enron.com",
+            "subject": "Whalley's Visit to London",
+            "date": "Mon, 04 Jun 2001 08:42:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.752231,
+            "ml_score": 75.2231
+          },
+          "hybrid_analysis": {
+            "score": 45.1338,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 275,
+            "text": "-------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 275,
+              "chunk_id": "email_0043_chunk_0003",
+              "email_id": "email_0043",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+              "character_count": 518
+            }
+          }
+        },
+        {
+          "email_id": "email_0009",
+          "semantic_rank": 16,
+          "semantic_similarity": 0.5517845153808594,
+          "final_hybrid_score": 0.520412,
+          "score_breakdown": {
+            "semantic_component": 0.275892,
+            "ml_component": 0.138825,
+            "risk_component": 0.085695,
+            "url_component": 0.02,
+            "final_score": 0.520412
+          },
+          "email": {
+            "from": "enron.announcements@enron.com",
+            "to": "all.worldwide@enron.com",
+            "subject": "2000 Chairman's Award",
+            "date": "Fri, 11 Aug 2000 18:20:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.694123,
+            "ml_score": 69.4123
+          },
+          "hybrid_analysis": {
+            "score": 42.8474,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 2,
+            "url_domains": [
+              "home.enron.com"
+            ],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 52,
+            "text": "n.announcements@enron.com\",\n  \"to\": \"all.worldwide@enron.com\",\n  \"body_length\": 1614,\n  \"total_text_length\": 1718\n}\n\nSOURCE FILES\n------------\nHybrid Analysis File:\nemail_0009_ml_hybrid.json\n\nForensic File:\nemail_0009_forensic.json\n\nRisk File:\nemail_0009_risk.json\n\nINVESTIGATION PURPOSE\n---------------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 52,
+              "chunk_id": "email_0009_chunk_0005",
+              "email_id": "email_0009",
+              "chunk_index": 5,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0009_rag.txt",
+              "character_count": 814
+            }
+          }
+        },
+        {
+          "email_id": "email_0086",
+          "semantic_rank": 12,
+          "semantic_similarity": 0.5569143891334534,
+          "final_hybrid_score": 0.511898,
+          "score_breakdown": {
+            "semantic_component": 0.278457,
+            "ml_component": 0.1459,
+            "risk_component": 0.08754,
+            "url_component": 0.0,
+            "final_score": 0.511898
+          },
+          "email": {
+            "from": "marie.heard@enron.com",
+            "to": "shemeika.landry@enron.com, shelli.smith@enron.com",
+            "subject": "Brokerage Agreement Memo",
+            "date": "Tue, 29 May 2001 06:54:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.729501,
+            "ml_score": 72.9501
+          },
+          "hybrid_analysis": {
+            "score": 43.7701,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 520,
+            "text": "on.com\",\n  \"to\": \"shemeika.landry@enron.com, shelli.smith@enron.com\",\n  \"body_length\": 365,\n  \"total_text_length\": 490\n}\n\nSOURCE FILES\n------------\nHybrid Analysis File:\nemail_0086_ml_hybrid.json\n\nForensic File:\nemail_0086_forensic.json\n\nRisk File:\nemail_0086_risk.json\n\nINVESTIGATION PURPOSE\n---------------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 520,
+              "chunk_id": "email_0086_chunk_0003",
+              "email_id": "email_0086",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0086_rag.txt",
+              "character_count": 819
+            }
+          }
+        },
+        {
+          "email_id": "email_0090",
+          "semantic_rank": 9,
+          "semantic_similarity": 0.5708022117614746,
+          "final_hybrid_score": 0.504165,
+          "score_breakdown": {
+            "semantic_component": 0.285401,
+            "ml_component": 0.136727,
+            "risk_component": 0.082036,
+            "url_component": 0.0,
+            "final_score": 0.504165
+          },
+          "email": {
+            "from": "pgerman@ong.com",
+            "to": "kpresto@enron.com",
+            "subject": "The List",
+            "date": "Wed, 25 Apr 2001 07:25:00 -0700"
+          },
+          "ml_analysis": {
+            "label": "SPAM/PHISHING",
+            "phishing_probability": 0.683637,
+            "ml_score": 68.3637
+          },
+          "hybrid_analysis": {
+            "score": 41.0182,
+            "risk_level": "MEDIUM"
+          },
+          "forensic_analysis": {
+            "url_count": 0,
+            "url_domains": [],
+            "has_attachments": false
+          },
+          "retrieved_evidence": {
+            "chunk_index": 541,
+            "text": "nal email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+            "metadata": {
+              "vector_index": 541,
+              "chunk_id": "email_0090_chunk_0003",
+              "email_id": "email_0090",
+              "chunk_index": 3,
+              "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0090_rag.txt",
+              "character_count": 476
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "access_model": "ROLE_SCOPE",
+  "allowed_scopes": [
+    "case_memory",
+    "investigation",
+    "research",
+    "threat_intel"
+  ],
+  "created_at": "2026-09-16T19:19:20.811634+00:00",
+  "description": "Application-level authorization policy for privacy-protected vector scopes.",
+  "policy_sha256": "fd0191a4ad297c1611b7c8c051f60dbfb898249f67c78d63d06dd09bce02f11c",
+  "policy_type": "privacy_vector_scope_access_control",
+  "roles": {
+    "analyst": [
+      "case_memory",
+      "investigation",
+      "threat_intel"
+    ],
+    "investigator": [
+      "case_memory",
+      "investigation"
+    ],
+    "researcher": [
+      "research"
+    ],
+    "security_admin": [
+      "case_memory",
+      "investigation",
+      "research",
+      "threat_intel"
+    ]
+  },
+  "security_notes": [
+    "Authorization is enforced at the application layer.",
+    "Database permissions should provide an additional boundary.",
+    "Authentication is required before authorization.",
+    "Differential privacy does not replace access control.",
+    "Unauthorized scope access must be rejected."
+  ],
+  "version": "1.0"
+}

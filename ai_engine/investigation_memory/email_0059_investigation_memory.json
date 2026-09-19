@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.387624+00:00",
+  "email_id": "email_0059",
+  "evidence": {
+    "file_name": "email_0059.eml",
+    "sha256": "b5b745e84d90604158fa3436730c62ed0393832ff30bc879a23108082b30b76a",
+    "source_forensic_file": "email_0059_forensic.json"
+  },
+  "email": {
+    "from": "mary.hain@enron.com",
+    "to": "alan.comnes@enron.com, steve.walton@enron.com",
+    "cc": "lysa.akin@enron.com",
+    "bcc": "lysa.akin@enron.com",
+    "subject": "Re: Internal Resource Report",
+    "date": "Mon, 22 Jan 2001 01:01:00 -0800",
+    "normalized_date": "2001-01-22T01:01:00-08:00",
+    "message_id": "<3754584.1075860376871.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 2726,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.272309,
+    "ml_score": 27.2309
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 16.3385,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0059_forensic.json",
+    "threat_intelligence": "email_0059_threat_intel.json",
+    "risk_assessment": "email_0059_risk.json",
+    "ml_hybrid": "email_0059_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

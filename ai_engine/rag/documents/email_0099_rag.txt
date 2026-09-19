@@ -1,0 +1,222 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0099
+File Name: email_0099.eml
+SHA-256: ad426fa1024e9cc807c25494ce23fd6813a734c1c55f892d97b02a4c3d04316f
+
+EMAIL METADATA
+--------------
+From: greg.mcelwee@csfb.com
+To: dutch.quigley@enron.com
+Cc: malle@enron.com, guillaume.malle@csfb.com
+Bcc: malle@enron.com, guillaume.malle@csfb.com
+Subject: RE:
+Date: Fri, 30 Nov 2001 20:00:35 -0800
+Normalized Date: 2001-11-30T20:00:35-08:00
+Message-ID: <27697871.1075841450951.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+Hello Dutch,
+
+We have sent to you this evening a copy of our confirmation for the Nymex natural gas transaction.  We have
+amended the original transaction confirmation dated 21-Nov-00 to include this new transaction (we are only authorized to amend the existing transaction, not enter into a new one).  Attached is a blacklined version of the new confirmation so that you may see the additions made to the final sent by fax.  We appreciate you review and return of a signed confirmation tomorrow so that we may consider this deal closed.
+
+Our contact numbers are as follows should you have have any questions:
+
+Greg McElwee
+H  (201) 653-4348
+M  (201) 637-6283
+
+Guillame Malle
+H  (212) 996-5177
+M  (212) 680-5715
+
+Please fax the signed confirmation to the following numbers:
+
+(212) 743-4639
+(917) 326-7899
+
+Again, thank you for your patience and understanding in this matter.
+
+Best Regards,
+Greg McElwee
+
+
+
+-----Original Message-----
+From: Quigley, Dutch [mailto:Dutch.Quigley@ENRON.com]
+Sent: Friday, November 30, 2001 8:29 PM
+To: greg.mcelwee@csfb.com
+Subject:
+
+
+
+
+**********************************************************************
+This e-mail is the property of Enron Corp. and/or its relevant affiliate and may contain confidential and privileged material for the sole use of the intended recipient (s). Any review, use, distribution or disclosure by others is strictly prohibited. If you are not the intended recipient (or authorized to receive for the recipient), please contact the sender or reply to Enron Corp. at enron.messaging.administration@enron.com and delete all copies of the message. This e-mail (and any attachments hereto) are not intended to be an offer (or an acceptance) and do not create or evidence a binding and enforceable contract between Enron Corp. (or any of its affiliates) and the intended recipient or any other party, and may not be relied on by anyone as the basis of a contract by estoppel or otherwise. Thank you.
+**********************************************************************
+
+
+This message is for the named person's use only. It may contain sensitive and private proprietary or legally privileged information. No confidentiality or privilege is waived or lost by any mistransmission. If you are not the intended recipient, please immediately delete it and all copies of it from your system, destroy any hard copies of it and notify the sender. You must not, directly or indirectly, use, disclose, distribute, print, or copy any part of this message if you are not the intended recipient. CREDIT SUISSE GROUP and each legal entity in the CREDIT SUISSE FIRST BOSTON or CREDIT SUISSE ASSET MANAGEMENT business units of CREDIT SUISSE FIRST BOSTON reserve the right to monitor all e-mail communications through its networks. Any views expressed in this message are those of the individual sender, except where the message states otherwise and the sender is authorized to state them to be the views of any such entity. Unless otherwise stated, any pricing information give!
+n !
+in this message is indicative  o
+nly, is subject to change and does not constitute an offer to deal at any price quoted. Any reference to the terms of executed transactions should be treated as  preliminary only and subject to our formal written confirmation.
+
+
+ - 5849170 Amended Enron Natural Gas Swap.doc 
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 3332
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0099.eml",
+  "email_sha256": "ad426fa1024e9cc807c25494ce23fd6813a734c1c55f892d97b02a4c3d04316f",
+  "subject": "RE:",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.486254
+ML Score: 48.6254
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 29.1752
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "RE:",
+  "from": "greg.mcelwee@csfb.com",
+  "to": "dutch.quigley@enron.com",
+  "body_length": 3332,
+  "total_text_length": 3410
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0099_ml_hybrid.json
+
+Forensic File:
+email_0099_forensic.json
+
+Risk File:
+email_0099_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

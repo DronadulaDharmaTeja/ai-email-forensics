@@ -1,0 +1,190 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0081
+File Name: email_0081.eml
+SHA-256: de45498ad77928dfe60eff735b9105033264b571a8c3de6fd4c95019cbe4e620
+
+EMAIL METADATA
+--------------
+From: chris.meyer@enron.com
+To: joe.parks@enron.com, sylvia.pollan@enron.com
+Cc: julie.gomez@enron.com, scott.neal@enron.com
+Bcc: julie.gomez@enron.com, scott.neal@enron.com
+Subject: 
+Date: Wed, 26 Jul 2000 04:37:00 -0700
+Normalized Date: 2000-07-26T04:37:00-07:00
+Message-ID: <30311846.1075858411361.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+I've renegotiated the 400,000 MMBtu/day supply area deal on NGPL.  The 
+primary delivery points have not changed. The new (receipt) paths, volumes 
+and rates are below.  I'll forward the actual receipt points along with the 
+amended contract once complete.  Essentially, this new structure 
+significantly reduces our commodity costs to points west of 346 and slightly 
+reduces (50%) commodity costs east of 346.  Please remember that secondary 
+deliveries to points east of 346 (with the exception of Sonat Erath) still 
+include a volumetric (demand) adder $0.02 Dth for STX receipts and $0.025 for 
+all other receipts.   Deliveries to Sonat Erath will be an additional $0.02 
+MMbtu.  Let me know if you have any issues ASAP.  I want to make this 
+effective August 1.
+
+East of 346
+
+
+chris
+x31666
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 795
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0081.eml",
+  "email_sha256": "de45498ad77928dfe60eff735b9105033264b571a8c3de6fd4c95019cbe4e620",
+  "subject": "",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.64466
+ML Score: 64.466
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 38.6796
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "",
+  "from": "chris.meyer@enron.com",
+  "to": "joe.parks@enron.com, sylvia.pollan@enron.com",
+  "body_length": 795,
+  "total_text_length": 891
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0081_ml_hybrid.json
+
+Forensic File:
+email_0081_forensic.json
+
+Risk File:
+email_0081_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

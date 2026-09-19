@@ -1,0 +1,241 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0071
+File Name: email_0071.eml
+SHA-256: 2932b430429b287e94d0a019e7916a2f4fc358cbf90c24b0bc2aa524c94a1168
+
+EMAIL METADATA
+--------------
+From: customer-service@fatbrain.com
+To: kam.keiser@enron.com
+Cc: 
+Bcc: 
+Subject: Your Fatbrain Order #1100362991
+Date: Mon, 20 Aug 2001 14:06:35 -0700
+Normalized Date: 2001-08-20T14:06:35-07:00
+Message-ID: <23450302.1075840200207.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+Thank you for shopping at Fatbrain.com.
+ 
+As a new customer, you will discover that our site is the most comprehensive source for professional and technical books, training, corporate publishing, and more.
+ 
+We have provided the details of your order below.  As a part of our ongoing customer service commitment to keep you informed, we will send you an e-mail confirmation the day your order ships.
+
+To view the status of your order, simply visit our account management page at:
+http://www1.fatbrain.com/asp/actmgmt/secure.asp.
+
+If you have any questions, please e-mail us at Customer-service@fatbrain.com or call 1-877-FATBRAIN (1-877-328-2724) Monday through Friday, 8AM-11PM E.S.T.  International customers, please call 201-272-3652.
+
+We appreciate your business and hope you visit us again at http://www.fatbrain.com. 
+
+-The Customer Service Team-
+            Fatbrain.com {*}
+
+*****************************************************************
+Shipping: Your order will ship via Second Day. (To estimate arrival, please add 2-3 business days for shipping to item availability.)
+
+ QTY    PRICE     TITLE                                   AVAILABLE
+----------------------------------------------------------------------
+   1    $61.75 Financial Futures and Options : A Guide t  Ships 24 Hours-Same Day Avail
+--------------
+        $61.75 Net Product
+         $0.00 Gift Wrap
+         $0.00 Tax
+         $8.98 Shipping
+--------------
+        $70.73 Total Order Price
+        $70.73 Credit Card                 
+Please note: Taxes indicated on this order confirmation are estimates only.  At time of shipment, Fatbrain calculates applicable local sales tax on all products and shipping services in CA, NY, NJ, KY, NV, VA, and TN. Check your final statement for exact taxes charged. The Goods and Services Tax (GST) is applied to orders delivered in Canada.
+
+*****************************************************************
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 2
+
+URL Domains:
+[
+  "www1.fatbrain.com",
+  "www.fatbrain.com"
+]
+
+URL Items:
+[
+  "http://www1.fatbrain.com/asp/actmgmt/secure.asp",
+  "http://www.fatbrain.com"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1925
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0071.eml",
+  "email_sha256": "2932b430429b287e94d0a019e7916a2f4fc358cbf90c24b0bc2aa524c94a1168",
+  "subject": "Your Fatbrain Order #1100362991",
+  "url_count": 2,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 2,
+  "maximum_url_risk": 10,
+  "urls": [
+    {
+      "url": "http://www1.fatbrain.com/asp/actmgmt/secure.asp",
+      "risk_score": 10,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS",
+        "Suspicious keywords: secure"
+      ],
+      "domain": "www1.fatbrain.com",
+      "scheme": "http",
+      "path": "/asp/actmgmt/secure.asp",
+      "query_present": false,
+      "domain_entropy": 3.5725
+    },
+    {
+      "url": "http://www.fatbrain.com",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www.fatbrain.com",
+      "scheme": "http",
+      "path": "",
+      "query_present": false,
+      "domain_entropy": 3.4528
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.841613
+ML Score: 84.1613
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 50.4968
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Your Fatbrain Order #1100362991",
+  "from": "customer-service@fatbrain.com",
+  "to": "kam.keiser@enron.com",
+  "body_length": 1925,
+  "total_text_length": 2036
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0071_ml_hybrid.json
+
+Forensic File:
+email_0071_forensic.json
+
+Risk File:
+email_0071_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,243 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0054
+File Name: email_0054.eml
+SHA-256: e6a2bbde2634aa532137319c8dc557e33c87d77d05b3aeaa49b19f35b2a2a017
+
+EMAIL METADATA
+--------------
+From: enron.announcements@enron.com
+To: all.houston@enron.com
+Cc: 
+Bcc: 
+Subject: eSource Presents Lexis-Nexis Training
+Date: Thu, 10 May 2001 17:50:00 -0700
+Normalized Date: 2001-05-10T17:50:00-07:00
+Message-ID: <6033591.1075855751193.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+eSource presents Lexis-Nexis training
+
+ADVANCED
+
+This session will cover advanced searching tips.  It will also cover using 
+Smart Indexing to narrow your search results.  Find out how to customize your 
+desktop for easier searching.
+
+Attend our Lexis-Nexis Advanced Clinic: 
+    
+May. 18     8:30 - 10:00 AM    EB572 
+
+
+PUBLIC RECORDS
+
+Lexis-Nexis is the premier provider of public record information.  We will 
+learn about materials available to you including Secretary of State Filings 
+and DBA's, UCC filings, Bankruptcies, and Property Records.  If you are doing 
+due diligence on companies, especially smaller ones, this is a session you 
+will want 
+to attend.
+
+Attend our Lexis-Nexis Public Records Clinic: 
+
+May. 18    10:30 AM -12:00 NOON      EB572 
+   
+
+Seats fill up fast! To reserve a seat, please call Stephanie E. Taylor at 
+5-7928
+Cost $25.00 Per Person
+No Shows will be charged $50.00
+* Please bring your Lexis-Nexis login ID and password. If you don't have one, 
+a guest ID will be provided.
+
+Check the eSource training page at http://esource.enron.com/training.doc for 
+additional training sessions and vendor presentations.
+
+http://esource.enron.com
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 2
+
+URL Domains:
+[
+  "esource.enron.com"
+]
+
+URL Items:
+[
+  "http://esource.enron.com/training.doc",
+  "http://esource.enron.com"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1169
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0054.eml",
+  "email_sha256": "e6a2bbde2634aa532137319c8dc557e33c87d77d05b3aeaa49b19f35b2a2a017",
+  "subject": "eSource Presents Lexis-Nexis Training",
+  "url_count": 2,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 2,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://esource.enron.com/training.doc",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "esource.enron.com",
+      "scheme": "http",
+      "path": "/training.doc",
+      "query_present": false,
+      "domain_entropy": 3.0575
+    },
+    {
+      "url": "http://esource.enron.com",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "esource.enron.com",
+      "scheme": "http",
+      "path": "",
+      "query_present": false,
+      "domain_entropy": 3.0575
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.645535
+ML Score: 64.5535
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 38.7321
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "eSource Presents Lexis-Nexis Training",
+  "from": "enron.announcements@enron.com",
+  "to": "all.houston@enron.com",
+  "body_length": 1169,
+  "total_text_length": 1287
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0054_ml_hybrid.json
+
+Forensic File:
+email_0054_forensic.json
+
+Risk File:
+email_0054_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,318 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0064
+File Name: email_0064.eml
+SHA-256: 60de978b90e73b2aadd8f52ad40d53c57e40402d515b8797df608aa6c9a3951c
+
+EMAIL METADATA
+--------------
+From: special-offers-help@mail.southwest.com
+To: special-offers1@mail.southwest.com
+Cc: 
+Bcc: 
+Subject: New southwest.com specials
+Date: Thu, 16 Nov 2000 16:33:00 -0800
+Normalized Date: 2000-11-16T16:33:00-08:00
+Message-ID: <29009005.1075840627212.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+November 17, 2000
+
+Your Invitation to e-Freedom.  Gobble It Up!
+
+********* southwest.com e-Freedom Sale *********
+
+Who: southwest.com Customers.
+
+What: Internet Specials for $99/$109 or less each way.
+
+Where: All cities with scheduled Southwest Airlines
+ service.
+
+When: 7-day advance purchase beginning
+ at 7:00 AM CST on November 17, 2000 through
+ December 1, 2000, midnight Pacific Time.
+ Travel beginning November 28, 2000 through
+ March 30, 2001.
+
+Why: To give you the Freedom to move about the country.
+
+How: Go to http://www.southwest.com/hotfares/?src=click
+
+***************************************************************
+Another sale in one week?
+It's like one more serving of mom's pumpkin pie.
+
+Here are the details of the southwest.com Internet Special:
+*Tuesday, Wednesday, and Saturday $99 or less each
+way Internet Specials are available only on southwest.com
+and may be combined with any other fare type.
+
+*Monday, Thursday, Friday, and Sunday $109 or less each
+way Internet Specials are available only on southwest.com
+and may be combined with any other fare type.
+
+All with the following restrictions:
+
+*7-day advance purchase
+*Travel November 28, 2000 through March 30, 2001.
+ Florida markets will be blacked out March 15-30, 2001.
+*Purchase beginning November 17 through
+ December 1, 2000, midnight Pacific Time.
+*southwest.com Internet Specials are available one-way or
+ may be combined with any other fare.
+ When combining with another fare, the
+ most restrictive fare rules apply.
+*Changes to any portion of the reservation
+ (flight, dates, cities, and/or names of passengers),
+ once purchased, will result in the cancellation of
+ the ENTIRE reservation and rebooking at the lowest
+ fare available which could result in a fare increase.
+
+Fares do not include a federal excise tax of up to $2.75
+that will be imposed on each flight segment of your
+itinerary. A flight segment is defined as a takeoff and
+a landing. The fares listed do not include airport-assessed
+passenger facility charges (PFCs) of up to $12 roundtrip.
+
+southwest.com Internet Specials are nonchangeable and
+nonrefundable. *Ticketless Travel Online may only be
+purchased with a credit card. Customers holding funds from
+a previously unused trip on Southwest Airlines or Customers
+who have Southwest Airlines vouchers will not be able to use
+those forms of payment for Ticketless Travel Online.
+*Unused funds may be applied toward future travel on
+Southwest Airlines within one year of the original purchase date.
+
+Seats are limited and won't be available on some
+flights that operate during very busy travel times
+and holiday periods.
+
+Standby travel requires an upgrade to the
+full unrestricted fare.
+
+************ SUBSCRIBER INFORMATION **************
+Please pass this great news on to your friends!
+To subscribe to Southwest Airlines E-mail Updates,
+visit http://www.southwest.com/email/
+
+Remember, if you change your Internet service provider,
+you will need to unsubscribe and resubscribe in order
+to continue receiving Southwest Airlines e-mail updates.
+Please visit our subscription page at:
+http://www.southwest.com/email/
+
+***************************************************************
+
+This is a post only mailing from Southwest Airlines.
+Please do not attempt to respond to this message.
+
+Copyright 2000 Southwest Airlines Co. All Rights Reserved.
+
+
+---
+You are currently subscribed to special-offers1 as: [mark.guzman@enron.com]
+To unsubscribe, send email to 
+leave-special-offers1-99566240O@mail.southwest.com
+or unsubscribe anytime at http://www.southwest.com/email 
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 3
+
+URL Domains:
+[
+  "www.southwest.com"
+]
+
+URL Items:
+[
+  "http://www.southwest.com/hotfares/?src=click",
+  "http://www.southwest.com/email/",
+  "http://www.southwest.com/email"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 3572
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0064.eml",
+  "email_sha256": "60de978b90e73b2aadd8f52ad40d53c57e40402d515b8797df608aa6c9a3951c",
+  "subject": "New southwest.com specials",
+  "url_count": 3,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 3,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://www.southwest.com/hotfares/?src=click",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www.southwest.com",
+      "scheme": "http",
+      "path": "/hotfares/",
+      "query_present": true,
+      "domain_entropy": 3.1463
+    },
+    {
+      "url": "http://www.southwest.com/email/",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www.southwest.com",
+      "scheme": "http",
+      "path": "/email/",
+      "query_present": false,
+      "domain_entropy": 3.1463
+    },
+    {
+      "url": "http://www.southwest.com/email",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www.southwest.com",
+      "scheme": "http",
+      "path": "/email",
+      "query_present": false,
+      "domain_entropy": 3.1463
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.164822
+ML Score: 16.4822
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 9.8893
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "New southwest.com specials",
+  "from": "special-offers-help@mail.southwest.com",
+  "to": "special-offers1@mail.southwest.com",
+  "body_length": 3572,
+  "total_text_length": 3701
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0064_ml_hybrid.json
+
+Forensic File:
+email_0064_forensic.json
+
+Risk File:
+email_0064_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

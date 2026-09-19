@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.150609+00:00",
+  "email_id": "email_0045",
+  "evidence": {
+    "file_name": "email_0045.eml",
+    "sha256": "a979267225340b9234ce27bbed3d8381ee4bad388ebccfd4fec51dc2a40f552f",
+    "source_forensic_file": "email_0045_forensic.json"
+  },
+  "email": {
+    "from": "james.mcmillan@enron.com",
+    "to": "",
+    "cc": "emilio.vicens@enron.com, michael.wortham@enron.com",
+    "bcc": "emilio.vicens@enron.com, michael.wortham@enron.com",
+    "subject": "Professional Services Agreement",
+    "date": "Tue, 05 Dec 2000 01:48:00 -0800",
+    "normalized_date": "2000-12-05T01:48:00-08:00",
+    "message_id": "<9790652.1075860490923.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 829,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.726457,
+    "ml_score": 72.6457
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 43.5874,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0045_forensic.json",
+    "threat_intelligence": "email_0045_threat_intel.json",
+    "risk_assessment": "email_0045_risk.json",
+    "ml_hybrid": "email_0045_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.875491+00:00",
+  "email_id": "email_0016",
+  "evidence": {
+    "file_name": "email_0016.eml",
+    "sha256": "bb95fcc3b11d50ade16cd1c141efc35d853b68b21f3d8048b20c291a63888be4",
+    "source_forensic_file": "email_0016_forensic.json"
+  },
+  "email": {
+    "from": "martin.cuilla@enron.com",
+    "to": "rwharton@bellhelicopter.textron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Weather",
+    "date": "Wed, 20 Sep 2000 03:39:00 -0700",
+    "normalized_date": "2000-09-20T03:39:00-07:00",
+    "message_id": "<610852.1075858073700.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 1194,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.189623,
+    "ml_score": 18.9623
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 11.3774,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0016_forensic.json",
+    "threat_intelligence": "email_0016_threat_intel.json",
+    "risk_assessment": "email_0016_risk.json",
+    "ml_hybrid": "email_0016_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

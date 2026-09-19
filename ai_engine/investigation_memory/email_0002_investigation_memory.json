@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.644221+00:00",
+  "email_id": "email_0002",
+  "evidence": {
+    "file_name": "email_0002.eml",
+    "sha256": "f48f1e0589b916e0144a002fc0489324b2e98092d945e8ffeff761895eeea2cb",
+    "source_forensic_file": "email_0002_forensic.json"
+  },
+  "email": {
+    "from": "sharon.brown@enron.com",
+    "to": "e..anderson@enron.com, vicki.berg@enron.com, lynn.blair@enron.com, janet.bowers@enron.com, john.buchanan@enron.com, shelley.corman@enron.com, mary.darveaux@enron.com, rick.dietz@enron.com, jodie.floyd@enron.com, tom.gilbert@enron.com, bradley.holmes@enron.com, steven.january@enron.com, tim.johanson@enron.com, toby.kuehl@enron.com, karen.lagerstrom@enron.com, maggie.matheson@enron.com, danny.mccarty@enron.com, kent.miller@enron.com, kay.miller@enron.com, dave.neubauer@enron.com, dave.odneal@enron.com, chris.sebesta@enron.com, frank.semin@enron.com, gary.spraggins@enron.com, larry.steward@enron.com, linda.trevino@enron.com, steve.weller@enron.com, jo.williams@enron.com",
+    "cc": "julie.armstrong@enron.com, linda.wehring@enron.com, ricki.winters@enron.com, sharon.solon@enron.com, judy.kudym@enron.com, rosemary.gracey@enron.com, deborah.cappiello@enron.com, ava.garcia@enron.com, alma.carrillo@enron.com",
+    "bcc": "julie.armstrong@enron.com, linda.wehring@enron.com, ricki.winters@enron.com, sharon.solon@enron.com, judy.kudym@enron.com, rosemary.gracey@enron.com, deborah.cappiello@enron.com, ava.garcia@enron.com, alma.carrillo@enron.com",
+    "subject": "Winter Ops - KC Hotel Information",
+    "date": "Mon, 20 Aug 2001 12:34:19 -0700",
+    "normalized_date": "2001-08-20T12:34:19-07:00",
+    "message_id": "<15061964.1075853024388.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 312,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.654898,
+    "ml_score": 65.4898
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 39.2939,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0002_forensic.json",
+    "threat_intelligence": "email_0002_threat_intel.json",
+    "risk_assessment": "email_0002_risk.json",
+    "ml_hybrid": "email_0002_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

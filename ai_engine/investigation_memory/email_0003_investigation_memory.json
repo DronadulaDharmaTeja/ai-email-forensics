@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.660271+00:00",
+  "email_id": "email_0003",
+  "evidence": {
+    "file_name": "email_0003.eml",
+    "sha256": "c86b8af668e522f128c9ed8bbbdc458fd8c2ca404de44ec072e59587ef9e87f6",
+    "source_forensic_file": "email_0003_forensic.json"
+  },
+  "email": {
+    "from": "lynn.blair@enron.com",
+    "to": "sharon.brown@enron.com",
+    "cc": "lynn.blair@enron.com, steven.january@enron.com, bob.stevens@enron.com",
+    "bcc": "lynn.blair@enron.com, steven.january@enron.com, bob.stevens@enron.com",
+    "subject": "Winter Ops Meeting",
+    "date": "Thu, 05 Jul 2001 08:35:29 -0700",
+    "normalized_date": "2001-07-05T08:35:29-07:00",
+    "message_id": "<4937308.1075853024299.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 309,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.621387,
+    "ml_score": 62.1387
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 37.2832,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0003_forensic.json",
+    "threat_intelligence": "email_0003_threat_intel.json",
+    "risk_assessment": "email_0003_risk.json",
+    "ml_hybrid": "email_0003_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

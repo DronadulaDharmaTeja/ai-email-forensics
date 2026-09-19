@@ -1,0 +1,581 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.089724+00:00",
+  "email_id": "email_0042",
+  "evidence": {
+    "file_name": "email_0042.eml",
+    "sha256": "2391bd92ce9d7ed197cdbdaf5e8c2ccf61e93df81d5a2e2e545d2d5532155c72",
+    "source_forensic_file": "email_0042_forensic.json"
+  },
+  "email": {
+    "from": "insider@newsletters.businessweek.com",
+    "to": "gwhalle@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "BusinessWeek Online Insider Dec. 22",
+    "date": "Thu, 21 Dec 2000 08:51:00 -0800",
+    "normalized_date": "2000-12-21T08:51:00-08:00",
+    "message_id": "<3488215.1075845440068.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 9108,
+    "url_count": 35,
+    "url_domains": [
+      "www.businessweek.com",
+      "ebiz.businessweek.com",
+      "frontier.businessweek.com",
+      "mba.businessweek.com",
+      "businessweek.com",
+      "www.leadersonline.com",
+      "newsletters.businessweek.com"
+    ],
+    "url_items": [
+      "http://www.businessweek.com/search.htm",
+      "http://www.businessweek.com/today.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_800.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_210.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_171.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001220_822.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001220_617.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001218_169.htm",
+      "http://ebiz.businessweek.com",
+      "http://www.businessweek.com/ebiz/0012/es1221.htm",
+      "http://www.businessweek.com/ebiz/0012/ec1219.htm",
+      "http://www.businessweek.com/ebiz/0012/ep1218.htm",
+      "http://www.businessweek.com/ebiz/0012/el1215.htm",
+      "http://frontier.businessweek.com",
+      "http://www.businessweek.com/smallbiz/content/dec2000/sb20001221_477.htm",
+      "http://www.businessweek.com/smallbiz/content/dec2000/sb20001221_624.htm",
+      "http://www.businessweek.com/smallbiz/content/dec2000/sb20001220_682.htm",
+      "http://www.businessweek.com/smallbiz/resources/rate_report/sb_rate_report.htm",
+      "http://www.businessweek.com/smallbiz/sbreg.htm",
+      "http://mba.businessweek.com",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_275.htm",
+      "http://www.businessweek.com/bschools/content/originals/bs01214.htm",
+      "http://www.businessweek.com/bschools/mbajournal/index.htm#secondyear",
+      "http://www.businessweek.com/bschools/mbajournal/index.htm",
+      "http://www.businessweek.com/bschools/content/qanda/rotterdam_aqna_00.htm",
+      "http://www.businessweek.com/bschools/00pt/",
+      "http://www.businessweek.com/bschools/content/qanda/bscaqna19.htm",
+      "http://www.businessweek.com/common_frames/bs.htm?/bschools/virtrelo/index.htm",
+      "http://www.businessweek.com/careers/index.html",
+      "http://businessweek.com/careers/content/dec2000/ca20001222_660.htm",
+      "http://businessweek.com/careers/content/dec2000/ca20001220_300.htm",
+      "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_366.htm",
+      "http://www.businessweek.com",
+      "http://www.leadersonline.com",
+      "http://newsletters.businessweek.com/Change-Remove/a14109a62891954a2"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 3,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://www.businessweek.com/search.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/search.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/today.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/today.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_800.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001219_800.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_210.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001219_210.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_171.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001219_171.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001220_822.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001220_822.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001220_617.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001220_617.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001218_169.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001218_169.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://ebiz.businessweek.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "ebiz.businessweek.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.4992
+        },
+        {
+          "url": "http://www.businessweek.com/ebiz/0012/es1221.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/ebiz/0012/es1221.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/ebiz/0012/ec1219.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/ebiz/0012/ec1219.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/ebiz/0012/ep1218.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/ebiz/0012/ep1218.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/ebiz/0012/el1215.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/ebiz/0012/el1215.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://frontier.businessweek.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "frontier.businessweek.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.7337
+        },
+        {
+          "url": "http://www.businessweek.com/smallbiz/content/dec2000/sb20001221_477.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/smallbiz/content/dec2000/sb20001221_477.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/smallbiz/content/dec2000/sb20001221_624.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/smallbiz/content/dec2000/sb20001221_624.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/smallbiz/content/dec2000/sb20001220_682.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/smallbiz/content/dec2000/sb20001220_682.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/smallbiz/resources/rate_report/sb_rate_report.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/smallbiz/resources/rate_report/sb_rate_report.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/smallbiz/sbreg.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/smallbiz/sbreg.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://mba.businessweek.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "mba.businessweek.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.5464
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_275.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001219_275.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/content/originals/bs01214.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/content/originals/bs01214.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/mbajournal/index.htm#secondyear",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/mbajournal/index.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/mbajournal/index.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/mbajournal/index.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/content/qanda/rotterdam_aqna_00.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/content/qanda/rotterdam_aqna_00.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/00pt/",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/00pt/",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/bschools/content/qanda/bscaqna19.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bschools/content/qanda/bscaqna19.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/common_frames/bs.htm?/bschools/virtrelo/index.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/common_frames/bs.htm",
+          "query_present": true,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com/careers/index.html",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/careers/index.html",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://businessweek.com/careers/content/dec2000/ca20001222_660.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "businessweek.com",
+          "scheme": "http",
+          "path": "/careers/content/dec2000/ca20001222_660.htm",
+          "query_present": false,
+          "domain_entropy": 3.4056
+        },
+        {
+          "url": "http://businessweek.com/careers/content/dec2000/ca20001220_300.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "businessweek.com",
+          "scheme": "http",
+          "path": "/careers/content/dec2000/ca20001220_300.htm",
+          "query_present": false,
+          "domain_entropy": 3.4056
+        },
+        {
+          "url": "http://www.businessweek.com/bwdaily/dnflash/dec2000/nf20001219_366.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "/bwdaily/dnflash/dec2000/nf20001219_366.htm",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.businessweek.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.businessweek.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.3464
+        },
+        {
+          "url": "http://www.leadersonline.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.leadersonline.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.5585
+        },
+        {
+          "url": "http://newsletters.businessweek.com/Change-Remove/a14109a62891954a2",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "newsletters.businessweek.com",
+          "scheme": "http",
+          "path": "/Change-Remove/a14109a62891954a2",
+          "query_present": false,
+          "domain_entropy": 3.5531
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.242999,
+    "ml_score": 24.2999
+  },
+  "rule_based_risk": {
+    "score": 3,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 15.7799,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0042_forensic.json",
+    "threat_intelligence": "email_0042_threat_intel.json",
+    "risk_assessment": "email_0042_risk.json",
+    "ml_hybrid": "email_0042_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

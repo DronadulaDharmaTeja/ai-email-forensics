@@ -1,0 +1,195 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0014
+File Name: email_0014.eml
+SHA-256: 0bd9938dd6b3821dbef38bf9d8672b34ead91cc3cce7a4ccacb1ee12ccfff4dc
+
+EMAIL METADATA
+--------------
+From: bill.hatch@enron.com
+To: dbrown66@csc.com
+Cc: john.nanof@enron.com, richard.ring@enron.com
+Bcc: john.nanof@enron.com, richard.ring@enron.com
+Subject: Conf Call re: Invoicing for GSA Renewable Power
+Date: Thu, 13 Sep 2001 08:10:14 -0700
+Normalized Date: 2001-09-13T08:10:14-07:00
+Message-ID: <673296.1075858652176.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Dyaniese,
+
+Per my voice mail, I suggest we have a conf call with Richard this afternoon to discuss the GSA renewable billing.  It is incorrect to charge three GSA accounts for the renewable power.  
+
+The proper GSA Renewable invoicing is as follows:
+
+Charge JFK Building (57-1695-094001) 175,000 kwh/month at 5.5 cents and 225,000 kwh/month at 5.25 cents.  This equals 400,000 kwh/month and 4.8mm kwh per year which is the minimum amount they contracted for.
+
+The proper Hanscom Air Force Renewable invoicing is as follows:
+
+Charge only HAFB Acc't # 516488321650,   200,000 kwh/month at 5.5 cents. 
+
+
+The problems I see ahead are the adjustments CSC needs to make to past invoices in order to properly re-calculate the monthly total consumption price.  I'd like for Richard and me to review with you what CSC now needs to do.
+
+Will 2:00 Eastern be ok with you?  The dial in number is 800-711-8000; the passcode is 26060#.
+
+Please let me know.
+
+Thanks,
+
+Bill
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 957
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0014.eml",
+  "email_sha256": "0bd9938dd6b3821dbef38bf9d8672b34ead91cc3cce7a4ccacb1ee12ccfff4dc",
+  "subject": "Conf Call re: Invoicing for GSA Renewable Power",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.557774
+ML Score: 55.7774
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 33.4665
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Conf Call re: Invoicing for GSA Renewable Power",
+  "from": "bill.hatch@enron.com",
+  "to": "dbrown66@csc.com",
+  "body_length": 957,
+  "total_text_length": 1071
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0014_ml_hybrid.json
+
+Forensic File:
+email_0014_forensic.json
+
+Risk File:
+email_0014_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

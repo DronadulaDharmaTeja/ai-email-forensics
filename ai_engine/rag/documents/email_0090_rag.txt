@@ -1,0 +1,185 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0090
+File Name: email_0090.eml
+SHA-256: bdfdb39e836b3c776257dc2a6f50b282e0b52b9487937eda0fcd04791bc3c7de
+
+EMAIL METADATA
+--------------
+From: pgerman@ong.com
+To: kpresto@enron.com
+Cc: 
+Bcc: 
+Subject: The List
+Date: Wed, 25 Apr 2001 07:25:00 -0700
+Normalized Date: 2001-04-25T07:25:00-07:00
+Message-ID: <24212422.1075849735546.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Kevin,
+
+I hope that you find this information timely.  The staff of power traders here
+look forward to working with you all soon.
+
+Thanks,
+
+Perry
+
+(See attached file: OPMC_Power_Marketing_Personnel.xls)
+
+ - OPMC_Power_Marketing_Personnel.xls
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 241
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0090.eml",
+  "email_sha256": "bdfdb39e836b3c776257dc2a6f50b282e0b52b9487937eda0fcd04791bc3c7de",
+  "subject": "The List",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.683637
+ML Score: 68.3637
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 41.0182
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "The List",
+  "from": "pgerman@ong.com",
+  "to": "kpresto@enron.com",
+  "body_length": 241,
+  "total_text_length": 312
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0090_ml_hybrid.json
+
+Forensic File:
+email_0090_forensic.json
+
+Risk File:
+email_0090_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

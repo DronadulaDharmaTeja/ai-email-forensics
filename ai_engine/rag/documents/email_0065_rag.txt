@@ -1,0 +1,196 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0065
+File Name: email_0065.eml
+SHA-256: 048ca750ffb4abed5fc30ce165b9f4036ef20013b979d0104ba491a672be3038
+
+EMAIL METADATA
+--------------
+From: tgross@amerexenergy.com
+To: bldlhance@prodigy.net, kenneth.bowman@elpaso.com, bruce.gainey@elpaso.com, chevyman84_3@yahoo.com, cjphillips@oneok.com, lifeisbasic@earthlink.net, currerb@texaco.com, dburke@neonramp.com, dldberta@compuex.com, donald.c.bertalot@usa.conoco.com, dschettler@tmvgas.com, matthewsw@epenergy.com, gayland@natgas.com, ofcc@intcon.net, gplatzer@utilicorp.com, mgurley@utilicorp.com, hank@apbenergy.com, james12@ev1.net, jlsurb@aol.com, jmccord@pcenergy.com, jpspiveysupply@bigfoot.com, jsweeney@tractebelusa.com, kadargan@equiva.com, khop@oregontrail.net, kevin_busby@bigfoot.com, kirkb@natgas.com, krunvee@aol.com, kurtis_k_gibson@reliantenergy.com, sneakybug_99@yahoo.com, pieculr@texaco.com, lmay2@enron.com, mcrosno@altra.com, paj@millenniumenergyinc.com, mmiller@pennaco.com, matt_a_grizzell@cargill.com, menters@reliantenergy.nl, mrupe@cima-energy.com, mkuennen@brr.com, mparks@ballistic.com, mtitus@tmvgas.com, mycorse1@aol.com, thegrossfamily@earthlink.net, patrickm@amerexenergy.com, rbjohnson@cmsenergy.com, sassafrass96@aol.com, scoe@utilicorp.com, scott_wirges@transcanada.com, smtalkemeyer@equiva.com, susanmark4@worldnet.att.net, thesotu@juno.com, vicki@amerexenergy.com, tsaiya@texaco.com
+Cc: 
+Bcc: 
+Subject: Daily Thought
+Date: Tue, 24 Apr 2001 10:04:00 -0700
+Normalized Date: 2001-04-24T10:04:00-07:00
+Message-ID: <10775671.1075857937608.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+R. Todd Gross
+NYMEX/Location/Basis Options
+281-340-0875
+
+When they had finished eating, Jesus said to Simon Peter, 'Simon son of
+John, do you truly love me more than these?'
+'Yes Lord,' he said, 'you know that I love you.'
+Jesus said, 'Feed my lambs.'...
+Peter was hurt because Jesus asked him the third time, 'Do you love me?' He
+said, 'Lord, you know all things; you know that I love you.'
+John 21:15,  17b (NIV)
+
+Jesus asked Peter three times if he loved him. The first time Jesus said,
+"Do you truly love (Greek agape: volitional, self-sacrificial love) me more
+than these?" The second time, Jesus focused on Peter alone and still used
+the word translated into Greek, phileo (signifying affection, affinity, or
+brotherly love) and asked, in effect, "Are you even my friend?" Each time
+Peter responded with the word translated into Greek as phileo. Jesus doesn't
+settle for quick, superficial answers. He has a way of getting to the heart
+of the matter. Peter had to face his true feelings and motives when Jesus
+confronted him. How would you respond if Jesus asked you, "Do you truly love
+me?" Do you really love Jesus? Are you even his friend?
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1149
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0065.eml",
+  "email_sha256": "048ca750ffb4abed5fc30ce165b9f4036ef20013b979d0104ba491a672be3038",
+  "subject": "Daily Thought",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.810666
+ML Score: 81.0666
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 48.64
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Daily Thought",
+  "from": "tgross@amerexenergy.com",
+  "to": "bldlhance@prodigy.net, kenneth.bowman@elpaso.com, bruce.gainey@elpaso.com, chevyman84_3@yahoo.com, cjphillips@oneok.com, lifeisbasic@earthlink.net, currerb@texaco.com, dburke@neonramp.com, dldberta@compuex.com, donald.c.bertalot@usa.conoco.com, dschettler@tmvgas.com, matthewsw@epenergy.com, gayland@natgas.com, ofcc@intcon.net, gplatzer@utilicorp.com, mgurley@utilicorp.com, hank@apbenergy.com, james12@ev1.net, jlsurb@aol.com, jmccord@pcenergy.com, jpspiveysupply@bigfoot.com, jsweeney@tractebelusa.com, kadargan@equiva.com, khop@oregontrail.net, kevin_busby@bigfoot.com, kirkb@natgas.com, krunvee@aol.com, kurtis_k_gibson@reliantenergy.com, sneakybug_99@yahoo.com, pieculr@texaco.com, lmay2@enron.com, mcrosno@altra.com, paj@millenniumenergyinc.com, mmiller@pennaco.com, matt_a_grizzell@cargill.com, menters@reliantenergy.nl, mrupe@cima-energy.com, mkuennen@brr.com, mparks@ballistic.com, mtitus@tmvgas.com, mycorse1@aol.com, thegrossfamily@earthlink.net, patrickm@amerexenergy.com, rbjohnson@cmsenergy.com, sassafrass96@aol.com, scoe@utilicorp.com, scott_wirges@transcanada.com, smtalkemeyer@equiva.com, susanmark4@worldnet.att.net, thesotu@juno.com, vicki@amerexenergy.com, tsaiya@texaco.com",
+  "body_length": 1149,
+  "total_text_length": 2412
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0065_ml_hybrid.json
+
+Forensic File:
+email_0065_forensic.json
+
+Risk File:
+email_0065_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

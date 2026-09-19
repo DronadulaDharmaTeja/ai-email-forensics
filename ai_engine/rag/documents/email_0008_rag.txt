@@ -1,0 +1,220 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0008
+File Name: email_0008.eml
+SHA-256: aaec2f5a367a393b561cfd65aa23d03739c7ea11579fb3dec296a39f31ae3a8d
+
+EMAIL METADATA
+--------------
+From: office.chairman@enron.com
+To: all.worldwide@enron.com
+Cc: 
+Bcc: 
+Subject: Code of Ethics
+Date: Mon, 14 Aug 2000 13:19:00 -0700
+Normalized Date: 2000-08-14T13:19:00-07:00
+Message-ID: <32086953.1075863603392.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+As Enron employees, we are responsible for conducting the business affairs of 
+the Company in accordance with all applicable laws and in a moral and honest 
+manner.
+
+To make certain that we understand what is expected of us, Enron has adopted 
+certain policies, approved by the Board of Directors, which are in the Code 
+of Ethics July 2000, formerly known as the Enron Conduct of Business 
+Affairs.  This year, we,ve made some revisions to our Code of Ethics to 
+address recent policies approved by the Board of Directors and adopted by 
+Enron.  These changes include:  
+
+  Principles of Human Rights have been added, which describe Enron,s 
+responsibility to conduct itself according to basic tenets of human behavior 
+that transcend industries, cultures, economics, and local, regional and 
+national boundaries (see pg. 4);
+  Additional information about our Business Ethics policy about legal 
+contracts, the selection of outside counsel, and disparaging remarks made by 
+employees about Enron (see pg. 12);
+  Additional information about Enron,s policy on confidential information and 
+trade secrets (see pg. 14);
+  A decrease in the number of days computer passwords are valid under Enron,s 
+policy on communication services and equipment (see pg. 35);
+  Additional information about criminal penalties and civil fines assessed by 
+the US government under the Foreign Corrupt Practices Act (see pg. 50); and
+  Additional language regarding Enron,s policy on conflicts of interests, 
+investments, and outside business interests of employees (see pg. 57).   
+
+The Code of Ethics contains commonsense rules of conduct that most employees 
+practice on a day-to-day basis.  However, I ask that you read them carefully 
+and completely to make certain that you are complying with these policies.  
+It is absolutely essential that you fully comply with these policies in the 
+future.  If you have any questions, I encourage you to discuss them with your 
+supervisor or Enron legal counsel.
+
+In next few weeks, you will receive the Code of Ethics July 2000 booklet and 
+a Certificate of Compliance, which you must sign as a statement of your 
+agreement to comply with the policies stated in the Code of Ethics booklet 
+during your employment with Enron.  You may do this in one of two ways:
+
+  Select the Code of Ethics option located at eHRonline.enron.com and 
+complete the Certificate of Compliance.
+  Sign and return the Certificate of Compliance to Elaine Overturf, Deputy 
+Corporate Secretary, Enron Corp. 1400 Smith Street, EB4836, Houston, Texas 
+77002-7369.
+
+Thank you for your cooperation and for all you do to make Enron a successful 
+company.
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2710
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0008.eml",
+  "email_sha256": "aaec2f5a367a393b561cfd65aa23d03739c7ea11579fb3dec296a39f31ae3a8d",
+  "subject": "Code of Ethics",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.639831
+ML Score: 63.9831
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 38.3898
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Code of Ethics",
+  "from": "office.chairman@enron.com",
+  "to": "all.worldwide@enron.com",
+  "body_length": 2710,
+  "total_text_length": 2803
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0008_ml_hybrid.json
+
+Forensic File:
+email_0008_forensic.json
+
+Risk File:
+email_0008_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,180 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0097
+File Name: email_0097.eml
+SHA-256: bcfcdbbc73a9e00c86d0870b3d8408051f9df1ebf93cd15708f83a8c20d03362
+
+EMAIL METADATA
+--------------
+From: ben.thomason@enron.com
+To: dutch.quigley@enron.com
+Cc: paul.burkhart@enron.com, jaime.araoz@enron.com
+Bcc: paul.burkhart@enron.com, jaime.araoz@enron.com
+Subject: ENA Q4 Settlement
+Date: Fri, 16 Nov 2001 07:55:01 -0800
+Normalized Date: 2001-11-16T07:55:01-08:00
+Message-ID: <16782774.1075841451048.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Dutch,
+
+I am working on pulling together due diligence information for Global Finance in regards to ENA trading activity.  One number that stood out to us on the ENA PRMA detail was the Q4 2000 settlement of approximately negative $500MM.  We discussed possible reasons for this figure with the ENA accounting group, and they suggested it might be the Dec 2000 Nymex settlement, which was more that negative $600MM.  They suggested that I could contact you for further insight.  Would you have a few minutes sometime today to talk about that settlement?
+
+Thanks,
+Ben
+5-2047
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 573
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0097.eml",
+  "email_sha256": "bcfcdbbc73a9e00c86d0870b3d8408051f9df1ebf93cd15708f83a8c20d03362",
+  "subject": "ENA Q4 Settlement",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.699731
+ML Score: 69.9731
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 41.9839
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "ENA Q4 Settlement",
+  "from": "ben.thomason@enron.com",
+  "to": "dutch.quigley@enron.com",
+  "body_length": 573,
+  "total_text_length": 666
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0097_ml_hybrid.json
+
+Forensic File:
+email_0097_forensic.json
+
+Risk File:
+email_0097_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

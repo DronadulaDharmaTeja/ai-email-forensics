@@ -1,0 +1,196 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0049
+File Name: email_0049.eml
+SHA-256: 54fbeaf505c046aa4a068f8bd00a110e458b74fd6b4466ac2f38c463a8849d25
+
+EMAIL METADATA
+--------------
+From: michelle.cash@enron.com
+To: dolores.lenfest@enron.com, rick.johnson@enron.com
+Cc: 
+Bcc: 
+Subject: FPL Update
+Date: Tue, 01 Aug 2000 03:48:00 -0700
+Normalized Date: 2000-08-01T03:48:00-07:00
+Message-ID: <31775262.1075860485988.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+---------------------- Forwarded by Michelle Cash/HOU/ECT on 08/01/2000 10:48 
+AM ---------------------------
+
+
+Don Miller
+08/01/2000 10:24 AM
+To: Michelle Cash/HOU/ECT@ECT, Tommy J Yanowski/HOU/ECT@ECT, Leslie 
+Reeves/HOU/ECT@ECT, Eric LeDain/CAL/ECT@ECT, Kate Chaney/CAL/ECT@ECT, Rodney 
+Malcolm/HOU/ECT@ECT, Brian Redmond/HOU/ECT@ECT
+cc:  
+Subject: FPL Update
+
+Many of you that had an interest in E2/Endeavor probably heard yesterday that 
+FPL and Entergy agreed to merge.  This was a complete surprise to us, and 
+unfortunately kills our chances for creating a JV with FPL. We are looking at 
+other options, and I am confident that we will be back with another partner.
+
+Thanks for your time and help in this process.
+
+Regards,
+
+Don 
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 738
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0049.eml",
+  "email_sha256": "54fbeaf505c046aa4a068f8bd00a110e458b74fd6b4466ac2f38c463a8849d25",
+  "subject": "FPL Update",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.599134
+ML Score: 59.9134
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 35.948
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "FPL Update",
+  "from": "michelle.cash@enron.com",
+  "to": "dolores.lenfest@enron.com, rick.johnson@enron.com",
+  "body_length": 738,
+  "total_text_length": 851
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0049_ml_hybrid.json
+
+Forensic File:
+email_0049_forensic.json
+
+Risk File:
+email_0049_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

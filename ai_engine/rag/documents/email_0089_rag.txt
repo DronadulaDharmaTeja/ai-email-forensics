@@ -1,0 +1,304 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0089
+File Name: email_0089.eml
+SHA-256: 842bb17c92f98dd526e284412566d2ac007fc579be0a4755553a316f79ae0ca6
+
+EMAIL METADATA
+--------------
+From: no.address@enron.com
+To: 
+Cc: 
+Bcc: 
+Subject: Weekend Outage Report for 11-16-01 through 11-18-01
+Date: Thu, 15 Nov 2001 14:41:34 -0800
+Normalized Date: 2001-11-15T14:41:34-08:00
+Message-ID: <3277811.1075861923181.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+------------------------------------------------------------------------------------------------------
+W E E K E N D   S Y S T E M S   A V A I L A B I L I T Y
+
+F O R
+
+November 16, 2001 5:00pm through November 19, 2001 12:00am
+------------------------------------------------------------------------------------------------------
+		    				       		    			
+
+SCHEDULED SYSTEM OUTAGES: 
+
+ARDMORE DATA CENTER - FACILITY OPERATIONS: No Scheduled Outages.
+
+AZURIX: No Scheduled Outages.
+
+EB34 DATA CENTER - FACILITY OPERATIONS: No Scheduled Outages.
+
+EDI SERVER: No Scheduled Outages.
+
+ENRON CENTER SOUTH DATA CENTER - FACILITY OPERATIONS: No Scheduled Outages
+
+ENRON NORTH AMERICAN LANS:  
+Impact:  3AC
+Time:  Fri 11/16/2001 at  10:00:00 PM CT thru Sat 11/17/2001 at 12:00:00 AM CT
+	Fri 11/16/2001 at    8:00:00 PM PT thru Fri 11/16/2001 at  10:00:00 PM PT
+	Sat 11/17/2001 at  4:00:00 AM London thru Sat 11/17/2001 at  6:00:00 AM London
+Outage:  Swing 3AC 8th and 9th floors to CORP IP space.
+Environments Impacted:  8th
+Purpose: EBS Integration
+Backout: re-issue original configurations, bring trunk to eb44 back up.
+Contact(s): 	Micah Staggs    713-345-1696
+		   		    		    		
+Impact:  Ardmore
+Time:  Sat 11/17/2001 at  10:30:00 PM CT thru Sun 11/18/2001 at   2:30:00 AM CT
+	Sat 11/17/2001 at     8:30:00 PM PT thru Sun 11/18/2001 at 12:30:00 AM PT
+	Sun 11/18/2001 at  4:30:00 AM London thru Sun 11/18/2001 at  8:30:00 AM London
+Outage:  Add redundant connections between ARD-COR-CCX1/2 and ENA-CX1/2-ARD 
+Environments Impacted:  All
+Purpose: Increased bandwidth / resiliency available on the MAN
+Backout: Put original equipment/configs back in place
+Contact(s): 	Dennis McGough    713-345-3143
+ 
+FIELD SERVICES:  No Scheduled Outages.
+
+INTERNET: No Scheduled Outages.
+
+MESSAGING:
+Impact:  Corp Notes
+Time:  Fri 11/16/2001 at  9:00:00 PM CT thru Sat 11/17/2001 at    1:00:00 AM CT
+	Fri 11/16/2001 at  7:00:00 PM PT thru  Fri 11/16/2001 at  11:00:00 PM PT
+	Sat 11/17/2001 at  3:00:00 AM London thru Sat 11/17/2001 at  7:00:00 AM London
+Outage:  cNotes Server Reboots
+Environments Impacted:  All users on any of the mailservers listed below
+Purpose: Scheduled @ 2 week interval
+Backout: Make sure server comes up.
+Contact(s): 	Trey Rhodes  (713) 345-7792  
+		    		    		    		
+Impact:  EI
+Time:  Fri 11/16/2001 at  9:00:00 PM CT thru Sat 11/17/2001 at    1:00:00 AM CT
+	Fri 11/16/2001 at  7:00:00 PM PT thru  Fri 11/16/2001 at  11:00:00 PM PT
+	Sat 11/17/2001 at  3:00:00 AM London thru Sat 11/17/2001 at  7:00:00 AM London
+Outage:  EI Notes Server Maintenance
+Environments Impacted:  EI Local/Domestic/Foreign Sites
+Purpose: Scheduled @ 2 week interval
+Backout: N/A
+Contact(s): 	David Ricafrente    713-646-7741
+		    		    		    		
+Impact:  EES
+Time:  Fri 11/16/2001 at  8:30:00 PM CT thru Fri 11/16/2001 at  11:30:00 PM CT
+	Fri 11/16/2001 at  6:30:00 PM PT thru Fri 11/16/2001 at    9:30:00 PM PT
+	Sat 11/17/2001 at  2:30:00 AM London  thru Sat 11/17/2001 at  5:30:00 AM London
+Outage:  EES Notes Server Reboots
+Environments Impacted:  All users on any of the mailservers listed below
+Purpose: Scheduled @ 2 week interval on 1st and the 3rd Friday of each month.
+Backout: 
+Contact(s): 	Dalak Malik    713-345-8219
+ 
+MARKET DATA:
+Impact:  CORP
+Time:  Sat 11/17/2001 at  12:00:00 PM CT thru Sat 11/17/2001 at  12:30:00 PM CT
+	Sat 11/17/2001 at  10:00:00 AM PT thru Sat 11/17/2001 at  10:30:00 AM PT
+	Sat 11/17/2001 at  6:00:00 PM London thru Sat 11/17/2001 at  6:30:00 PM London
+Outage:  Autex - "taurus" system upgrade
+Environments Impacted:  Autex
+Purpose: replace obsolesced hardware with Enron Standard hardware configuration for critical trading application
+Backout: Replace with original system
+Contact(s): 	John Sieckman    713-345-7862 
+
+NT: No Scheduled Outages.
+
+OS/2:  No Scheduled Outages.
+
+OTHER SYSTEMS:
+Impact:  SAP
+Time:  Fri 11/16/2001 at  8:00:00 PM CT thru Mon 11/19/2001 at    2:00:00 AM CT
+	Fri 11/16/2001 at  6:00:00 PM PT thru Mon 11/19/2001 at  12:00:00 AM PT
+	Sat 11/17/2001 at  2:00:00 AM London thru Mon 11/19/2001 at  8:00:00 AM London
+Outage:  Add New SAP Storage
+Environments Impacted:  SAP
+Purpose: Disk growth in SAP required procurement of additional disk.
+Backout: Revert to current configuration. 
+Contact(s): 	Gary Sentiff    713-345-5125
+ 
+SITARA:  No Scheduled Outages.
+
+SUN/OSS SYSTEM: No Scheduled Outages.
+
+TELEPHONY: No Scheduled Outages
+
+TERMINAL SERVER:  No Scheduled Outages.
+
+UNIFY:  No Scheduled Outages.
+
+----------------------------------------------------------------------------------------------------------------------------
+								FOR ASSISTANCE
+
+(713) 853-1411   Enron Resolution Center
+
+
+Specific Help:
+Information Risk Management			(713) 853-5536
+SAP/ISC                                                                               (713) 345-4727
+Unify On-Call 					(713) 284-3757  [Pager]
+Sitara On-Call					(713) 288-0101  [Pager]
+RUS/GOPS/GeoTools/APRS			(713) 639-9726  [Pager]
+OSS/UA4/TARP				(713) 285-3165  [Pager]
+CPR						(713) 284-4175  [Pager]
+EDI Support 					(713) 327-3893  [Pager]
+EES Help Desk					(713)853-9797 OR (888)853-9797
+TDS -Trader Decision Support On-Call                    (713) 327-6032 [Pager]
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 5180
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0089.eml",
+  "email_sha256": "842bb17c92f98dd526e284412566d2ac007fc579be0a4755553a316f79ae0ca6",
+  "subject": "Weekend Outage Report for 11-16-01 through 11-18-01",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.188679
+ML Score: 18.8679
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 11.3208
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Weekend Outage Report for 11-16-01 through 11-18-01",
+  "from": "no.address@enron.com",
+  "to": "",
+  "body_length": 5180,
+  "total_text_length": 5282
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0089_ml_hybrid.json
+
+Forensic File:
+email_0089_forensic.json
+
+Risk File:
+email_0089_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

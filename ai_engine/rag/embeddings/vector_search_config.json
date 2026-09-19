@@ -1,0 +1,10 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "vector_count": 623,
+  "similarity_metric": "cosine_similarity",
+  "normalization": "L2",
+  "source_chunks": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/chunks/rag_chunks.json",
+  "embeddings": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/embeddings/rag_embeddings.npy",
+  "metadata": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/embeddings/rag_embedding_metadata.json"
+}

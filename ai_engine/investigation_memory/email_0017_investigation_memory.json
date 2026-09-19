@@ -1,0 +1,185 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.892141+00:00",
+  "email_id": "email_0017",
+  "evidence": {
+    "file_name": "email_0017.eml",
+    "sha256": "e25002711cf78397b28f4aeb673c9dd0d93cd23311932baba06b43680f15e21e",
+    "source_forensic_file": "email_0017_forensic.json"
+  },
+  "email": {
+    "from": "intelhomecomputing.d1njhud.j@message.intel.com",
+    "to": "mcuilla@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "News from Intel(R)",
+    "date": "Wed, 13 Dec 2000 14:49:00 -0800",
+    "normalized_date": "2000-12-13T14:49:00-08:00",
+    "message_id": "<11055798.1075858071792.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 2074,
+    "url_count": 7,
+    "url_domains": [
+      "p0.com",
+      "intel.p0.com"
+    ],
+    "url_items": [
+      "http://p0.com/t.d?LkABJ_j8=intel/wireless_2series/index.htm",
+      "http://p0.com/t.d?BEABJ_j8=intel/pccamera/index.htm",
+      "http://p0.com/t.d?akABJ_j8=intel/anypoint/index.htm",
+      "http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp",
+      "http://intel.p0.com/unsubscribe.dyn?i=224685188&s=4zWp",
+      "http://p0.com/t.d?cEABJ_j8=intel/sites/corporate/tradmarx.htm",
+      "http://p0.com/t.d?LkABJ_j8=intel/sites/corporate/privacy.htm"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://p0.com/t.d?LkABJ_j8=intel/wireless_2series/index.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "p0.com",
+          "scheme": "http",
+          "path": "/t.d",
+          "query_present": true,
+          "domain_entropy": 2.585
+        },
+        {
+          "url": "http://p0.com/t.d?BEABJ_j8=intel/pccamera/index.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "p0.com",
+          "scheme": "http",
+          "path": "/t.d",
+          "query_present": true,
+          "domain_entropy": 2.585
+        },
+        {
+          "url": "http://p0.com/t.d?akABJ_j8=intel/anypoint/index.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "p0.com",
+          "scheme": "http",
+          "path": "/t.d",
+          "query_present": true,
+          "domain_entropy": 2.585
+        },
+        {
+          "url": "http://intel.p0.com/hc_update.dyn?i=224685188&s=4zWp",
+          "risk_score": 10,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS",
+            "Suspicious keywords: update"
+          ],
+          "domain": "intel.p0.com",
+          "scheme": "http",
+          "path": "/hc_update.dyn",
+          "query_present": true,
+          "domain_entropy": 3.4183
+        },
+        {
+          "url": "http://intel.p0.com/unsubscribe.dyn?i=224685188&s=4zWp",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "intel.p0.com",
+          "scheme": "http",
+          "path": "/unsubscribe.dyn",
+          "query_present": true,
+          "domain_entropy": 3.4183
+        },
+        {
+          "url": "http://p0.com/t.d?cEABJ_j8=intel/sites/corporate/tradmarx.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "p0.com",
+          "scheme": "http",
+          "path": "/t.d",
+          "query_present": true,
+          "domain_entropy": 2.585
+        },
+        {
+          "url": "http://p0.com/t.d?LkABJ_j8=intel/sites/corporate/privacy.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "p0.com",
+          "scheme": "http",
+          "path": "/t.d",
+          "query_present": true,
+          "domain_entropy": 2.585
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.289396,
+    "ml_score": 28.9396
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 17.3637,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0017_forensic.json",
+    "threat_intelligence": "email_0017_threat_intel.json",
+    "risk_assessment": "email_0017_risk.json",
+    "ml_hybrid": "email_0017_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

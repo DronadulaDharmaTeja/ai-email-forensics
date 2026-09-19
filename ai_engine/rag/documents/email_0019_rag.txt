@@ -1,0 +1,196 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0019
+File Name: email_0019.eml
+SHA-256: 3f421d73196d74e2f0f4455410efaa743d5bf5148d0fc1f14c933af2b369ccbe
+
+EMAIL METADATA
+--------------
+From: ggt@gateway.net
+To: martin.cuilla@enron.com, gary.lamphier@enron.com, gary.taylor@enron.com, mcuilla@hotmail.com
+Cc: 
+Bcc: 
+Subject: Fantasy football lineup
+Date: Sat, 16 Sep 2000 23:54:00 -0700
+Normalized Date: 2000-09-16T23:54:00-07:00
+Message-ID: <105112.1075858073745.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+My add drops haven't been approved, so here's my  official lineup:
+?
+QB???? Beurlein
+RB???? Wheatley
+RB???? Smith
+WR??? Robinson
+WR??? Morton
+WR??? Ward
+K??????  Detroit
+D?????? New Orleans?
+?
+I can't log on to the CBS Sportsline server, and  I'm on my way out to play 
+golf, so if any of the above wide receivers are on  bye, Gonzalez is the 
+starter instead of them (but I think all those receivers  are playing).
+?
+Bench:
+QB??? Plummer???  bye
+RB???  James??????? bye
+RB??? Chauncey
+WR??? Gonzalez
+WR??? Sanders???  bye
+WR???  Mathis??????? may be injured
+?
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 560
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0019.eml",
+  "email_sha256": "3f421d73196d74e2f0f4455410efaa743d5bf5148d0fc1f14c933af2b369ccbe",
+  "subject": "Fantasy football lineup",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.431188
+ML Score: 43.1188
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 25.8713
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Fantasy football lineup",
+  "from": "ggt@gateway.net",
+  "to": "martin.cuilla@enron.com, gary.lamphier@enron.com, gary.taylor@enron.com, mcuilla@hotmail.com",
+  "body_length": 560,
+  "total_text_length": 721
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0019_ml_hybrid.json
+
+Forensic File:
+email_0019_forensic.json
+
+Risk File:
+email_0019_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

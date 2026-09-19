@@ -1,0 +1,203 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0056
+File Name: email_0056.eml
+SHA-256: b75a1dc4f669376be137960ed164623c8885468ee1b6f28c0f2385e0a3fb0d22
+
+EMAIL METADATA
+--------------
+From: susan.mara@enron.com
+To: alan.comnes@enron.com, angela.schwarz@enron.com, beverly.aden@enron.com, bill.votaw@enron.com, brenda.barreda@enron.com, carol.moffett@enron.com, cathy.corbin@enron.com, chris.foster@enron.com, christina.liscano@enron.com, christopher.calger@enron.com, craig.sutter@enron.com, dan.leff@enron.com, debora.whitehead@enron.com, dennis.benevides@enron.com, don.black@enron.com, douglas.huth@enron.com, edward.sacks@enron.com, eric.melvin@enron.com, erika.dupre@enron.com, evan.hughes@enron.com, fran.deltoro@enron.com, gayle.muench@enron.com, ginger.dernehl@enron.com, gordon.savage@enron.com, harold.buchanan@enron.com, harry.kingerski@enron.com, iris.waser@enron.com, james.steffes@enron.com, james.lewis@enron.com, james.wright@enron.com, jeff.messina@enron.com, jeremy.blachman@enron.com, jess.hewitt@enron.com, joe.hartsoe@enron.com, karen.denne@enron.com, kathy.bass@enron.com, kathy.dodgen@enron.com, ken.gustafson@enron.com, kevin.hughes@enron.com, leasa.lopez@enron.com, leticia.botello@enron.com, mark.muller@enron.com, marsha.suggs@enron.com, marty.sunde@enron.com, meredith.eggleston@enron.com, michael.etringer@enron.com, michael.mann@enron.com, michelle.cisneros@enron.com, mpalmer@enron.com, neil.bresnan@enron.com, neil.hong@enron.com, paul.kaufman@enron.com, richard.zdunkewicz@enron.com, richard.leibert@enron.com, richard.shapiro@enron.com, rita.hennessy@enron.com, robert.badeer@enron.com, rosalinda.tijerina@enron.com, sandra.mccubbin@enron.com, sarah.novosel@enron.com, scott.gahn@enron.com, scott.stoness@enron.com, sharon.dick@enron.com, skean@enron.com, susan.mara@enron.com, tanya.leslie@enron.com, tasha.lair@enron.com, ted.murphy@enron.com, terri.greenlee@enron.com, tim.belden@enron.com, tony.spruiell@enron.com, vicki.sharp@enron.com, vladimir.gorny@enron.com, wanda.curry@enron.com, william.bradford@enron.com, jubran.whalan@enron.com, triley@enron.com, richard.sanders@enron.com, robert.williams@enron.com, dwatkiss@bracepatt.com, rcarroll@bracepatt.com, donna.fulton@enron.com, gfergus@brobeck.com, bruno.gaillard@enron.com, linda.robertson@enron.com, ren@enron.com, lazure@enron.com, michael.tribolet@enron.com, phillip.allen@enron.com, christian.yoder@enron.com, jklauber@llgm.com, tamara.johnson@enron.com, mary.hain@enron.com, greg.wolfe@enron.com, jeff.dasovich@enron.com, dirk.vanulden@enron.com, steve.walker@enron.com, james.wright@enron.com, mike.smith@enron.com, richard.shapiro@enron.com, leslie.lawner@enron.com, robert.neustaedter@enron.com, steve.walton@enron.com, psmith3@enron.com, mjackso7@enron.com, janel.guerrero@enron.com, mark.fillinger@enron.com, jennifer.rudolph@enron.com, martin.wenzel@enron.com, wgang@enron.com, joseph.alamo@enron.com, tracy.ngo@enron.com, ray.alvarez@enron.com, steve.hall@enron.com, david.leboe@enron.com, jay.zoellner@enron.com
+Cc: 
+Bcc: 
+Subject: Davis' Announcement may be about New Public Power Agency
+Date: Wed, 04 Apr 2001 02:37:00 -0700
+Normalized Date: 2001-04-04T02:37:00-07:00
+Message-ID: <25381515.1075860340180.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Davis' speach may address what's in this story.  Requested time is Thursday 
+at 6:05 pm (not Wednesday as I reported earlier)
+
+http://www0.mercurycenter.com/premium/local/docs/calpower04.htm
+
+
+
+
+Sue Mara
+Enron Corp.
+Tel: (415) 782-7802
+Fax:(415) 782-7854
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 1
+
+URL Domains:
+[
+  "www0.mercurycenter.com"
+]
+
+URL Items:
+[
+  "http://www0.mercurycenter.com/premium/local/docs/calpower04.htm"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 254
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0056.eml",
+  "email_sha256": "b75a1dc4f669376be137960ed164623c8885468ee1b6f28c0f2385e0a3fb0d22",
+  "subject": "Davis' Announcement may be about New Public Power Agency",
+  "url_count": 1,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 1,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://www0.mercurycenter.com/premium/local/docs/calpower04.htm",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www0.mercurycenter.com",
+      "scheme": "http",
+      "path": "/premium/local/docs/calpower04.htm",
+      "query_present": false,
+      "domain_entropy": 3.4131
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.237205
+ML Score: 23.7205
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 14.2323
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Davis' Announcement may be about New Public Power Agency",
+  "from": "susan.mara@enron.com",
+  "to": "alan.comnes@enron.com, angela.schwarz@enron.com, beverly.aden@enron.com, bill.votaw@enron.com, brenda.barreda@enron.com, carol.moffett@enron.com, cathy.corbin@enron.com, chris.foster@enron.com, christina.liscano@enron.com, christopher.calger@enron.com, craig.sutter@enron.com, dan.leff@enron.com, debora.whitehead@enron.com, dennis.benevides@enron.com, don.black@enron.com, douglas.huth@enron.com, edward.sacks@enron.com, eric.melvin@enron.com, erika.dupre@enron.com, evan.hughes@enron.com, fran.deltoro@enron.com, gayle.muench@enron.com, ginger.dernehl@enron.com, gordon.savage@enron.com, harold.buchanan@enron.com, harry.kingerski@enron.com, iris.waser@enron.com, james.steffes@enron.com, james.lewis@enron.com, james.wright@enron.com, jeff.messina@enron.com, jeremy.blachman@enron.com, jess.hewitt@enron.com, joe.hartsoe@enron.com, karen.denne@enron.com, kathy.bass@enron.com, kathy.dodgen@enron.com, ken.gustafson@enron.com, kevin.hughes@enron.com, leasa.lopez@enron.com, leticia.botello@enron.com, mark.muller@enron.com, marsha.suggs@enron.com, marty.sunde@enron.com, meredith.eggleston@enron.com, michael.etringer@enron.com, michael.mann@enron.com, michelle.cisneros@enron.com, mpalmer@enron.com, neil.bresnan@enron.com, neil.hong@enron.com, paul.kaufman@enron.com, richard.zdunkewicz@enron.com, richard.leibert@enron.com, richard.shapiro@enron.com, rita.hennessy@enron.com, robert.badeer@enron.com, rosalinda.tijerina@enron.com, sandra.mccubbin@enron.com, sarah.novosel@enron.com, scott.gahn@enron.com, scott.stoness@enron.com, sharon.dick@enron.com, skean@enron.com, susan.mara@enron.com, tanya.leslie@enron.com, tasha.lair@enron.com, ted.murphy@enron.com, terri.greenlee@enron.com, tim.belden@enron.com, tony.spruiell@enron.com, vicki.sharp@enron.com, vladimir.gorny@enron.com, wanda.curry@enron.com, william.bradford@enron.com, jubran.whalan@enron.com, triley@enron.com, richard.sanders@enron.com, robert.williams@enron.com, dwatkiss@bracepatt.com, rcarroll@bracepatt.com, donna.fulton@enron.com, gfergus@brobeck.com, bruno.gaillard@enron.com, linda.robertson@enron.com, ren@enron.com, lazure@enron.com, michael.tribolet@enron.com, phillip.allen@enron.com, christian.yoder@enron.com, jklauber@llgm.com, tamara.johnson@enron.com, mary.hain@enron.com, greg.wolfe@enron.com, jeff.dasovich@enron.com, dirk.vanulden@enron.com, steve.walker@enron.com, james.wright@enron.com, mike.smith@enron.com, richard.shapiro@enron.com, leslie.lawner@enron.com, robert.neustaedter@enron.com, steve.walton@enron.com, psmith3@enron.com, mjackso7@enron.com, janel.guerrero@enron.com, mark.fillinger@enron.com, jennifer.rudolph@enron.com, martin.wenzel@enron.com, wgang@enron.com, joseph.alamo@enron.com, tracy.ngo@enron.com, ray.alvarez@enron.com, steve.hall@enron.com, david.leboe@enron.com, jay.zoellner@enron.com",
+  "body_length": 254,
+  "total_text_length": 3165
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0056_ml_hybrid.json
+
+Forensic File:
+email_0056_forensic.json
+
+Risk File:
+email_0056_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

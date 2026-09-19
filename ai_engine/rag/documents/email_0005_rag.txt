@@ -1,0 +1,190 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0005
+File Name: email_0005.eml
+SHA-256: a9bf0029b6924b49f03b6ee9d8bde4f029543b7cb0906722f56d0ca28f34ae64
+
+EMAIL METADATA
+--------------
+From: casey@mercatorpartners.com
+To: bromberg@cgalaska.uscg.mil, balgeo@rpw200.com, bill.pond@garden.com, robert.badeer@enron.com, bfogel@hbs.edu, ccorl@cga.uscg.mil, dallman@ballston.uscg.mil, dostergaard@lantd5.uscg.mil, kmbourdon@aol.com, dspade65@aol.com, dev.braganza@garden.com, dontrone@email.msn.com, dfears@comdt.uscg.mil, dwhitmer@d11.uscg.mil, phndh@rpnet.net, garret.guinn@kaisertwd.com, h.schmidt@internet.uscg.mil, james.roth@whiting-turner.com, jddow@shore.net, jpiche@kpmg.com, jandrews@rdc.uscg.mil, j.vorbach@worldnet.att.net, jcoburn@whoi.edu, jsanto@mba.2001.hbs.edu, jrwhitehead@msoboston.uscg.mil, jgalo@mit.edu, jdheller@cga.uscg.mil, jjaskot@jwlaw.com, jmcderm926@aol.com, jnolan@d9.uscg.mil, crossley.mw@pg.com, miltr@houxchange.ckor.com, njarmstrong@avondale.com, akflynn@alaska.com, pboynton@d1.uscg.mil, rich@beutel-usa.com, richard.lerudis@level3.com, rlsco@sprynet.com, haymort78@aol.com, rwalther@tuskercorp.com, rblendu@aol.com, kirkpat@mit.edu, steve@taxpayer.net, jfsf@mindspring.com, tlindstrom@pacnorwest.uscg.mil, tim_atkin@sra.com, timothy.noonan.wg97@wharton.upenn.edu, abaginski@cga.uscg.mil, tripp14@aol.com, jdsbridge@aol.com, gronlund@ctol.net, yale.peebles@bain.com
+Cc: 
+Bcc: 
+Subject: GOOD ADVICE
+Date: Wed, 07 Jun 2000 16:17:00 -0700
+Normalized Date: 2000-06-07T16:17:00-07:00
+Message-ID: <11344073.1075863603583.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Attached is some good advice from Den Colin Powell that I thought I would
+share.  I hope you find it as impactful as I did.
+
+Cheers,
+Casey Jones
+Mercator Partners, LLC
+89 Thoreau Street
+Concord, MA 01742
++1 (978) 318-9696 (office)
++1 (978) 318-9797 (fax)
++1 (978) 394-2110 (mobile)
+
+
+
+ - att1.htm
+ - Casey Jones.vcf
+ - Powell on Leadership.pps
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 343
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0005.eml",
+  "email_sha256": "a9bf0029b6924b49f03b6ee9d8bde4f029543b7cb0906722f56d0ca28f34ae64",
+  "subject": "GOOD ADVICE",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.557766
+ML Score: 55.7766
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 33.466
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "GOOD ADVICE",
+  "from": "casey@mercatorpartners.com",
+  "to": "bromberg@cgalaska.uscg.mil, balgeo@rpw200.com, bill.pond@garden.com, robert.badeer@enron.com, bfogel@hbs.edu, ccorl@cga.uscg.mil, dallman@ballston.uscg.mil, dostergaard@lantd5.uscg.mil, kmbourdon@aol.com, dspade65@aol.com, dev.braganza@garden.com, dontrone@email.msn.com, dfears@comdt.uscg.mil, dwhitmer@d11.uscg.mil, phndh@rpnet.net, garret.guinn@kaisertwd.com, h.schmidt@internet.uscg.mil, james.roth@whiting-turner.com, jddow@shore.net, jpiche@kpmg.com, jandrews@rdc.uscg.mil, j.vorbach@worldnet.att.net, jcoburn@whoi.edu, jsanto@mba.2001.hbs.edu, jrwhitehead@msoboston.uscg.mil, jgalo@mit.edu, jdheller@cga.uscg.mil, jjaskot@jwlaw.com, jmcderm926@aol.com, jnolan@d9.uscg.mil, crossley.mw@pg.com, miltr@houxchange.ckor.com, njarmstrong@avondale.com, akflynn@alaska.com, pboynton@d1.uscg.mil, rich@beutel-usa.com, richard.lerudis@level3.com, rlsco@sprynet.com, haymort78@aol.com, rwalther@tuskercorp.com, rblendu@aol.com, kirkpat@mit.edu, steve@taxpayer.net, jfsf@mindspring.com, tlindstrom@pacnorwest.uscg.mil, tim_atkin@sra.com, timothy.noonan.wg97@wharton.upenn.edu, abaginski@cga.uscg.mil, tripp14@aol.com, jdsbridge@aol.com, gronlund@ctol.net, yale.peebles@bain.com",
+  "body_length": 343,
+  "total_text_length": 1583
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0005_ml_hybrid.json
+
+Forensic File:
+email_0005_forensic.json
+
+Risk File:
+email_0005_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

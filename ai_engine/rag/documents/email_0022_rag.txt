@@ -1,0 +1,308 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0022
+File Name: email_0022.eml
+SHA-256: 2a0bc9bc59cd3303e3b6ee5b0007bdc77a74d43b690bde27c501080c1622062a
+
+EMAIL METADATA
+--------------
+From: webmaster@cera.com
+To: clients@cera.com
+Cc: 
+Bcc: 
+Subject: Western Energy--Winter Demand Peaks Not Expected to Result in Price Spikes or Reliability Problems - CERA Monthly Briefing
+Date: Mon, 29 Oct 2001 19:01:05 -0800
+Normalized Date: 2001-10-29T19:01:05-08:00
+Message-ID: <24437340.1075858863964.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+Title: One Tight Winter Peak Remains
+URL(s):
+
+http://www20.cera.com/eprofile?u=35&m=2760;
+
+
+***********************************************************************
+
+WESTERN ENERGY--WINTER DEMAND PEAKS NOT EXPECTED TO RESULT IN PRICE SPIKES OR RELIABILITY PROBLEMS
+
+Building natural gas and power supplies are providing a cushion for the western
+energy markets for this winter. Although seasonal gas and power demand spikes
+will again push prices higher, this winter will not look like the winter of
+2000/01. Unlike during the record high gas and power prices and blackouts last
+year winter, reduced demand, increased gas storage levels, and new gas and
+power supplies will significantly temper prices and significantly reduce the
+risk of supply disruptions.
+
+*  A supply build of 300 million cubic feet (MMcf) per day in the Rockies and
+900 MMcf in western Canada is meeting with declining demand in the West
+
+*  Fourth quarter power demand is expected to be 13 percent below levels last
+year, while over 5,000 megawatts of new supply has been added this year
+
+*  Only severe cold weather, prolonged drought, or a supply disruption could
+produce a reliability problem this winter
+
+**end**
+
+Follow above URL for complete CERA Monthly Briefing (10 pages).
+
+
+
+
+E-mail Category: Monthly Briefing
+CERA Knowledge Area(s): Western Energy
+
+
+***********************************************************************
+***********************************************************************
+CERA's Autumn 2001 Roundtable event dates and agendas
+are now available at http://www20.cera.com/event
+***********************************************************************
+
+
+To make changes to your cera.com profile go to:
+http://www20.cera.com/client/updateaccount
+
+Forgot your username and password? Go to:
+http://www20.cera.com/client/forgot
+
+This electronic message and attachments, if any, contain information
+from Cambridge Energy Research Associates, Inc. (CERA) which is
+confidential and may be privileged. Unauthorized disclosure, copying,
+distribution or use of the contents of this message or any attachments,
+in whole or in part, is strictly prohibited.
+Terms of Use: http://www20.cera.com/tos
+Questions/Comments: webmaster@cera.com
+Copyright 2001. Cambridge Energy Research Associates
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 5
+
+URL Domains:
+[
+  "www20.cera.com"
+]
+
+URL Items:
+[
+  "http://www20.cera.com/eprofile?u=35&m=2760",
+  "http://www20.cera.com/event",
+  "http://www20.cera.com/client/updateaccount",
+  "http://www20.cera.com/client/forgot",
+  "http://www20.cera.com/tos"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2277
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0022.eml",
+  "email_sha256": "2a0bc9bc59cd3303e3b6ee5b0007bdc77a74d43b690bde27c501080c1622062a",
+  "subject": "Western Energy--Winter Demand Peaks Not Expected to Result in Price Spikes or Reliability Problems - CERA Monthly Briefing",
+  "url_count": 5,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 5,
+  "maximum_url_risk": 15,
+  "urls": [
+    {
+      "url": "http://www20.cera.com/eprofile?u=35&m=2760",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www20.cera.com",
+      "scheme": "http",
+      "path": "/eprofile",
+      "query_present": true,
+      "domain_entropy": 3.182
+    },
+    {
+      "url": "http://www20.cera.com/event",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www20.cera.com",
+      "scheme": "http",
+      "path": "/event",
+      "query_present": false,
+      "domain_entropy": 3.182
+    },
+    {
+      "url": "http://www20.cera.com/client/updateaccount",
+      "risk_score": 15,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS",
+        "Suspicious keywords: account, update"
+      ],
+      "domain": "www20.cera.com",
+      "scheme": "http",
+      "path": "/client/updateaccount",
+      "query_present": false,
+      "domain_entropy": 3.182
+    },
+    {
+      "url": "http://www20.cera.com/client/forgot",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www20.cera.com",
+      "scheme": "http",
+      "path": "/client/forgot",
+      "query_present": false,
+      "domain_entropy": 3.182
+    },
+    {
+      "url": "http://www20.cera.com/tos",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "www20.cera.com",
+      "scheme": "http",
+      "path": "/tos",
+      "query_present": false,
+      "domain_entropy": 3.182
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.408583
+ML Score: 40.8583
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 24.515
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Western Energy--Winter Demand Peaks Not Expected to Result in Price Spikes or Reliability Problems - CERA Monthly Briefing",
+  "from": "webmaster@cera.com",
+  "to": "clients@cera.com",
+  "body_length": 2277,
+  "total_text_length": 2464
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0022_ml_hybrid.json
+
+Forensic File:
+email_0022_forensic.json
+
+Risk File:
+email_0022_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.229500+00:00",
+  "email_id": "email_0050",
+  "evidence": {
+    "file_name": "email_0050.eml",
+    "sha256": "50ad352026dc4f3488f3306920772e1452b6e87ab04ddaae693070c4abaf09c4",
+    "source_forensic_file": "email_0050_forensic.json"
+  },
+  "email": {
+    "from": "public.relations@enron.com",
+    "to": "all.worldwide@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Jeff Skilling on CNN this weekend",
+    "date": "Thu, 17 May 2001 16:01:00 -0700",
+    "normalized_date": "2001-05-17T16:01:00-07:00",
+    "message_id": "<26988341.1075855752307.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 893,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.342819,
+    "ml_score": 34.2819
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 20.5691,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0050_forensic.json",
+    "threat_intelligence": "email_0050_threat_intel.json",
+    "risk_assessment": "email_0050_risk.json",
+    "ml_hybrid": "email_0050_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

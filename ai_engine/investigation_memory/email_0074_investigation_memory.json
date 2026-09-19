@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.638968+00:00",
+  "email_id": "email_0074",
+  "evidence": {
+    "file_name": "email_0074.eml",
+    "sha256": "e835268121ed86a89044e1a9089a229e0320c177c6aa2a698cf5cc2b966d94ca",
+    "source_forensic_file": "email_0074_forensic.json"
+  },
+  "email": {
+    "from": "frank.hayden@enron.com",
+    "to": "kam.keiser@enron.com",
+    "cc": "wayne.vinson@enron.com, wei.hu@enron.com",
+    "bcc": "wayne.vinson@enron.com, wei.hu@enron.com",
+    "subject": "RE: Risk type cd on gas position from ENPower",
+    "date": "Mon, 23 Jul 2001 14:07:54 -0700",
+    "normalized_date": "2001-07-23T14:07:54-07:00",
+    "message_id": "<14683145.1075840200399.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 1363,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.278497,
+    "ml_score": 27.8497
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 16.7098,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0074_forensic.json",
+    "threat_intelligence": "email_0074_threat_intel.json",
+    "risk_assessment": "email_0074_risk.json",
+    "ml_hybrid": "email_0074_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

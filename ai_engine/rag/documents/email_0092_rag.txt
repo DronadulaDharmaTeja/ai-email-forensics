@@ -1,0 +1,209 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0092
+File Name: email_0092.eml
+SHA-256: 2a9c8279cdd1d64e6b079b2de8dd16c19b9638518e3778a4c414bafaf792b3dd
+
+EMAIL METADATA
+--------------
+From: dpresto@clearskybroadband.com
+To: kevin.m.presto@enron.com
+Cc: 
+Bcc: 
+Subject: RE: reminder
+Date: Thu, 22 Mar 2001 03:04:00 -0800
+Normalized Date: 2001-03-22T03:04:00-08:00
+Message-ID: <11061498.1075849735498.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+ Kev,
+
+Jacob Gurgevich
+
+DP
+
+-----Original Message-----
+From: Kevin.M.Presto@enron.com
+To: dpresto@clearskybroadband.com
+Sent: 3/22/01 9:14 AM
+Subject: Re: reminder
+
+I need the name of Lisa's son to officially set up the Dr. appt. in Dr.
+Ott's office.
+---------------------- Forwarded by Kevin M Presto/HOU/ECT on 03/22/2001
+11:13 AM ---------------------------
+
+
+ (Embedded     Enron North America Corp.
+ image moved
+ to file:      From:  Kevin M Presto
+ pic01752.pcx) 03/21/2001 07:14 AM
+
+
+
+
+
+
+To:   Darin Presto <dpresto@clearskybroadband.com> @ ENRON
+cc:
+Subject:  Re: reminder  (Document link: Kevin M Presto)
+
+Don't worry about a rental.   I can pick you up at the airport.   I am
+trying to confirm an appt. today.   I'll let you know.
+
+ <<pic01752.pcx>> 
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 760
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0092.eml",
+  "email_sha256": "2a9c8279cdd1d64e6b079b2de8dd16c19b9638518e3778a4c414bafaf792b3dd",
+  "subject": "RE: reminder",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.324327
+ML Score: 32.4327
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 19.4596
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "RE: reminder",
+  "from": "dpresto@clearskybroadband.com",
+  "to": "kevin.m.presto@enron.com",
+  "body_length": 760,
+  "total_text_length": 856
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0092_ml_hybrid.json
+
+Forensic File:
+email_0092_forensic.json
+
+Risk File:
+email_0092_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

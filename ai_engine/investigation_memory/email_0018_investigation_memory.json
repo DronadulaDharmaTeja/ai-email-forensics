@@ -1,0 +1,99 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.920553+00:00",
+  "email_id": "email_0018",
+  "evidence": {
+    "file_name": "email_0018.eml",
+    "sha256": "690a7a0c11ba1268f6b1adb8d49efa07987be480206f6275a82805b816d5e349",
+    "source_forensic_file": "email_0018_forensic.json"
+  },
+  "email": {
+    "from": "webmaster@cera.com",
+    "to": "",
+    "cc": "",
+    "bcc": "",
+    "subject": "California on the Brink -- CERA Alert",
+    "date": "Wed, 13 Dec 2000 12:18:00 -0800",
+    "normalized_date": "2000-12-13T12:18:00-08:00",
+    "message_id": "<23917067.1075858071817.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 9582,
+    "url_count": 1,
+    "url_domains": [
+      "www.cera.com"
+    ],
+    "url_items": [
+      "http://www.cera.com/tos.html"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 5,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://www.cera.com/tos.html",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.cera.com",
+          "scheme": "http",
+          "path": "/tos.html",
+          "query_present": false,
+          "domain_entropy": 2.8554
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.216646,
+    "ml_score": 21.6646
+  },
+  "rule_based_risk": {
+    "score": 5,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 14.9988,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0018_forensic.json",
+    "threat_intelligence": "email_0018_threat_intel.json",
+    "risk_assessment": "email_0018_risk.json",
+    "ml_hybrid": "email_0018_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

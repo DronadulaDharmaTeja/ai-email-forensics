@@ -1,0 +1,99 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.927244+00:00",
+  "email_id": "email_0088",
+  "evidence": {
+    "file_name": "email_0088.eml",
+    "sha256": "d0031e58c8d9ba5101a8065008106c9fcded9dec07351e7652495bac51ad5825",
+    "source_forensic_file": "email_0088_forensic.json"
+  },
+  "email": {
+    "from": "chairman.ken@enron.com",
+    "to": "dl-ga-all_enron_worldwide6@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "IMPORTANT VIDEO ANNOUNCEMENT",
+    "date": "Fri, 09 Nov 2001 15:18:22 -0800",
+    "normalized_date": "2001-11-09T15:18:22-08:00",
+    "message_id": "<27222543.1075861921112.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 156,
+    "url_count": 1,
+    "url_domains": [
+      "home.enron.com"
+    ],
+    "url_items": [
+      "http://home.enron.com/message/"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 5,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://home.enron.com/message/",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "home.enron.com",
+          "scheme": "http",
+          "path": "/message/",
+          "query_present": false,
+          "domain_entropy": 2.8963
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.71073,
+    "ml_score": 71.073
+  },
+  "rule_based_risk": {
+    "score": 5,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 44.6438,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0088_forensic.json",
+    "threat_intelligence": "email_0088_threat_intel.json",
+    "risk_assessment": "email_0088_risk.json",
+    "ml_hybrid": "email_0088_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

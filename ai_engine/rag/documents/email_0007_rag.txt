@@ -1,0 +1,207 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0007
+File Name: email_0007.eml
+SHA-256: d39faa2aa125e250bedd68d64bd398c7cdc83571c9f38f38da79068d4883087c
+
+EMAIL METADATA
+--------------
+From: office.chairman@enron.com
+To: all.worldwide@enron.com
+Cc: 
+Bcc: 
+Subject: Enron,s Entry Into Global Metals Market
+Date: Sun, 21 May 2000 18:55:00 -0700
+Normalized Date: 2000-05-21T18:55:00-07:00
+Message-ID: <3558415.1075863603606.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+This morning, we announced an offer to acquire London-based MG plc, one of 
+the world,s leading metals marketers, for $446 million.  We have been 
+monitoring the global metals market for several years, and we believe that 
+now is the right time to enter this $120 billion market.  We are confident 
+that our successful business model, which we have proven in the natural gas 
+and electricity markets, gives us a tremendous advantage in a market that is 
+undergoing fundamental change.
+
+Our offer to acquire MG plc has been unanimously recommended by MG plc,s 
+board of directors, and we expect to close the transaction by early third 
+quarter of this year, following shareholder and customary regulatory 
+approvals.
+
+MG plc is a leading independent company in global non-ferrous metals trading 
+and marketing and the only such company that is publicly traded.  
+Headquartered in London with major offices in New York and Frankfurt, MG plc 
+has 330 employees in 14 countries.  It is the world,s leading copper 
+merchant, one of the top three merchants of copper concentrates and nickel, 
+and a leading European merchant of recycled metal.  Other products that MG 
+plc markets include aluminum, lead, tin, zinc, brass and stainless steel.
+
+This transaction provides Enron with access to new customers and enables 
+cross-marketing opportunities.  We plan to sell Enron energy products to MG 
+plc customers and offer bundled products combining metals and power 
+outsourcing.  Enron will help producers and consumers manage the risks 
+inherent in volatile raw materials and energy markets, and we will improve 
+commodity prices for both buyers and sellers.
+
+MG plc,s existing market-making capabilities and market knowledge provide an 
+immediate platform upon which to overlay Enron,s proven ability to offer 
+innovative e-commerce-enabled services to commodity-based industries.  Our 
+new metals business will be integrated into our wholesale business by Enron 
+Europe CEO John Sherriff, who will work closely with Enron Net Works CEO Greg 
+Whalley.
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2083
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0007.eml",
+  "email_sha256": "d39faa2aa125e250bedd68d64bd398c7cdc83571c9f38f38da79068d4883087c",
+  "subject": "Enron\u0001,s Entry Into Global Metals Market",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.78796
+ML Score: 78.796
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 47.2776
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Enron\u0001,s Entry Into Global Metals Market",
+  "from": "office.chairman@enron.com",
+  "to": "all.worldwide@enron.com",
+  "body_length": 2083,
+  "total_text_length": 2202
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0007_ml_hybrid.json
+
+Forensic File:
+email_0007_forensic.json
+
+Risk File:
+email_0007_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

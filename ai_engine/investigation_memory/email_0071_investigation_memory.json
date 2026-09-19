@@ -1,0 +1,115 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.591792+00:00",
+  "email_id": "email_0071",
+  "evidence": {
+    "file_name": "email_0071.eml",
+    "sha256": "2932b430429b287e94d0a019e7916a2f4fc358cbf90c24b0bc2aa524c94a1168",
+    "source_forensic_file": "email_0071_forensic.json"
+  },
+  "email": {
+    "from": "customer-service@fatbrain.com",
+    "to": "kam.keiser@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Your Fatbrain Order #1100362991",
+    "date": "Mon, 20 Aug 2001 14:06:35 -0700",
+    "normalized_date": "2001-08-20T14:06:35-07:00",
+    "message_id": "<23450302.1075840200207.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 1925,
+    "url_count": 2,
+    "url_domains": [
+      "www1.fatbrain.com",
+      "www.fatbrain.com"
+    ],
+    "url_items": [
+      "http://www1.fatbrain.com/asp/actmgmt/secure.asp",
+      "http://www.fatbrain.com"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://www1.fatbrain.com/asp/actmgmt/secure.asp",
+          "risk_score": 10,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS",
+            "Suspicious keywords: secure"
+          ],
+          "domain": "www1.fatbrain.com",
+          "scheme": "http",
+          "path": "/asp/actmgmt/secure.asp",
+          "query_present": false,
+          "domain_entropy": 3.5725
+        },
+        {
+          "url": "http://www.fatbrain.com",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.fatbrain.com",
+          "scheme": "http",
+          "path": "",
+          "query_present": false,
+          "domain_entropy": 3.4528
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.841613,
+    "ml_score": 84.1613
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 50.4968,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0071_forensic.json",
+    "threat_intelligence": "email_0071_threat_intel.json",
+    "risk_assessment": "email_0071_risk.json",
+    "ml_hybrid": "email_0071_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

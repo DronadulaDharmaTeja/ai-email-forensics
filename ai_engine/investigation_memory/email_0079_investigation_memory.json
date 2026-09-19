@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.718018+00:00",
+  "email_id": "email_0079",
+  "evidence": {
+    "file_name": "email_0079.eml",
+    "sha256": "0326593f16e7d69ccdf1e28d2bcf35c178cc60884f91487bb1e7cf3384df76f7",
+    "source_forensic_file": "email_0079_forensic.json"
+  },
+  "email": {
+    "from": "skaczenski@velaw.com",
+    "to": "kenneth.lay@enron.com, michael.goldberg@bakerbotts.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "SENT ON BEHALF OF MIKE TELLE",
+    "date": "Mon, 25 Sep 2000 09:59:00 -0700",
+    "normalized_date": "2000-09-25T09:59:00-07:00",
+    "message_id": "<1655982.1075840210808.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 734,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.719626,
+    "ml_score": 71.9626
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 43.1776,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0079_forensic.json",
+    "threat_intelligence": "email_0079_threat_intel.json",
+    "risk_assessment": "email_0079_risk.json",
+    "ml_hybrid": "email_0079_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

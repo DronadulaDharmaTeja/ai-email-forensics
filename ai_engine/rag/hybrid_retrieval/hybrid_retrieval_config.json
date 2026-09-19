@@ -1,0 +1,19 @@
+{
+  "system": "Hybrid RAG Retrieval",
+  "version": "1.0",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "semantic_top_k": 20,
+  "final_top_k": 5,
+  "scoring_weights": {
+    "semantic_similarity": 0.5,
+    "ml_phishing_probability": 0.2,
+    "hybrid_risk_score": 0.2,
+    "url_presence": 0.1
+  },
+  "source_files": {
+    "chunks": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/chunks/rag_chunks.json",
+    "embeddings": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/embeddings/rag_embeddings.npy",
+    "metadata": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/embeddings/rag_embedding_metadata.json",
+    "investigation_memory": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/investigation_memory/investigation_memory_master.json"
+  }
+}

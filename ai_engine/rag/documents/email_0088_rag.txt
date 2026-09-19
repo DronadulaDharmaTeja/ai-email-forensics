@@ -1,0 +1,195 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0088
+File Name: email_0088.eml
+SHA-256: d0031e58c8d9ba5101a8065008106c9fcded9dec07351e7652495bac51ad5825
+
+EMAIL METADATA
+--------------
+From: chairman.ken@enron.com
+To: dl-ga-all_enron_worldwide6@enron.com
+Cc: 
+Bcc: 
+Subject: IMPORTANT VIDEO ANNOUNCEMENT
+Date: Fri, 09 Nov 2001 15:18:22 -0800
+Normalized Date: 2001-11-09T15:18:22-08:00
+Message-ID: <27222543.1075861921112.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+I have a very important video announcement about the future of our company.  Please go to <http://home.enron.com/message/> to access the video.  Thank you.
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 1
+
+URL Domains:
+[
+  "home.enron.com"
+]
+
+URL Items:
+[
+  "http://home.enron.com/message/"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 156
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0088.eml",
+  "email_sha256": "d0031e58c8d9ba5101a8065008106c9fcded9dec07351e7652495bac51ad5825",
+  "subject": "IMPORTANT VIDEO ANNOUNCEMENT",
+  "url_count": 1,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 1,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://home.enron.com/message/",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "home.enron.com",
+      "scheme": "http",
+      "path": "/message/",
+      "query_present": false,
+      "domain_entropy": 2.8963
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 5
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 5,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[
+  "Suspicious subject terms: important"
+]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.71073
+ML Score: 71.073
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 5.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 44.6438
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "IMPORTANT VIDEO ANNOUNCEMENT",
+  "from": "chairman.ken@enron.com",
+  "to": "dl-ga-all_enron_worldwide6@enron.com",
+  "body_length": 156,
+  "total_text_length": 273
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0088_ml_hybrid.json
+
+Forensic File:
+email_0088_forensic.json
+
+Risk File:
+email_0088_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

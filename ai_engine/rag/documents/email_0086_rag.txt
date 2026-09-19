@@ -1,0 +1,188 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0086
+File Name: email_0086.eml
+SHA-256: f8f00ab77218ae9661425ebe7c9df8c28a0c1426374372411fcdcf1a504923b3
+
+EMAIL METADATA
+--------------
+From: marie.heard@enron.com
+To: shemeika.landry@enron.com, shelli.smith@enron.com
+Cc: donna.lowry@enron.com, sara.shackleton@enron.com
+Bcc: donna.lowry@enron.com, sara.shackleton@enron.com
+Subject: Brokerage Agreement Memo
+Date: Tue, 29 May 2001 06:54:00 -0700
+Normalized Date: 2001-05-29T06:54:00-07:00
+Message-ID: <6820706.1075853545635.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Pursuant to Sara Shackleton's request, I am attaching a memo that I prepared 
+in April, 2000 regarding procedures for opening brokerage accounts.
+
+Please do not hesitate to contact either Sara at x35620 or me with any 
+questions.
+
+Marie Heard
+Senior Legal Specialist
+Enron North America Corp.
+Phone:  (713) 853-3907
+Fax:  (713) 646-3490
+Marie.Heard@Enron.com
+
+
+    
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 365
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0086.eml",
+  "email_sha256": "f8f00ab77218ae9661425ebe7c9df8c28a0c1426374372411fcdcf1a504923b3",
+  "subject": "Brokerage Agreement Memo",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.729501
+ML Score: 72.9501
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 43.7701
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Brokerage Agreement Memo",
+  "from": "marie.heard@enron.com",
+  "to": "shemeika.landry@enron.com, shelli.smith@enron.com",
+  "body_length": 365,
+  "total_text_length": 490
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0086_ml_hybrid.json
+
+Forensic File:
+email_0086_forensic.json
+
+Risk File:
+email_0086_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

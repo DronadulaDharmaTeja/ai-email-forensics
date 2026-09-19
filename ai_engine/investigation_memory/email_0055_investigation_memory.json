@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.323792+00:00",
+  "email_id": "email_0055",
+  "evidence": {
+    "file_name": "email_0055.eml",
+    "sha256": "758eacf9fec3ca06a4872a9a9a2b8b339d8503b49e553b2d1c6d06b7f3c5051f",
+    "source_forensic_file": "email_0055_forensic.json"
+  },
+  "email": {
+    "from": "james.steffes@enron.com",
+    "to": "jeff.dasovich@enron.com",
+    "cc": "donna.fulton@enron.com, jeff.dasovich@enron.com, joe.hartsoe@enron.com, linda.robertson@enron.com, mary.hain@enron.com, paul.kaufman@enron.com, richard.shapiro@enron.com, sarah.novosel@enron.com, susan.mara@enron.com",
+    "bcc": "donna.fulton@enron.com, jeff.dasovich@enron.com, joe.hartsoe@enron.com, linda.robertson@enron.com, mary.hain@enron.com, paul.kaufman@enron.com, richard.shapiro@enron.com, sarah.novosel@enron.com, susan.mara@enron.com",
+    "subject": "Re: Ridgewood's Petition To Be Released From QF Contracts",
+    "date": "Wed, 21 Mar 2001 10:48:00 -0800",
+    "normalized_date": "2001-03-21T10:48:00-08:00",
+    "message_id": "<12544454.1075860358335.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 3428,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.113996,
+    "ml_score": 11.3996
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 6.8397,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0055_forensic.json",
+    "threat_intelligence": "email_0055_threat_intel.json",
+    "risk_assessment": "email_0055_risk.json",
+    "ml_hybrid": "email_0055_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

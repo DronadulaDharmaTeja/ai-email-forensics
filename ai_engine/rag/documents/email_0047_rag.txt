@@ -1,0 +1,226 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0047
+File Name: email_0047.eml
+SHA-256: 3eb4cef81bf8e76195cccff9bc74220f523506a96f4e7aa6e40da759c98068a0
+
+EMAIL METADATA
+--------------
+From: michelle.cash@enron.com
+To: rhonna.palmer@enron.com
+Cc: 
+Bcc: 
+Subject: Re: HR Floor Meeting - Friday, 6/30/00
+Date: Tue, 27 Jun 2000 11:39:00 -0700
+Normalized Date: 2000-06-27T11:39:00-07:00
+Message-ID: <29688978.1075860485228.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Rhonna, you know there's an espeak with Cindy Olson on Friday at 10:00, 
+right?  Perhaps that should be advertised in the floor meeting . . . .  
+Michelle
+
+
+------------------------------------------------------------------------------
+---------------------------
+
+Michelle Cash
+Enron North America Corp.
+1400 Smith Street, EB 3823
+Houston, Texas  77002
+(713) 853-6401
+michelle.cash@enron.com
+
+This message may contain confidential information that is protected by the 
+attorney-client and/or work product privileges.
+
+
+
+	Rhonna Palmer
+	06/27/2000 06:20 PM
+		 
+		 To: Irma Alvarez/HOU/ECT@ECT, Derek Anderson/HOU/ECT@ECT, Teri 
+Ashley/HOU/ECT@ECT, Michelle Cash/HOU/ECT@ECT, Carmen Chavira/HOU/ECT@ECT, 
+Dawn Doucet/CAL/ECT@ECT, Rocio Gonzalez/HOU/ECT@ECT, Erin 
+Kanouff/HOU/ECT@ECT, Yvonne Laing/HOU/ECT@ECT, Fran L Mayes/HOU/ECT@ECT, Brad 
+McSherry/HOU/ECT@ECT, Kim Melodick/HOU/ECT@ECT, Jennifer 
+Milligan/HOU/ECT@ECT, David Oxley/HOU/ECT@ECT, Rhonna Palmer/HOU/ECT@ECT, 
+Cynthia Ramirez/HOU/ECT@ECT, Jeanette Salinas/HOU/ECT@ECT, Cindy 
+Skinner/HOU/ECT@ECT, Chris Tull/HOU/ECT@ECT, Norma Villarreal/HOU/ECT@ECT, 
+Sheila Walton/HOU/ECT@ECT, Christopher Williams/HOU/ECT@ECT, Jorge 
+Olivares/Corp/Enron@ENRON, Kathryn McLean/HOU/ECT@ECT, Tim 
+O'Rourke/LON/ECT@ECT, Julie Clyatt/Corp/Enron@ENRON, Philip 
+Conn/Corp/Enron@ENRON, Ted C Bland/HOU/ECT@ECT, Donna 
+Salazar/Corp/Enron@ENRON, Cecilia Hankamer/Corp/Enron@Enron, Elspeth 
+Inglis/Corp/Enron@Enron, Monica Cale/HOU/ECT@ECT, Dave Hill/Corp/Enron@Enron, 
+Ramona Perkins/Corp/Enron@Enron, Janet De La Paz/HR/Corp/Enron@ENRON, Teresa 
+Bien/Corp/Enron@Enron, Veronica Parra/HOU/ECT@ECT, Samantha 
+Amosson/Corp/Enron@Enron, Toni Graham/Corp/Enron@Enron, Hector 
+McLoughlin/Corp/Enron@Enron, Shanna Funkhouser/Corp/Enron@ENRON, Sheila 
+Knudsen/Corp/Enron@ENRON, Kristi Anderson/HOU/ECT@ECT, Amy 
+FitzPatrick/PDX/ECT@ECT, Amy Gambill/Corp/Enron@ENRON, Robin 
+Tumey/HOU/ECT@ECT, Tana Cashion/NA/Enron@ENRON, Gracie S Presas/HOU/ECT@ECT, 
+Todd Burke/NA/Enron@ENRON, Simone Scott Walker/Corp/Enron@ENRON, Brandi 
+Granderson/NA/Enron@Enron
+		 cc: 
+		 Subject: HR Floor Meeting - Friday, 6/30/00
+
+There will be a HR floor meeting on Friday morning, June 30 beginning at 
+8:30.  Please come to EB3676A.  Your attendance is appreciated.  Breakfast 
+will be provided.
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 2309
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0047.eml",
+  "email_sha256": "3eb4cef81bf8e76195cccff9bc74220f523506a96f4e7aa6e40da759c98068a0",
+  "subject": "Re: HR Floor Meeting - Friday, 6/30/00",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.475144
+ML Score: 47.5144
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 28.5086
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Re: HR Floor Meeting - Friday, 6/30/00",
+  "from": "michelle.cash@enron.com",
+  "to": "rhonna.palmer@enron.com",
+  "body_length": 2309,
+  "total_text_length": 2424
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0047_ml_hybrid.json
+
+Forensic File:
+email_0047_forensic.json
+
+Risk File:
+email_0047_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

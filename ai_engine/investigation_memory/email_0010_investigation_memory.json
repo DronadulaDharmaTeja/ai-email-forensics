@@ -1,0 +1,129 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.771675+00:00",
+  "email_id": "email_0010",
+  "evidence": {
+    "file_name": "email_0010.eml",
+    "sha256": "6092b18e89b9ed7a64b8f7ae670fcb56c82a7983d6037ac9c066a47ae2bac647",
+    "source_forensic_file": "email_0010_forensic.json"
+  },
+  "email": {
+    "from": "kbergman@ercot.com",
+    "to": "rms@ercot.com, rmsvote@ercot.com, wms@ercot.com, wmsvote@ercot.com, set@ercot.com, testplan@ercot.com, tdtwg@ercot.com",
+    "cc": "clientreps@ercot.com, waggoner@enron.com, twaggoner@ercot.com",
+    "bcc": "clientreps@ercot.com, waggoner@enron.com, twaggoner@ercot.com",
+    "subject": "REMINDER - DEADLINE For Letter of Intent - Retail Market Qualification Testing Pre-Orientation Meeting Notice - Feb 7, 2002",
+    "date": "Tue, 05 Feb 2002 09:45:17 -0800",
+    "normalized_date": "2002-02-05T09:45:17-08:00",
+    "message_id": "<14323831.1075861006266.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 3433,
+    "url_count": 3,
+    "url_domains": [
+      "www.hilton.com",
+      "stage.ercot.com",
+      "www.ercot.com"
+    ],
+    "url_items": [
+      "http://www.hilton.com/en/hi/hotels/index.jhtml;jsessionid=JCAZMEFNNDVEHJ",
+      "http://stage.ercot.com/FlightCalendar.asp",
+      "http://www.ercot.com/Participants/ITPTA.htm"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://www.hilton.com/en/hi/hotels/index.jhtml;jsessionid=JCAZMEFNNDVEHJ",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.hilton.com",
+          "scheme": "http",
+          "path": "/en/hi/hotels/index.jhtml",
+          "query_present": false,
+          "domain_entropy": 3.182
+        },
+        {
+          "url": "http://stage.ercot.com/FlightCalendar.asp",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "stage.ercot.com",
+          "scheme": "http",
+          "path": "/FlightCalendar.asp",
+          "query_present": false,
+          "domain_entropy": 3.2402
+        },
+        {
+          "url": "http://www.ercot.com/Participants/ITPTA.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.ercot.com",
+          "scheme": "http",
+          "path": "/Participants/ITPTA.htm",
+          "query_present": false,
+          "domain_entropy": 2.8731
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.259313,
+    "ml_score": 25.9313
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 15.5588,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0010_forensic.json",
+    "threat_intelligence": "email_0010_threat_intel.json",
+    "risk_assessment": "email_0010_risk.json",
+    "ml_hybrid": "email_0010_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

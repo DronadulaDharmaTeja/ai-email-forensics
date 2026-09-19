@@ -1,0 +1,236 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0009
+File Name: email_0009.eml
+SHA-256: 68f004f2b7a039eae8fdba2125d3dbf3c43d4e82b10d62f3a05e52b639b52775
+
+EMAIL METADATA
+--------------
+From: enron.announcements@enron.com
+To: all.worldwide@enron.com
+Cc: 
+Bcc: 
+Subject: 2000 Chairman's Award
+Date: Fri, 11 Aug 2000 18:20:00 -0700
+Normalized Date: 2000-08-11T18:20:00-07:00
+Message-ID: <32156305.1075863603445.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Everyday heroes are all around us at Enron, living our core values of 
+Respect, Integrity, Communication and Excellence in everything they do.  Some 
+of these heroes make a big splash while others just quietly make a difference 
+in the workplace around them.  Either way, these special individuals deserve 
+to be recognized with a nomination for the 2000 Chairman's Award.
+
+As there is more than just one employee living the values at Enron, this 
+award program will honor 10 employees as members of the Chairman's 
+Roundtable.  From that group, the one individual most embodying our values 
+will be presented with the Chairman's Award at the Management Conference in 
+San Antonio in November.
+
+The beauty of this award program is that it is completely employee-driven 
+from beginning to end.  From your nominations, an international employee 
+committee will select the Chairman's Roundtable and eventually, the 
+Chairman's Award winner.  Your role of nominating our everyday heroes is 
+extremely vital to the program's success.  If someone has made a positive 
+impression on you, please take the time to complete a nomination form and 
+send it to Charla Reese by October 1, 2000.  You may click here for a 
+printable form:  http://home.enron.com/announce/chairman_nom/form3.doc
+
+For more information on the Chairman's Award, including details on last 
+year's Roundtable members and previous winners, Repit Suliyono and Bobbye 
+Brown, please click here: http://home.enron.com/announce/chairman_nom
+
+Again, this is a very special award at Enron and we sincerely thank you for 
+your participation.
+
+Ken, Jeff and Joe
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 2
+
+URL Domains:
+[
+  "home.enron.com"
+]
+
+URL Items:
+[
+  "http://home.enron.com/announce/chairman_nom/form3.doc",
+  "http://home.enron.com/announce/chairman_nom"
+]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1614
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": true,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0009.eml",
+  "email_sha256": "68f004f2b7a039eae8fdba2125d3dbf3c43d4e82b10d62f3a05e52b639b52775",
+  "subject": "2000 Chairman's Award",
+  "url_count": 2,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 2,
+  "maximum_url_risk": 5,
+  "urls": [
+    {
+      "url": "http://home.enron.com/announce/chairman_nom/form3.doc",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "home.enron.com",
+      "scheme": "http",
+      "path": "/announce/chairman_nom/form3.doc",
+      "query_present": false,
+      "domain_entropy": 2.8963
+    },
+    {
+      "url": "http://home.enron.com/announce/chairman_nom",
+      "risk_score": 5,
+      "risk_level": "LOW",
+      "indicators": [
+        "HTTP instead of HTTPS"
+      ],
+      "domain": "home.enron.com",
+      "scheme": "http",
+      "path": "/announce/chairman_nom",
+      "query_present": false,
+      "domain_entropy": 2.8963
+    }
+  ]
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 3
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 3,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[
+  "Suspicious body indicators: click here"
+]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.694123
+ML Score: 69.4123
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 3.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 42.8474
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "2000 Chairman's Award",
+  "from": "enron.announcements@enron.com",
+  "to": "all.worldwide@enron.com",
+  "body_length": 1614,
+  "total_text_length": 1718
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0009_ml_hybrid.json
+
+Forensic File:
+email_0009_forensic.json
+
+Risk File:
+email_0009_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

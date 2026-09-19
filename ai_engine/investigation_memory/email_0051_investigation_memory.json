@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.259248+00:00",
+  "email_id": "email_0051",
+  "evidence": {
+    "file_name": "email_0051.eml",
+    "sha256": "da4b806fc2d7eaacd5f73069834d96d46a77e321e910dd2ddd1a3f35915c14f4",
+    "source_forensic_file": "email_0051_forensic.json"
+  },
+  "email": {
+    "from": "enron.announcements@enron.com",
+    "to": "all.houston@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Houston Ballet's Miller Theater Performance of Coppelia",
+    "date": "Thu, 10 May 2001 17:53:00 -0700",
+    "normalized_date": "2001-05-10T17:53:00-07:00",
+    "message_id": "<8958499.1075855751237.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 3628,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.383397,
+    "ml_score": 38.3397
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 23.0038,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0051_forensic.json",
+    "threat_intelligence": "email_0051_threat_intel.json",
+    "risk_assessment": "email_0051_risk.json",
+    "ml_hybrid": "email_0051_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

@@ -1,0 +1,183 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0035
+File Name: email_0035.eml
+SHA-256: bf3160e96df0ed73d2a09e59f2c6b1eebdc69c2c56e0e9bf89e4634ebfa94129
+
+EMAIL METADATA
+--------------
+From: virginia.thompson@enron.com
+To: diana.scholtes@enron.com
+Cc: mike.purcell@enron.com
+Bcc: mike.purcell@enron.com
+Subject: PGE August 2001
+Date: Fri, 21 Sep 2001 13:23:06 -0700
+Normalized Date: 2001-09-21T13:23:06-07:00
+Message-ID: <27701615.1075840030038.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Hi Diana-
+
+   Here's that spreadsheet in E-mail form.  Hope this helps.
+  Click on the 3rd tab (it should be defaulted there) and it will give you the same detail.
+
+  Let me know if you have any questions.
+
+  Virginia
+
+      
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 225
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0035.eml",
+  "email_sha256": "bf3160e96df0ed73d2a09e59f2c6b1eebdc69c2c56e0e9bf89e4634ebfa94129",
+  "subject": "PGE August 2001",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.596478
+ML Score: 59.6478
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 35.7887
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "PGE August 2001",
+  "from": "virginia.thompson@enron.com",
+  "to": "diana.scholtes@enron.com",
+  "body_length": 225,
+  "total_text_length": 322
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0035_ml_hybrid.json
+
+Forensic File:
+email_0035_forensic.json
+
+Risk File:
+email_0035_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

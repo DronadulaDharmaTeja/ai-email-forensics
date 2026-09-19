@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.675399+00:00",
+  "email_id": "email_0004",
+  "evidence": {
+    "file_name": "email_0004.eml",
+    "sha256": "29127d814b799de5397bf73a7186481d2b9692529baa5df7e29f4bdad0710541",
+    "source_forensic_file": "email_0004_forensic.json"
+  },
+  "email": {
+    "from": "sharon.brown@enron.com",
+    "to": "larry.steward@enron.com, toby.kuehl@enron.com, lynn.blair@enron.com, mike.bryant@enron.com, shelley.corman@enron.com, rick.dietz@enron.com, bradley.holmes@enron.com, steven.january@enron.com, sheila.nacey@enron.com, donna.scott@enron.com",
+    "cc": "ricki.winters@enron.com, alma.carrillo@enron.com, ava.garcia@enron.com",
+    "bcc": "ricki.winters@enron.com, alma.carrillo@enron.com, ava.garcia@enron.com",
+    "subject": "Draft - Winter Ops Agenda",
+    "date": "Thu, 26 Jul 2001 08:16:14 -0700",
+    "normalized_date": "2001-07-26T08:16:14-07:00",
+    "message_id": "<1237601.1075853024323.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 299,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.498607,
+    "ml_score": 49.8607
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 29.9164,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0004_forensic.json",
+    "threat_intelligence": "email_0004_threat_intel.json",
+    "risk_assessment": "email_0004_risk.json",
+    "ml_hybrid": "email_0004_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

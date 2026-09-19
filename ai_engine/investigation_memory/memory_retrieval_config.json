@@ -1,0 +1,18 @@
+{
+  "retrieval_system": "Structured Investigation Memory Retrieval",
+  "version": "1.0",
+  "memory_source": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/investigation_memory/investigation_memory_master.json",
+  "record_count": 100,
+  "supported_filters": [
+    "email_id",
+    "ml_label",
+    "hybrid_risk",
+    "forensic_risk",
+    "min_hybrid_score",
+    "has_urls",
+    "has_attachments",
+    "sender_contains",
+    "subject_contains"
+  ],
+  "limit_default": 10
+}

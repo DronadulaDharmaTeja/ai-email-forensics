@@ -1,0 +1,5 @@
+python-dotenv
+openai
+numpy
+sentence-transformers
+mcp<2

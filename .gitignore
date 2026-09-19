@@ -1,0 +1,11 @@
+.env
+.venv/
+desktop.ini
+datasets/
+evidence/
+models/
+reports/
+threat_intel/
+database/backups/
+__pycache__/
+ai_engine/**/backups/

@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.574487+00:00",
+  "email_id": "email_0070",
+  "evidence": {
+    "file_name": "email_0070.eml",
+    "sha256": "2f6fefe03a4be988af0860ab331d3f5be0fba3e364e3762b6cf4f1b6033b4820",
+    "source_forensic_file": "email_0070_forensic.json"
+  },
+  "email": {
+    "from": "bryce.baxter@enron.com",
+    "to": "kam.keiser@enron.com",
+    "cc": "isabel.resendez@enron.com",
+    "bcc": "isabel.resendez@enron.com",
+    "subject": "Bridgeline $50,000/month Fee",
+    "date": "Wed, 18 Apr 2001 15:01:00 -0700",
+    "normalized_date": "2001-04-18T15:01:00-07:00",
+    "message_id": "<3288701.1075840200658.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 281,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.772138,
+    "ml_score": 77.2138
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 46.3283,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0070_forensic.json",
+    "threat_intelligence": "email_0070_threat_intel.json",
+    "risk_assessment": "email_0070_risk.json",
+    "ml_hybrid": "email_0070_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

@@ -1,0 +1,225 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0084
+File Name: email_0084.eml
+SHA-256: 7eb28f018060294673fd42f1d970f01289370448d713b18c0a74c8ecddb62138
+
+EMAIL METADATA
+--------------
+From: scott.neal@enron.com
+To: cag9783@labs.tamu.edu
+Cc: 
+Bcc: 
+Subject: Re: Internship
+Date: Wed, 15 Nov 2000 09:13:00 -0800
+Normalized Date: 2000-11-15T09:13:00-08:00
+Message-ID: <10843832.1075858391957.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Jennifer Milligan will be contacting regarding the intern program.  She will 
+probably want a resume from you.
+Also,  she will want to know what area(s) (eg. accounting, marketing, 
+research, etc.)  you have interest in working. 
+
+Please keep me up to date once she contacts you.
+
+Sincerely,
+
+Scott
+---------------------- Forwarded by Scott Neal/HOU/ECT on 11/15/2000 05:06 PM 
+---------------------------
+
+
+Scott Neal
+11/12/2000 07:58 PM
+To: "Christopher Graeter" <cag9783@labs.tamu.edu> @ ENRON
+cc:  
+Subject: Re: Internship  
+
+Haven't forgot about you yet.  I will have the information for you this 
+week.  Thank you for your persistence and 
+patience.
+
+Sincerely,
+
+Scott
+
+
+
+"Christopher Graeter" <cag9783@labs.tamu.edu> on 10/19/2000 02:55:41 PM
+To: <scott.neal@enron.com>
+cc:  
+Subject: Internship
+
+
+Scott-
+ Hey there, this is Chris Graeter.  I wanted to check with you to see about
+getting in touch with the person in charge of internships.  I am sure he or
+she is busy, but in the mean time I was not sure if you or the person who
+would be contacting me had my email address.  It is cgraeter@tamu.edu.  I
+know that sometimes it is easier to get in touch with someone by email so I
+wanted to make sure you had this information.  Thank you again for all your
+assistance.  I hope to talk to you soon.
+
+Sincerely,
+Chris Graeter
+
+
+
+
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1335
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0084.eml",
+  "email_sha256": "7eb28f018060294673fd42f1d970f01289370448d713b18c0a74c8ecddb62138",
+  "subject": "Re: Internship",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.379825
+ML Score: 37.9825
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 22.7895
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Re: Internship",
+  "from": "scott.neal@enron.com",
+  "to": "cag9783@labs.tamu.edu",
+  "body_length": 1335,
+  "total_text_length": 1421
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0084_ml_hybrid.json
+
+Forensic File:
+email_0084_forensic.json
+
+Risk File:
+email_0084_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

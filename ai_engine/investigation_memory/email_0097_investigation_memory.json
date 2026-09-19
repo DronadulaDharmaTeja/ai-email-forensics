@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:56.076541+00:00",
+  "email_id": "email_0097",
+  "evidence": {
+    "file_name": "email_0097.eml",
+    "sha256": "bcfcdbbc73a9e00c86d0870b3d8408051f9df1ebf93cd15708f83a8c20d03362",
+    "source_forensic_file": "email_0097_forensic.json"
+  },
+  "email": {
+    "from": "ben.thomason@enron.com",
+    "to": "dutch.quigley@enron.com",
+    "cc": "paul.burkhart@enron.com, jaime.araoz@enron.com",
+    "bcc": "paul.burkhart@enron.com, jaime.araoz@enron.com",
+    "subject": "ENA Q4 Settlement",
+    "date": "Fri, 16 Nov 2001 07:55:01 -0800",
+    "normalized_date": "2001-11-16T07:55:01-08:00",
+    "message_id": "<16782774.1075841451048.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 573,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.699731,
+    "ml_score": 69.9731
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 41.9839,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0097_forensic.json",
+    "threat_intelligence": "email_0097_threat_intel.json",
+    "risk_assessment": "email_0097_risk.json",
+    "ml_hybrid": "email_0097_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

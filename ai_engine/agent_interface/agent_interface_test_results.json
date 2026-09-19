@@ -1,0 +1,36 @@
+{
+  "step": "8.1",
+  "step_name": "AI Evidence Context Interface",
+  "created_utc": "2026-09-13T23:03:46.552320+00:00",
+  "statistics": {
+    "queries": 3,
+    "emails": 9,
+    "claims": 288,
+    "observed_claims": 144,
+    "analyzed_claims": 135,
+    "retrieved_claims": 9,
+    "provenance_records": 288
+  },
+  "validation": {
+    "Master grounded evidence loaded": true,
+    "Provenance map loaded": true,
+    "Claims indexed": true,
+    "Emails indexed": true,
+    "Queries indexed": true,
+    "Email lookup works": true,
+    "Observed retrieval works": true,
+    "Analyzed retrieval works": true,
+    "RAG retrieval works": true,
+    "Claim search works": true,
+    "Claim type search works": true,
+    "Agent context works": true,
+    "Provenance available": true,
+    "Negative lookup handled": true,
+    "No missing provenance": true,
+    "Configuration saved": true
+  },
+  "all_passed": true,
+  "sample_email": "email_0009",
+  "sample_evidence_id": "EVD-email_0021-OBS-001",
+  "configuration": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/agent_interface/agent_interface_config.json"
+}

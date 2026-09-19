@@ -1,0 +1,2306 @@
+{
+  "EVD-email_0021-OBS-001": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-OBS-002": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-OBS-003": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-OBS-004": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-OBS-005": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-BODY-006": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-BODY-007": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-BODY-008": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-URL-009": {
+    "email_id": "email_0021",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-010": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-011": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-012": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-013": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-014": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-015": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-FLAG-016": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-ML-017": {
+    "email_id": "email_0021",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-ML-018": {
+    "email_id": "email_0021",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-ML-019": {
+    "email_id": "email_0021",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-ML-020": {
+    "email_id": "email_0021",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-ML-021": {
+    "email_id": "email_0021",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RISK-022": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RISK-023": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RISK-024": {
+    "email_id": "email_0021",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-HYBRID-025": {
+    "email_id": "email_0021",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-HYBRID-026": {
+    "email_id": "email_0021",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-HYBRID-027": {
+    "email_id": "email_0021",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-HYBRID-028": {
+    "email_id": "email_0021",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RULE-029": {
+    "email_id": "email_0021",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0021_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RULE-030": {
+    "email_id": "email_0021",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0021_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RULE-031": {
+    "email_id": "email_0021",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0021_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0021-RAG-032": {
+    "email_id": "email_0021",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-OBS-001": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-OBS-002": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-OBS-003": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-OBS-004": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-OBS-005": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-BODY-006": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-BODY-007": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-BODY-008": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-URL-009": {
+    "email_id": "email_0043",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-010": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-011": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-012": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-013": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-014": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-015": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-FLAG-016": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-ML-017": {
+    "email_id": "email_0043",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-ML-018": {
+    "email_id": "email_0043",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-ML-019": {
+    "email_id": "email_0043",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-ML-020": {
+    "email_id": "email_0043",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-ML-021": {
+    "email_id": "email_0043",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RISK-022": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RISK-023": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RISK-024": {
+    "email_id": "email_0043",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-HYBRID-025": {
+    "email_id": "email_0043",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-HYBRID-026": {
+    "email_id": "email_0043",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-HYBRID-027": {
+    "email_id": "email_0043",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-HYBRID-028": {
+    "email_id": "email_0043",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RULE-029": {
+    "email_id": "email_0043",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0043_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RULE-030": {
+    "email_id": "email_0043",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0043_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RULE-031": {
+    "email_id": "email_0043",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0043_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0043-RAG-032": {
+    "email_id": "email_0043",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-OBS-001": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-OBS-002": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-OBS-003": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-OBS-004": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-OBS-005": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-BODY-006": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-BODY-007": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-BODY-008": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-URL-009": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-URL-010": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-URL-011": {
+    "email_id": "email_0009",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-012": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-013": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-014": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-015": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-016": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-017": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-FLAG-018": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-ML-019": {
+    "email_id": "email_0009",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-ML-020": {
+    "email_id": "email_0009",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-ML-021": {
+    "email_id": "email_0009",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-ML-022": {
+    "email_id": "email_0009",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-ML-023": {
+    "email_id": "email_0009",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RISK-024": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RISK-025": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RISK-026": {
+    "email_id": "email_0009",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-HYBRID-027": {
+    "email_id": "email_0009",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-HYBRID-028": {
+    "email_id": "email_0009",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-HYBRID-029": {
+    "email_id": "email_0009",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-HYBRID-030": {
+    "email_id": "email_0009",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0009_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RULE-031": {
+    "email_id": "email_0009",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0009_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RULE-032": {
+    "email_id": "email_0009",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0009_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RULE-033": {
+    "email_id": "email_0009",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0009_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0009-RAG-034": {
+    "email_id": "email_0009",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0009_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-OBS-001": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-OBS-002": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-OBS-003": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-OBS-004": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-OBS-005": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-BODY-006": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-BODY-007": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-BODY-008": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-URL-009": {
+    "email_id": "email_0078",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-010": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-011": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-012": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-013": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-014": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-015": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-FLAG-016": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-ML-017": {
+    "email_id": "email_0078",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-ML-018": {
+    "email_id": "email_0078",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-ML-019": {
+    "email_id": "email_0078",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-ML-020": {
+    "email_id": "email_0078",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-ML-021": {
+    "email_id": "email_0078",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RISK-022": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RISK-023": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RISK-024": {
+    "email_id": "email_0078",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-HYBRID-025": {
+    "email_id": "email_0078",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-HYBRID-026": {
+    "email_id": "email_0078",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-HYBRID-027": {
+    "email_id": "email_0078",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-HYBRID-028": {
+    "email_id": "email_0078",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0078_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RULE-029": {
+    "email_id": "email_0078",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0078_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RULE-030": {
+    "email_id": "email_0078",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0078_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RULE-031": {
+    "email_id": "email_0078",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0078_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0078-RAG-032": {
+    "email_id": "email_0078",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0078_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-OBS-001": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-OBS-002": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-OBS-003": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-OBS-004": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-OBS-005": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-BODY-006": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-BODY-007": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-BODY-008": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-URL-009": {
+    "email_id": "email_0090",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-010": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-011": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-012": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-013": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-014": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-015": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-FLAG-016": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-ML-017": {
+    "email_id": "email_0090",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-ML-018": {
+    "email_id": "email_0090",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-ML-019": {
+    "email_id": "email_0090",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-ML-020": {
+    "email_id": "email_0090",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-ML-021": {
+    "email_id": "email_0090",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RISK-022": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RISK-023": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RISK-024": {
+    "email_id": "email_0090",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-HYBRID-025": {
+    "email_id": "email_0090",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-HYBRID-026": {
+    "email_id": "email_0090",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-HYBRID-027": {
+    "email_id": "email_0090",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-HYBRID-028": {
+    "email_id": "email_0090",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0090_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RULE-029": {
+    "email_id": "email_0090",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0090_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RULE-030": {
+    "email_id": "email_0090",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0090_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RULE-031": {
+    "email_id": "email_0090",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0090_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0090-RAG-032": {
+    "email_id": "email_0090",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0090_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-OBS-001": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-OBS-002": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-OBS-003": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-BODY-004": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-BODY-005": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-BODY-006": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-URL-007": {
+    "email_id": "email_0093",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-008": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-009": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-010": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-011": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-012": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-013": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-FLAG-014": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-ML-015": {
+    "email_id": "email_0093",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-ML-016": {
+    "email_id": "email_0093",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-ML-017": {
+    "email_id": "email_0093",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-ML-018": {
+    "email_id": "email_0093",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-ML-019": {
+    "email_id": "email_0093",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RISK-020": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RISK-021": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RISK-022": {
+    "email_id": "email_0093",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-HYBRID-023": {
+    "email_id": "email_0093",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-HYBRID-024": {
+    "email_id": "email_0093",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-HYBRID-025": {
+    "email_id": "email_0093",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-HYBRID-026": {
+    "email_id": "email_0093",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RULE-027": {
+    "email_id": "email_0093",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0093_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RULE-028": {
+    "email_id": "email_0093",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0093_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RULE-029": {
+    "email_id": "email_0093",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0093_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0093-RAG-030": {
+    "email_id": "email_0093",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-OBS-001": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-OBS-002": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-OBS-003": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-OBS-004": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-OBS-005": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-BODY-006": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-BODY-007": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-BODY-008": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-URL-009": {
+    "email_id": "email_0067",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-010": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-011": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-012": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-013": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-014": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-015": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-FLAG-016": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-ML-017": {
+    "email_id": "email_0067",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-ML-018": {
+    "email_id": "email_0067",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-ML-019": {
+    "email_id": "email_0067",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-ML-020": {
+    "email_id": "email_0067",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-ML-021": {
+    "email_id": "email_0067",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RISK-022": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RISK-023": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RISK-024": {
+    "email_id": "email_0067",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-HYBRID-025": {
+    "email_id": "email_0067",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-HYBRID-026": {
+    "email_id": "email_0067",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-HYBRID-027": {
+    "email_id": "email_0067",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-HYBRID-028": {
+    "email_id": "email_0067",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RULE-029": {
+    "email_id": "email_0067",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0067_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RULE-030": {
+    "email_id": "email_0067",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0067_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RULE-031": {
+    "email_id": "email_0067",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0067_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0067-RAG-032": {
+    "email_id": "email_0067",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-OBS-001": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-OBS-002": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-OBS-003": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-OBS-004": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-OBS-005": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-BODY-006": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-BODY-007": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-BODY-008": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-URL-009": {
+    "email_id": "email_0075",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-010": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-011": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-012": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-013": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-014": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-015": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-FLAG-016": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-ML-017": {
+    "email_id": "email_0075",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-ML-018": {
+    "email_id": "email_0075",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-ML-019": {
+    "email_id": "email_0075",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-ML-020": {
+    "email_id": "email_0075",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-ML-021": {
+    "email_id": "email_0075",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RISK-022": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RISK-023": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RISK-024": {
+    "email_id": "email_0075",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-HYBRID-025": {
+    "email_id": "email_0075",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-HYBRID-026": {
+    "email_id": "email_0075",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-HYBRID-027": {
+    "email_id": "email_0075",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-HYBRID-028": {
+    "email_id": "email_0075",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RULE-029": {
+    "email_id": "email_0075",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0075_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RULE-030": {
+    "email_id": "email_0075",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0075_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RULE-031": {
+    "email_id": "email_0075",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0075_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0075-RAG-032": {
+    "email_id": "email_0075",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-OBS-001": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-OBS-002": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-OBS-003": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-OBS-004": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-OBS-005": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_EMAIL_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "email_identity",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-BODY-006": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-BODY-007": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-BODY-008": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_BODY_METADATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "body",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-URL-009": {
+    "email_id": "email_0086",
+    "claim_type": "OBSERVED_URL_DATA",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "urls",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-010": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-011": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-012": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-013": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-014": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-015": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-FLAG-016": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_FLAG",
+    "evidence_class": "OBSERVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "forensic_flags",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-ML-017": {
+    "email_id": "email_0086",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-ML-018": {
+    "email_id": "email_0086",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-ML-019": {
+    "email_id": "email_0086",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-ML-020": {
+    "email_id": "email_0086",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-ML-021": {
+    "email_id": "email_0086",
+    "claim_type": "ML_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "ml_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RISK-022": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RISK-023": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RISK-024": {
+    "email_id": "email_0086",
+    "claim_type": "FORENSIC_RISK_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "forensic_risk_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-HYBRID-025": {
+    "email_id": "email_0086",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-HYBRID-026": {
+    "email_id": "email_0086",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-HYBRID-027": {
+    "email_id": "email_0086",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-HYBRID-028": {
+    "email_id": "email_0086",
+    "claim_type": "HYBRID_ANALYSIS",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0086_ml_hybrid.json",
+    "source_section": "hybrid_analysis",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RULE-029": {
+    "email_id": "email_0086",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0086_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RULE-030": {
+    "email_id": "email_0086",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0086_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RULE-031": {
+    "email_id": "email_0086",
+    "claim_type": "RULE_BASED_RISK",
+    "evidence_class": "ANALYZED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0086_risk.json",
+    "source_section": "risk",
+    "grounding_status": "GROUNDED"
+  },
+  "EVD-email_0086-RAG-032": {
+    "email_id": "email_0086",
+    "claim_type": "RAG_RETRIEVED_EVIDENCE",
+    "evidence_class": "RETRIEVED",
+    "source_file": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0086_forensic.json",
+    "source_section": "retrieved_rag_evidence",
+    "grounding_status": "GROUNDED"
+  }
+}

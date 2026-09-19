@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.540782+00:00",
+  "email_id": "email_0068",
+  "evidence": {
+    "file_name": "email_0068.eml",
+    "sha256": "9c288fc1e09a24b0474be5ab9b457e8574b27a40b386d6960a34595100e23013",
+    "source_forensic_file": "email_0068_forensic.json"
+  },
+  "email": {
+    "from": "frank.hayden@enron.com",
+    "to": "bjorn.hagelmann@enron.com, david.port@enron.com, vladimir.gorny@enron.com, rudi.zipter@enron.com, cassandra.schultz@enron.com, ted.murphy@enron.com, homan.amiry@enron.com, michael.pitt@enron.com, mark.thomas@enron.com, bharat.khanna@enron.com, lacrecia.davenport@enron.com, paulo.issler@enron.com, mike.maggi@enron.com, harry.arora@enron.com, tim.belden@enron.com, john.arnold@enron.com, john.griffith@enron.com, larry.may@enron.com, sunil.dalal@enron.com, naveen.andrews@enron.com, michael_schilmoeller@pgn.com",
+    "cc": "lloyd.bloom@elpaso.com",
+    "bcc": "lloyd.bloom@elpaso.com",
+    "subject": "A Two States Model For Power",
+    "date": "Wed, 18 Apr 2001 08:00:00 -0700",
+    "normalized_date": "2001-04-18T08:00:00-07:00",
+    "message_id": "<4549510.1075857936641.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 447,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.430834,
+    "ml_score": 43.0834
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 25.8501,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0068_forensic.json",
+    "threat_intelligence": "email_0068_threat_intel.json",
+    "risk_assessment": "email_0068_risk.json",
+    "ml_hybrid": "email_0068_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

@@ -1,0 +1,324 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0012
+File Name: email_0012.eml
+SHA-256: 729a247169bfc5de21735bbe3b8bec67df642f7f3f32bcbbdaa6014057a3efe8
+
+EMAIL METADATA
+--------------
+From: bill.hatch@enron.com
+To: richard.ring@enron.com
+Cc: 
+Bcc: 
+Subject: Re: New Acc't Numbers
+Date: Mon, 27 Aug 2001 13:55:42 -0700
+Normalized Date: 2001-08-27T13:55:42-07:00
+Message-ID: <20792606.1075858652225.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+fyi..
+---------------------- Forwarded by Bill Hatch/HOU/EES on 08/27/2001 04:55 PM ---------------------------
+
+
+Bill Hatch
+08/27/2001 04:47 PM
+To:	dbrown66@csc.com @ ENRON
+cc:	 
+Subject:	Re: New Acc't Numbers   
+
+Dyaniese,
+
+I forgot that it's so close to the end of the fiscal year so no problem with me waiting.  If I can have it by the end of the week that would be fine.
+
+On a more important issue, I hope you and/or Mat is researching how we're billing the renewables for the GSA.  There seems to be a problem.
+
+Please let me know about the renewabla pricing as soon as you have some information.  This really is important to the GSA.
+
+Thanks,
+
+Bill
+
+
+
+dbrown66@csc.com on 08/27/2001 04:03:00 PM
+To:	bhatch@enron.com
+cc:	 
+Subject:	Re: New Acc't Numbers
+
+
+Bill,
+
+I don't know off hand (I recognize some of the abbreviations as part of the
+site address)...I simply forwarded a spreadsheet that was given to me.  If
+you don't mind waiting until tomorrow or Wednesday, I can look them up and
+send it to you again.  It's the end of the month, end of GSAs fiscal year,
+I'm trying to make everybody happy...  You're included on that list so I'll
+make sure I get the info. to you asap.
+
+Thanks,
+Dyaniese
+
+
+
+
+bhatch@enron.com on 08/27/2001 03:41:49 PM
+
+To:   Dyaniese A Brown/TMG/CSC@CSC
+cc:
+
+Subject:  Re: New Acc't Numbers
+
+
+
+Dyaniese,
+
+Thanks for the infor but I'm having trouble understanding the abreviations.
+What agencies are the following:
+
+AFRI
+BOS
+BOST
+DORC
+GENE
+MAGU
+Nat'l
+US A
+
+Please let me know.
+
+Thanks,
+
+Bill
+
+
+
+
+dbrown66@csc.com on 08/27/2001 02:41:47 PM
+
+To:   "Bill Hatch" <bhatch@enron.com>
+cc:
+Subject:  Re: New Acc't Numbers
+
+
+Bill,
+
+I was extremely busy last week and forgot to send this to you.  Let me know
+if you need anything else.
+
+Thanks,
+Dyaniese
+
+(See attached file: BECO Account Numbers.xls)
+
+
+
+
+"Bill Hatch" <bhatch@enron.com> on 08/27/2001 01:49:12 PM
+
+To:   Dyaniese A Brown/TMG/CSC@CSC
+cc:
+
+Subject:  New Acc't Numbers
+
+
+
+
+Dyaniese,
+
+Can you send me the guide to the new BECO account numbers?  What I need are
+the
+old numbers by Agency and the corresponding new account numbers.
+
+Thanks,
+
+Bill
+
+
+
+
+(See attached file: BECO Account Numbers.xls)
+
+
+
+
+**********************************************************************
+This e-mail is the property of Enron Corp. and/or its relevant affiliate
+and may contain confidential and privileged material for the sole use of
+the intended recipient (s). Any review, use, distribution or disclosure by
+others is strictly prohibited. If you are not the intended recipient (or
+authorized to receive for the recipient), please contact the sender or
+reply to Enron Corp. at enron.messaging.administration@enron.com and delete
+all copies of the message. This e-mail (and any attachments hereto) are not
+intended to be an offer (or an acceptance) and do not create or evidence a
+binding and enforceable contract between Enron Corp. (or any of its
+affiliates) and the intended recipient or any other party, and may not be
+relied on by anyone as the basis of a contract by estoppel or otherwise.
+Thank you.
+**********************************************************************
+
+(See attached file: BECO Account Numbers.xls)
+
+
+ - BECO Account Numbers.xls 
+
+
+
+
+
+
+<Embedded StdOleLink>
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 3247
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0012.eml",
+  "email_sha256": "729a247169bfc5de21735bbe3b8bec67df642f7f3f32bcbbdaa6014057a3efe8",
+  "subject": "Re: New Acc't Numbers",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.139884
+ML Score: 13.9884
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 8.3931
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Re: New Acc't Numbers",
+  "from": "bill.hatch@enron.com",
+  "to": "richard.ring@enron.com",
+  "body_length": 3247,
+  "total_text_length": 3341
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0012_ml_hybrid.json
+
+Forensic File:
+email_0012_forensic.json
+
+Risk File:
+email_0012_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

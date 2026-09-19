@@ -1,0 +1,875 @@
+{
+  "query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+  "context_count": 5,
+  "contexts": [
+    {
+      "context_type": "EMAIL_FORENSICS_EVIDENCE_CONTEXT",
+      "context_version": "1.0",
+      "created_utc": "2026-09-13T22:57:08.733396+00:00",
+      "investigation_query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "email_id": "email_0093",
+      "retrieval": {
+        "semantic_rank": 10,
+        "semantic_similarity": 0.6960799694061279,
+        "final_hybrid_score": 0.636784,
+        "score_breakdown": {
+          "semantic_component": 0.34804,
+          "ml_component": 0.180465,
+          "risk_component": 0.108279,
+          "url_component": 0.0,
+          "final_score": 0.636784
+        }
+      },
+      "observed_evidence": {
+        "email_identity": {
+          "from": "tamara.black@enron.com",
+          "to": "",
+          "cc": "",
+          "bcc": "",
+          "subject": "",
+          "date": "Wed, 17 Jan 2001 00:15:00 -0800",
+          "normalized_date": "2001-01-17T00:15:00-08:00",
+          "message_id": "<20502664.1075849735022.JavaMail.evans@thyme>",
+          "reply_to": "",
+          "return_path": ""
+        },
+        "body": {
+          "text": "Could you please come check Kevin Presto TV....he thinks the cable is out of \nit. Thanks Tjae",
+          "text_length": 93,
+          "has_html": false,
+          "html_length": 0
+        },
+        "routing": {
+          "received_hops": []
+        },
+        "headers": {
+          "Message-ID": "<20502664.1075849735022.JavaMail.evans@thyme>",
+          "Date": "Wed, 17 Jan 2001 00:15:00 -0800",
+          "From": "tamara.black@enron.com",
+          "Subject": "",
+          "Mime-Version": "1.0",
+          "Content-Type": "text/plain; charset=\"us-ascii\"",
+          "Content-Transfer-Encoding": "7bit",
+          "X-From": "Tamara Jae Black",
+          "X-To": "4069192@ATTPager",
+          "X-cc": "",
+          "X-bcc": "",
+          "X-Folder": "\\Kevin_Presto_Nov2001\\Notes Folders\\All documents",
+          "X-Origin": "PRESTO-K",
+          "X-FileName": "kpresto.nsf"
+        },
+        "security_headers": {},
+        "urls": {
+          "count": 0,
+          "items": [],
+          "domains": []
+        },
+        "mime": {
+          "part_count": 1,
+          "parts": [
+            {
+              "content_type": "text/plain",
+              "content_disposition": null,
+              "filename": null,
+              "size_bytes": 93
+            }
+          ],
+          "attachment_count": 0,
+          "attachments": []
+        },
+        "forensic_flags": {
+          "has_attachments": false,
+          "has_urls": false,
+          "has_html": false,
+          "has_received_headers": false,
+          "has_authentication_results": false,
+          "has_dkim_signature": false,
+          "has_return_path": false
+        }
+      },
+      "threat_intelligence": {
+        "summary": {},
+        "urls": [],
+        "domains": [],
+        "findings": [],
+        "raw_available": true
+      },
+      "analytical_evidence": {
+        "ml_analysis": {
+          "model": "TF-IDF + LogisticRegression",
+          "prediction": 1,
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.902326,
+          "ml_score": 90.2326
+        },
+        "forensic_risk_analysis": {
+          "score": 0.0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "hybrid_analysis": {
+          "ml_weight": 0.6,
+          "forensic_weight": 0.4,
+          "score": 54.1395,
+          "risk_level": "MEDIUM"
+        },
+        "rule_based_risk": {
+          "score": 0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "risk_findings": []
+      },
+      "retrieved_rag_evidence": {
+        "chunk_index": 553,
+        "text": "I-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+        "metadata": {
+          "vector_index": 553,
+          "chunk_id": "email_0093_chunk_0003",
+          "email_id": "email_0093",
+          "chunk_index": 3,
+          "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0093_rag.txt",
+          "character_count": 282
+        }
+      },
+      "retrieval_summary": {
+        "email": {
+          "from": "tamara.black@enron.com",
+          "to": "",
+          "subject": "",
+          "date": "Wed, 17 Jan 2001 00:15:00 -0800"
+        },
+        "ml": {
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.902326,
+          "ml_score": 90.2326
+        },
+        "hybrid": {
+          "score": 54.1395,
+          "risk_level": "MEDIUM"
+        },
+        "forensic": {
+          "url_count": 0,
+          "url_domains": [],
+          "has_attachments": false
+        }
+      },
+      "source_files": {
+        "forensic": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0093_forensic.json",
+        "threat_intelligence": "/content/drive/MyDrive/email forensics  with advance features/threat_intel/email_0093_threat_intel.json",
+        "risk_assessment": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0093_risk.json",
+        "ml_hybrid": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0093_ml_hybrid.json"
+      },
+      "evidence_status": {
+        "forensic_available": true,
+        "threat_intelligence_available": true,
+        "risk_assessment_available": true,
+        "ml_hybrid_available": true,
+        "rag_chunk_available": true
+      },
+      "interpretation_policy": {
+        "observed_evidence": "Directly extracted from email forensic processing.",
+        "threat_intelligence": "Derived from the project's URL/threat-intelligence analysis.",
+        "analytical_evidence": "Derived from rule-based risk and ML/hybrid analysis.",
+        "retrieved_rag_evidence": "Retrieved semantic evidence from the RAG corpus.",
+        "important_note": "Analytical scores are model or rule outputs and should not be treated as independent proof of maliciousness."
+      }
+    },
+    {
+      "context_type": "EMAIL_FORENSICS_EVIDENCE_CONTEXT",
+      "context_version": "1.0",
+      "created_utc": "2026-09-13T22:57:08.739372+00:00",
+      "investigation_query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "email_id": "email_0043",
+      "retrieval": {
+        "semantic_rank": 2,
+        "semantic_similarity": 0.7448914051055908,
+        "final_hybrid_score": 0.61316,
+        "score_breakdown": {
+          "semantic_component": 0.372446,
+          "ml_component": 0.150446,
+          "risk_component": 0.090268,
+          "url_component": 0.0,
+          "final_score": 0.61316
+        }
+      },
+      "observed_evidence": {
+        "email_identity": {
+          "from": "liz.taylor@enron.com",
+          "to": "richard.lewis@enron.com",
+          "cc": "",
+          "bcc": "",
+          "subject": "Whalley's Visit to London",
+          "date": "Mon, 04 Jun 2001 08:42:00 -0700",
+          "normalized_date": "2001-06-04T08:42:00-07:00",
+          "message_id": "<5697203.1075845442073.JavaMail.evans@thyme>",
+          "reply_to": "",
+          "return_path": ""
+        },
+        "body": {
+          "text": "Hi Richard,\n\nPer my voicemail, are you available for at least an hour to meet w/Greg \nWhalley while he is in London?  He is wide open on Thursday.  Please advise.\n\nMany Thanks,\n\nLiz Taylor - E.A. to Greg Whalley",
+          "text_length": 211,
+          "has_html": false,
+          "html_length": 0
+        },
+        "routing": {
+          "received_hops": []
+        },
+        "headers": {
+          "Message-ID": "<5697203.1075845442073.JavaMail.evans@thyme>",
+          "Date": "Mon, 04 Jun 2001 08:42:00 -0700",
+          "From": "liz.taylor@enron.com",
+          "To": "richard.lewis@enron.com",
+          "Subject": "Whalley's Visit to London",
+          "Mime-Version": "1.0",
+          "Content-Type": "text/plain; charset=\"us-ascii\"",
+          "Content-Transfer-Encoding": "7bit",
+          "X-From": "Liz M Taylor",
+          "X-To": "Richard Lewis",
+          "X-cc": "",
+          "X-bcc": "",
+          "X-Folder": "\\Greg_Whalley_Oct2001\\Notes Folders\\All documents",
+          "X-Origin": "WHALLEY-G",
+          "X-FileName": "gwhalley.nsf"
+        },
+        "security_headers": {},
+        "urls": {
+          "count": 0,
+          "items": [],
+          "domains": []
+        },
+        "mime": {
+          "part_count": 1,
+          "parts": [
+            {
+              "content_type": "text/plain",
+              "content_disposition": null,
+              "filename": null,
+              "size_bytes": 211
+            }
+          ],
+          "attachment_count": 0,
+          "attachments": []
+        },
+        "forensic_flags": {
+          "has_attachments": false,
+          "has_urls": false,
+          "has_html": false,
+          "has_received_headers": false,
+          "has_authentication_results": false,
+          "has_dkim_signature": false,
+          "has_return_path": false
+        }
+      },
+      "threat_intelligence": {
+        "summary": {},
+        "urls": [],
+        "domains": [],
+        "findings": [],
+        "raw_available": true
+      },
+      "analytical_evidence": {
+        "ml_analysis": {
+          "model": "TF-IDF + LogisticRegression",
+          "prediction": 1,
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.752231,
+          "ml_score": 75.2231
+        },
+        "forensic_risk_analysis": {
+          "score": 0.0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "hybrid_analysis": {
+          "ml_weight": 0.6,
+          "forensic_weight": 0.4,
+          "score": 45.1338,
+          "risk_level": "MEDIUM"
+        },
+        "rule_based_risk": {
+          "score": 0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "risk_findings": []
+      },
+      "retrieved_rag_evidence": {
+        "chunk_index": 275,
+        "text": "-------------\nThis document combines original email forensic evidence\nwith threat intelligence, rule-based risk assessment,\nmachine-learning analysis, and hybrid risk analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+        "metadata": {
+          "vector_index": 275,
+          "chunk_id": "email_0043_chunk_0003",
+          "email_id": "email_0043",
+          "chunk_index": 3,
+          "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0043_rag.txt",
+          "character_count": 518
+        }
+      },
+      "retrieval_summary": {
+        "email": {
+          "from": "liz.taylor@enron.com",
+          "to": "richard.lewis@enron.com",
+          "subject": "Whalley's Visit to London",
+          "date": "Mon, 04 Jun 2001 08:42:00 -0700"
+        },
+        "ml": {
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.752231,
+          "ml_score": 75.2231
+        },
+        "hybrid": {
+          "score": 45.1338,
+          "risk_level": "MEDIUM"
+        },
+        "forensic": {
+          "url_count": 0,
+          "url_domains": [],
+          "has_attachments": false
+        }
+      },
+      "source_files": {
+        "forensic": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0043_forensic.json",
+        "threat_intelligence": "/content/drive/MyDrive/email forensics  with advance features/threat_intel/email_0043_threat_intel.json",
+        "risk_assessment": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0043_risk.json",
+        "ml_hybrid": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0043_ml_hybrid.json"
+      },
+      "evidence_status": {
+        "forensic_available": true,
+        "threat_intelligence_available": true,
+        "risk_assessment_available": true,
+        "ml_hybrid_available": true,
+        "rag_chunk_available": true
+      },
+      "interpretation_policy": {
+        "observed_evidence": "Directly extracted from email forensic processing.",
+        "threat_intelligence": "Derived from the project's URL/threat-intelligence analysis.",
+        "analytical_evidence": "Derived from rule-based risk and ML/hybrid analysis.",
+        "retrieved_rag_evidence": "Retrieved semantic evidence from the RAG corpus.",
+        "important_note": "Analytical scores are model or rule outputs and should not be treated as independent proof of maliciousness."
+      }
+    },
+    {
+      "context_type": "EMAIL_FORENSICS_EVIDENCE_CONTEXT",
+      "context_version": "1.0",
+      "created_utc": "2026-09-13T22:57:08.745228+00:00",
+      "investigation_query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "email_id": "email_0021",
+      "retrieval": {
+        "semantic_rank": 15,
+        "semantic_similarity": 0.6749542951583862,
+        "final_hybrid_score": 0.598008,
+        "score_breakdown": {
+          "semantic_component": 0.337477,
+          "ml_component": 0.162832,
+          "risk_component": 0.097699,
+          "url_component": 0.0,
+          "final_score": 0.598008
+        }
+      },
+      "observed_evidence": {
+        "email_identity": {
+          "from": "freepaysitepasss@yahoo.com",
+          "to": "undisclosed.recipients@mailman.enron.com",
+          "cc": "",
+          "bcc": "",
+          "subject": "Adult Industry Secrets Revealed!                         14859",
+          "date": "Sat, 29 Dec 2001 02:29:46 -0800",
+          "normalized_date": "2001-12-29T02:29:46-08:00",
+          "message_id": "<24936387.1075855416731.JavaMail.evans@thyme>",
+          "reply_to": "",
+          "return_path": ""
+        },
+        "body": {
+          "text": "\r\n\r\nUNLOCK THE SECRET OF A FREE PAYSITE PASSWORD\r\nThe secrets that the industry does'nt want you to know.\r\nWe believe each surfer needs to know how the adult industry operates so that they\r\nwont become a victim of a scam. Please bookmark this site as this will be your best reference\r\nto adult paysites on the web.\r\nThe info on this site was last updated on Decmber 14, 2001\r\n\r\nINDUSTRY FACTS\r\n1. The Adult Internet industry generated over $90 billion in revenues in 2000 accounting for 13%  of all revenue generated on the internet and making it the #1 product/service on the internet today!\r\n2. According to recent studies, over 74% of adults that joined a paysite for an initial fee did not receive access to the content they where promised on the opening tour. How can you make a wise decision before trying out the product first? Would you ever buy a car without test driving it first?\r\n3. A few top notch adult sites saw this problem in the industry and decided to do something about it. These companies are offering free passes to their membership area for a 5 day period so the surfer can make a wise decision on whether they like the site or not. \r\nTHE SECRET\r\nEvery web surfer needs to know how this industry works and how to avoid being scammed. Most people don't know that there are some sites where you don't need to spend the $40 to find out if the site is good or not. How can you waste your money on a site without even knowing what the site is all about?\r\nWe will show you our simple 6 step system on obtaining a free password into an adult website for 5 days of unlimited use. We constantly add new sites to our pages that offer these free passes. That's why we suggest you bookmark this page and use it as a reference. You can try as many of these sites as you want. Please remember these passes will only work for 5 days from the day that you signup. But... they are FREE and take only a few minutes to obtain. \r\nINSTRUCTIONS\r\n1. Below you will see a list of adult pay sites which will offer a free pass to their membership area. Find the site that you like.\r\n2. Now that you have found your favorite site just click on the link to go directly to their homepage. You are obtaining these free passes because you are going directly to the site and cutting out the middle man.\r\n3. Find the link or button that says \"free access\" and click on it. This will bring you to a menu of 3 choices. Choose the one that says FREE FIVE DAY PASS and click it.\r\n4. Fill in the required info. Your credit card number is used as age verification and to bill you IF you decide to stay a member. . These sites are million dollar operations and won't charge you for the free passes. If you don't believe it read their terms and conditions. They are simply protecting themselves from minors receiving these free passes.\r\n5. Ones you have filled out all the info just hit submit. Check your email for your access code and your free pass will work right away. The whole process takes less than two minutes. \r\n6. That's all there is to it! Now, sit back and enjoy your free passes for 5 days. Remember, you can signup for all of the sites listed below, there is no limit. People are paying $40 a month for these passes and you can get them for free! \r\nAs of December 14 We have 12 sites on our free passes list.\t\r\n   X SLUTS Hot Horny Sluts. Girls who are ready to satisfy as many cocks as possible. These sluts can take 5 guys at a time they love to suck cocks and drink cum and they are always ready to fuck!   PINK WET The ultimate all in one adult mega site. If you want a ton of hardcore content including photos, videos, and live feeds this is the site to see. So much content it would take a year to see all of it.   LEZBABES  Lezbabes features some of the hottest lesbian models found on the internet. These girls love to lick each others pussies and don't have a problem doing it in from of the camera.   EBONY PEARLS The nets hottest ebony pay site. These hot black girls are ready to do anything in front of the camera. Site features lots of hardcore action including interracial and black on black hardcore.   TEEN SHAVE Teen Shave features hot shaves teen pussy pics. These girls are so fuckign hot I don't even know what they are doing in the porn business they should be models. A site that's worth a visit! SICKO PORN Sick is the name of the game. These girls can shove any object in their pussy. This site is SICK and the girls are fuckign hot and ready to do anything for the camera.  Check out this site its SICK!   SICKO TEENS Sicko Teens features some of the youngest women to hit the adult porno business. They are young and horny and are willing to do anything for the camera. Visit Sicko Teens Now!   SICK ANAL This site has been said to be one of most hardcore sites on the net  \t\r\n",
+          "text_length": 4802,
+          "has_html": false,
+          "html_length": 0
+        },
+        "routing": {
+          "received_hops": []
+        },
+        "headers": {
+          "Message-ID": "<24936387.1075855416731.JavaMail.evans@thyme>",
+          "Date": "Sat, 29 Dec 2001 02:29:46 -0800",
+          "From": "freepaysitepasss@yahoo.com",
+          "To": "undisclosed.recipients@mailman.enron.com",
+          "Subject": "Adult Industry Secrets Revealed!                         14859",
+          "Mime-Version": "1.0",
+          "Content-Type": "text/plain; charset=\"us-ascii\"",
+          "Content-Transfer-Encoding": "quoted-printable",
+          "X-From": "FREEPAYSITEPASSS@yahoo.com@ENRON",
+          "X-To": "Undisclosed.Recipients@mailman.enron.com",
+          "X-cc": "",
+          "X-bcc": "",
+          "X-Folder": "\\Steve_Harris_Jan2002\\Harris, Steven\\Inbox",
+          "X-Origin": "Kean-S",
+          "X-FileName": "skean (Non-Privileged).pst"
+        },
+        "security_headers": {},
+        "urls": {
+          "count": 0,
+          "items": [],
+          "domains": []
+        },
+        "mime": {
+          "part_count": 1,
+          "parts": [
+            {
+              "content_type": "text/plain",
+              "content_disposition": null,
+              "filename": null,
+              "size_bytes": 4802
+            }
+          ],
+          "attachment_count": 0,
+          "attachments": []
+        },
+        "forensic_flags": {
+          "has_attachments": false,
+          "has_urls": false,
+          "has_html": false,
+          "has_received_headers": false,
+          "has_authentication_results": false,
+          "has_dkim_signature": false,
+          "has_return_path": false
+        }
+      },
+      "threat_intelligence": {
+        "summary": {},
+        "urls": [],
+        "domains": [],
+        "findings": [],
+        "raw_available": true
+      },
+      "analytical_evidence": {
+        "ml_analysis": {
+          "model": "TF-IDF + LogisticRegression",
+          "prediction": 1,
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.81416,
+          "ml_score": 81.416
+        },
+        "forensic_risk_analysis": {
+          "score": 0.0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "hybrid_analysis": {
+          "ml_weight": 0.6,
+          "forensic_weight": 0.4,
+          "score": 48.8496,
+          "risk_level": "MEDIUM"
+        },
+        "rule_based_risk": {
+          "score": 0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "risk_findings": []
+      },
+      "retrieved_rag_evidence": {
+        "chunk_index": 139,
+        "text": "inal email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+        "metadata": {
+          "vector_index": 139,
+          "chunk_id": "email_0021_chunk_0008",
+          "email_id": "email_0021",
+          "chunk_index": 8,
+          "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0021_rag.txt",
+          "character_count": 243
+        }
+      },
+      "retrieval_summary": {
+        "email": {
+          "from": "freepaysitepasss@yahoo.com",
+          "to": "undisclosed.recipients@mailman.enron.com",
+          "subject": "Adult Industry Secrets Revealed!                         14859",
+          "date": "Sat, 29 Dec 2001 02:29:46 -0800"
+        },
+        "ml": {
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.81416,
+          "ml_score": 81.416
+        },
+        "hybrid": {
+          "score": 48.8496,
+          "risk_level": "MEDIUM"
+        },
+        "forensic": {
+          "url_count": 0,
+          "url_domains": [],
+          "has_attachments": false
+        }
+      },
+      "source_files": {
+        "forensic": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0021_forensic.json",
+        "threat_intelligence": "/content/drive/MyDrive/email forensics  with advance features/threat_intel/email_0021_threat_intel.json",
+        "risk_assessment": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0021_risk.json",
+        "ml_hybrid": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0021_ml_hybrid.json"
+      },
+      "evidence_status": {
+        "forensic_available": true,
+        "threat_intelligence_available": true,
+        "risk_assessment_available": true,
+        "ml_hybrid_available": true,
+        "rag_chunk_available": true
+      },
+      "interpretation_policy": {
+        "observed_evidence": "Directly extracted from email forensic processing.",
+        "threat_intelligence": "Derived from the project's URL/threat-intelligence analysis.",
+        "analytical_evidence": "Derived from rule-based risk and ML/hybrid analysis.",
+        "retrieved_rag_evidence": "Retrieved semantic evidence from the RAG corpus.",
+        "important_note": "Analytical scores are model or rule outputs and should not be treated as independent proof of maliciousness."
+      }
+    },
+    {
+      "context_type": "EMAIL_FORENSICS_EVIDENCE_CONTEXT",
+      "context_version": "1.0",
+      "created_utc": "2026-09-13T22:57:08.751149+00:00",
+      "investigation_query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "email_id": "email_0067",
+      "retrieval": {
+        "semantic_rank": 14,
+        "semantic_similarity": 0.6761363744735718,
+        "final_hybrid_score": 0.59733,
+        "score_breakdown": {
+          "semantic_component": 0.338068,
+          "ml_component": 0.162038,
+          "risk_component": 0.097223,
+          "url_component": 0.0,
+          "final_score": 0.59733
+        }
+      },
+      "observed_evidence": {
+        "email_identity": {
+          "from": "bob.lee@enron.com",
+          "to": "larry.may@enron.com",
+          "cc": "",
+          "bcc": "",
+          "subject": "Vol Skew",
+          "date": "Wed, 18 Apr 2001 05:54:00 -0700",
+          "normalized_date": "2001-04-18T05:54:00-07:00",
+          "message_id": "<31386551.1075857936618.JavaMail.evans@thyme>",
+          "reply_to": "",
+          "return_path": ""
+        },
+        "body": {
+          "text": "Larry,\n\nI already had a meeting scheduled at 2:30 tomorrow.  Can we meet (your desk) \nat 3:45PM?\n\nBob",
+          "text_length": 101,
+          "has_html": false,
+          "html_length": 0
+        },
+        "routing": {
+          "received_hops": []
+        },
+        "headers": {
+          "Message-ID": "<31386551.1075857936618.JavaMail.evans@thyme>",
+          "Date": "Wed, 18 Apr 2001 05:54:00 -0700",
+          "From": "bob.lee@enron.com",
+          "To": "larry.may@enron.com",
+          "Subject": "Vol Skew",
+          "Mime-Version": "1.0",
+          "Content-Type": "text/plain; charset=\"us-ascii\"",
+          "Content-Transfer-Encoding": "7bit",
+          "X-From": "Bob Lee",
+          "X-To": "Larry May",
+          "X-cc": "",
+          "X-bcc": "",
+          "X-Folder": "\\Lawrence_May_Jun2001_1\\Notes Folders\\All documents",
+          "X-Origin": "May-L",
+          "X-FileName": "lmay2.nsf"
+        },
+        "security_headers": {},
+        "urls": {
+          "count": 0,
+          "items": [],
+          "domains": []
+        },
+        "mime": {
+          "part_count": 1,
+          "parts": [
+            {
+              "content_type": "text/plain",
+              "content_disposition": null,
+              "filename": null,
+              "size_bytes": 101
+            }
+          ],
+          "attachment_count": 0,
+          "attachments": []
+        },
+        "forensic_flags": {
+          "has_attachments": false,
+          "has_urls": false,
+          "has_html": false,
+          "has_received_headers": false,
+          "has_authentication_results": false,
+          "has_dkim_signature": false,
+          "has_return_path": false
+        }
+      },
+      "threat_intelligence": {
+        "summary": {},
+        "urls": [],
+        "domains": [],
+        "findings": [],
+        "raw_available": true
+      },
+      "analytical_evidence": {
+        "ml_analysis": {
+          "model": "TF-IDF + LogisticRegression",
+          "prediction": 1,
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.810192,
+          "ml_score": 81.0192
+        },
+        "forensic_risk_analysis": {
+          "score": 0.0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "hybrid_analysis": {
+          "ml_weight": 0.6,
+          "forensic_weight": 0.4,
+          "score": 48.6115,
+          "risk_level": "MEDIUM"
+        },
+        "rule_based_risk": {
+          "score": 0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "risk_findings": []
+      },
+      "retrieved_rag_evidence": {
+        "chunk_index": 428,
+        "text": "s.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+        "metadata": {
+          "vector_index": 428,
+          "chunk_id": "email_0067_chunk_0003",
+          "email_id": "email_0067",
+          "chunk_index": 3,
+          "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0067_rag.txt",
+          "character_count": 344
+        }
+      },
+      "retrieval_summary": {
+        "email": {
+          "from": "bob.lee@enron.com",
+          "to": "larry.may@enron.com",
+          "subject": "Vol Skew",
+          "date": "Wed, 18 Apr 2001 05:54:00 -0700"
+        },
+        "ml": {
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.810192,
+          "ml_score": 81.0192
+        },
+        "hybrid": {
+          "score": 48.6115,
+          "risk_level": "MEDIUM"
+        },
+        "forensic": {
+          "url_count": 0,
+          "url_domains": [],
+          "has_attachments": false
+        }
+      },
+      "source_files": {
+        "forensic": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0067_forensic.json",
+        "threat_intelligence": "/content/drive/MyDrive/email forensics  with advance features/threat_intel/email_0067_threat_intel.json",
+        "risk_assessment": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0067_risk.json",
+        "ml_hybrid": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0067_ml_hybrid.json"
+      },
+      "evidence_status": {
+        "forensic_available": true,
+        "threat_intelligence_available": true,
+        "risk_assessment_available": true,
+        "ml_hybrid_available": true,
+        "rag_chunk_available": true
+      },
+      "interpretation_policy": {
+        "observed_evidence": "Directly extracted from email forensic processing.",
+        "threat_intelligence": "Derived from the project's URL/threat-intelligence analysis.",
+        "analytical_evidence": "Derived from rule-based risk and ML/hybrid analysis.",
+        "retrieved_rag_evidence": "Retrieved semantic evidence from the RAG corpus.",
+        "important_note": "Analytical scores are model or rule outputs and should not be treated as independent proof of maliciousness."
+      }
+    },
+    {
+      "context_type": "EMAIL_FORENSICS_EVIDENCE_CONTEXT",
+      "context_version": "1.0",
+      "created_utc": "2026-09-13T22:57:08.756981+00:00",
+      "investigation_query": "Find emails that appear suspicious based on machine learning and forensic evidence.",
+      "email_id": "email_0075",
+      "retrieval": {
+        "semantic_rank": 19,
+        "semantic_similarity": 0.662729024887085,
+        "final_hybrid_score": 0.587017,
+        "score_breakdown": {
+          "semantic_component": 0.331365,
+          "ml_component": 0.159783,
+          "risk_component": 0.09587,
+          "url_component": 0.0,
+          "final_score": 0.587017
+        }
+      },
+      "observed_evidence": {
+        "email_identity": {
+          "from": "brenda.anderson@enron.com",
+          "to": "kenneth.lay@enron.com",
+          "cc": "",
+          "bcc": "",
+          "subject": "FW: Reforestation projects at Panama - Mr.Kenneth Lay",
+          "date": "Tue, 17 Oct 2000 03:39:00 -0700",
+          "normalized_date": "2000-10-17T03:39:00-07:00",
+          "message_id": "<3998758.1075840217010.JavaMail.evans@thyme>",
+          "reply_to": "",
+          "return_path": ""
+        },
+        "body": {
+          "text": "----- Forwarded by Brenda Anderson/NA/Enron on 10/17/2000 10:39 AM -----\n\n\nWebmaster <webmaster@enron.com> on 10/16/2000 09:31:49 AM\nTo: <info@enron.com>\ncc:  \nSubject: FW: Reforestation projects at Panama - Mr.Kenneth Lay\n\nPlease respond directly to jfd@jonesforest.com\n\nThank you.\n----------\nFrom: \"Alberto Mantel\" <jfd@jonesforest.com>\nReply-To: <jfd@jonesforest.com>\nDate: Thu, 12 Oct 2000 12:05:15 -0500\nTo: <webmaster@enron.com>\nSubject: Reforestation projects at Panama - Mr.Kenneth Lay\n\n\nENRON\nMr.Kenneth Lay\nChairman & CEO\n________________\n\nDear Mr.Lay:\n\nIt's a pleasure to get in contact with you, in order to expose our request.\n\nWe are a Reforestation Company from Panama, members of the American Chamber\nof Commerce (AMCHAM), the Spanish Chamber of Commerce and the Board of\nDirector of the Panamanian National Association of Reforestators and we are\nconstituted for four different groups, with a headquarters in Panama City,\nand offices in New York and Miami, in addition to several clothing and shoes\ncompanies in Colon Free Zone, chain of retail stores at Panama City, real\nestate, etc.\n\nAt present, we have 1200 reforested hectares (1 ha = 2,47 acre) with\nteakwood trees. Our program is to extend the plantations, in order to\ncomplete 2000 hectares the next year and 4000/5000 hectares (at least), in\nthe next 5/8 years with the participation of new investors.\n\nAs our strategy, we have in mind to invite new investment groups to\nincorporate our projects, through the formation of Joint Ventures for\ndevelope them together, or to start new forestal projects with tropical\nspecies apts for the panamanian type soil. The tropical species have an high\naggregate value in the international market.\n\nBecause this, we want to get in contact with your group to invite you to\ninvest in our forestal projects. We haven't problem with the lands and\ndimension of projects.\n\nIt's very important to detail, that our project need to be for your group,\npart of the environmental corporative strategy in this area (Central\nAmerica), due at Panama don't have big extension of lands.\n\nOur company will offer, in this case, the guarantees could be necessary.\n\nMust have in mind, all the advantages existing in Panama, which are:\n\n- Money currency is the U.S.Dollar, which gives stability that few countries\nactually have,\n\n- Low internal costs,\n\n- Low annual inflation, which the past 15 years has been 1,3%,\n\n- Strategical geographic position,\n\n- Forestal Law exempts free to tax all profits obtain in Reforestation.\n\nIf you have interest in our proposal, we will send you more information\nabout our company by courrier.\n\nPlease, let me know your comments about our request.\n\nThank you in advance for your attention, we will kindly await for your\nresponse.\n\nHope to hear from you soon.\n\nSincerely,\n\nAlberto Mantel\nAdministrative Director\nJONES FOREST & DEVELOPMENT CORP., S.A.\n\nPh:   (507) 260-4222\nFax:  (507) 260-7483\nE-Mail : jfd@jonesforest.com\n\n\n\n",
+          "text_length": 2951,
+          "has_html": false,
+          "html_length": 0
+        },
+        "routing": {
+          "received_hops": []
+        },
+        "headers": {
+          "Message-ID": "<3998758.1075840217010.JavaMail.evans@thyme>",
+          "Date": "Tue, 17 Oct 2000 03:39:00 -0700",
+          "From": "brenda.anderson@enron.com",
+          "To": "kenneth.lay@enron.com",
+          "Subject": "FW: Reforestation projects at Panama - Mr.Kenneth Lay",
+          "Mime-Version": "1.0",
+          "Content-Type": "text/plain; charset=\"us-ascii\"",
+          "Content-Transfer-Encoding": "7bit",
+          "X-From": "Brenda Anderson",
+          "X-To": "Kenneth Lay",
+          "X-cc": "",
+          "X-bcc": "",
+          "X-Folder": "\\Kenneth_Lay_Dec2000\\Notes Folders\\All documents",
+          "X-Origin": "LAY-K",
+          "X-FileName": "klay.nsf"
+        },
+        "security_headers": {},
+        "urls": {
+          "count": 0,
+          "items": [],
+          "domains": []
+        },
+        "mime": {
+          "part_count": 1,
+          "parts": [
+            {
+              "content_type": "text/plain",
+              "content_disposition": null,
+              "filename": null,
+              "size_bytes": 2951
+            }
+          ],
+          "attachment_count": 0,
+          "attachments": []
+        },
+        "forensic_flags": {
+          "has_attachments": false,
+          "has_urls": false,
+          "has_html": false,
+          "has_received_headers": false,
+          "has_authentication_results": false,
+          "has_dkim_signature": false,
+          "has_return_path": false
+        }
+      },
+      "threat_intelligence": {
+        "summary": {},
+        "urls": [],
+        "domains": [],
+        "findings": [],
+        "raw_available": true
+      },
+      "analytical_evidence": {
+        "ml_analysis": {
+          "model": "TF-IDF + LogisticRegression",
+          "prediction": 1,
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.798914,
+          "ml_score": 79.8914
+        },
+        "forensic_risk_analysis": {
+          "score": 0.0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "hybrid_analysis": {
+          "ml_weight": 0.6,
+          "forensic_weight": 0.4,
+          "score": 47.9349,
+          "risk_level": "MEDIUM"
+        },
+        "rule_based_risk": {
+          "score": 0,
+          "level": "LOW",
+          "confidence": "rule_based"
+        },
+        "risk_findings": []
+      },
+      "retrieved_rag_evidence": {
+        "chunk_index": 467,
+        "text": "analysis.\n\nIt is intended for retrieval-augmented investigation\nand AI-assisted forensic analysis.\n\nThe original email evidence remains authoritative.\nMachine-learning predictions and risk scores are\nanalytical outputs and should not by themselves be\ntreated as proof of malicious activity.\n\nEND OF INVESTIGATION DOCUMENT\n=============================",
+        "metadata": {
+          "vector_index": 467,
+          "chunk_id": "email_0075_chunk_0006",
+          "email_id": "email_0075",
+          "chunk_index": 6,
+          "source_file": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/documents/email_0075_rag.txt",
+          "character_count": 351
+        }
+      },
+      "retrieval_summary": {
+        "email": {
+          "from": "brenda.anderson@enron.com",
+          "to": "kenneth.lay@enron.com",
+          "subject": "FW: Reforestation projects at Panama - Mr.Kenneth Lay",
+          "date": "Tue, 17 Oct 2000 03:39:00 -0700"
+        },
+        "ml": {
+          "label": "SPAM/PHISHING",
+          "phishing_probability": 0.798914,
+          "ml_score": 79.8914
+        },
+        "hybrid": {
+          "score": 47.9349,
+          "risk_level": "MEDIUM"
+        },
+        "forensic": {
+          "url_count": 0,
+          "url_domains": [],
+          "has_attachments": false
+        }
+      },
+      "source_files": {
+        "forensic": "/content/drive/MyDrive/email forensics  with advance features/evidence/enron/email_0075_forensic.json",
+        "threat_intelligence": "/content/drive/MyDrive/email forensics  with advance features/threat_intel/email_0075_threat_intel.json",
+        "risk_assessment": "/content/drive/MyDrive/email forensics  with advance features/reports/risk_assessment/email_0075_risk.json",
+        "ml_hybrid": "/content/drive/MyDrive/email forensics  with advance features/reports/ml_predictions_corrected/email_0075_ml_hybrid.json"
+      },
+      "evidence_status": {
+        "forensic_available": true,
+        "threat_intelligence_available": true,
+        "risk_assessment_available": true,
+        "ml_hybrid_available": true,
+        "rag_chunk_available": true
+      },
+      "interpretation_policy": {
+        "observed_evidence": "Directly extracted from email forensic processing.",
+        "threat_intelligence": "Derived from the project's URL/threat-intelligence analysis.",
+        "analytical_evidence": "Derived from rule-based risk and ML/hybrid analysis.",
+        "retrieved_rag_evidence": "Retrieved semantic evidence from the RAG corpus.",
+        "important_note": "Analytical scores are model or rule outputs and should not be treated as independent proof of maliciousness."
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:53.756147+00:00",
+  "email_id": "email_0009",
+  "evidence": {
+    "file_name": "email_0009.eml",
+    "sha256": "68f004f2b7a039eae8fdba2125d3dbf3c43d4e82b10d62f3a05e52b639b52775",
+    "source_forensic_file": "email_0009_forensic.json"
+  },
+  "email": {
+    "from": "enron.announcements@enron.com",
+    "to": "all.worldwide@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "2000 Chairman's Award",
+    "date": "Fri, 11 Aug 2000 18:20:00 -0700",
+    "normalized_date": "2000-08-11T18:20:00-07:00",
+    "message_id": "<32156305.1075863603445.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 1614,
+    "url_count": 2,
+    "url_domains": [
+      "home.enron.com"
+    ],
+    "url_items": [
+      "http://home.enron.com/announce/chairman_nom/form3.doc",
+      "http://home.enron.com/announce/chairman_nom"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 3,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://home.enron.com/announce/chairman_nom/form3.doc",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "home.enron.com",
+          "scheme": "http",
+          "path": "/announce/chairman_nom/form3.doc",
+          "query_present": false,
+          "domain_entropy": 2.8963
+        },
+        {
+          "url": "http://home.enron.com/announce/chairman_nom",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "home.enron.com",
+          "scheme": "http",
+          "path": "/announce/chairman_nom",
+          "query_present": false,
+          "domain_entropy": 2.8963
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 1,
+    "label": "SPAM/PHISHING",
+    "phishing_probability": 0.694123,
+    "ml_score": 69.4123
+  },
+  "rule_based_risk": {
+    "score": 3,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 42.8474,
+    "risk_level": "MEDIUM"
+  },
+  "source_files": {
+    "forensic": "email_0009_forensic.json",
+    "threat_intelligence": "email_0009_threat_intel.json",
+    "risk_assessment": "email_0009_risk.json",
+    "ml_hybrid": "email_0009_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

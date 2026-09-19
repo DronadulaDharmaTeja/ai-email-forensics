@@ -1,0 +1,9 @@
+{
+  "chunking_method": "character_based",
+  "chunk_size": 1200,
+  "chunk_overlap": 200,
+  "source_documents": 100,
+  "total_chunks": 623,
+  "errors": 0,
+  "processing_errors": []
+}

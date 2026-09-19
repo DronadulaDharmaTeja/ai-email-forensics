@@ -1,0 +1,39 @@
+{
+  "interface": "AI Evidence Context Interface",
+  "version": "1.0",
+  "type": "DETERMINISTIC_GROUNDED_EVIDENCE_INTERFACE",
+  "created_utc": "2026-09-13T23:03:46.525099+00:00",
+  "source": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/grounded_evidence/master_grounded_evidence.json",
+  "provenance_source": "/content/drive/MyDrive/email forensics  with advance features/ai_engine/rag/grounded_evidence/evidence_provenance_map.json",
+  "supported_operations": [
+    "get_claim",
+    "get_email_evidence",
+    "get_observed_evidence",
+    "get_analyzed_evidence",
+    "get_rag_evidence",
+    "search_claims",
+    "search_claim_type",
+    "get_query_context",
+    "build_agent_context",
+    "statistics"
+  ],
+  "agent_safety_rules": [
+    "Only grounded claims may enter agent context.",
+    "Observed and analyzed evidence remain separate.",
+    "ML predictions are analytical outputs.",
+    "Risk scores are analytical outputs.",
+    "RAG evidence remains marked as retrieved evidence.",
+    "Evidence IDs must be preserved.",
+    "Provenance must be preserved.",
+    "Agents must not invent unsupported facts."
+  ],
+  "statistics": {
+    "queries": 3,
+    "emails": 9,
+    "claims": 288,
+    "observed_claims": 144,
+    "analyzed_claims": 135,
+    "retrieved_claims": 9,
+    "provenance_records": 288
+  }
+}

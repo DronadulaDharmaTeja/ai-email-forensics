@@ -1,0 +1,212 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0082
+File Name: email_0082.eml
+SHA-256: dcf8110675c76b6cbaeae8f33584e1faad9678fbea8c67c96768c4ce416b01ce
+
+EMAIL METADATA
+--------------
+From: chris.meyer@enron.com
+To: joe.parks@enron.com, sylvia.pollan@enron.com
+Cc: julie.gomez@enron.com, scott.neal@enron.com
+Bcc: julie.gomez@enron.com, scott.neal@enron.com
+Subject: NGPL Supply Area Deal
+Date: Mon, 31 Jul 2000 03:47:00 -0700
+Normalized Date: 2000-07-31T03:47:00-07:00
+Message-ID: <31525840.1075858411339.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Per my previous e-mail, the new receipt point allocation and lower commodity 
+rate structure is effective 8/1/00.
+
+chris
+x31666
+
+
+
+---------------------- Forwarded by Chris Meyer/HOU/ECT on 07/31/2000 10:45 
+AM ---------------------------
+   
+	
+	
+	From:  Chris Meyer                           07/26/2000 11:37 AM
+	
+
+To: Joe Parks/Corp/Enron@ENRON, Sylvia S Pollan/HOU/ECT@ECT
+cc: Julie A Gomez/HOU/ECT@ECT, Scott Neal/HOU/ECT@ECT 
+Subject: 
+
+I've renegotiated the 400,000 MMBtu/day supply area deal on NGPL.  The 
+primary delivery points have not changed. The new (receipt) paths, volumes 
+and rates are below.  I'll forward the actual receipt points along with the 
+amended contract once complete.  Essentially, this new structure 
+significantly reduces our commodity costs to points west of 346 and slightly 
+reduces (50%) commodity costs east of 346.  Please remember that secondary 
+deliveries to points east of 346 (with the exception of Sonat Erath) still 
+include a volumetric (demand) adder $0.02 Dth for STX receipts and $0.025 for 
+all other receipts.   Deliveries to Sonat Erath will be an additional $0.02 
+MMbtu.  Let me know if you have any issues ASAP.  I want to make this 
+effective August 1.
+
+East of 346
+
+
+chris
+x31666
+
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1239
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0082.eml",
+  "email_sha256": "dcf8110675c76b6cbaeae8f33584e1faad9678fbea8c67c96768c4ce416b01ce",
+  "subject": "NGPL Supply Area Deal",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.426992
+ML Score: 42.6992
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 25.6195
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "NGPL Supply Area Deal",
+  "from": "chris.meyer@enron.com",
+  "to": "joe.parks@enron.com, sylvia.pollan@enron.com",
+  "body_length": 1239,
+  "total_text_length": 1356
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0082_ml_hybrid.json
+
+Forensic File:
+email_0082_forensic.json
+
+Risk File:
+email_0082_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

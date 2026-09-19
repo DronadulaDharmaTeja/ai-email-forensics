@@ -1,0 +1,191 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0039
+File Name: email_0039.eml
+SHA-256: e2365a86fca3c840d59af97b05c844623d6257a21f379774b868611582575534
+
+EMAIL METADATA
+--------------
+From: wyndi_workman-rodriguez@pgn.com
+To: 
+Cc: anne_snyder@pgn.com, bill_casey@pgn.com, shari_johnson@pgn.com
+Bcc: anne_snyder@pgn.com, bill_casey@pgn.com, shari_johnson@pgn.com
+Subject: July 2001
+Date: Thu, 30 Aug 2001 19:49:51 -0700
+Normalized Date: 2001-08-30T19:49:51-07:00
+Message-ID: <13312389.1075840030064.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+I know I'm kind of bouncing around, but since we have help, we're working on whatever we can.  The following is what has been found for July 2001, then we should be good:
+
+7/9:  Deal #676569.1 - needs an adder of $0.10, currently shows none (PGE system).  Our day total for our sales is $82,439.88
+
+7/13 & 7/14:  Deal #683299.1 - needs correct index (not NF) of OFF - - day total 7/13 = $55,054.30 & 7/14 = $48,907.74
+
+7/23:  Deal #695822.1 - needs correct index of OFF (day tot=$184,848.56)
+
+7/24:  Deal #697589.1 - needs correct index of OFF (day tot=$56,573.22)
+
+7/25:  Deal #700116.1 - same as 7/24 (day total = $48,997.04)
+
+Totals for PGE Sales:   $2,573,217.72
+Totals for PGE Purch   $2,543,124.12
+
+AND THAT'S IT !!!!  
+
+Wyndi & Anne
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 739
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0039.eml",
+  "email_sha256": "e2365a86fca3c840d59af97b05c844623d6257a21f379774b868611582575534",
+  "subject": "July 2001",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.253901
+ML Score: 25.3901
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 15.2341
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "July 2001",
+  "from": "wyndi_workman-rodriguez@pgn.com",
+  "to": "",
+  "body_length": 739,
+  "total_text_length": 810
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0039_ml_hybrid.json
+
+Forensic File:
+email_0039_forensic.json
+
+Risk File:
+email_0039_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

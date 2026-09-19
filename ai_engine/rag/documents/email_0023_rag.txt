@@ -1,0 +1,203 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0023
+File Name: email_0023.eml
+SHA-256: 4332bebf0c7233aaee7a01cfb701405cbd97b0757365bce05ee052a87e6d627a
+
+EMAIL METADATA
+--------------
+From: vincent.strohmeyer@enron.com
+To: rod.hayslett@enron.com, jerry.peters@enron.com, danny.mccarty@enron.com, stanley.horton@enron.com
+Cc: a..howard@enron.com, james.saunders@enron.com, john.cobb@enron.com, dave.neubauer@enron.com, steven.harris@enron.com, cheryl.perchal@enron.com, kent.miller@enron.com, larry.pavlou@enron.com
+Bcc: a..howard@enron.com, james.saunders@enron.com, john.cobb@enron.com, dave.neubauer@enron.com, steven.harris@enron.com, cheryl.perchal@enron.com, kent.miller@enron.com, larry.pavlou@enron.com
+Subject: Daily Summary of Risk Data 12/26
+Date: Fri, 28 Dec 2001 13:37:30 -0800
+Normalized Date: 2001-12-28T13:37:30-08:00
+Message-ID: <13397504.1075855416626.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+
+Summary Risk Data as of 	26Dec2001	Previous	
+			
+Active Financial Deals	        71	        71	
+Active Physical Positions	        40	       40	
+P&L  Daily ($thousands)	        88.3 	       47.0 	
+VaR ($thousands)	    1,626.3* 	    1,611.4* 	
+			
+ETS Margin Account Deals	         0	         0	
+			
+
+*The VaR continues to be over the ETS VaR limit of $1,000,000.
+
+Company	 MTM by Counter Party 	 Asset 	 Liability 	 Net 21Dec01 	 Previous 	 Change 	
+NNG	EL Paso Energy Marketing	          17,727.8 	 (20,164.3)	         (2,436.5)	   (2,296.6)	           (139.9)	
+NNG	Reliant Energy Services	                 81.5 	            -   	              81.5 	         76.5 	               5.0 	
+NNG	TransCanada Energy 	          21,039.6 	 (20,429.4)	             610.2 	       620.5 	             (10.3)	
+NNG	Grand Total	          38,848.9 	 (40,593.7)	         (1,744.8)	   (1,599.6)	           (145.2)	
+							
+
+The terminated contracts with RMTC are now fixed receivables as of the early termination date of December 14, 2001 except for interest. NNG is owed $4.8mm and TW is owed $33.9mm.  Amounts are past due.
+
+
+Definitions:
+Physical deals modeled in the Caminus Zainet system are deals which have some form of price risk, (i.e. Index to index deals, and anticipated fuel sales) This does not include standard transport and storage agreements or unhedged natural positions.
+
+P&L  Daily:   Daily change in the  mark-to-market (MTM) valuation of all deals being tracked in the Caminus Zainet system.  This includes the origination and changes in value for both the physical and financial sides of hedges, along with any speculative trades and floating unhedged physical positions.
+
+VaR is "Value at Risk":  Enron Corp policy defines this as the maximum expected one day loss on the portfolio given a 95% statistical confidence interval.  This number is currently calculated on the Caminus system using a variance covariance methodology, rather than a Monte Carlo simulation per the Enron Corp policy.
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1997
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0023.eml",
+  "email_sha256": "4332bebf0c7233aaee7a01cfb701405cbd97b0757365bce05ee052a87e6d627a",
+  "subject": "Daily Summary of Risk Data 12/26",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.266207
+ML Score: 26.6207
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 15.9724
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Daily Summary of Risk Data 12/26",
+  "from": "vincent.strohmeyer@enron.com",
+  "to": "rod.hayslett@enron.com, jerry.peters@enron.com, danny.mccarty@enron.com, stanley.horton@enron.com",
+  "body_length": 1997,
+  "total_text_length": 2185
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0023_ml_hybrid.json
+
+Forensic File:
+email_0023_forensic.json
+
+Risk File:
+email_0023_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

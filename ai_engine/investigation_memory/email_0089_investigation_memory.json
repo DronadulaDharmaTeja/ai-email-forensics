@@ -1,0 +1,81 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.943360+00:00",
+  "email_id": "email_0089",
+  "evidence": {
+    "file_name": "email_0089.eml",
+    "sha256": "842bb17c92f98dd526e284412566d2ac007fc579be0a4755553a316f79ae0ca6",
+    "source_forensic_file": "email_0089_forensic.json"
+  },
+  "email": {
+    "from": "no.address@enron.com",
+    "to": "",
+    "cc": "",
+    "bcc": "",
+    "subject": "Weekend Outage Report for 11-16-01 through 11-18-01",
+    "date": "Thu, 15 Nov 2001 14:41:34 -0800",
+    "normalized_date": "2001-11-15T14:41:34-08:00",
+    "message_id": "<3277811.1075861923181.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 5180,
+    "url_count": 0,
+    "url_domains": [],
+    "url_items": [],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": false,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": []
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.188679,
+    "ml_score": 18.8679
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 11.3208,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0089_forensic.json",
+    "threat_intelligence": "email_0089_threat_intel.json",
+    "risk_assessment": "email_0089_risk.json",
+    "ml_hybrid": "email_0089_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

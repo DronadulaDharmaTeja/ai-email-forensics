@@ -1,0 +1,181 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0041
+File Name: email_0041.eml
+SHA-256: 11ee6335de5cd3c0c6f6910516b9d07f0a0dd25b63435c7ffd8c5ac966dacfa7
+
+EMAIL METADATA
+--------------
+From: chris.abel@enron.com
+To: ted.ii@enron.com, david.port@enron.com, cassandra.schultz@enron.com, jeffrey.shankman@enron.com, greg.whalley@enron.com
+Cc: shona.wilson@enron.com, bjorn.hagelmann@enron.com, d.hall@enron.com, brent.price@enron.com
+Bcc: shona.wilson@enron.com, bjorn.hagelmann@enron.com, d.hall@enron.com, brent.price@enron.com
+Subject: 6/20/01 EOL Crude 5 Day Cumulative Loss
+Date: Thu, 21 Jun 2001 09:07:00 -0700
+Normalized Date: 2001-06-21T09:07:00-07:00
+Message-ID: <9980094.1075845444873.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+This is a notification that a 5 Day Cumulative Loss ocurred for EOL Crude 
+24/7 Trading on June 20, 2001 in the amount of $4.7 million.  The limit 
+established for EOL Crude is $3.75 million.
+
+No signature is required on this notification.
+
+Chris Abel
+x33102
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 258
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0041.eml",
+  "email_sha256": "11ee6335de5cd3c0c6f6910516b9d07f0a0dd25b63435c7ffd8c5ac966dacfa7",
+  "subject": "6/20/01 EOL Crude 5 Day Cumulative Loss",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.513319
+ML Score: 51.3319
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 30.7992
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "6/20/01 EOL Crude 5 Day Cumulative Loss",
+  "from": "chris.abel@enron.com",
+  "to": "ted.ii@enron.com, david.port@enron.com, cassandra.schultz@enron.com, jeffrey.shankman@enron.com, greg.whalley@enron.com",
+  "body_length": 258,
+  "total_text_length": 467
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0041_ml_hybrid.json
+
+Forensic File:
+email_0041_forensic.json
+
+Risk File:
+email_0041_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

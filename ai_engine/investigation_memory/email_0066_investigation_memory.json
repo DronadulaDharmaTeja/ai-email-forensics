@@ -1,0 +1,129 @@
+{
+  "memory_type": "EMAIL_FORENSICS_INVESTIGATION_MEMORY",
+  "memory_version": "1.1",
+  "memory_created_utc": "2026-09-13T22:50:55.495043+00:00",
+  "email_id": "email_0066",
+  "evidence": {
+    "file_name": "email_0066.eml",
+    "sha256": "d96f0bd68e8774aa4309be25372c406631cd14331739151a4c81ad4858b1f43b",
+    "source_forensic_file": "email_0066_forensic.json"
+  },
+  "email": {
+    "from": "enron.announcements@enron.com",
+    "to": "all.houston@enron.com",
+    "cc": "",
+    "bcc": "",
+    "subject": "Enron In Action 05.07.01",
+    "date": "Fri, 04 May 2001 10:01:00 -0700",
+    "normalized_date": "2001-05-04T10:01:00-07:00",
+    "message_id": "<17417239.1075857938895.JavaMail.evans@thyme>"
+  },
+  "forensic_analysis": {
+    "body_length": 6615,
+    "url_count": 3,
+    "url_domains": [
+      "hrweb.enron.com",
+      "www.aidshelp.org",
+      "www.kidventurecamp.com"
+    ],
+    "url_items": [
+      "http://hrweb.enron.com/wellness",
+      "http://www.aidshelp.org/programs/housing.htm",
+      "http://www.kidventurecamp.com/camp_enron.htm"
+    ],
+    "forensic_flags": {
+      "has_attachments": false,
+      "has_urls": true,
+      "has_html": false,
+      "has_received_headers": false,
+      "has_authentication_results": false,
+      "has_dkim_signature": false,
+      "has_return_path": false
+    },
+    "component_scores": {
+      "authentication": 0,
+      "sender": 0,
+      "subject": 0,
+      "body": 0,
+      "urls": 0,
+      "attachments": 0,
+      "html": 0,
+      "routing": 0
+    }
+  },
+  "threat_intelligence": {
+    "available": true,
+    "summary": {
+      "urls": [
+        {
+          "url": "http://hrweb.enron.com/wellness",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "hrweb.enron.com",
+          "scheme": "http",
+          "path": "/wellness",
+          "query_present": false,
+          "domain_entropy": 3.2402
+        },
+        {
+          "url": "http://www.aidshelp.org/programs/housing.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.aidshelp.org",
+          "scheme": "http",
+          "path": "/programs/housing.htm",
+          "query_present": false,
+          "domain_entropy": 3.5778
+        },
+        {
+          "url": "http://www.kidventurecamp.com/camp_enron.htm",
+          "risk_score": 5,
+          "risk_level": "LOW",
+          "indicators": [
+            "HTTP instead of HTTPS"
+          ],
+          "domain": "www.kidventurecamp.com",
+          "scheme": "http",
+          "path": "/camp_enron.htm",
+          "query_present": false,
+          "domain_entropy": 3.8797
+        }
+      ]
+    }
+  },
+  "ml_analysis": {
+    "model": "TF-IDF + LogisticRegression",
+    "prediction": 0,
+    "label": "LEGITIMATE/HAM",
+    "phishing_probability": 0.276997,
+    "ml_score": 27.6997
+  },
+  "rule_based_risk": {
+    "score": 0,
+    "level": "LOW",
+    "confidence": "rule_based"
+  },
+  "hybrid_analysis": {
+    "ml_weight": 0.6,
+    "forensic_weight": 0.4,
+    "score": 16.6198,
+    "risk_level": "LOW"
+  },
+  "source_files": {
+    "forensic": "email_0066_forensic.json",
+    "threat_intelligence": "email_0066_threat_intel.json",
+    "risk_assessment": "email_0066_risk.json",
+    "ml_hybrid": "email_0066_ml_hybrid.json"
+  },
+  "investigation": {
+    "status": "READY_FOR_RAG_AND_AGENT_ANALYSIS",
+    "evidence_authority": "ORIGINAL_FORENSIC_EVIDENCE",
+    "analytical_outputs_are_not_proof": true
+  }
+}

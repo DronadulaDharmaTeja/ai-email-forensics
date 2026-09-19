@@ -1,0 +1,190 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0085
+File Name: email_0085.eml
+SHA-256: f64bf066e0d1768bcb99d0b19f077940fa8762eb6c697a1c9c1bf72e85aa283d
+
+EMAIL METADATA
+--------------
+From: marie.heard@enron.com
+To: bianca.ornelas@enron.com
+Cc: 
+Bcc: 
+Subject: Deemed ISDAs
+Date: Thu, 07 Jun 2001 02:06:00 -0700
+Normalized Date: 2001-06-07T02:06:00-07:00
+Message-ID: <13668446.1075853545659.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Hi, Bianca!
+
+Francisco Pinto Leite has asked me to give him a list of all outstanding 
+ISDAs and Deemed ISDAs with Mexican counterparties.  Can you send me a list 
+of the Deemed ISDAs that are still outstanding (either comments received or 
+counterparty has not returned signed copy).
+
+Thanks!
+
+Marie
+
+Marie Heard
+Senior Legal Specialist
+Enron North America Corp.
+Phone:  (713) 853-3907
+Fax:  (713) 646-3490
+Marie.Heard@Enron.com
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 429
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0085.eml",
+  "email_sha256": "f64bf066e0d1768bcb99d0b19f077940fa8762eb6c697a1c9c1bf72e85aa283d",
+  "subject": "Deemed ISDAs",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 1
+Classification: SPAM/PHISHING
+Phishing Probability: 0.617435
+ML Score: 61.7435
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 37.0461
+Hybrid Risk Level: MEDIUM
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "Deemed ISDAs",
+  "from": "marie.heard@enron.com",
+  "to": "bianca.ornelas@enron.com",
+  "body_length": 429,
+  "total_text_length": 517
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0085_ml_hybrid.json
+
+Forensic File:
+email_0085_forensic.json
+
+Risk File:
+email_0085_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

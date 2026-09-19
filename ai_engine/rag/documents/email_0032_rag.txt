@@ -1,0 +1,222 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0032
+File Name: email_0032.eml
+SHA-256: ee7e53104cf45aa05e210b90b402fa9dbf81b13005630a2dbe1b07a191b87499
+
+EMAIL METADATA
+--------------
+From: frazier.king@enron.com
+To: morris.j@ei.com, shelley.corman@enron.com
+Cc: 
+Bcc: 
+Subject: INGAA Data Request - Marketing Affiliate Conference
+Date: Tue, 19 Dec 2000 06:02:00 -0800
+Normalized Date: 2000-12-19T06:02:00-08:00
+Message-ID: <20708989.1075852055427.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+John,
+
+Here is the information for TW.
+I will forward the others when they are complete.
+
+
+Shelley,
+
+John wanted the data as soon as complete.
+This seems to be ok to me, but I do not know TW as well as you.
+If you see anything which raises a question, please let us know.
+I can check into it.
+John can hold up working on it.
+
+Frazier
+
+
+---------------------- Forwarded by Frazier King/FGT/Enron on 12/19/2000 
+02:01 PM ---------------------------
+   
+	
+	
+	From:  Elizabeth Brown                           12/19/2000 10:49 AM
+	
+
+To: Frazier King/FGT/Enron@ENRON, Shelley Corman/ET&S/Enron@ENRON, Rita 
+Bianchi/ET&S/Enron@ENRON
+cc: Linda Trevino/ET&S/Enron@ENRON, Nancy Bastida/FGT/Enron@ENRON 
+
+Subject: INGAA Data Request - Marketing Affiliate Conference
+
+Based on the criteria established in Shelley's initial email request and the 
+additional information gathered from our meeting yesterday afternoon, here is 
+the data I have compiled for Transwestern using an effective date of November 
+1, 2000.  I am still in the process of verifying one shipper's agency 
+services and will notify you if there are any corrections to be made to this 
+document no later than COB today.
+
+If you have any questions regarding the spreadsheets, please feel free to 
+contact me at x3-6928.  I will be on vacation until next Wednesday, 12/27 but 
+staying in town.  If any issues arise during my absence, please contact Linda 
+Trevino or page me at (800) 718-0830.
+
+
+
+Thanks,
+Elizabeth
+
+
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1469
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0032.eml",
+  "email_sha256": "ee7e53104cf45aa05e210b90b402fa9dbf81b13005630a2dbe1b07a191b87499",
+  "subject": "INGAA Data Request - Marketing Affiliate Conference",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.441758
+ML Score: 44.1758
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 26.5055
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "INGAA Data Request - Marketing Affiliate Conference",
+  "from": "frazier.king@enron.com",
+  "to": "morris.j@ei.com, shelley.corman@enron.com",
+  "body_length": 1469,
+  "total_text_length": 1614
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0032_ml_hybrid.json
+
+Forensic File:
+email_0032_forensic.json
+
+Risk File:
+email_0032_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================

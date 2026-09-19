@@ -1,0 +1,207 @@
+EMAIL FORENSICS INVESTIGATION DOCUMENT
+======================================
+
+CASE TYPE
+---------
+Email Forensics
+
+EVIDENCE IDENTIFICATION
+-----------------------
+Email ID: email_0074
+File Name: email_0074.eml
+SHA-256: e835268121ed86a89044e1a9089a229e0320c177c6aa2a698cf5cc2b966d94ca
+
+EMAIL METADATA
+--------------
+From: frank.hayden@enron.com
+To: kam.keiser@enron.com
+Cc: wayne.vinson@enron.com, wei.hu@enron.com
+Bcc: wayne.vinson@enron.com, wei.hu@enron.com
+Subject: RE: Risk type cd on gas position from ENPower
+Date: Mon, 23 Jul 2001 14:07:54 -0700
+Normalized Date: 2001-07-23T14:07:54-07:00
+Message-ID: <14683145.1075840200399.JavaMail.evans@thyme>
+Reply-To: 
+Return-Path: 
+
+EMAIL BODY
+----------
+Kam,
+Power is calc'ing deals under one post id for both price and basis and unfortunately this is messing things up in VAR. I've requested that all "price" deals with a reference month greater than 7/31/01, be decomposed into risk type "D" and "P".  Basically, delta would remain the same for both risk types, and the problem is coming in which curve names to choose.  (Additionally, Wei will "add" a NYMEX leg for the "P" leg of the deal) 
+
+I understand that for each curve below, there are unique names for forward basis and intra-month.  Can you break out the correct names to use intra-month and forward deals?  (i.e. forward basis is an "curve")
+
+Let me know how I can help.
+
+Frank
+
+
+ -----Original Message-----
+From: 	Hu, Wei  
+Sent:	Monday, July 23, 2001 3:22 PM
+To:	Vinson, Donald Wayne
+Cc:	Hayden, Frank
+Subject:	Risk type cd on gas position from ENPower
+
+Donnie,
+
+I saw five curve codes are being put out by ENPower for gas legs of SPREADOPTION and HEAT-SWAP deals.  These curves are:
+
+PRICE_CURVE_CD
+---------------
+GD-COLGULF/LA
+GD-HPL/SHPCH
+GDP-NTHWST/CANB
+IF-HPL/SHPCHAN
+TENN/Z6
+
+The current patch in production is to hard-code risk_type_cd 'M' for these deals.  Apparently, we want to break down the risk_type_cd to 'P' and 'D', can you please brief me the business logic again so that I can see if we can provide any ad-hoc solution?
+
+Thanks,
+
+Wei
+
+HTML CONTENT
+------------
+Has HTML: False
+HTML Length: 0
+
+ROUTING INFORMATION
+-------------------
+{
+  "received_hops": []
+}
+
+URL ANALYSIS
+------------
+URL Count: 0
+
+URL Domains:
+[]
+
+URL Items:
+[]
+
+MIME / ATTACHMENT INFORMATION
+-----------------------------
+{
+  "part_count": 1,
+  "parts": [
+    {
+      "content_type": "text/plain",
+      "content_disposition": null,
+      "filename": null,
+      "size_bytes": 1363
+    }
+  ],
+  "attachment_count": 0,
+  "attachments": []
+}
+
+FORENSIC FLAGS
+--------------
+{
+  "has_attachments": false,
+  "has_urls": false,
+  "has_html": false,
+  "has_received_headers": false,
+  "has_authentication_results": false,
+  "has_dkim_signature": false,
+  "has_return_path": false
+}
+
+THREAT INTELLIGENCE
+-------------------
+{
+  "email_file": "email_0074.eml",
+  "email_sha256": "e835268121ed86a89044e1a9089a229e0320c177c6aa2a698cf5cc2b966d94ca",
+  "subject": "RE: Risk type cd on gas position from ENPower",
+  "url_count": 0,
+  "high_risk_urls": 0,
+  "medium_risk_urls": 0,
+  "low_risk_urls": 0,
+  "maximum_url_risk": 0,
+  "urls": []
+}
+
+RULE-BASED RISK ASSESSMENT
+--------------------------
+Risk Score: 0
+
+Risk Level: LOW
+
+Risk Confidence: rule_based
+
+Component Scores:
+{
+  "authentication": 0,
+  "sender": 0,
+  "subject": 0,
+  "body": 0,
+  "urls": 0,
+  "attachments": 0,
+  "html": 0,
+  "routing": 0
+}
+
+Findings:
+[]
+
+MACHINE LEARNING ANALYSIS
+-------------------------
+Model: TF-IDF + LogisticRegression
+Prediction: 0
+Classification: LEGITIMATE/HAM
+Phishing Probability: 0.278497
+ML Score: 27.8497
+
+FORENSIC ANALYSIS USED BY HYBRID ENGINE
+---------------------------------------
+Forensic Score: 0.0
+Forensic Level: LOW
+Forensic Confidence: rule_based
+
+HYBRID RISK ANALYSIS
+--------------------
+ML Weight: 0.6
+Forensic Weight: 0.4
+Hybrid Score: 16.7098
+Hybrid Risk Level: LOW
+
+INVESTIGATION INPUT SUMMARY
+---------------------------
+{
+  "subject": "RE: Risk type cd on gas position from ENPower",
+  "from": "frank.hayden@enron.com",
+  "to": "kam.keiser@enron.com",
+  "body_length": 1363,
+  "total_text_length": 1481
+}
+
+SOURCE FILES
+------------
+Hybrid Analysis File:
+email_0074_ml_hybrid.json
+
+Forensic File:
+email_0074_forensic.json
+
+Risk File:
+email_0074_risk.json
+
+INVESTIGATION PURPOSE
+---------------------
+This document combines original email forensic evidence
+with threat intelligence, rule-based risk assessment,
+machine-learning analysis, and hybrid risk analysis.
+
+It is intended for retrieval-augmented investigation
+and AI-assisted forensic analysis.
+
+The original email evidence remains authoritative.
+Machine-learning predictions and risk scores are
+analytical outputs and should not by themselves be
+treated as proof of malicious activity.
+
+END OF INVESTIGATION DOCUMENT
+=============================
