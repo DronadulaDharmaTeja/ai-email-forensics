@@ -1,29 +1,40 @@
+import os
+
 import mysql.connector
 from mysql.connector import Error
-from getpass import getpass
+from mysql.connector.pooling import MySQLConnectionPool
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env
+load_dotenv()
 
 
 DB_CONFIG = {
-    "host": "127.0.0.1",
-    "port": 3306,
-    "user": "root",
-    "database": "email_forensics_db",
+    "host": os.getenv("MYSQL_HOST", "127.0.0.1"),
+    "port": int(os.getenv("MYSQL_PORT", "3306")),
+    "user": os.getenv("MYSQL_USER", "root"),
+    "password": os.getenv("MYSQL_PASSWORD"),
+    "database": os.getenv("MYSQL_DATABASE", "email_forensics_db"),
 }
 
 
-def get_connection():
-    password = getpass("MySQL password: ")
+# Create a reusable MySQL connection pool
+connection_pool = MySQLConnectionPool(
+    pool_name="email_forensics_pool",
+    pool_size=5,
+    pool_reset_session=True,
+    **DB_CONFIG,
+)
 
-    return mysql.connector.connect(
-        host=DB_CONFIG["host"],
-        port=DB_CONFIG["port"],
-        user=DB_CONFIG["user"],
-        password=password,
-        database=DB_CONFIG["database"],
-    )
+
+def get_connection():
+    """Get a database connection from the connection pool."""
+    return connection_pool.get_connection()
 
 
 def test_connection():
+    """Test MySQL connectivity."""
     connection = None
 
     try:

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ForensiMail - Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">ForensiMail</div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="investigation.html">Investigation</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+
+        <div class="status">
+            <span>●</span> System Online
+        </div>
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <section class="page-header">
+            <div>
+                <p class="eyebrow">AI EMAIL FORENSICS</p>
+                <h1>Investigation Dashboard</h1>
+                <p>
+                    Retrieve and inspect forensic case information
+                    from the AI Email Forensics API.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Case Search -->
+
+        <section class="dashboard-card">
+
+            <h2>Retrieve Case</h2>
+
+            <div class="case-search">
+
+                <input
+                    type="text"
+                    id="caseId"
+                    placeholder="Enter Case ID e.g. email_0009"
+                    value="email_0009"
+                >
+
+                <button onclick="loadCase()">
+                    Load Case
+                </button>
+
+            </div>
+
+            <p id="apiStatus" class="api-status">
+                Ready
+            </p>
+
+        </section>
+
+
+        <!-- Case Information -->
+
+        <section class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <h3>Case ID</h3>
+                <p id="case_id">—</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Filename</h3>
+                <p id="filename">—</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Threat Score</h3>
+                <p id="threat_score">—</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Threat Level</h3>
+                <p id="threat_level">—</p>
+            </div>
+
+        </section>
+
+
+        <!-- Email Information -->
+
+        <section class="dashboard-card">
+
+            <h2>Email Information</h2>
+
+            <div class="email-details">
+
+                <div>
+                    <strong>Sender</strong>
+                    <p id="sender_raw">—</p>
+                </div>
+
+                <div>
+                    <strong>Recipient</strong>
+                    <p id="recipient_raw">—</p>
+                </div>
+
+                <div>
+                    <strong>Subject</strong>
+                    <p id="subject">—</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Raw API Response -->
+
+        <section class="dashboard-card">
+
+            <h2>API Response</h2>
+
+            <pre id="apiResponse">No case loaded.</pre>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        const API_BASE_URL = "http://127.0.0.1:8000";
+
+
+        async function loadCase() {
+
+            const caseId =
+                document.getElementById("caseId").value.trim();
+
+            const status =
+                document.getElementById("apiStatus");
+
+            if (!caseId) {
+
+                status.textContent = "Please enter a Case ID.";
+
+                return;
+            }
+
+
+            status.textContent = "Loading case...";
+
+
+            try {
+
+                const response = await fetch(
+                    `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}`
+                );
+
+
+                const data = await response.json();
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        data.detail || `API Error: ${response.status}`
+                    );
+
+                }
+
+
+                // Case information
+
+                document.getElementById("case_id").textContent =
+                    data.case_id || "—";
+
+                document.getElementById("filename").textContent =
+                    data.filename || "—";
+
+                document.getElementById("threat_score").textContent =
+                    data.threat_score ?? "—";
+
+                document.getElementById("threat_level").textContent =
+                    data.threat_level || "—";
+
+
+                // Email information
+
+                document.getElementById("sender_raw").textContent =
+                    data.sender_raw || "—";
+
+                document.getElementById("recipient_raw").textContent =
+                    data.recipient_raw || "—";
+
+                document.getElementById("subject").textContent =
+                    data.subject || "—";
+
+
+                // Raw response
+
+                document.getElementById("apiResponse").textContent =
+                    JSON.stringify(data, null, 2);
+
+
+                status.textContent =
+                    "Case loaded successfully.";
+
+
+            } catch (error) {
+
+                status.textContent =
+                    `Error: ${error.message}`;
+
+
+                document.getElementById("apiResponse").textContent =
+                    error.message;
+
+            }
+
+        }
+
+
+        // Automatically load the test case
+
+        window.addEventListener("DOMContentLoaded", () => {
+
+            loadCase();
+
+        });
+
+    </script>
+
+</body>
+</html>
