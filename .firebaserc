@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "email-forensics-8981f"
+  },
+  "targets": {
+    "email-forensics-8981f": {
+      "hosting": {
+        "forensimail-login": [
+          "forensimail-login"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

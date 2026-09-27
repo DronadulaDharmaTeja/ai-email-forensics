@@ -1,0 +1,3057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ForensiMail | Investigation Reports</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            background: #070b14;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        /* =====================================================
+           APPLICATION
+        ===================================================== */
+
+        #app {
+            display: none;
+            min-height: 100vh;
+        }
+
+        #app.authenticated {
+            display: flex;
+        }
+
+        /* =====================================================
+           SIDEBAR
+        ===================================================== */
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 250px;
+
+            background: #0b1120;
+
+            border-right: 1px solid #1e293b;
+
+            display: flex;
+            flex-direction: column;
+
+            z-index: 1000;
+        }
+
+        .brand {
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 0 22px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 11px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #7c3aed
+                );
+
+            font-size: 20px;
+        }
+
+        .brand-name {
+            color: #f8fafc;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .brand-subtitle {
+            margin-top: 2px;
+
+            color: #64748b;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+        /* =====================================================
+           NAVIGATION
+        ===================================================== */
+
+        .sidebar-section {
+            padding: 24px 14px 5px;
+        }
+
+        .sidebar-label {
+            padding: 0 12px 8px;
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+
+            width: 100%;
+
+            padding: 11px 13px;
+
+            margin-bottom: 4px;
+
+            border: 1px solid transparent;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+            transition: 0.2s ease;
+        }
+
+        .nav-item:hover {
+            background: #111827;
+            color: #e2e8f0;
+        }
+
+        .nav-item.active {
+            background:
+                rgba(37, 99, 235, 0.13);
+
+            border-color:
+                rgba(59, 130, 246, 0.2);
+
+            color: #60a5fa;
+        }
+
+        .nav-icon {
+            width: 22px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /* =====================================================
+           SIDEBAR STATUS
+        ===================================================== */
+
+        .sidebar-bottom {
+            margin-top: auto;
+
+            padding: 14px;
+
+            border-top: 1px solid #1e293b;
+        }
+
+        .security-status {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 12px;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 10px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: #22c55e;
+
+            box-shadow:
+                0 0 10px #22c55e;
+        }
+
+        .status-text strong {
+            display: block;
+
+            color: #e2e8f0;
+
+            font-size: 11px;
+        }
+
+        .status-text span {
+            display: block;
+
+            margin-top: 2px;
+
+            color: #64748b;
+
+            font-size: 10px;
+        }
+
+        /* =====================================================
+           MAIN
+        ===================================================== */
+
+        .main-area {
+            width: calc(100% - 250px);
+
+            margin-left: 250px;
+
+            min-height: 100vh;
+        }
+
+        /* =====================================================
+           TOPBAR
+        ===================================================== */
+
+        .topbar {
+            position: sticky;
+            top: 0;
+
+            z-index: 900;
+
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 30px;
+
+            background:
+                rgba(7, 11, 20, 0.95);
+
+            border-bottom: 1px solid #1e293b;
+
+            backdrop-filter: blur(15px);
+        }
+
+        .breadcrumb {
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .breadcrumb strong {
+            color: #cbd5e1;
+            font-weight: 500;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+
+            gap: 18px;
+        }
+
+        .system-status {
+            display: flex;
+            align-items: center;
+
+            gap: 7px;
+
+            color: #94a3b8;
+
+            font-size: 11px;
+        }
+
+        .system-status .dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #22c55e;
+
+            box-shadow:
+                0 0 8px #22c55e;
+        }
+
+        /* =====================================================
+           PROFILE
+        ===================================================== */
+
+        .profile-wrapper {
+            position: relative;
+        }
+
+        .profile-button {
+            display: flex;
+            align-items: center;
+
+            gap: 9px;
+
+            min-width: 190px;
+
+            padding: 5px 9px 5px 6px;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 10px;
+
+            color: white;
+        }
+
+        .profile-button:hover {
+            border-color: #3b82f6;
+        }
+
+        .profile-avatar {
+            width: 35px;
+            height: 35px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+        }
+
+        .profile-info {
+            flex: 1;
+            min-width: 0;
+
+            text-align: left;
+        }
+
+        .profile-info strong {
+            display: block;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            color: #f8fafc;
+
+            font-size: 11px;
+        }
+
+        .profile-info span {
+            display: block;
+
+            margin-top: 2px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            color: #64748b;
+
+            font-size: 9px;
+        }
+
+        /* =====================================================
+           PROFILE DROPDOWN
+        ===================================================== */
+
+        .profile-dropdown {
+            position: absolute;
+
+            right: 0;
+
+            top: calc(100% + 10px);
+
+            width: 285px;
+
+            padding: 10px;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0,0,0,.5);
+
+            display: none;
+
+            z-index: 5000;
+        }
+
+        .profile-dropdown.show {
+            display: block;
+        }
+
+        .dropdown-user {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 10px;
+        }
+
+        .dropdown-user img {
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+        }
+
+        .dropdown-user-info {
+            min-width: 0;
+        }
+
+        .dropdown-user-info strong {
+            display: block;
+
+            color: #f8fafc;
+
+            font-size: 13px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+        .dropdown-user-info span {
+            display: block;
+
+            margin-top: 3px;
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+
+            margin: 7px 0;
+
+            background: #1e293b;
+        }
+
+        .dropdown-action {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 11px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background: transparent;
+
+            color: #cbd5e1;
+
+            text-align: left;
+
+            font-size: 12px;
+        }
+
+        .dropdown-action:hover {
+            background: #172033;
+        }
+
+        .dropdown-action.logout {
+            color: #f87171;
+        }
+
+        /* =====================================================
+           CONTENT
+        ===================================================== */
+
+        .content {
+            max-width: 1500px;
+
+            margin: auto;
+
+            padding: 30px;
+        }
+
+        .page-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            margin-bottom: 25px;
+        }
+
+        .eyebrow {
+            margin-bottom: 8px;
+
+            color: #3b82f6;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.6px;
+
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            color: #f8fafc;
+
+            font-size: 34px;
+
+            font-weight: 750;
+
+            letter-spacing: -1px;
+        }
+
+        .page-description {
+            margin-top: 8px;
+
+            color: #64748b;
+
+            font-size: 13px;
+        }
+
+        /* =====================================================
+           ACTION BAR
+        ===================================================== */
+
+        .action-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px;
+
+            margin-bottom: 20px;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+        .case-search {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            flex: 1;
+        }
+
+        .case-search label {
+            color: #94a3b8;
+
+            font-size: 11px;
+
+            font-weight: 600;
+        }
+
+        .case-input {
+            width: 280px;
+
+            height: 40px;
+
+            padding: 0 12px;
+
+            outline: none;
+
+            background: #070b14;
+
+            border: 1px solid #263449;
+
+            border-radius: 8px;
+
+            color: #f8fafc;
+
+            font-size: 12px;
+        }
+
+        .case-input:focus {
+            border-color: #3b82f6;
+        }
+
+        .btn {
+            height: 40px;
+
+            padding: 0 17px;
+
+            border: 1px solid #263449;
+
+            border-radius: 8px;
+
+            background: #111827;
+
+            color: #cbd5e1;
+
+            font-size: 12px;
+
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #172033;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+
+            border-color: #2563eb;
+
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        /* =====================================================
+           SUMMARY CARDS
+        ===================================================== */
+
+        .summary-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0,1fr));
+
+            gap: 14px;
+
+            margin-bottom: 20px;
+        }
+
+        .summary-card {
+            padding: 18px;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+        .summary-label {
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: .8px;
+        }
+
+        .summary-value {
+            margin-top: 9px;
+
+            color: #f8fafc;
+
+            font-size: 20px;
+
+            font-weight: 700;
+        }
+
+        /* =====================================================
+           REPORT SECTIONS
+        ===================================================== */
+
+        .report-section {
+            margin-bottom: 20px;
+
+            overflow: hidden;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+        .section-header {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 17px 20px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .section-header h2 {
+            color: #e2e8f0;
+
+            font-size: 14px;
+        }
+
+        .section-header span {
+            color: #64748b;
+
+            font-size: 10px;
+        }
+
+        .section-body {
+            padding: 20px;
+        }
+
+        .detail-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,minmax(0,1fr));
+
+            gap: 12px;
+        }
+
+        .detail-item {
+            padding: 14px;
+
+            background: #0b1120;
+
+            border: 1px solid #172033;
+
+            border-radius: 10px;
+        }
+
+        .detail-label {
+            margin-bottom: 6px;
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+        }
+
+        .detail-value {
+            color: #cbd5e1;
+
+            font-size: 12px;
+
+            word-break: break-word;
+        }
+
+        /* =====================================================
+           THREAT BADGE
+        ===================================================== */
+
+        .badge {
+            display: inline-flex;
+
+            padding: 5px 10px;
+
+            border-radius: 999px;
+
+            font-size: 10px;
+
+            font-weight: 700;
+        }
+
+        .low {
+            background: rgba(34,197,94,.12);
+            color: #4ade80;
+        }
+
+        .medium {
+            background: rgba(234,179,8,.12);
+            color: #facc15;
+        }
+
+        .high {
+            background: rgba(239,68,68,.12);
+            color: #f87171;
+        }
+
+        .unknown {
+            background: rgba(148,163,184,.12);
+            color: #94a3b8;
+        }
+
+        /* =====================================================
+           CODE / JSON
+        ===================================================== */
+
+        .code-view {
+            margin: 0;
+
+            padding: 18px;
+
+            max-height: 400px;
+
+            overflow: auto;
+
+            background: #070b14;
+
+            border: 1px solid #172033;
+
+            border-radius: 10px;
+
+            color: #94a3b8;
+
+            font-family:
+                Consolas,
+                "Cascadia Code",
+                monospace;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+
+            white-space: pre-wrap;
+
+            word-break: break-word;
+        }
+
+        /* =====================================================
+           STATES
+        ===================================================== */
+
+        .state {
+            padding: 45px 20px;
+
+            text-align: center;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+
+            color: #64748b;
+        }
+
+        .state.error {
+            color: #f87171;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* =====================================================
+           PROFILE MODAL
+        ===================================================== */
+
+        .modal {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 10000;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                rgba(2,6,23,.78);
+
+            backdrop-filter: blur(8px);
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-box {
+            width: 100%;
+
+            max-width: 500px;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 30px 80px
+                rgba(0,0,0,.55);
+        }
+
+        .modal-header {
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            padding: 22px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .modal-header img {
+            width: 60px;
+            height: 60px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+        }
+
+        .modal-header h2 {
+            color: #f8fafc;
+            font-size: 18px;
+        }
+
+        .modal-header p {
+            margin-top: 4px;
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        .profile-details {
+            padding: 10px 22px 20px;
+        }
+
+        .profile-row {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 13px 0;
+
+            border-bottom: 1px solid #172033;
+        }
+
+        .profile-row label {
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        .profile-row span {
+            max-width: 65%;
+
+            color: #e2e8f0;
+
+            font-size: 11px;
+
+            text-align: right;
+
+            word-break: break-word;
+        }
+
+        .modal-footer {
+            padding: 0 22px 22px;
+        }
+
+        .close-btn {
+            width: 100%;
+
+            height: 40px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background: #1e293b;
+
+            color: #cbd5e1;
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width:1000px) {
+
+            .sidebar {
+                width: 215px;
+            }
+
+            .main-area {
+                width: calc(100% - 215px);
+                margin-left: 215px;
+            }
+
+            .summary-grid {
+                grid-template-columns:
+                    repeat(2,minmax(0,1fr));
+            }
+        }
+
+        @media(max-width:800px) {
+
+            .sidebar {
+                display: none;
+            }
+
+            .main-area {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .action-bar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .case-search {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .case-input {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:600px) {
+
+            .topbar {
+                padding: 0 15px;
+            }
+
+            .breadcrumb,
+            .system-status {
+                display: none;
+            }
+
+            .profile-info {
+                display: none;
+            }
+
+            .profile-button {
+                min-width: auto;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-title {
+                font-size: 27px;
+            }
+        }
+
+        /* =====================================================
+           PRINT
+        ===================================================== */
+
+        @media print {
+
+            .sidebar,
+            .topbar,
+            .action-bar {
+                display: none !important;
+            }
+
+            .main-area {
+                width: 100%;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .report-section,
+            .summary-card {
+                border: 1px solid #ddd;
+                background: white;
+                color: black;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     APPLICATION
+========================================================= -->
+
+<div id="app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🛡️
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    ForensiMail
+                </div>
+
+                <div class="brand-subtitle">
+                    AI Email Forensics
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-label">
+                Main
+            </div>
+
+
+            <a
+                href="dashboard.html"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ▦
+                </span>
+
+                Dashboard
+
+            </a>
+
+
+            <a
+                href="investigation.html"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ◉
+                </span>
+
+                Investigation
+
+            </a>
+
+
+            <a
+                href="reports.html"
+                class="nav-item active"
+            >
+
+                <span class="nav-icon">
+                    ▤
+                </span>
+
+                Reports
+
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-label">
+                System
+            </div>
+
+
+            <a
+                href="../index.html"
+                class="nav-item"
+            >
+
+                <span class="nav-icon">
+                    ⌂
+                </span>
+
+                Home
+
+            </a>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="security-status">
+
+                <span class="status-dot"></span>
+
+                <div class="status-text">
+
+                    <strong>
+                        System Online
+                    </strong>
+
+                    <span>
+                        Secure investigation environment
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN AREA
+    ====================================================== -->
+
+    <div class="main-area">
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="breadcrumb">
+
+                ForensiMail
+
+                &nbsp;/&nbsp;
+
+                <strong>
+                    Investigation Reports
+                </strong>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+
+                <div class="system-status">
+
+                    <span class="dot"></span>
+
+                    System Online
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="profile-wrapper">
+
+
+                    <button
+                        id="profileButton"
+                        class="profile-button"
+                        type="button"
+                    >
+
+                        <img
+                            id="userPhoto"
+                            class="profile-avatar"
+                            src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                            alt="User"
+                        >
+
+                        <div class="profile-info">
+
+                            <strong id="userName">
+                                User
+                            </strong>
+
+                            <span id="userEmail">
+                                Loading...
+                            </span>
+
+                        </div>
+
+                        <span>
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div
+                        id="profileDropdown"
+                        class="profile-dropdown"
+                    >
+
+
+                        <div class="dropdown-user">
+
+                            <img
+                                id="dropdownPhoto"
+                                src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                                alt="User"
+                            >
+
+                            <div class="dropdown-user-info">
+
+                                <strong id="dropdownName">
+                                    User
+                                </strong>
+
+                                <span id="dropdownEmail">
+                                    Loading...
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dropdown-divider"></div>
+
+
+                        <button
+                            id="viewProfileButton"
+                            class="dropdown-action"
+                            type="button"
+                        >
+
+                            👤
+
+                            <span>
+                                View Profile
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            id="logoutButton"
+                            class="dropdown-action logout"
+                            type="button"
+                            onclick="logoutForensiMail()"
+                        >
+
+                            🚪
+
+                            <span>
+                                Logout
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <main class="content">
+
+
+            <section class="page-header">
+
+                <div>
+
+                    <div class="eyebrow">
+                        AI EMAIL FORENSICS
+                    </div>
+
+                    <h1 class="page-title">
+                        Investigation Reports
+                    </h1>
+
+                    <p class="page-description">
+
+                        Review forensic evidence, security analysis,
+                        threat assessment, and investigation results.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CASE SEARCH
+            ================================================== -->
+
+            <section class="action-bar">
+
+
+                <div class="case-search">
+
+                    <label for="caseId">
+                        CASE ID
+                    </label>
+
+                    <input
+                        id="caseId"
+                        class="case-input"
+                        type="text"
+                        value="email_0009"
+                        placeholder="Enter Case ID"
+                    >
+
+                    <button
+                        id="loadReportBtn"
+                        class="btn btn-primary"
+                        type="button"
+                    >
+                        Load Report
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="btn"
+                    type="button"
+                    onclick="window.print()"
+                >
+                    🖨 Print Report
+                </button>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LOADING
+            ================================================== -->
+
+            <div
+                id="loadingState"
+                class="state hidden"
+            >
+
+                Loading forensic report...
+
+            </div>
+
+
+            <!-- =================================================
+                 ERROR
+            ================================================== -->
+
+            <div
+                id="errorState"
+                class="state error hidden"
+            >
+
+                <strong>
+                    Unable to load report
+                </strong>
+
+                <br><br>
+
+                <span id="errorMessage">
+                    An unexpected error occurred.
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 REPORT
+            ================================================== -->
+
+            <div id="reportContent" class="hidden">
+
+
+                <!-- SUMMARY -->
+
+                <section class="summary-grid">
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-label">
+                            Case ID
+                        </div>
+
+                        <div
+                            id="reportCaseId"
+                            class="summary-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-label">
+                            Threat Level
+                        </div>
+
+                        <div
+                            id="reportThreatLevel"
+                            class="summary-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-label">
+                            Threat Score
+                        </div>
+
+                        <div
+                            id="reportThreatScore"
+                            class="summary-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-label">
+                            Status
+                        </div>
+
+                        <div
+                            id="reportStatus"
+                            class="summary-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- CASE INFORMATION -->
+
+                <section class="report-section">
+
+
+                    <div class="section-header">
+
+                        <h2>
+                            Case Information
+                        </h2>
+
+                        <span>
+                            FORENSIC METADATA
+                        </span>
+
+                    </div>
+
+
+                    <div class="section-body">
+
+
+                        <div class="detail-grid">
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Case ID
+                                </div>
+
+                                <div
+                                    id="detailCaseId"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Filename
+                                </div>
+
+                                <div
+                                    id="detailFilename"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Sender
+                                </div>
+
+                                <div
+                                    id="detailSender"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Recipient
+                                </div>
+
+                                <div
+                                    id="detailRecipient"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Subject
+                                </div>
+
+                                <div
+                                    id="detailSubject"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Date Sent
+                                </div>
+
+                                <div
+                                    id="detailDate"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Origin IP
+                                </div>
+
+                                <div
+                                    id="detailOriginIp"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    MD5 Hash
+                                </div>
+
+                                <div
+                                    id="detailMd5"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- EMAIL SECURITY -->
+
+                <section class="report-section">
+
+
+                    <div class="section-header">
+
+                        <h2>
+                            Email Security Analysis
+                        </h2>
+
+                        <span>
+                            SPF / DKIM / DMARC
+                        </span>
+
+                    </div>
+
+
+                    <div class="section-body">
+
+
+                        <div class="detail-grid">
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    SPF
+                                </div>
+
+                                <div
+                                    id="detailSpf"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    DKIM
+                                </div>
+
+                                <div
+                                    id="detailDkim"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    DMARC
+                                </div>
+
+                                <div
+                                    id="detailDmarc"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-item">
+
+                                <div class="detail-label">
+                                    Threat Level
+                                </div>
+
+                                <div
+                                    id="detailThreatLevel"
+                                    class="detail-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- EMAIL BODY -->
+
+                <section class="report-section">
+
+
+                    <div class="section-header">
+
+                        <h2>
+                            Email Body
+                        </h2>
+
+                        <span>
+                            EXTRACTED CONTENT
+                        </span>
+
+                    </div>
+
+
+                    <div class="section-body">
+
+                        <pre
+                            id="emailBody"
+                            class="code-view"
+                        >No email body available.</pre>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- INVESTIGATION -->
+
+                <section class="report-section">
+
+
+                    <div class="section-header">
+
+                        <h2>
+                            Investigation Result
+                        </h2>
+
+                        <span>
+                            AI FORENSIC ENGINE
+                        </span>
+
+                    </div>
+
+
+                    <div class="section-body">
+
+                        <pre
+                            id="investigationResult"
+                            class="code-view"
+                        >Investigation result will appear here.</pre>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- RAW DATA -->
+
+                <section class="report-section">
+
+
+                    <div class="section-header">
+
+                        <h2>
+                            Case API Data
+                        </h2>
+
+                        <span>
+                            RAW EVIDENCE RESPONSE
+                        </span>
+
+                    </div>
+
+
+                    <div class="section-body">
+
+                        <pre
+                            id="rawCaseData"
+                            class="code-view"
+                        >—</pre>
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     PROFILE MODAL
+========================================================= -->
+
+<div
+    id="profileModal"
+    class="modal"
+>
+
+
+    <div class="modal-box">
+
+
+        <div class="modal-header">
+
+            <img
+                id="modalPhoto"
+                src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                alt="User"
+            >
+
+            <div>
+
+                <h2 id="modalName">
+                    User
+                </h2>
+
+                <p id="modalEmail">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-details">
+
+
+            <div class="profile-row">
+
+                <label>
+                    Email
+                </label>
+
+                <span id="profileEmail">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <label>
+                    Authentication
+                </label>
+
+                <span id="profileProvider">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <label>
+                    Email Verification
+                </label>
+
+                <span id="profileVerified">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <label>
+                    Account Created
+                </label>
+
+                <span id="profileCreated">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <label>
+                    Last Sign-In
+                </label>
+
+                <span id="profileLastLogin">
+                    —
+                </span>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <label>
+                    Firebase User ID
+                </label>
+
+                <span id="profileUID">
+                    —
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="modal-footer">
+
+            <button
+                id="closeProfileButton"
+                class="close-btn"
+                type="button"
+            >
+                Close
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     FIREBASE
+========================================================= -->
+
+<script type="module">
+
+    import {
+        initializeApp
+    }
+    from
+    "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+
+    import {
+        getAuth,
+        onAuthStateChanged,
+        signOut
+    }
+    from
+    "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+
+    const firebaseConfig = {
+
+        apiKey:
+            "AIzaSyAHu6ytExHI26K41IbfS_JHFjSkSsVfg6Y",
+
+        authDomain:
+            "email-forensics-8981f.firebaseapp.com",
+
+        projectId:
+            "email-forensics-8981f",
+
+        storageBucket:
+            "email-forensics-8981f.firebasestorage.app",
+
+        messagingSenderId:
+            "1129107379",
+
+        appId:
+            "1:1129107379:web:9d272ebfe471ad78f05c6",
+
+        measurementId:
+            "G-R1K4G4FJ3Y"
+
+    };
+
+
+    const app =
+        initializeApp(
+            firebaseConfig
+        );
+
+
+    const auth =
+        getAuth(app);
+
+
+    /* =====================================================
+       AUTH GUARD
+    ====================================================== */
+
+    onAuthStateChanged(
+        auth,
+        (user) => {
+
+            if (!user) {
+
+                window.location.replace(
+                    "../index.html"
+                );
+
+                return;
+            }
+
+
+            document
+                .getElementById("app")
+                .classList
+                .add("authenticated");
+
+
+            loadUserProfile(user);
+
+            loadReport();
+
+        }
+    );
+
+
+    /* =====================================================
+       USER PROFILE
+    ====================================================== */
+
+    function loadUserProfile(user) {
+
+        const name =
+            user.displayName ||
+            "ForensiMail User";
+
+        const email =
+            user.email ||
+            "No email";
+
+        const photo =
+            user.photoURL ||
+            `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=2563eb&color=fff&size=128`;
+
+
+        document.getElementById("userName")
+            .textContent = name;
+
+        document.getElementById("userEmail")
+            .textContent = email;
+
+        document.getElementById("userPhoto")
+            .src = photo;
+
+
+        document.getElementById("dropdownName")
+            .textContent = name;
+
+        document.getElementById("dropdownEmail")
+            .textContent = email;
+
+        document.getElementById("dropdownPhoto")
+            .src = photo;
+
+
+        document.getElementById("modalName")
+            .textContent = name;
+
+        document.getElementById("modalEmail")
+            .textContent = email;
+
+        document.getElementById("modalPhoto")
+            .src = photo;
+
+
+        document.getElementById("profileEmail")
+            .textContent = email;
+
+
+        let provider =
+            "Email / Password";
+
+
+        if (
+            user.providerData &&
+            user.providerData.length
+        ) {
+
+            provider =
+                user.providerData
+                    .map(
+                        p => {
+
+                            if (
+                                p.providerId ===
+                                "google.com"
+                            ) {
+                                return "Google";
+                            }
+
+                            if (
+                                p.providerId ===
+                                "password"
+                            ) {
+                                return "Email / Password";
+                            }
+
+                            return p.providerId;
+
+                        }
+                    )
+                    .join(", ");
+
+        }
+
+
+        document.getElementById(
+            "profileProvider"
+        ).textContent = provider;
+
+
+        document.getElementById(
+            "profileVerified"
+        ).textContent =
+            user.emailVerified
+                ? "Verified"
+                : "Not Verified";
+
+
+        document.getElementById(
+            "profileCreated"
+        ).textContent =
+            user.metadata?.creationTime
+                ? new Date(
+                    user.metadata.creationTime
+                ).toLocaleString()
+                : "Unavailable";
+
+
+        document.getElementById(
+            "profileLastLogin"
+        ).textContent =
+            user.metadata?.lastSignInTime
+                ? new Date(
+                    user.metadata.lastSignInTime
+                ).toLocaleString()
+                : "Unavailable";
+
+
+        document.getElementById(
+            "profileUID"
+        ).textContent =
+            user.uid;
+
+    }
+
+
+    /* =====================================================
+       LOGOUT
+    ====================================================== */
+
+    window.logoutForensiMail =
+        async function () {
+
+            const button =
+                document.getElementById(
+                    "logoutButton"
+                );
+
+
+            try {
+
+                button.disabled = true;
+
+                button.innerHTML =
+                    "⏳ Signing out...";
+
+
+                await signOut(auth);
+
+
+                sessionStorage.clear();
+
+
+                window.location.replace(
+                    "../index.html"
+                );
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Logout error:",
+                    error
+                );
+
+
+                button.disabled = false;
+
+                button.innerHTML =
+                    "🚪 Logout";
+
+
+                alert(
+                    "Logout failed: " +
+                    error.message
+                );
+
+            }
+
+        };
+
+
+    /* =====================================================
+       PROFILE DROPDOWN
+    ====================================================== */
+
+    document
+        .getElementById("profileButton")
+        .addEventListener(
+            "click",
+            (event) => {
+
+                event.stopPropagation();
+
+                document
+                    .getElementById(
+                        "profileDropdown"
+                    )
+                    .classList
+                    .toggle("show");
+
+            }
+        );
+
+
+    document.addEventListener(
+        "click",
+        (event) => {
+
+            const wrapper =
+                document.querySelector(
+                    ".profile-wrapper"
+                );
+
+
+            if (
+                wrapper &&
+                !wrapper.contains(
+                    event.target
+                )
+            ) {
+
+                document
+                    .getElementById(
+                        "profileDropdown"
+                    )
+                    .classList
+                    .remove("show");
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       VIEW PROFILE
+    ====================================================== */
+
+    document
+        .getElementById("viewProfileButton")
+        .addEventListener(
+            "click",
+            () => {
+
+                document
+                    .getElementById(
+                        "profileDropdown"
+                    )
+                    .classList
+                    .remove("show");
+
+
+                document
+                    .getElementById(
+                        "profileModal"
+                    )
+                    .classList
+                    .add("show");
+
+            }
+        );
+
+
+    document
+        .getElementById("closeProfileButton")
+        .addEventListener(
+            "click",
+            () => {
+
+                document
+                    .getElementById(
+                        "profileModal"
+                    )
+                    .classList
+                    .remove("show");
+
+            }
+        );
+
+
+    document
+        .getElementById("profileModal")
+        .addEventListener(
+            "click",
+            (event) => {
+
+                if (
+                    event.target.id ===
+                    "profileModal"
+                ) {
+
+                    event.currentTarget
+                        .classList
+                        .remove("show");
+
+                }
+
+            }
+        );
+
+</script>
+
+
+
+<!-- =========================================================
+     REPORT JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    const API_BASE_URL =
+        "http://127.0.0.1:8000";
+
+
+    const caseInput =
+        document.getElementById(
+            "caseId"
+        );
+
+
+    const loadButton =
+        document.getElementById(
+            "loadReportBtn"
+        );
+
+
+    const loadingState =
+        document.getElementById(
+            "loadingState"
+        );
+
+
+    const errorState =
+        document.getElementById(
+            "errorState"
+        );
+
+
+    const errorMessage =
+        document.getElementById(
+            "errorMessage"
+        );
+
+
+    const reportContent =
+        document.getElementById(
+            "reportContent"
+        );
+
+
+    function showLoading() {
+
+        loadingState
+            .classList
+            .remove("hidden");
+
+        errorState
+            .classList
+            .add("hidden");
+
+        reportContent
+            .classList
+            .add("hidden");
+
+    }
+
+
+    function showError(message) {
+
+        loadingState
+            .classList
+            .add("hidden");
+
+        reportContent
+            .classList
+            .add("hidden");
+
+        errorMessage
+            .textContent = message;
+
+        errorState
+            .classList
+            .remove("hidden");
+
+    }
+
+
+    function showReport() {
+
+        loadingState
+            .classList
+            .add("hidden");
+
+        errorState
+            .classList
+            .add("hidden");
+
+        reportContent
+            .classList
+            .remove("hidden");
+
+    }
+
+
+    function value(value) {
+
+        if (
+            value === null ||
+            value === undefined ||
+            value === ""
+        ) {
+
+            return "—";
+
+        }
+
+        return String(value);
+
+    }
+
+
+    function setText(
+        id,
+        data
+    ) {
+
+        const element =
+            document.getElementById(id);
+
+
+        if (element) {
+
+            element.textContent =
+                value(data);
+
+        }
+
+    }
+
+
+    function threatBadge(level) {
+
+        const text =
+            value(level);
+
+
+        const normalized =
+            text.toLowerCase();
+
+
+        let className =
+            "unknown";
+
+
+        if (
+            normalized === "low"
+        ) {
+
+            className = "low";
+
+        }
+
+        else if (
+            normalized === "medium"
+        ) {
+
+            className = "medium";
+
+        }
+
+        else if (
+            normalized === "high" ||
+            normalized === "critical"
+        ) {
+
+            className = "high";
+
+        }
+
+
+        return `
+            <span class="badge ${className}">
+                ${text}
+            </span>
+        `;
+
+    }
+
+
+    async function loadReport() {
+
+        const caseId =
+            caseInput.value.trim();
+
+
+        if (!caseId) {
+
+            showError(
+                "Please enter a Case ID."
+            );
+
+            return;
+
+        }
+
+
+        showLoading();
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}`
+                );
+
+
+            if (!response.ok) {
+
+                let message =
+                    `API returned HTTP ${response.status}.`;
+
+
+                try {
+
+                    const errorData =
+                        await response.json();
+
+
+                    if (
+                        errorData.detail
+                    ) {
+
+                        message =
+                            errorData.detail;
+
+                    }
+
+                }
+
+                catch (_) {}
+
+
+                throw new Error(
+                    message
+                );
+
+            }
+
+
+            const data =
+                await response.json();
+
+
+            renderReport(data);
+
+
+            await loadInvestigation(
+                caseId
+            );
+
+
+            showReport();
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "Report error:",
+                error
+            );
+
+
+            showError(
+                error.message ||
+                "Unable to load report."
+            );
+
+        }
+
+    }
+
+
+    function renderReport(data) {
+
+        setText(
+            "reportCaseId",
+            data.case_id
+        );
+
+
+        setText(
+            "reportThreatScore",
+            data.threat_score
+        );
+
+
+        setText(
+            "reportStatus",
+            "Case Loaded"
+        );
+
+
+        document
+            .getElementById(
+                "reportThreatLevel"
+            )
+            .innerHTML =
+            threatBadge(
+                data.threat_level
+            );
+
+
+        setText(
+            "detailCaseId",
+            data.case_id
+        );
+
+
+        setText(
+            "detailFilename",
+            data.filename
+        );
+
+
+        setText(
+            "detailSender",
+            data.sender_clean ||
+            data.sender_raw
+        );
+
+
+        setText(
+            "detailRecipient",
+            data.recipient_raw
+        );
+
+
+        setText(
+            "detailSubject",
+            data.subject
+        );
+
+
+        setText(
+            "detailDate",
+            data.date_sent
+        );
+
+
+        setText(
+            "detailOriginIp",
+            data.origin_ip
+        );
+
+
+        setText(
+            "detailMd5",
+            data.md5_hash
+        );
+
+
+        setText(
+            "detailSpf",
+            data.has_spf
+        );
+
+
+        setText(
+            "detailDkim",
+            data.dkim_status
+        );
+
+
+        setText(
+            "detailDmarc",
+            data.dmarc_policy
+        );
+
+
+        document
+            .getElementById(
+                "detailThreatLevel"
+            )
+            .innerHTML =
+            threatBadge(
+                data.threat_level
+            );
+
+
+        document
+            .getElementById(
+                "emailBody"
+            )
+            .textContent =
+            data.body_plain ||
+            "No plain-text email body available.";
+
+
+        document
+            .getElementById(
+                "rawCaseData"
+            )
+            .textContent =
+            JSON.stringify(
+                data,
+                null,
+                2
+            );
+
+    }
+
+
+    async function loadInvestigation(
+        caseId
+    ) {
+
+        const output =
+            document.getElementById(
+                "investigationResult"
+            );
+
+
+        try {
+
+            const response =
+                await fetch(
+                    `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}/investigate?rounds=1`,
+                    {
+                        method: "POST"
+                    }
+                );
+
+
+            if (!response.ok) {
+
+                output.textContent =
+                    `Investigation API returned HTTP ${response.status}. The case report itself was loaded successfully.`;
+
+                return;
+
+            }
+
+
+            const result =
+                await response.json();
+
+
+            output.textContent =
+                JSON.stringify(
+                    result,
+                    null,
+                    2
+                );
+
+        }
+
+        catch (error) {
+
+            output.textContent =
+                "Investigation result unavailable. The basic forensic case report is still available.";
+
+            console.warn(
+                "Investigation unavailable:",
+                error
+            );
+
+        }
+
+    }
+
+
+    loadButton.addEventListener(
+        "click",
+        loadReport
+    );
+
+
+    caseInput.addEventListener(
+        "keydown",
+        (event) => {
+
+            if (
+                event.key === "Enter"
+            ) {
+
+                loadReport();
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>

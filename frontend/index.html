@@ -1,270 +1,204 @@
+const { onCall, HttpsError } = require("firebase-functions/v2/https");
+const { Resend } = require("resend");
+
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+exports.sendWelcomeEmail = onCall(
+  {
+    region: "asia-south1",
+  },
+  async (request) => {
+
+    // Check that the Firebase user is authenticated
+    if (!request.auth) {
+      throw new HttpsError(
+        "unauthenticated",
+        "User must be authenticated."
+      );
+    }
+
+    // Get the email directly from Firebase Authentication
+    const email = request.auth.token.email;
+
+    if (!email) {
+      throw new HttpsError(
+        "invalid-argument",
+        "Authenticated user does not have an email address."
+      );
+    }
+
+    try {
+
+      const result = await resend.emails.send({
+        from: "ForensiMail <onboarding@resend.dev>",
+
+        to: [email],
+
+        subject: "Welcome to ForensiMail",
+
+        html: `
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ForensiMail | AI Email Forensics</title>
-
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Welcome to ForensiMail</title>
 </head>
 
-<body>
+<body style="
+    margin:0;
+    padding:0;
+    background:#080d1d;
+    font-family:Arial,Helvetica,sans-serif;
+">
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="brand">
-            <div class="brand-icon">F</div>
-            <div>
-                <h1>ForensiMail</h1>
-                <span>AI Email Forensics</span>
-            </div>
+    <div style="
+        max-width:600px;
+        margin:40px auto;
+        padding:30px;
+        background:#0f172a;
+        border-radius:18px;
+        color:#ffffff;
+    ">
+
+        <div style="
+            text-align:center;
+            font-size:45px;
+            margin-bottom:15px;
+        ">
+            🛡️
         </div>
 
-        <nav>
-            <a href="./index.html" class="active">Home</a>
-            <a href="./pages/dashboard.html">Dashboard</a>
-            <a href="./pages/investigation.html">Investigation</a>
-            <a href="./pages/reports.html">Reports</a>
-        </nav>
+        <h1 style="
+            text-align:center;
+            color:#60a5fa;
+            margin-bottom:10px;
+        ">
+            Welcome to ForensiMail
+        </h1>
 
-        <div class="system-status">
-            <span class="status-dot"></span>
-            System Online
-        </div>
-    </header>
+        <p style="
+            text-align:center;
+            color:#94a3b8;
+            font-size:15px;
+        ">
+            AI Email Forensics Investigation System
+        </p>
 
+        <hr style="
+            border:none;
+            border-top:1px solid #334155;
+            margin:25px 0;
+        ">
 
-    <!-- Hero -->
-    <main>
+        <p style="
+            color:#e2e8f0;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            Your ForensiMail account has been created successfully.
+        </p>
 
-        <section class="hero">
+        <p style="
+            color:#e2e8f0;
+            font-size:16px;
+            line-height:1.6;
+        ">
+            You can now sign in and access the
+            <strong>AI Email Forensics Investigation System</strong>.
+        </p>
 
-            <div class="hero-content">
+        <div style="
+            margin-top:25px;
+            padding:18px;
+            background:#111827;
+            border:1px solid #334155;
+            border-radius:12px;
+        ">
 
-                <div class="badge">
-                    AI-POWERED DIGITAL FORENSICS
-                </div>
+            <p style="
+                margin:0 0 8px 0;
+                color:#94a3b8;
+                font-size:13px;
+            ">
+                Account Email
+            </p>
 
-                <h2>
-                    Investigate Suspicious Emails
-                    <span>with AI</span>
-                </h2>
+            <p style="
+                margin:0;
+                color:#ffffff;
+                font-size:16px;
+                font-weight:bold;
+            ">
+                ${email}
+            </p>
 
-                <p>
-                    ForensiMail is an AI-based email forensic investigation
-                    platform for analyzing email headers, URLs, attachments,
-                    authentication evidence, risk indicators and AI findings.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="./pages/investigation.html" class="btn btn-primary">
-                        Start Investigation
-                    </a>
-
-                    <a href="./pages/dashboard.html" class="btn btn-secondary">
-                        Open Dashboard
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- Investigation Card -->
-            <div class="hero-card">
-
-                <div class="card-header">
-                    <span>FORENSIC ENGINE</span>
-                    <span class="live-label">● LIVE</span>
-                </div>
-
-                <div class="scan-line"></div>
-
-                <div class="analysis-item">
-                    <span>Email Parsing</span>
-                    <strong class="success">READY</strong>
-                </div>
-
-                <div class="analysis-item">
-                    <span>Header Analysis</span>
-                    <strong class="success">READY</strong>
-                </div>
-
-                <div class="analysis-item">
-                    <span>URL Analysis</span>
-                    <strong class="success">READY</strong>
-                </div>
-
-                <div class="analysis-item">
-                    <span>AI Classification</span>
-                    <strong class="success">READY</strong>
-                </div>
-
-                <div class="analysis-item">
-                    <span>Risk Assessment</span>
-                    <strong class="success">READY</strong>
-                </div>
-
-                <div class="analysis-item">
-                    <span>MCP Services</span>
-                    <strong class="success">ONLINE</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Platform capabilities -->
-        <section class="features">
-
-            <div class="section-heading">
-                <span>CAPABILITIES</span>
-                <h2>Forensic Investigation Pipeline</h2>
-                <p>
-                    Analyze digital email evidence through multiple
-                    forensic and AI-powered stages.
-                </p>
-            </div>
-
-
-            <div class="feature-grid">
-
-                <article class="feature-card">
-                    <div class="feature-icon">01</div>
-                    <h3>Email Evidence</h3>
-                    <p>
-                        Process EML evidence and preserve original
-                        forensic information for investigation.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-icon">02</div>
-                    <h3>Header Analysis</h3>
-                    <p>
-                        Inspect sender, recipient, routing and available
-                        authentication-related evidence.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-icon">03</div>
-                    <h3>URL Intelligence</h3>
-                    <p>
-                        Extract and structurally analyze URLs contained
-                        within email evidence.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-icon">04</div>
-                    <h3>AI Classification</h3>
-                    <p>
-                        Use the AI engine to classify email evidence and
-                        generate investigation findings.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-icon">05</div>
-                    <h3>Risk Assessment</h3>
-                    <p>
-                        Combine forensic indicators into a deterministic
-                        risk assessment for the investigation.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-icon">06</div>
-                    <h3>Investigation Reports</h3>
-                    <p>
-                        Organize findings and evidence into a structured
-                        investigation report.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Architecture -->
-        <section class="pipeline">
-
-            <div class="section-heading">
-                <span>WORKFLOW</span>
-                <h2>From Evidence to Investigation</h2>
-            </div>
-
-            <div class="pipeline-flow">
-
-                <div class="pipeline-step">
-                    <div class="step-number">01</div>
-                    <h3>Upload</h3>
-                    <p>Provide email evidence</p>
-                </div>
-
-                <div class="pipeline-arrow">→</div>
-
-                <div class="pipeline-step">
-                    <div class="step-number">02</div>
-                    <h3>Parse</h3>
-                    <p>Extract forensic data</p>
-                </div>
-
-                <div class="pipeline-arrow">→</div>
-
-                <div class="pipeline-step">
-                    <div class="step-number">03</div>
-                    <h3>Analyze</h3>
-                    <p>Inspect evidence</p>
-                </div>
-
-                <div class="pipeline-arrow">→</div>
-
-                <div class="pipeline-step">
-                    <div class="step-number">04</div>
-                    <h3>AI</h3>
-                    <p>Generate findings</p>
-                </div>
-
-                <div class="pipeline-arrow">→</div>
-
-                <div class="pipeline-step">
-                    <div class="step-number">05</div>
-                    <h3>Report</h3>
-                    <p>Produce investigation results</p>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <div>
-            <strong>ForensiMail</strong>
-            <span>AI Email Forensics Investigation System</span>
         </div>
 
-        <div>
-            Email Forensics • AI • MCP • Digital Investigation
+        <div style="
+            margin-top:25px;
+            padding:18px;
+            background:#111827;
+            border-radius:12px;
+        ">
+
+            <p style="
+                margin:0;
+                color:#94a3b8;
+                font-size:14px;
+                line-height:1.6;
+            ">
+                Your account is ready. Please return to
+                ForensiMail and sign in using your email
+                address and password.
+            </p>
+
         </div>
 
-    </footer>
+        <hr style="
+            border:none;
+            border-top:1px solid #334155;
+            margin:30px 0;
+        ">
 
+        <p style="
+            text-align:center;
+            color:#64748b;
+            font-size:12px;
+            line-height:1.6;
+        ">
+            This is an automated email from ForensiMail.
+            Please do not reply to this message.
+        </p>
 
-    <script src="./js/app.js"></script>
+    </div>
 
 </body>
 </html>
+        `,
+      });
+
+      console.log(
+        "Welcome email sent successfully:",
+        result
+      );
+
+      return {
+        success: true,
+        email: email,
+        message: "Welcome email sent successfully.",
+      };
+
+    } catch (error) {
+
+      console.error(
+        "WELCOME EMAIL ERROR:",
+        error
+      );
+
+      throw new HttpsError(
+        "internal",
+        "Unable to send welcome email."
+      );
+    }
+  }
+);

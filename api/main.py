@@ -2,6 +2,7 @@
 from fastapi.middleware.cors import CORSMiddleware
 
 from database.cases_repository import get_case
+from api.investigation import router as investigation_router
 
 
 # ============================================================
@@ -13,6 +14,13 @@ app = FastAPI(
     version="1.0.0",
     description="API for the AI Email Forensics Investigation System",
 )
+
+
+# ============================================================
+# INVESTIGATION ROUTER
+# ============================================================
+
+app.include_router(investigation_router)
 
 
 # ============================================================

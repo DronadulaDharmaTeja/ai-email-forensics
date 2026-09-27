@@ -9,3 +9,24 @@ threat_intel/
 database/backups/
 __pycache__/
 ai_engine/**/backups/
+
+# Firebase
+.firebase/
+functions/node_modules/
+functions/.env
+
+# Python
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+
+# Local IDE/system files
+.vscode/
+*.log
+
+# Temporary backup files
+*_before_*.py
+*_restore*.py
+run_debate_restore.txt

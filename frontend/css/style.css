@@ -1,516 +1,2166 @@
-/* =========================================================
-   FORENSIMAIL — AI EMAIL FORENSICS
-   Global Styles
-   ========================================================= */
-
-:root {
-    --bg: #070b12;
-    --bg-secondary: #0c121c;
-    --panel: #101823;
-    --panel-hover: #141f2c;
-    --border: #1e2b3a;
-    --text: #e8eef6;
-    --muted: #8d9aaa;
-    --accent: #39d98a;
-    --accent-dark: #1c9b62;
-    --blue: #4da3ff;
-    --danger: #ff5c6c;
-    --warning: #f5b942;
-    --radius: 14px;
-    --max-width: 1200px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    min-height: 100vh;
-    background:
-        radial-gradient(circle at 80% 10%, rgba(57, 217, 138, 0.08), transparent 28%),
-        radial-gradient(circle at 10% 30%, rgba(77, 163, 255, 0.06), transparent 25%),
-        var(--bg);
-    color: var(--text);
-    font-family: Inter, "Segoe UI", Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
-.navbar {
-    width: 100%;
-    min-height: 76px;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    border-bottom: 1px solid var(--border);
-    background: rgba(7, 11, 18, 0.92);
-    backdrop-filter: blur(14px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;
-}
-
-.brand-icon {
-    width: 42px;
-    height: 42px;
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
-    color: var(--accent);
-    font-size: 20px;
-    font-weight: 800;
-    box-shadow: 0 0 18px rgba(57, 217, 138, 0.12);
-}
-
-.brand h1 {
-    font-size: 18px;
-    line-height: 1.1;
-}
-
-.brand span {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-nav a {
-    color: var(--muted);
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.2s ease;
-}
-
-nav a:hover,
-nav a.active {
-    color: var(--text);
-    background: var(--panel);
-}
-
-nav a.active {
-    color: var(--accent);
-}
-
-.system-status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--muted);
-    font-size: 12px;
-    white-space: nowrap;
-}
-
-.status-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 10px rgba(57, 217, 138, 0.8);
-}
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero {
-    width: min(var(--max-width), 90%);
-    margin: 0 auto;
-    min-height: 650px;
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    align-items: center;
-    gap: 70px;
-    padding: 90px 0;
-}
-
-.badge {
-    display: inline-block;
-    padding: 6px 11px;
-    margin-bottom: 22px;
-    border: 1px solid rgba(57, 217, 138, 0.35);
-    border-radius: 999px;
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-}
-
-.hero h2 {
-    max-width: 720px;
-    font-size: clamp(42px, 6vw, 72px);
-    line-height: 1.02;
-    letter-spacing: -2px;
-    margin-bottom: 25px;
-}
-
-.hero h2 span {
-    color: var(--accent);
-}
-
-.hero-content > p {
-    max-width: 650px;
-    color: var(--muted);
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 35px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 48px;
-    padding: 0 20px;
-    border-radius: 9px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    transition: 0.2s ease;
-}
-
-.btn-primary {
-    background: var(--accent);
-    color: #06100b;
-}
-
-.btn-primary:hover {
-    background: #52e59a;
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    border: 1px solid var(--border);
-    color: var(--text);
-    background: var(--panel);
-}
-
-.btn-secondary:hover {
-    background: var(--panel-hover);
-    border-color: #34475b;
-}
-
-/* =========================================================
-   FORENSIC ENGINE CARD
-   ========================================================= */
-
-.hero-card {
-    padding: 25px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-        linear-gradient(145deg, rgba(16, 24, 35, 0.98), rgba(10, 16, 24, 0.98));
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    color: var(--muted);
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-}
-
-.live-label {
-    color: var(--accent);
-}
-
-.scan-line {
-    height: 1px;
-    margin: 20px 0;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--accent),
-        transparent
-    );
-}
-
-.analysis-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(30, 43, 58, 0.75);
-    color: #c4cfdb;
-    font-size: 13px;
-}
-
-.analysis-item:last-child {
-    border-bottom: 0;
-}
-
-.success {
-    color: var(--accent);
-    font-size: 11px;
-    letter-spacing: 0.7px;
-}
-
-/* =========================================================
-   SECTION HEADINGS
-   ========================================================= */
-
-.section-heading {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 50px;
-}
-
-.section-heading > span {
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.8px;
-}
-
-.section-heading h2 {
-    margin: 8px 0 12px;
-    font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.15;
-}
-
-.section-heading p {
-    color: var(--muted);
-}
-
-/* =========================================================
-   FEATURES
-   ========================================================= */
-
-.features {
-    width: min(var(--max-width), 90%);
-    margin: 0 auto;
-    padding: 80px 0;
-}
-
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.feature-card {
-    min-height: 210px;
-    padding: 25px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: rgba(16, 24, 35, 0.7);
-    transition: 0.25s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-4px);
-    border-color: #304255;
-    background: var(--panel-hover);
-}
-
-.feature-icon {
-    width: 38px;
-    height: 38px;
-    margin-bottom: 22px;
-    display: grid;
-    place-items: center;
-    border: 1px solid rgba(57, 217, 138, 0.35);
-    border-radius: 8px;
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 800;
-}
-
-.feature-card h3 {
-    margin-bottom: 10px;
-    font-size: 17px;
-}
-
-.feature-card p {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-/* =========================================================
-   PIPELINE
-   ========================================================= */
-
-.pipeline {
-    width: min(var(--max-width), 90%);
-    margin: 0 auto;
-    padding: 80px 0 110px;
-}
-
-.pipeline-flow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-.pipeline-step {
-    width: 175px;
-    min-height: 140px;
-    padding: 20px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--panel);
-}
-
-.step-number {
-    color: var(--accent);
-    font-size: 12px;
-    font-weight: 800;
-    margin-bottom: 18px;
-}
-
-.pipeline-step h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.pipeline-step p {
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.pipeline-arrow {
-    color: var(--accent);
-    font-size: 22px;
-}
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-    min-height: 100px;
-    padding: 25px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 12px;
-}
-
-footer div {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-footer strong {
-    color: var(--text);
-    font-size: 14px;
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 950px) {
-    .navbar {
-        flex-wrap: wrap;
-        padding: 15px 5%;
-    }
-
-    nav {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        overflow-x: auto;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 70px 0;
-    }
-
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        gap: 15px;
-    }
-
-    .system-status {
-        display: none;
-    }
-
-    nav {
-        justify-content: flex-start;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 55px 0;
-    }
-
-    .hero h2 {
-        font-size: 42px;
-        letter-spacing: -1px;
-    }
-
-    .hero-content > p {
-        font-size: 15px;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .pipeline-flow {
-        flex-direction: column;
-    }
-
-    .pipeline-arrow {
-        transform: rotate(90deg);
-    }
-
-    .pipeline-step {
-        width: 100%;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ForensiMail - Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+
+    <!-- =====================================================
+         DASHBOARD + PROFILE STYLES
+         ===================================================== -->
+
+    <style>
+
+        /* =================================================
+           NAVBAR
+           ================================================= */
+
+        .navbar {
+            position: relative !important;
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            width: 100%;
+
+            min-height: 70px;
+
+            padding: 10px 20px !important;
+
+            box-sizing: border-box;
+
+            gap: 15px;
+
+            z-index: 1000;
+        }
+
+
+        .navbar .logo {
+            flex-shrink: 0;
+
+            white-space: nowrap;
+        }
+
+
+        .navbar nav {
+            display: flex !important;
+
+            align-items: center !important;
+
+            gap: 8px;
+
+            margin-left: auto;
+
+            flex-shrink: 1;
+        }
+
+
+        .navbar nav a {
+            white-space: nowrap;
+        }
+
+
+        .navbar .status {
+            flex-shrink: 0;
+
+            white-space: nowrap;
+
+            margin-left: 5px;
+        }
+
+
+        /* =================================================
+           USER PROFILE
+           ================================================= */
+
+        .user-profile {
+
+            position: relative !important;
+
+            flex-shrink: 0 !important;
+
+            margin-left: 5px !important;
+
+            z-index: 9999 !important;
+        }
+
+
+        .profile-button {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            width: 190px;
+
+            height: 48px;
+
+            padding: 5px 9px !important;
+
+            background: rgba(15, 23, 42, 0.95) !important;
+
+            border: 1px solid rgba(148, 163, 184, 0.35) !important;
+
+            border-radius: 12px;
+
+            color: #ffffff !important;
+
+            cursor: pointer;
+
+            box-sizing: border-box;
+
+            transition: 0.2s ease;
+        }
+
+
+        .profile-button:hover {
+
+            background: rgba(30, 41, 59, 1) !important;
+
+            border-color: #3b82f6 !important;
+        }
+
+
+        .profile-photo {
+
+            width: 36px !important;
+
+            height: 36px !important;
+
+            min-width: 36px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #3b82f6;
+
+            background: #1e293b;
+        }
+
+
+        .profile-summary {
+
+            display: flex !important;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            justify-content: center;
+
+            min-width: 0;
+
+            flex: 1;
+
+            overflow: hidden;
+        }
+
+
+        .profile-summary strong {
+
+            display: block;
+
+            width: 100%;
+
+            color: #f8fafc;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            text-align: left;
+        }
+
+
+        .profile-summary span {
+
+            display: block;
+
+            width: 100%;
+
+            color: #94a3b8;
+
+            font-size: 10px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            text-align: left;
+        }
+
+
+        .profile-arrow {
+
+            flex-shrink: 0;
+
+            color: #94a3b8;
+
+            font-size: 15px;
+        }
+
+
+        /* =================================================
+           PROFILE DROPDOWN
+           ================================================= */
+
+        .profile-dropdown {
+
+            display: none;
+
+            position: absolute !important;
+
+            top: calc(100% + 10px) !important;
+
+            right: 0 !important;
+
+            width: 300px;
+
+            padding: 12px;
+
+            background: #0f172a !important;
+
+            border: 1px solid #334155 !important;
+
+            border-radius: 16px;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.55);
+
+            z-index: 99999 !important;
+
+            box-sizing: border-box;
+        }
+
+
+        .profile-dropdown.show {
+
+            display: block !important;
+        }
+
+
+        .profile-dropdown-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 10px;
+        }
+
+
+        .large-profile-photo {
+
+            width: 52px;
+
+            height: 52px;
+
+            min-width: 52px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #3b82f6;
+
+            background: #1e293b;
+        }
+
+
+        .profile-dropdown-header div {
+
+            min-width: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 4px;
+        }
+
+
+        .profile-dropdown-header strong {
+
+            color: #f8fafc;
+
+            font-size: 15px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .profile-dropdown-header span {
+
+            color: #94a3b8;
+
+            font-size: 12px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .profile-divider {
+
+            height: 1px;
+
+            background: #334155;
+
+            margin: 8px 0;
+        }
+
+
+        .profile-menu-item {
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 12px;
+
+            border: none;
+
+            background: transparent;
+
+            color: #e2e8f0;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            text-align: left;
+
+            font-size: 14px;
+        }
+
+
+        .profile-menu-item:hover {
+
+            background: rgba(59, 130, 246, 0.12);
+        }
+
+
+        .logout-item {
+
+            color: #f87171;
+        }
+
+
+        .logout-item:hover {
+
+            background: rgba(239, 68, 68, 0.12);
+        }
+
+
+        /* =================================================
+           PROFILE MODAL
+           ================================================= */
+
+        .profile-modal {
+
+            display: none;
+
+            position: fixed;
+
+            inset: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: rgba(2, 6, 23, 0.78);
+
+            backdrop-filter: blur(6px);
+
+            z-index: 100000;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            box-sizing: border-box;
+        }
+
+
+        .profile-modal.show {
+
+            display: flex !important;
+        }
+
+
+        .profile-modal-card {
+
+            width: 100%;
+
+            max-width: 520px;
+
+            max-height: 90vh;
+
+            overflow-y: auto;
+
+            padding: 28px;
+
+            background: #0f172a;
+
+            border: 1px solid #334155;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.55);
+
+            box-sizing: border-box;
+        }
+
+
+        .profile-modal-top {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .profile-modal-photo {
+
+            width: 75px;
+
+            height: 75px;
+
+            min-width: 75px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 3px solid #3b82f6;
+
+            background: #1e293b;
+        }
+
+
+        .profile-modal-top h2 {
+
+            margin: 0;
+
+            color: #f8fafc;
+
+            font-size: 22px;
+        }
+
+
+        .profile-modal-top p {
+
+            margin: 6px 0 0;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+            word-break: break-word;
+        }
+
+
+        .profile-detail {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 13px 0;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+
+        .profile-detail label {
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+            flex-shrink: 0;
+        }
+
+
+        .profile-detail span {
+
+            color: #f8fafc;
+
+            font-size: 13px;
+
+            text-align: right;
+
+            word-break: break-word;
+        }
+
+
+        .close-profile {
+
+            width: 100%;
+
+            margin-top: 20px;
+
+            padding: 12px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #2563eb;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-weight: 600;
+        }
+
+
+        .close-profile:hover {
+
+            background: #1d4ed8;
+        }
+
+
+        /* =================================================
+           MOBILE
+           ================================================= */
+
+        @media (max-width: 1200px) {
+
+            .profile-button {
+
+                width: 48px;
+
+                padding: 5px !important;
+            }
+
+
+            .profile-summary {
+
+                display: none !important;
+            }
+
+
+            .profile-arrow {
+
+                display: none;
+            }
+
+        }
+
+
+        @media (max-width: 900px) {
+
+            .navbar {
+
+                flex-wrap: wrap;
+
+                padding: 10px !important;
+            }
+
+
+            .navbar nav {
+
+                order: 3;
+
+                width: 100%;
+
+                justify-content: center;
+
+                margin-left: 0;
+
+                overflow-x: auto;
+            }
+
+
+            .navbar .status {
+
+                margin-left: auto;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar .status {
+
+                display: none;
+            }
+
+
+            .profile-dropdown {
+
+                right: -5px;
+
+                width: 280px;
+            }
+
+
+            .profile-detail {
+
+                flex-direction: column;
+
+                gap: 5px;
+            }
+
+
+            .profile-detail span {
+
+                text-align: left;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<!-- =====================================================
+     BODY
+     ===================================================== -->
+
+<body style="visibility: hidden;">
+
+
+
+    <!-- =================================================
+         NAVIGATION BAR
+         ================================================= -->
+
+    <header class="navbar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            ForensiMail
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="../index.html">
+
+                Home
+
+            </a>
+
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+
+                Dashboard
+
+            </a>
+
+
+            <a href="investigation.html">
+
+                Investigation
+
+            </a>
+
+
+            <a href="reports.html">
+
+                Reports
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- SYSTEM STATUS -->
+
+        <div class="status">
+
+            <span>●</span>
+
+            System Online
+
+        </div>
+
+
+
+        <!-- =================================================
+             USER PROFILE
+             ================================================= -->
+
+        <div class="user-profile">
+
+
+            <!-- PROFILE BUTTON -->
+
+            <button
+                id="profileButton"
+                class="profile-button"
+                type="button"
+            >
+
+                <img
+                    id="profilePhoto"
+                    class="profile-photo"
+                    src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                    alt="Profile"
+                >
+
+
+                <div class="profile-summary">
+
+                    <strong id="profileName">
+
+                        User
+
+                    </strong>
+
+
+                    <span id="profileEmail">
+
+                        Loading...
+
+                    </span>
+
+                </div>
+
+
+                <span class="profile-arrow">
+
+                    ▾
+
+                </span>
+
+            </button>
+
+
+
+            <!-- =================================================
+                 PROFILE DROPDOWN
+                 ================================================= -->
+
+            <div
+                id="profileDropdown"
+                class="profile-dropdown"
+            >
+
+
+                <div class="profile-dropdown-header">
+
+
+                    <img
+                        id="dropdownProfilePhoto"
+                        class="large-profile-photo"
+                        src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                        alt="Profile"
+                    >
+
+
+                    <div>
+
+                        <strong id="dropdownName">
+
+                            User
+
+                        </strong>
+
+
+                        <span id="dropdownEmail">
+
+                            Loading...
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="profile-divider"></div>
+
+
+
+                <!-- VIEW PROFILE -->
+
+                <button
+                    id="viewProfileButton"
+                    class="profile-menu-item"
+                    type="button"
+                >
+
+                    <span>👤</span>
+
+                    <span>
+                        View Profile
+                    </span>
+
+                </button>
+
+
+
+                <!-- LOGOUT -->
+
+                <button
+                    id="logoutButton"
+                    class="profile-menu-item logout-item"
+                    type="button"
+                >
+
+                    <span>🚪</span>
+
+                    <span>
+                        Logout
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN DASHBOARD
+         ================================================= -->
+
+    <main class="dashboard-container">
+
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="eyebrow">
+
+                    AI EMAIL FORENSICS
+
+                </p>
+
+
+                <h1>
+
+                    Investigation Dashboard
+
+                </h1>
+
+
+                <p>
+
+                    Retrieve and inspect forensic case information
+                    from the AI Email Forensics API.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CASE SEARCH
+             ================================================= -->
+
+        <section class="dashboard-card">
+
+
+            <h2>
+
+                Retrieve Case
+
+            </h2>
+
+
+            <div class="case-search">
+
+
+                <input
+                    type="text"
+                    id="caseId"
+                    placeholder="Enter Case ID e.g. email_0009"
+                    value="email_0009"
+                >
+
+
+                <button
+                    id="loadCaseButton"
+                    type="button"
+                >
+
+                    Load Case
+
+                </button>
+
+
+            </div>
+
+
+            <p
+                id="apiStatus"
+                class="api-status"
+            >
+
+                Ready
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CASE INFORMATION
+             ================================================= -->
+
+        <section class="dashboard-grid">
+
+
+            <div class="dashboard-card">
+
+                <h3>
+
+                    Case ID
+
+                </h3>
+
+
+                <p id="case_id">
+
+                    —
+
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-card">
+
+                <h3>
+
+                    Filename
+
+                </h3>
+
+
+                <p id="filename">
+
+                    —
+
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-card">
+
+                <h3>
+
+                    Threat Score
+
+                </h3>
+
+
+                <p id="threat_score">
+
+                    —
+
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-card">
+
+                <h3>
+
+                    Threat Level
+
+                </h3>
+
+
+                <p id="threat_level">
+
+                    —
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             EMAIL INFORMATION
+             ================================================= -->
+
+        <section class="dashboard-card">
+
+
+            <h2>
+
+                Email Information
+
+            </h2>
+
+
+            <div class="email-details">
+
+
+                <div>
+
+                    <strong>
+
+                        Sender
+
+                    </strong>
+
+
+                    <p id="sender_raw">
+
+                        —
+
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+
+                        Recipient
+
+                    </strong>
+
+
+                    <p id="recipient_raw">
+
+                        —
+
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <strong>
+
+                        Subject
+
+                    </strong>
+
+
+                    <p id="subject">
+
+                        —
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             RAW API RESPONSE
+             ================================================= -->
+
+        <section class="dashboard-card">
+
+
+            <h2>
+
+                API Response
+
+            </h2>
+
+
+            <pre id="apiResponse">No case loaded.</pre>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         PROFILE DETAILS MODAL
+         ================================================= -->
+
+    <div
+        id="profileModal"
+        class="profile-modal"
+    >
+
+
+        <div class="profile-modal-card">
+
+
+            <!-- PROFILE HEADER -->
+
+            <div class="profile-modal-top">
+
+
+                <img
+                    id="modalProfilePhoto"
+                    class="profile-modal-photo"
+                    src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                    alt="Profile"
+                >
+
+
+                <div>
+
+                    <h2 id="modalProfileName">
+
+                        User
+
+                    </h2>
+
+
+                    <p id="modalProfileEmail">
+
+                        Loading...
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ACCOUNT EMAIL -->
+
+            <div class="profile-detail">
+
+                <label>
+                    Account Email
+                </label>
+
+
+                <span id="detailEmail">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- AUTHENTICATION -->
+
+            <div class="profile-detail">
+
+                <label>
+                    Authentication
+                </label>
+
+
+                <span id="detailProvider">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- EMAIL VERIFICATION -->
+
+            <div class="profile-detail">
+
+                <label>
+                    Email Verified
+                </label>
+
+
+                <span id="detailVerified">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- ACCOUNT CREATION -->
+
+            <div class="profile-detail">
+
+                <label>
+                    Account Created
+                </label>
+
+
+                <span id="detailCreated">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- LAST LOGIN -->
+
+            <div class="profile-detail">
+
+                <label>
+                    Last Sign-In
+                </label>
+
+
+                <span id="detailLastLogin">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- FIREBASE UID -->
+
+            <div class="profile-detail">
+
+                <label>
+                    User ID
+                </label>
+
+
+                <span id="detailUID">
+                    —
+                </span>
+
+            </div>
+
+
+
+            <!-- CLOSE -->
+
+            <button
+                id="closeProfileButton"
+                class="close-profile"
+                type="button"
+            >
+
+                Close
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FIREBASE AUTHENTICATION
+         ===================================================== -->
+
+    <script type="module">
+
+
+        /* =================================================
+           FIREBASE SDK
+           ================================================= */
+
+        import {
+            initializeApp
+        }
+        from
+        "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+
+        import {
+            getAuth,
+            onAuthStateChanged,
+            signOut
+        }
+        from
+        "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+
+
+        /* =================================================
+           FIREBASE CONFIGURATION
+           ================================================= */
+
+        const firebaseConfig = {
+
+            apiKey:
+                "AIzaSyAHu6ytExHI26K41IbfS_JHFjSkSsVfg6Y",
+
+            authDomain:
+                "email-forensics-8981f.firebaseapp.com",
+
+            projectId:
+                "email-forensics-8981f",
+
+            storageBucket:
+                "email-forensics-8981f.firebasestorage.app",
+
+            messagingSenderId:
+                "1129107379",
+
+            appId:
+                "1:1129107379:web:9d272ebfe471ad78f05c6",
+
+            measurementId:
+                "G-R1K4G4FJ3Y"
+
+        };
+
+
+
+        /* =================================================
+           INITIALIZE FIREBASE
+           ================================================= */
+
+        const firebaseApp =
+            initializeApp(
+                firebaseConfig
+            );
+
+
+        const auth =
+            getAuth(
+                firebaseApp
+            );
+
+
+
+        /* =================================================
+           AUTHENTICATION CHECK
+           ================================================= */
+
+        onAuthStateChanged(
+            auth,
+            (user) => {
+
+
+                /* -----------------------------------------
+                   NOT LOGGED IN
+                   ----------------------------------------- */
+
+                if (!user) {
+
+                    console.log(
+                        "User is not authenticated."
+                    );
+
+
+                    window.location.replace(
+                        "../index.html"
+                    );
+
+
+                    return;
+
+                }
+
+
+
+                /* -----------------------------------------
+                   LOGGED IN
+                   ----------------------------------------- */
+
+                console.log(
+                    "Authentication successful."
+                );
+
+
+                console.log(
+                    "User:",
+                    user.email
+                );
+
+
+                /* Show dashboard */
+
+                document.body.style.visibility =
+                    "visible";
+
+
+                /* Load user profile */
+
+                loadUserProfile(user);
+
+            }
+        );
+
+
+
+        /* =================================================
+           LOAD USER PROFILE
+           ================================================= */
+
+        function loadUserProfile(user) {
+
+
+            const name =
+                user.displayName ||
+                "ForensiMail User";
+
+
+            const email =
+                user.email ||
+                "No email";
+
+
+            const photo =
+                user.photoURL ||
+                `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=2563eb&color=fff`;
+
+
+
+            /* -----------------------------------------
+               NAVBAR
+               ----------------------------------------- */
+
+            document
+                .getElementById("profileName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("profileEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("profilePhoto")
+                .src =
+                photo;
+
+
+
+            /* -----------------------------------------
+               DROPDOWN
+               ----------------------------------------- */
+
+            document
+                .getElementById("dropdownName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("dropdownEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("dropdownProfilePhoto")
+                .src =
+                photo;
+
+
+
+            /* -----------------------------------------
+               MODAL
+               ----------------------------------------- */
+
+            document
+                .getElementById("modalProfileName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("modalProfileEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("modalProfilePhoto")
+                .src =
+                photo;
+
+
+
+            /* -----------------------------------------
+               EMAIL
+               ----------------------------------------- */
+
+            document
+                .getElementById("detailEmail")
+                .textContent =
+                email;
+
+
+
+            /* -----------------------------------------
+               AUTH PROVIDER
+               ----------------------------------------- */
+
+            let provider =
+                "Email / Password";
+
+
+            if (
+                user.providerData &&
+                user.providerData.length > 0
+            ) {
+
+                provider =
+                    user.providerData
+                        .map(
+                            (providerData) => {
+
+                                if (
+                                    providerData.providerId ===
+                                    "google.com"
+                                ) {
+
+                                    return "Google";
+
+                                }
+
+
+                                if (
+                                    providerData.providerId ===
+                                    "password"
+                                ) {
+
+                                    return "Email / Password";
+
+                                }
+
+
+                                return providerData.providerId;
+
+                            }
+                        )
+                        .join(", ");
+
+            }
+
+
+            document
+                .getElementById("detailProvider")
+                .textContent =
+                provider;
+
+
+
+            /* -----------------------------------------
+               EMAIL VERIFIED
+               ----------------------------------------- */
+
+            document
+                .getElementById("detailVerified")
+                .textContent =
+                user.emailVerified
+                    ? "Verified"
+                    : "Not Verified";
+
+
+
+            /* -----------------------------------------
+               ACCOUNT CREATED
+               ----------------------------------------- */
+
+            const created =
+                user.metadata?.creationTime;
+
+
+            document
+                .getElementById("detailCreated")
+                .textContent =
+                created
+                    ? new Date(
+                        created
+                    ).toLocaleString()
+                    : "Unavailable";
+
+
+
+            /* -----------------------------------------
+               LAST SIGN-IN
+               ----------------------------------------- */
+
+            const lastLogin =
+                user.metadata?.lastSignInTime;
+
+
+            document
+                .getElementById("detailLastLogin")
+                .textContent =
+                lastLogin
+                    ? new Date(
+                        lastLogin
+                    ).toLocaleString()
+                    : "Unavailable";
+
+
+
+            /* -----------------------------------------
+               FIREBASE UID
+               ----------------------------------------- */
+
+            document
+                .getElementById("detailUID")
+                .textContent =
+                user.uid;
+
+        }
+
+
+
+        /* =================================================
+           PROFILE DROPDOWN
+           ================================================= */
+
+        document
+            .getElementById("profileButton")
+            .addEventListener(
+                "click",
+                (event) => {
+
+                    event.stopPropagation();
+
+
+                    document
+                        .getElementById("profileDropdown")
+                        .classList
+                        .toggle("show");
+
+                }
+            );
+
+
+
+        /* =================================================
+           VIEW PROFILE
+           ================================================= */
+
+        document
+            .getElementById("viewProfileButton")
+            .addEventListener(
+                "click",
+                () => {
+
+
+                    document
+                        .getElementById("profileDropdown")
+                        .classList
+                        .remove("show");
+
+
+                    document
+                        .getElementById("profileModal")
+                        .classList
+                        .add("show");
+
+                }
+            );
+
+
+
+        /* =================================================
+           CLOSE PROFILE
+           ================================================= */
+
+        document
+            .getElementById("closeProfileButton")
+            .addEventListener(
+                "click",
+                () => {
+
+
+                    document
+                        .getElementById("profileModal")
+                        .classList
+                        .remove("show");
+
+                }
+            );
+
+
+
+        /* =================================================
+           CLICK OUTSIDE MODAL
+           ================================================= */
+
+        document
+            .getElementById("profileModal")
+            .addEventListener(
+                "click",
+                (event) => {
+
+
+                    if (
+                        event.target.id ===
+                        "profileModal"
+                    ) {
+
+
+                        document
+                            .getElementById("profileModal")
+                            .classList
+                            .remove("show");
+
+                    }
+
+                }
+            );
+
+
+
+        /* =================================================
+           LOGOUT
+           ================================================= */
+
+        document
+            .getElementById("logoutButton")
+            .addEventListener(
+                "click",
+                async () => {
+
+
+                    try {
+
+
+                        console.log(
+                            "Logging out..."
+                        );
+
+
+                        await signOut(
+                            auth
+                        );
+
+
+                        console.log(
+                            "Logout successful."
+                        );
+
+
+                        window.location.replace(
+                            "../index.html"
+                        );
+
+
+                    }
+                    catch (error) {
+
+
+                        console.error(
+                            "Logout error:",
+                            error
+                        );
+
+
+                        alert(
+                            "Unable to logout. Please try again."
+                        );
+
+                    }
+
+                }
+            );
+
+
+
+        /* =================================================
+           CLOSE DROPDOWN OUTSIDE CLICK
+           ================================================= */
+
+        document.addEventListener(
+            "click",
+            (event) => {
+
+
+                const profile =
+                    document.querySelector(
+                        ".user-profile"
+                    );
+
+
+                if (
+                    profile &&
+                    !profile.contains(
+                        event.target
+                    )
+                ) {
+
+
+                    document
+                        .getElementById(
+                            "profileDropdown"
+                        )
+                        .classList
+                        .remove("show");
+
+                }
+
+            }
+        );
+
+
+    </script>
+
+
+
+    <!-- =====================================================
+         FASTAPI DASHBOARD LOGIC
+         ===================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           BACKEND URL
+           ================================================= */
+
+        const API_BASE_URL =
+            "http://127.0.0.1:8000";
+
+
+
+        /* =================================================
+           LOAD CASE
+           ================================================= */
+
+        async function loadCase() {
+
+
+            const caseInput =
+                document.getElementById(
+                    "caseId"
+                );
+
+
+            const status =
+                document.getElementById(
+                    "apiStatus"
+                );
+
+
+            const caseId =
+                caseInput.value.trim();
+
+
+
+            /* -----------------------------------------
+               VALIDATION
+               ----------------------------------------- */
+
+            if (!caseId) {
+
+
+                status.textContent =
+                    "Please enter a Case ID.";
+
+
+                return;
+
+            }
+
+
+
+            /* -----------------------------------------
+               LOADING
+               ----------------------------------------- */
+
+            status.textContent =
+                "Loading case...";
+
+
+
+            try {
+
+
+                /* -------------------------------------
+                   API REQUEST
+                   ------------------------------------- */
+
+                const response =
+                    await fetch(
+                        `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}`
+                    );
+
+
+
+                /* -------------------------------------
+                   RESPONSE
+                   ------------------------------------- */
+
+                const data =
+                    await response.json();
+
+
+
+                /* -------------------------------------
+                   ERROR
+                   ------------------------------------- */
+
+                if (!response.ok) {
+
+
+                    throw new Error(
+
+                        data.detail ||
+                        `API Error: ${response.status}`
+
+                    );
+
+                }
+
+
+
+                /* -------------------------------------
+                   CASE ID
+                   ------------------------------------- */
+
+                document
+                    .getElementById("case_id")
+                    .textContent =
+                    data.case_id ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   FILENAME
+                   ------------------------------------- */
+
+                document
+                    .getElementById("filename")
+                    .textContent =
+                    data.filename ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   THREAT SCORE
+                   ------------------------------------- */
+
+                document
+                    .getElementById("threat_score")
+                    .textContent =
+                    data.threat_score ??
+                    "—";
+
+
+
+                /* -------------------------------------
+                   THREAT LEVEL
+                   ------------------------------------- */
+
+                document
+                    .getElementById("threat_level")
+                    .textContent =
+                    data.threat_level ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   SENDER
+                   ------------------------------------- */
+
+                document
+                    .getElementById("sender_raw")
+                    .textContent =
+                    data.sender_raw ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   RECIPIENT
+                   ------------------------------------- */
+
+                document
+                    .getElementById("recipient_raw")
+                    .textContent =
+                    data.recipient_raw ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   SUBJECT
+                   ------------------------------------- */
+
+                document
+                    .getElementById("subject")
+                    .textContent =
+                    data.subject ||
+                    "—";
+
+
+
+                /* -------------------------------------
+                   RAW RESPONSE
+                   ------------------------------------- */
+
+                document
+                    .getElementById("apiResponse")
+                    .textContent =
+                    JSON.stringify(
+                        data,
+                        null,
+                        2
+                    );
+
+
+
+                /* -------------------------------------
+                   SUCCESS
+                   ------------------------------------- */
+
+                status.textContent =
+                    "Case loaded successfully.";
+
+            }
+
+
+            catch (error) {
+
+
+                console.error(
+                    "API Error:",
+                    error
+                );
+
+
+                status.textContent =
+                    `Error: ${error.message}`;
+
+
+                document
+                    .getElementById("apiResponse")
+                    .textContent =
+                    error.message;
+
+            }
+
+        }
+
+
+
+        /* =================================================
+           LOAD DEFAULT CASE AFTER PAGE LOAD
+           ================================================= */
+
+        window.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+
+                document
+                    .getElementById(
+                        "loadCaseButton"
+                    )
+                    .addEventListener(
+                        "click",
+                        loadCase
+                    );
+
+
+                loadCase();
+
+            }
+        );
+
+
+    </script>
+
+
+
+</body>
+
+</html>

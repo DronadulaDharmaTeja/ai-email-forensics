@@ -1,245 +1,3379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ForensiMail - Dashboard</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="../css/style.css">
+    <title>ForensiMail | Investigation Dashboard</title>
+
+
+    <!-- =====================================================
+         PROFESSIONAL DASHBOARD CSS
+         ===================================================== -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family:
+                Inter,
+                "Segoe UI",
+                Arial,
+                sans-serif;
+
+            background: #070b14;
+
+            color: #e5e7eb;
+
+            min-height: 100vh;
+
+            overflow-x: hidden;
+        }
+
+
+        button,
+        input {
+            font: inherit;
+        }
+
+
+        button {
+            cursor: pointer;
+        }
+
+
+        /* =================================================
+           APP
+           ================================================= */
+
+        #app {
+            display: none;
+            min-height: 100vh;
+        }
+
+
+        #app.authenticated {
+            display: flex;
+        }
+
+
+        /* =================================================
+           SIDEBAR
+           ================================================= */
+
+        .sidebar {
+
+            position: fixed;
+
+            left: 0;
+            top: 0;
+            bottom: 0;
+
+            width: 250px;
+
+            background: #0b1120;
+
+            border-right: 1px solid #1e293b;
+
+            display: flex;
+
+            flex-direction: column;
+
+            z-index: 1000;
+        }
+
+
+        .brand {
+
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 0 24px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+
+        .brand-icon {
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 11px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2563eb,
+                    #7c3aed
+                );
+
+            font-size: 20px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(37, 99, 235, 0.25);
+        }
+
+
+        .brand-name {
+
+            color: #f8fafc;
+
+            font-size: 18px;
+
+            font-weight: 700;
+        }
+
+
+        .brand-subtitle {
+
+            margin-top: 2px;
+
+            color: #64748b;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =================================================
+           SIDEBAR NAVIGATION
+           ================================================= */
+
+        .sidebar-section {
+
+            padding: 24px 14px 10px;
+        }
+
+
+        .sidebar-label {
+
+            padding: 0 12px;
+
+            margin-bottom: 8px;
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .nav-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            width: 100%;
+
+            padding: 11px 13px;
+
+            margin-bottom: 4px;
+
+            border: 1px solid transparent;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+
+            transition: 0.2s ease;
+        }
+
+
+        .nav-item:hover {
+
+            background: #111827;
+
+            color: #e2e8f0;
+        }
+
+
+        .nav-item.active {
+
+            background:
+                rgba(37, 99, 235, 0.12);
+
+            border-color:
+                rgba(59, 130, 246, 0.18);
+
+            color: #60a5fa;
+        }
+
+
+        .nav-icon {
+
+            width: 22px;
+
+            text-align: center;
+
+            font-size: 15px;
+        }
+
+
+        /* =================================================
+           SIDEBAR STATUS
+           ================================================= */
+
+        .sidebar-bottom {
+
+            margin-top: auto;
+
+            padding: 14px;
+
+            border-top: 1px solid #1e293b;
+        }
+
+
+        .security-status {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 12px;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 10px;
+        }
+
+
+        .status-dot {
+
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: #22c55e;
+
+            box-shadow: 0 0 10px #22c55e;
+        }
+
+
+        .status-text strong {
+
+            display: block;
+
+            color: #e2e8f0;
+
+            font-size: 11px;
+        }
+
+
+        .status-text span {
+
+            display: block;
+
+            margin-top: 2px;
+
+            color: #64748b;
+
+            font-size: 10px;
+        }
+
+
+        /* =================================================
+           MAIN AREA
+           ================================================= */
+
+        .main-area {
+
+            width: calc(100% - 250px);
+
+            margin-left: 250px;
+
+            min-height: 100vh;
+        }
+
+
+        /* =================================================
+           TOPBAR
+           ================================================= */
+
+        .topbar {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 900;
+
+            height: 76px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 0 30px;
+
+            background:
+                rgba(7, 11, 20, 0.94);
+
+            border-bottom: 1px solid #1e293b;
+
+            backdrop-filter: blur(15px);
+        }
+
+
+        .breadcrumb {
+
+            color: #64748b;
+
+            font-size: 12px;
+        }
+
+
+        .breadcrumb strong {
+
+            color: #cbd5e1;
+
+            font-weight: 500;
+        }
+
+
+        .topbar-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 18px;
+        }
+
+
+        .system-status {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+
+            color: #94a3b8;
+
+            font-size: 11px;
+        }
+
+
+        .system-status .dot {
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #22c55e;
+
+            box-shadow: 0 0 8px #22c55e;
+        }
+
+
+        /* =================================================
+           PROFILE
+           ================================================= */
+
+        .profile-wrapper {
+            position: relative;
+        }
+
+
+        .profile-button {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            min-width: 190px;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 10px;
+
+            padding: 5px 9px 5px 6px;
+
+            color: white;
+
+            cursor: pointer;
+        }
+
+
+        .profile-button:hover {
+
+            border-color: #3b82f6;
+
+            background: #111c30;
+        }
+
+
+        .profile-avatar {
+
+            width: 35px;
+            height: 35px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+
+            background: #1e293b;
+        }
+
+
+        .profile-info {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+
+            min-width: 0;
+
+            flex: 1;
+        }
+
+
+        .profile-info strong {
+
+            width: 100%;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            color: #f8fafc;
+
+            font-size: 11px;
+        }
+
+
+        .profile-info span {
+
+            width: 100%;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            color: #64748b;
+
+            font-size: 9px;
+
+            margin-top: 2px;
+        }
+
+
+        .profile-chevron {
+
+            color: #64748b;
+
+            font-size: 11px;
+        }
+
+
+        /* =================================================
+           PROFILE DROPDOWN
+           ================================================= */
+
+        .profile-dropdown {
+
+            position: absolute;
+
+            right: 0;
+
+            top: calc(100% + 10px);
+
+            width: 285px;
+
+            padding: 10px;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0, 0, 0, 0.5);
+
+            display: none;
+
+            z-index: 5000;
+        }
+
+
+        .profile-dropdown.show {
+            display: block;
+        }
+
+
+        .dropdown-user {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 10px;
+        }
+
+
+        .dropdown-user img {
+
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+        }
+
+
+        .dropdown-user-info {
+            min-width: 0;
+        }
+
+
+        .dropdown-user-info strong {
+
+            display: block;
+
+            color: #f8fafc;
+
+            font-size: 13px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .dropdown-user-info span {
+
+            display: block;
+
+            margin-top: 3px;
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .dropdown-divider {
+
+            height: 1px;
+
+            margin: 7px 0;
+
+            background: #1e293b;
+        }
+
+
+        .dropdown-action {
+
+            width: 100%;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 11px;
+
+            border: none;
+
+            border-radius: 8px;
+
+            background: transparent;
+
+            color: #cbd5e1;
+
+            text-align: left;
+
+            font-size: 12px;
+
+            cursor: pointer;
+        }
+
+
+        .dropdown-action:hover {
+
+            background: #172033;
+        }
+
+
+        .dropdown-action.logout {
+
+            color: #f87171;
+        }
+
+
+        .dropdown-action.logout:hover {
+
+            background:
+                rgba(248, 113, 113, 0.08);
+        }
+
+
+        .dropdown-action:disabled {
+
+            opacity: 0.6;
+
+            cursor: wait;
+        }
+
+
+        /* =================================================
+           CONTENT
+           ================================================= */
+
+        .content {
+
+            max-width: 1450px;
+
+            margin: 0 auto;
+
+            padding: 30px;
+        }
+
+
+        /* =================================================
+           PAGE HEADER
+           ================================================= */
+
+        .page-header {
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            margin-bottom: 28px;
+        }
+
+
+        .eyebrow {
+
+            margin-bottom: 8px;
+
+            color: #3b82f6;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.6px;
+
+            text-transform: uppercase;
+        }
+
+
+        .page-title {
+
+            color: #f8fafc;
+
+            font-size: clamp(26px, 3vw, 36px);
+
+            font-weight: 750;
+
+            line-height: 1.15;
+
+            letter-spacing: -1px;
+        }
+
+
+        .page-description {
+
+            max-width: 700px;
+
+            margin-top: 8px;
+
+            color: #64748b;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        .page-time {
+
+            color: #475569;
+
+            font-size: 10px;
+
+            text-align: right;
+        }
+
+
+        /* =================================================
+           SEARCH
+           ================================================= */
+
+        .search-card {
+
+            padding: 20px;
+
+            margin-bottom: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #0b1220
+                );
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+
+        .search-header {
+            margin-bottom: 14px;
+        }
+
+
+        .section-title {
+
+            color: #e2e8f0;
+
+            font-size: 14px;
+
+            font-weight: 650;
+        }
+
+
+        .section-subtitle {
+
+            margin-top: 3px;
+
+            color: #64748b;
+
+            font-size: 10px;
+        }
+
+
+        .search-row {
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+
+        .case-input {
+
+            flex: 1;
+
+            min-width: 0;
+
+            height: 42px;
+
+            padding: 0 13px;
+
+            outline: none;
+
+            background: #070b14;
+
+            border: 1px solid #263449;
+
+            border-radius: 9px;
+
+            color: #f8fafc;
+
+            font-size: 12px;
+        }
+
+
+        .case-input:focus {
+
+            border-color: #3b82f6;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(59, 130, 246, 0.08);
+        }
+
+
+        .load-button {
+
+            height: 42px;
+
+            padding: 0 20px;
+
+            border: none;
+
+            border-radius: 9px;
+
+            background: #2563eb;
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: 600;
+        }
+
+
+        .load-button:hover {
+            background: #1d4ed8;
+        }
+
+
+        .load-button:disabled {
+
+            opacity: 0.6;
+
+            cursor: wait;
+        }
+
+
+        .api-status {
+
+            margin-top: 10px;
+
+            color: #64748b;
+
+            font-size: 10px;
+        }
+
+
+        .api-status.success {
+            color: #4ade80;
+        }
+
+
+        .api-status.error {
+            color: #f87171;
+        }
+
+
+        /* =================================================
+           STATS
+           ================================================= */
+
+        .stats-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 14px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .stat-card {
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 18px;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+
+        .stat-card::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 70px;
+            height: 70px;
+
+            right: -25px;
+            top: -25px;
+
+            background:
+                rgba(37, 99, 235, 0.08);
+
+            border-radius: 50%;
+        }
+
+
+        .stat-label {
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.8px;
+        }
+
+
+        .stat-value {
+
+            margin-top: 9px;
+
+            color: #f8fafc;
+
+            font-size: 19px;
+
+            font-weight: 700;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .stat-icon {
+
+            position: absolute;
+
+            right: 15px;
+            top: 15px;
+
+            font-size: 18px;
+
+            opacity: 0.7;
+        }
+
+
+        /* =================================================
+           DASHBOARD GRID
+           ================================================= */
+
+        .dashboard-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.5fr)
+                minmax(300px, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .panel {
+
+            overflow: hidden;
+
+            background: #0f172a;
+
+            border: 1px solid #1e293b;
+
+            border-radius: 14px;
+        }
+
+
+        .panel-header {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 17px 18px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+
+        .panel-body {
+            padding: 18px;
+        }
+
+
+        /* =================================================
+           EMAIL
+           ================================================= */
+
+        .email-row {
+
+            display: grid;
+
+            grid-template-columns:
+                100px minmax(0, 1fr);
+
+            gap: 12px;
+
+            padding: 13px 0;
+
+            border-bottom: 1px solid #172033;
+        }
+
+
+        .email-row:last-child {
+            border-bottom: none;
+        }
+
+
+        .email-label {
+
+            color: #64748b;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+        }
+
+
+        .email-value {
+
+            color: #cbd5e1;
+
+            font-size: 12px;
+
+            word-break: break-word;
+        }
+
+
+        /* =================================================
+           THREAT
+           ================================================= */
+
+        .threat-center {
+
+            min-height: 220px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-direction: column;
+        }
+
+
+        .threat-circle {
+
+            width: 125px;
+
+            height: 125px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-direction: column;
+
+            border-radius: 50%;
+
+            border: 7px solid #1e293b;
+
+            background: #0b1120;
+        }
+
+
+        .threat-score {
+
+            color: #f8fafc;
+
+            font-size: 28px;
+
+            font-weight: 750;
+        }
+
+
+        .threat-score-label {
+
+            color: #64748b;
+
+            font-size: 9px;
+        }
+
+
+        .threat-badge {
+
+            margin-top: 15px;
+
+            padding: 6px 12px;
+
+            border-radius: 20px;
+
+            background: #172033;
+
+            color: #94a3b8;
+
+            font-size: 10px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+
+        .threat-badge.low {
+
+            background:
+                rgba(34, 197, 94, 0.1);
+
+            color: #4ade80;
+        }
+
+
+        .threat-badge.medium {
+
+            background:
+                rgba(250, 204, 21, 0.1);
+
+            color: #facc15;
+        }
+
+
+        .threat-badge.high {
+
+            background:
+                rgba(251, 146, 60, 0.1);
+
+            color: #fb923c;
+        }
+
+
+        .threat-badge.critical {
+
+            background:
+                rgba(248, 113, 113, 0.1);
+
+            color: #f87171;
+        }
+
+
+        /* =================================================
+           RAW RESPONSE
+           ================================================= */
+
+        .raw-panel {
+
+            margin-top: 20px;
+        }
+
+
+        .raw-response {
+
+            max-height: 330px;
+
+            overflow: auto;
+
+            margin: 0;
+
+            padding: 18px;
+
+            background: #070b14;
+
+            color: #94a3b8;
+
+            font-family:
+                Consolas,
+                "Cascadia Code",
+                monospace;
+
+            font-size: 11px;
+
+            line-height: 1.7;
+
+            white-space: pre-wrap;
+
+            word-break: break-word;
+        }
+
+
+        /* =================================================
+           PROFILE MODAL
+           ================================================= */
+
+        .modal-overlay {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 10000;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 20px;
+
+            background:
+                rgba(2, 6, 23, 0.78);
+
+            backdrop-filter: blur(8px);
+        }
+
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+
+        .profile-modal {
+
+            width: 100%;
+
+            max-width: 500px;
+
+            max-height: 90vh;
+
+            overflow-y: auto;
+
+            background: #0f172a;
+
+            border: 1px solid #263449;
+
+            border-radius: 18px;
+
+            box-shadow:
+                0 30px 80px
+                rgba(0, 0, 0, 0.55);
+        }
+
+
+        .modal-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            padding: 22px;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+
+        .modal-avatar {
+
+            width: 64px;
+
+            height: 64px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 2px solid #2563eb;
+        }
+
+
+        .modal-header h2 {
+
+            color: #f8fafc;
+
+            font-size: 18px;
+        }
+
+
+        .modal-header p {
+
+            margin-top: 4px;
+
+            color: #64748b;
+
+            font-size: 11px;
+
+            word-break: break-word;
+        }
+
+
+        .profile-details {
+
+            padding: 8px 22px 22px;
+        }
+
+
+        .profile-detail {
+
+            display: flex;
+
+            align-items: flex-start;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            padding: 13px 0;
+
+            border-bottom: 1px solid #172033;
+        }
+
+
+        .profile-detail label {
+
+            color: #64748b;
+
+            font-size: 11px;
+
+            flex-shrink: 0;
+        }
+
+
+        .profile-detail span {
+
+            max-width: 65%;
+
+            color: #e2e8f0;
+
+            font-size: 11px;
+
+            text-align: right;
+
+            word-break: break-word;
+        }
+
+
+        .modal-footer {
+
+            padding: 0 22px 22px;
+        }
+
+
+        .close-button {
+
+            width: 100%;
+
+            height: 40px;
+
+            border: none;
+
+            border-radius: 9px;
+
+            background: #1e293b;
+
+            color: #cbd5e1;
+
+            font-size: 12px;
+        }
+
+
+        .close-button:hover {
+            background: #263449;
+        }
+
+
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
+
+        @media (max-width: 1100px) {
+
+            .sidebar {
+                width: 210px;
+            }
+
+            .main-area {
+
+                margin-left: 210px;
+
+                width:
+                    calc(100% - 210px);
+            }
+
+            .stats-grid {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        @media (max-width: 850px) {
+
+            .sidebar {
+                display: none;
+            }
+
+            .main-area {
+
+                margin-left: 0;
+
+                width: 100%;
+            }
+
+            #app.authenticated {
+                display: block;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-time {
+                display: none;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .topbar {
+                padding: 0 15px;
+            }
+
+            .breadcrumb {
+                display: none;
+            }
+
+            .system-status {
+                display: none;
+            }
+
+            .profile-info {
+                display: none;
+            }
+
+            .profile-button {
+                min-width: auto;
+                padding: 5px;
+            }
+
+            .profile-chevron {
+                display: none;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .search-row {
+                flex-direction: column;
+            }
+
+            .load-button {
+                width: 100%;
+            }
+
+            .email-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .profile-detail {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .profile-detail span {
+                max-width: 100%;
+                text-align: left;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 
 <body>
 
-    <header class="navbar">
-        <div class="logo">ForensiMail</div>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="dashboard.html" class="active">Dashboard</a>
-            <a href="investigation.html">Investigation</a>
-            <a href="reports.html">Reports</a>
-        </nav>
+    <!-- =====================================================
+         APPLICATION
+         ===================================================== -->
 
-        <div class="status">
-            <span>●</span> System Online
-        </div>
-    </header>
+    <div id="app">
 
 
-    <main class="dashboard-container">
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
 
-        <section class="page-header">
-            <div>
-                <p class="eyebrow">AI EMAIL FORENSICS</p>
-                <h1>Investigation Dashboard</h1>
-                <p>
-                    Retrieve and inspect forensic case information
-                    from the AI Email Forensics API.
-                </p>
+        <aside class="sidebar">
+
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <div class="brand-name">
+                        ForensiMail
+                    </div>
+
+                    <div class="brand-subtitle">
+                        AI Email Forensics
+                    </div>
+
+                </div>
+
             </div>
-        </section>
 
 
-        <!-- Case Search -->
 
-        <section class="dashboard-card">
+            <div class="sidebar-section">
 
-            <h2>Retrieve Case</h2>
+                <div class="sidebar-label">
+                    Investigation
+                </div>
 
-            <div class="case-search">
 
-                <input
-                    type="text"
-                    id="caseId"
-                    placeholder="Enter Case ID e.g. email_0009"
-                    value="email_0009"
+                <a
+                    href="dashboard.html"
+                    class="nav-item active"
                 >
 
-                <button onclick="loadCase()">
-                    Load Case
+                    <span class="nav-icon">
+                        ▦
+                    </span>
+
+                    Dashboard
+
+                </a>
+
+
+                <a
+                    href="investigation.html"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    Investigation
+
+                </a>
+
+
+                <a
+                    href="reports.html"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ▤
+                    </span>
+
+                    Reports
+
+                </a>
+
+            </div>
+
+
+
+            <div class="sidebar-section">
+
+                <div class="sidebar-label">
+                    System
+                </div>
+
+
+                <a
+                    href="../index.html"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ⌂
+                    </span>
+
+                    Home
+
+                </a>
+
+            </div>
+
+
+
+            <div class="sidebar-bottom">
+
+                <div class="security-status">
+
+                    <div class="status-dot"></div>
+
+                    <div class="status-text">
+
+                        <strong>
+                            System Online
+                        </strong>
+
+                        <span>
+                            ForensiMail services ready
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN AREA
+             ================================================= -->
+
+        <div class="main-area">
+
+
+            <!-- =================================================
+                 TOPBAR
+                 ================================================= -->
+
+            <header class="topbar">
+
+
+                <div class="breadcrumb">
+
+                    ForensiMail
+
+                    <span>
+                        /
+                    </span>
+
+                    <strong>
+                        Investigation Dashboard
+                    </strong>
+
+                </div>
+
+
+
+                <div class="topbar-right">
+
+
+                    <div class="system-status">
+
+                        <span class="dot"></span>
+
+                        System Online
+
+                    </div>
+
+
+
+                    <!-- PROFILE -->
+
+                    <div class="profile-wrapper">
+
+
+                        <button
+                            id="profileButton"
+                            class="profile-button"
+                            type="button"
+                        >
+
+                            <img
+                                id="userPhoto"
+                                class="profile-avatar"
+                                src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                                alt="User"
+                            >
+
+
+                            <div class="profile-info">
+
+                                <strong id="userName">
+                                    User
+                                </strong>
+
+                                <span id="userEmail">
+                                    Loading...
+                                </span>
+
+                            </div>
+
+
+                            <span class="profile-chevron">
+                                ▾
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- PROFILE DROPDOWN -->
+
+                        <div
+                            id="profileDropdown"
+                            class="profile-dropdown"
+                        >
+
+
+                            <div class="dropdown-user">
+
+
+                                <img
+                                    id="dropdownPhoto"
+                                    src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                                    alt="User"
+                                >
+
+
+                                <div class="dropdown-user-info">
+
+                                    <strong id="dropdownName">
+                                        User
+                                    </strong>
+
+                                    <span id="dropdownEmail">
+                                        Loading...
+                                    </span>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="dropdown-divider"></div>
+
+
+
+                            <button
+                                id="viewProfileButton"
+                                class="dropdown-action"
+                                type="button"
+                            >
+
+                                <span>
+                                    👤
+                                </span>
+
+                                <span>
+                                    View Profile
+                                </span>
+
+                            </button>
+
+
+
+                            <!-- IMPORTANT:
+                                 Logout uses onclick directly.
+                                 This avoids event-listener problems. -->
+
+                            <button
+                                id="logoutButton"
+                                class="dropdown-action logout"
+                                type="button"
+                                onclick="logoutForensiMail()"
+                            >
+
+                                <span>
+                                    🚪
+                                </span>
+
+                                <span>
+                                    Logout
+                                </span>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DASHBOARD CONTENT
+                 ================================================= -->
+
+            <main class="content">
+
+
+                <!-- PAGE HEADER -->
+
+                <section class="page-header">
+
+
+                    <div>
+
+                        <div class="eyebrow">
+                            AI EMAIL FORENSICS
+                        </div>
+
+
+                        <h1 class="page-title">
+                            Investigation Dashboard
+                        </h1>
+
+
+                        <p class="page-description">
+
+                            Monitor forensic email investigations,
+                            inspect case intelligence, and review
+                            threat assessment results.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="page-time">
+                        SECURE INVESTIGATION ENVIRONMENT
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     CASE SEARCH
+                     ================================================= -->
+
+                <section class="search-card">
+
+
+                    <div class="search-header">
+
+                        <div>
+
+                            <div class="section-title">
+                                Retrieve Investigation Case
+                            </div>
+
+                            <div class="section-subtitle">
+
+                                Enter a case identifier to retrieve
+                                forensic analysis results.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="search-row">
+
+
+                        <input
+                            id="caseId"
+                            class="case-input"
+                            type="text"
+                            value="email_0009"
+                            placeholder="Enter Case ID"
+                        >
+
+
+                        <button
+                            id="loadCaseButton"
+                            class="load-button"
+                            type="button"
+                        >
+
+                            Load Case
+
+                        </button>
+
+
+                    </div>
+
+
+
+                    <div
+                        id="apiStatus"
+                        class="api-status"
+                    >
+
+                        Ready
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     STATISTICS
+                     ================================================= -->
+
+                <section class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ◈
+                        </span>
+
+                        <div class="stat-label">
+                            Case ID
+                        </div>
+
+                        <div
+                            id="case_id"
+                            class="stat-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ▧
+                        </span>
+
+                        <div class="stat-label">
+                            Evidence File
+                        </div>
+
+                        <div
+                            id="filename"
+                            class="stat-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ◉
+                        </span>
+
+                        <div class="stat-label">
+                            Threat Score
+                        </div>
+
+                        <div
+                            id="threat_score"
+                            class="stat-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <span class="stat-icon">
+                            ⚠
+                        </span>
+
+                        <div class="stat-label">
+                            Threat Level
+                        </div>
+
+                        <div
+                            id="threat_level"
+                            class="stat-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     INFORMATION
+                     ================================================= -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="panel">
+
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <div class="section-title">
+                                    Email Information
+                                </div>
+
+                                <div class="section-subtitle">
+                                    Extracted email metadata
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="panel-body">
+
+
+                            <div class="email-row">
+
+                                <div class="email-label">
+                                    Sender
+                                </div>
+
+                                <div
+                                    id="sender_raw"
+                                    class="email-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="email-row">
+
+                                <div class="email-label">
+                                    Recipient
+                                </div>
+
+                                <div
+                                    id="recipient_raw"
+                                    class="email-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                            <div class="email-row">
+
+                                <div class="email-label">
+                                    Subject
+                                </div>
+
+                                <div
+                                    id="subject"
+                                    class="email-value"
+                                >
+                                    —
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- THREAT -->
+
+                    <div class="panel">
+
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <div class="section-title">
+                                    Threat Assessment
+                                </div>
+
+                                <div class="section-subtitle">
+                                    Current case risk assessment
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="threat-center">
+
+
+                            <div class="threat-circle">
+
+                                <div
+                                    id="threatScoreLarge"
+                                    class="threat-score"
+                                >
+                                    —
+                                </div>
+
+                                <div class="threat-score-label">
+                                    THREAT SCORE
+                                </div>
+
+                            </div>
+
+
+                            <div
+                                id="threatBadge"
+                                class="threat-badge"
+                            >
+                                Awaiting Analysis
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     RAW RESPONSE
+                     ================================================= -->
+
+                <section class="panel raw-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <div class="section-title">
+                                Investigation Data
+                            </div>
+
+                            <div class="section-subtitle">
+
+                                Raw response received from
+                                the forensic API
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <pre
+                        id="apiResponse"
+                        class="raw-response"
+                    >No case loaded.</pre>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PROFILE MODAL
+         ===================================================== -->
+
+    <div
+        id="profileModal"
+        class="modal-overlay"
+    >
+
+
+        <div class="profile-modal">
+
+
+            <div class="modal-header">
+
+
+                <img
+                    id="modalPhoto"
+                    class="modal-avatar"
+                    src="https://ui-avatars.com/api/?name=User&background=2563eb&color=fff"
+                    alt="User"
+                >
+
+
+                <div>
+
+                    <h2 id="modalName">
+                        User
+                    </h2>
+
+                    <p id="modalEmail">
+                        Loading...
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="profile-details">
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Account Email
+                    </label>
+
+                    <span id="profileEmailValue">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Authentication
+                    </label>
+
+                    <span id="profileProvider">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Email Verification
+                    </label>
+
+                    <span id="profileVerified">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Account Created
+                    </label>
+
+                    <span id="profileCreated">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Last Sign-In
+                    </label>
+
+                    <span id="profileLastLogin">
+                        —
+                    </span>
+
+                </div>
+
+
+                <div class="profile-detail">
+
+                    <label>
+                        Firebase User ID
+                    </label>
+
+                    <span id="profileUID">
+                        —
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="modal-footer">
+
+                <button
+                    id="closeProfileButton"
+                    class="close-button"
+                    type="button"
+                >
+
+                    Close
+
                 </button>
 
             </div>
 
-            <p id="apiStatus" class="api-status">
-                Ready
-            </p>
 
-        </section>
+        </div>
 
 
-        <!-- Case Information -->
-
-        <section class="dashboard-grid">
-
-            <div class="dashboard-card">
-                <h3>Case ID</h3>
-                <p id="case_id">—</p>
-            </div>
-
-            <div class="dashboard-card">
-                <h3>Filename</h3>
-                <p id="filename">—</p>
-            </div>
-
-            <div class="dashboard-card">
-                <h3>Threat Score</h3>
-                <p id="threat_score">—</p>
-            </div>
-
-            <div class="dashboard-card">
-                <h3>Threat Level</h3>
-                <p id="threat_level">—</p>
-            </div>
-
-        </section>
+    </div>
 
 
-        <!-- Email Information -->
 
-        <section class="dashboard-card">
+    <!-- =====================================================
+         FIREBASE AUTHENTICATION
+         ===================================================== -->
 
-            <h2>Email Information</h2>
+    <script type="module">
 
-            <div class="email-details">
-
-                <div>
-                    <strong>Sender</strong>
-                    <p id="sender_raw">—</p>
-                </div>
-
-                <div>
-                    <strong>Recipient</strong>
-                    <p id="recipient_raw">—</p>
-                </div>
-
-                <div>
-                    <strong>Subject</strong>
-                    <p id="subject">—</p>
-                </div>
-
-            </div>
-
-        </section>
+        import {
+            initializeApp
+        }
+        from
+        "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 
 
-        <!-- Raw API Response -->
-
-        <section class="dashboard-card">
-
-            <h2>API Response</h2>
-
-            <pre id="apiResponse">No case loaded.</pre>
-
-        </section>
-
-    </main>
+        import {
+            getAuth,
+            onAuthStateChanged,
+            signOut
+        }
+        from
+        "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 
 
-    <script>
+        /* =================================================
+           FIREBASE CONFIG
+           ================================================= */
 
-        const API_BASE_URL = "http://127.0.0.1:8000";
+        const firebaseConfig = {
+
+            apiKey:
+                "AIzaSyAHu6ytExHI26K41IbfS_JHFjSkSsVfg6Y",
+
+            authDomain:
+                "email-forensics-8981f.firebaseapp.com",
+
+            projectId:
+                "email-forensics-8981f",
+
+            storageBucket:
+                "email-forensics-8981f.firebasestorage.app",
+
+            messagingSenderId:
+                "1129107379",
+
+            appId:
+                "1:1129107379:web:9d272ebfe471ad78f05c6",
+
+            measurementId:
+                "G-R1K4G4FJ3Y"
+
+        };
 
 
-        async function loadCase() {
+        /* =================================================
+           INITIALIZE FIREBASE
+           ================================================= */
 
-            const caseId =
-                document.getElementById("caseId").value.trim();
+        const firebaseApp =
+            initializeApp(
+                firebaseConfig
+            );
 
-            const status =
-                document.getElementById("apiStatus");
 
-            if (!caseId) {
+        const auth =
+            getAuth(
+                firebaseApp
+            );
 
-                status.textContent = "Please enter a Case ID.";
 
-                return;
+        /* =================================================
+           MAKE LOGOUT FUNCTION AVAILABLE GLOBALLY
+           ================================================= */
+
+        window.logoutForensiMail =
+            async function () {
+
+
+                const logoutButton =
+                    document.getElementById(
+                        "logoutButton"
+                    );
+
+
+                try {
+
+
+                    console.log(
+                        "ForensiMail: Starting logout..."
+                    );
+
+
+                    if (logoutButton) {
+
+                        logoutButton.disabled =
+                            true;
+
+                        logoutButton.innerHTML =
+                            `
+                            <span>⏳</span>
+                            <span>Signing out...</span>
+                            `;
+
+                    }
+
+
+                    /* Firebase logout */
+
+                    await signOut(
+                        auth
+                    );
+
+
+                    console.log(
+                        "ForensiMail: Firebase logout successful."
+                    );
+
+
+                    /* Clear session data */
+
+                    sessionStorage.clear();
+
+
+                    /* Return to login */
+
+                    window.location.replace(
+                        "../index.html"
+                    );
+
+
+                }
+
+
+                catch (error) {
+
+
+                    console.error(
+                        "ForensiMail: Logout error:",
+                        error
+                    );
+
+
+                    if (logoutButton) {
+
+                        logoutButton.disabled =
+                            false;
+
+                        logoutButton.innerHTML =
+                            `
+                            <span>🚪</span>
+                            <span>Logout</span>
+                            `;
+
+                    }
+
+
+                    alert(
+                        "Logout failed: " +
+                        error.message
+                    );
+
+                }
+
+            };
+
+
+        /* =================================================
+           AUTHENTICATION GUARD
+           ================================================= */
+
+        onAuthStateChanged(
+            auth,
+            (user) => {
+
+
+                /* -----------------------------------------
+                   NOT AUTHENTICATED
+                   ----------------------------------------- */
+
+                if (!user) {
+
+                    console.log(
+                        "ForensiMail: No authenticated user."
+                    );
+
+
+                    window.location.replace(
+                        "../index.html"
+                    );
+
+
+                    return;
+
+                }
+
+
+                /* -----------------------------------------
+                   AUTHENTICATED
+                   ----------------------------------------- */
+
+                console.log(
+                    "ForensiMail: Authentication successful."
+                );
+
+
+                console.log(
+                    "User:",
+                    user.email
+                );
+
+
+                window.currentForensiMailUser =
+                    user;
+
+
+                /* Load user profile */
+
+                loadUserProfile(
+                    user
+                );
+
+
+                /* Show application */
+
+                document
+                    .getElementById("app")
+                    .classList
+                    .add("authenticated");
+
+
+                /* Load case */
+
+                loadCase();
+
+            }
+        );
+
+
+        /* =================================================
+           USER PROFILE
+           ================================================= */
+
+        function loadUserProfile(
+            user
+        ) {
+
+
+            const name =
+                user.displayName ||
+                "ForensiMail User";
+
+
+            const email =
+                user.email ||
+                "No email";
+
+
+            const photo =
+                user.photoURL ||
+                `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=2563eb&color=fff&size=128`;
+
+
+            /* Navbar */
+
+            document
+                .getElementById("userName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("userEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("userPhoto")
+                .src =
+                photo;
+
+
+            /* Dropdown */
+
+            document
+                .getElementById("dropdownName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("dropdownEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("dropdownPhoto")
+                .src =
+                photo;
+
+
+            /* Modal */
+
+            document
+                .getElementById("modalName")
+                .textContent =
+                name;
+
+
+            document
+                .getElementById("modalEmail")
+                .textContent =
+                email;
+
+
+            document
+                .getElementById("modalPhoto")
+                .src =
+                photo;
+
+
+            /* Email */
+
+            document
+                .getElementById("profileEmailValue")
+                .textContent =
+                email;
+
+
+            /* Provider */
+
+            let provider =
+                "Email / Password";
+
+
+            if (
+                user.providerData &&
+                user.providerData.length
+            ) {
+
+                provider =
+                    user.providerData
+                        .map(
+                            (providerData) => {
+
+                                if (
+                                    providerData.providerId ===
+                                    "google.com"
+                                ) {
+
+                                    return "Google";
+
+                                }
+
+
+                                if (
+                                    providerData.providerId ===
+                                    "password"
+                                ) {
+
+                                    return "Email / Password";
+
+                                }
+
+
+                                return providerData.providerId;
+
+                            }
+                        )
+                        .join(", ");
+
             }
 
 
-            status.textContent = "Loading case...";
+            document
+                .getElementById("profileProvider")
+                .textContent =
+                provider;
+
+
+            /* Verification */
+
+            document
+                .getElementById("profileVerified")
+                .textContent =
+                user.emailVerified
+                    ? "Verified"
+                    : "Not Verified";
+
+
+            /* Account creation */
+
+            document
+                .getElementById("profileCreated")
+                .textContent =
+                user.metadata?.creationTime
+                    ? new Date(
+                        user.metadata.creationTime
+                    ).toLocaleString()
+                    : "Unavailable";
+
+
+            /* Last login */
+
+            document
+                .getElementById("profileLastLogin")
+                .textContent =
+                user.metadata?.lastSignInTime
+                    ? new Date(
+                        user.metadata.lastSignInTime
+                    ).toLocaleString()
+                    : "Unavailable";
+
+
+            /* Firebase UID */
+
+            document
+                .getElementById("profileUID")
+                .textContent =
+                user.uid;
+
+        }
+
+
+        /* =================================================
+           PROFILE DROPDOWN
+           ================================================= */
+
+        document
+            .getElementById("profileButton")
+            .addEventListener(
+                "click",
+                (event) => {
+
+
+                    event.stopPropagation();
+
+
+                    document
+                        .getElementById(
+                            "profileDropdown"
+                        )
+                        .classList
+                        .toggle(
+                            "show"
+                        );
+
+                }
+            );
+
+
+        /* =================================================
+           VIEW PROFILE
+           ================================================= */
+
+        document
+            .getElementById("viewProfileButton")
+            .addEventListener(
+                "click",
+                () => {
+
+
+                    document
+                        .getElementById(
+                            "profileDropdown"
+                        )
+                        .classList
+                        .remove(
+                            "show"
+                        );
+
+
+                    document
+                        .getElementById(
+                            "profileModal"
+                        )
+                        .classList
+                        .add(
+                            "show"
+                        );
+
+                }
+            );
+
+
+        /* =================================================
+           CLOSE PROFILE
+           ================================================= */
+
+        document
+            .getElementById("closeProfileButton")
+            .addEventListener(
+                "click",
+                () => {
+
+
+                    document
+                        .getElementById(
+                            "profileModal"
+                        )
+                        .classList
+                        .remove(
+                            "show"
+                        );
+
+                }
+            );
+
+
+        /* =================================================
+           CLICK OUTSIDE MODAL
+           ================================================= */
+
+        document
+            .getElementById("profileModal")
+            .addEventListener(
+                "click",
+                (event) => {
+
+
+                    if (
+                        event.target.id ===
+                        "profileModal"
+                    ) {
+
+                        document
+                            .getElementById(
+                                "profileModal"
+                            )
+                            .classList
+                            .remove(
+                                "show"
+                            );
+
+                    }
+
+                }
+            );
+
+
+        /* =================================================
+           CLOSE DROPDOWN WHEN CLICKING OUTSIDE
+           ================================================= */
+
+        document.addEventListener(
+            "click",
+            (event) => {
+
+
+                const wrapper =
+                    document.querySelector(
+                        ".profile-wrapper"
+                    );
+
+
+                if (
+                    wrapper &&
+                    !wrapper.contains(
+                        event.target
+                    )
+                ) {
+
+
+                    document
+                        .getElementById(
+                            "profileDropdown"
+                        )
+                        .classList
+                        .remove(
+                            "show"
+                        );
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+
+    <!-- =====================================================
+         DASHBOARD API JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           FASTAPI URL
+           ================================================= */
+
+        const API_BASE_URL =
+            "http://127.0.0.1:8000";
+
+
+        /* =================================================
+           LOAD CASE
+           ================================================= */
+
+        async function loadCase() {
+
+
+            const caseId =
+                document
+                    .getElementById("caseId")
+                    .value
+                    .trim();
+
+
+            const status =
+                document
+                    .getElementById("apiStatus");
+
+
+            const button =
+                document
+                    .getElementById("loadCaseButton");
+
+
+            if (!caseId) {
+
+
+                status.textContent =
+                    "Please enter a Case ID.";
+
+
+                status.className =
+                    "api-status error";
+
+
+                return;
+
+            }
+
+
+            button.disabled =
+                true;
+
+
+            button.textContent =
+                "Loading...";
+
+
+            status.textContent =
+                "Connecting to forensic API...";
+
+
+            status.className =
+                "api-status";
 
 
             try {
 
-                const response = await fetch(
-                    `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}`
-                );
 
-
-                const data = await response.json();
+                const response =
+                    await fetch(
+                        `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}`
+                    );
 
 
                 if (!response.ok) {
 
+
+                    let message =
+                        `API Error: ${response.status}`;
+
+
+                    try {
+
+                        const errorData =
+                            await response.json();
+
+                        message =
+                            errorData.detail ||
+                            message;
+
+                    }
+
+                    catch {
+
+                    }
+
+
                     throw new Error(
-                        data.detail || `API Error: ${response.status}`
+                        message
                     );
 
                 }
 
 
-                // Case information
-
-                document.getElementById("case_id").textContent =
-                    data.case_id || "—";
-
-                document.getElementById("filename").textContent =
-                    data.filename || "—";
-
-                document.getElementById("threat_score").textContent =
-                    data.threat_score ?? "—";
-
-                document.getElementById("threat_level").textContent =
-                    data.threat_level || "—";
+                const data =
+                    await response.json();
 
 
-                // Email information
+                /* =========================================
+                   CASE INFORMATION
+                   ========================================= */
 
-                document.getElementById("sender_raw").textContent =
-                    data.sender_raw || "—";
-
-                document.getElementById("recipient_raw").textContent =
-                    data.recipient_raw || "—";
-
-                document.getElementById("subject").textContent =
-                    data.subject || "—";
+                document
+                    .getElementById("case_id")
+                    .textContent =
+                    data.case_id ||
+                    "—";
 
 
-                // Raw response
+                document
+                    .getElementById("filename")
+                    .textContent =
+                    data.filename ||
+                    "—";
 
-                document.getElementById("apiResponse").textContent =
-                    JSON.stringify(data, null, 2);
 
+                document
+                    .getElementById("threat_score")
+                    .textContent =
+                    data.threat_score ??
+                    "—";
+
+
+                document
+                    .getElementById("threat_level")
+                    .textContent =
+                    data.threat_level ||
+                    "—";
+
+
+                /* =========================================
+                   EMAIL
+                   ========================================= */
+
+                document
+                    .getElementById("sender_raw")
+                    .textContent =
+                    data.sender_raw ||
+                    "—";
+
+
+                document
+                    .getElementById("recipient_raw")
+                    .textContent =
+                    data.recipient_raw ||
+                    "—";
+
+
+                document
+                    .getElementById("subject")
+                    .textContent =
+                    data.subject ||
+                    "—";
+
+
+                /* =========================================
+                   RAW RESPONSE
+                   ========================================= */
+
+                document
+                    .getElementById("apiResponse")
+                    .textContent =
+                    JSON.stringify(
+                        data,
+                        null,
+                        2
+                    );
+
+
+                /* =========================================
+                   THREAT SCORE
+                   ========================================= */
+
+                document
+                    .getElementById(
+                        "threatScoreLarge"
+                    )
+                    .textContent =
+                    data.threat_score ??
+                    "—";
+
+
+                /* =========================================
+                   THREAT BADGE
+                   ========================================= */
+
+                const badge =
+                    document.getElementById(
+                        "threatBadge"
+                    );
+
+
+                badge.className =
+                    "threat-badge";
+
+
+                const level =
+                    String(
+                        data.threat_level ||
+                        ""
+                    ).toLowerCase();
+
+
+                if (
+                    level.includes("critical")
+                ) {
+
+                    badge.classList.add(
+                        "critical"
+                    );
+
+                }
+
+                else if (
+                    level.includes("high")
+                ) {
+
+                    badge.classList.add(
+                        "high"
+                    );
+
+                }
+
+                else if (
+                    level.includes("medium")
+                ) {
+
+                    badge.classList.add(
+                        "medium"
+                    );
+
+                }
+
+                else if (
+                    level.includes("low")
+                ) {
+
+                    badge.classList.add(
+                        "low"
+                    );
+
+                }
+
+
+                badge.textContent =
+                    data.threat_level ||
+                    "Awaiting Analysis";
+
+
+                /* =========================================
+                   SUCCESS
+                   ========================================= */
 
                 status.textContent =
                     "Case loaded successfully.";
 
 
-            } catch (error) {
+                status.className =
+                    "api-status success";
+
+            }
+
+
+            catch (error) {
+
+
+                console.error(
+                    "ForensiMail API Error:",
+                    error
+                );
+
 
                 status.textContent =
-                    `Error: ${error.message}`;
-
-
-                document.getElementById("apiResponse").textContent =
+                    "Backend unavailable: " +
                     error.message;
+
+
+                status.className =
+                    "api-status error";
+
+
+                document
+                    .getElementById(
+                        "apiResponse"
+                    )
+                    .textContent =
+                    "Unable to connect to the forensic API.\n\n" +
+                    error.message;
+
+            }
+
+
+            finally {
+
+
+                button.disabled =
+                    false;
+
+
+                button.textContent =
+                    "Load Case";
 
             }
 
         }
 
 
-        // Automatically load the test case
+        /* =================================================
+           LOAD BUTTON
+           ================================================= */
 
-        window.addEventListener("DOMContentLoaded", () => {
+        document
+            .getElementById(
+                "loadCaseButton"
+            )
+            .addEventListener(
+                "click",
+                loadCase
+            );
 
-            loadCase();
 
-        });
+        /* =================================================
+           ENTER KEY
+           ================================================= */
+
+        document
+            .getElementById("caseId")
+            .addEventListener(
+                "keydown",
+                (event) => {
+
+
+                    if (
+                        event.key ===
+                        "Enter"
+                    ) {
+
+                        loadCase();
+
+                    }
+
+                }
+            );
+
 
     </script>
 
+
 </body>
+
 </html>

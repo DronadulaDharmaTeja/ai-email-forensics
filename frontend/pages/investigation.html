@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Email Forensics - Investigation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1020;
+            color: #e5e7eb;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #111827;
+            border-bottom: 1px solid #263043;
+            padding: 18px 30px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .search-panel {
+            background: #111827;
+            border: 1px solid #263043;
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 25px;
+        }
+
+        .search-panel h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        input,
+        select {
+            background: #0f172a;
+            color: #fff;
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #60a5fa;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .status {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .status.loading {
+            display: block;
+            background: #172554;
+            color: #bfdbfe;
+        }
+
+        .status.success {
+            display: block;
+            background: #052e16;
+            color: #bbf7d0;
+        }
+
+        .status.error {
+            display: block;
+            background: #450a0a;
+            color: #fecaca;
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.visible {
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #263043;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .card h3 {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card .value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .classification {
+            color: #60a5fa;
+        }
+
+        .risk-low {
+            color: #4ade80;
+        }
+
+        .risk-medium {
+            color: #facc15;
+        }
+
+        .risk-high {
+            color: #fb923c;
+        }
+
+        .risk-critical {
+            color: #f87171;
+        }
+
+        .section {
+            background: #111827;
+            border: 1px solid #263043;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid #263043;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .section-body {
+            padding: 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .info-item {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 14px;
+        }
+
+        .info-label {
+            color: #9ca3af;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .info-value {
+            color: #f3f4f6;
+            word-break: break-word;
+        }
+
+        .agent-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .agent {
+            background: #0f172a;
+            border: 1px solid #263043;
+            border-radius: 10px;
+            padding: 18px;
+        }
+
+        .agent h4 {
+            margin-bottom: 15px;
+            color: #93c5fd;
+        }
+
+        .agent-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 7px 0;
+            border-bottom: 1px solid #1f2937;
+            font-size: 13px;
+        }
+
+        .agent-row:last-child {
+            border-bottom: none;
+        }
+
+        .agent-label {
+            color: #9ca3af;
+        }
+
+        .agent-value {
+            text-align: right;
+        }
+
+        .boolean-true {
+            color: #4ade80;
+        }
+
+        .boolean-false {
+            color: #9ca3af;
+        }
+
+        pre {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            color: #cbd5e1;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #93c5fd;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .agent-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 15px;
+            }
+
+            .grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                flex-direction: column;
+            }
+
+            input,
+            select,
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>AI Email Forensics Investigation</h1>
+    <p>Multi-Agent AI Investigation and Forensic Triage</p>
+</header>
+
+<main class="container">
+
+    <!-- =====================================================
+         SEARCH / INVESTIGATION
+         ===================================================== -->
+
+    <section class="search-panel">
+
+        <h2>Start Investigation</h2>
+
+        <div class="form-row">
+
+            <input
+                type="text"
+                id="caseId"
+                placeholder="Enter Case ID"
+                value="email_0009"
+            >
+
+            <select id="rounds">
+                <option value="1">1 Debate Round</option>
+                <option value="2">2 Debate Rounds</option>
+            </select>
+
+            <button id="investigateBtn" onclick="investigateCase()">
+                Investigate Case
+            </button>
+
+        </div>
+
+        <div id="status" class="status"></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESULTS
+         ===================================================== -->
+
+    <section id="results" class="results">
+
+        <!-- FINAL TRIAGE -->
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Classification</h3>
+                <div id="classification" class="value classification">
+                    -
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Confidence</h3>
+                <div id="confidence" class="value">
+                    -
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Risk Level</h3>
+                <div id="riskLevel" class="value">
+                    -
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Status</h3>
+                <div id="investigationStatus" class="value">
+                    -
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- CASE INFORMATION -->
+
+        <section class="section">
+
+            <div class="section-header">
+                Case Information
+            </div>
+
+            <div class="section-body">
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <div class="info-label">Case ID</div>
+                        <div id="caseIdResult" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Filename</div>
+                        <div id="filename" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">MD5 Hash</div>
+                        <div id="md5Hash" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Evidence File</div>
+                        <div id="evidenceFile" class="info-value">-</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AGENTS -->
+
+        <section class="section">
+
+            <div class="section-header">
+                Multi-Agent Investigation
+            </div>
+
+            <div class="section-body">
+
+                <div class="agent-grid">
+
+                    <div class="agent">
+
+                        <h4>⚖ Prosecutor</h4>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Classification</span>
+                            <span id="prosecutorClassification" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Confidence</span>
+                            <span id="prosecutorConfidence" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Risk</span>
+                            <span id="prosecutorRisk" class="agent-value">-</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="agent">
+
+                        <h4>🛡 Defender</h4>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Classification</span>
+                            <span id="defenderClassification" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Confidence</span>
+                            <span id="defenderConfidence" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Risk</span>
+                            <span id="defenderRisk" class="agent-value">-</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="agent">
+
+                        <h4>👨‍⚖ Judge</h4>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Classification</span>
+                            <span id="judgeClassification" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Confidence</span>
+                            <span id="judgeConfidence" class="agent-value">-</span>
+                        </div>
+
+                        <div class="agent-row">
+                            <span class="agent-label">Risk</span>
+                            <span id="judgeRisk" class="agent-value">-</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY -->
+
+        <section class="section">
+
+            <div class="section-header">
+                Isolation & Security
+            </div>
+
+            <div class="section-body">
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <div class="info-label">Evidence Mode</div>
+                        <div id="evidenceMode" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Data Classification</div>
+                        <div id="dataClassification" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Isolation Status</div>
+                        <div id="isolationStatus" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Analysis Mode</div>
+                        <div id="analysisMode" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Tool Execution</div>
+                        <div id="toolExecution" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Injection Findings</div>
+                        <div id="injectionFindings" class="info-value">-</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DETERMINISTIC EVIDENCE -->
+
+        <section class="section">
+
+            <div class="section-header">
+                Deterministic Evidence
+            </div>
+
+            <div class="section-body">
+
+                <div class="grid">
+
+                    <div class="card">
+                        <h3>Score</h3>
+                        <div id="detScore" class="value">-</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Strength</h3>
+                        <div id="detStrength" class="value">-</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>URLs</h3>
+                        <div id="urlCount" class="value">-</div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Suspicious URLs</h3>
+                        <div id="suspiciousUrls" class="value">-</div>
+                    </div>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <div class="info-label">External Hops</div>
+                        <div id="externalHops" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Indicator Count</div>
+                        <div id="indicatorCount" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">SPF</div>
+                        <div id="spf" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">DKIM</div>
+                        <div id="dkim" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">DMARC</div>
+                        <div id="dmarc" class="info-value">-</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Forensic Flags</div>
+                        <div id="forensicFlags" class="info-value">-</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RAW RESULT -->
+
+        <section class="section">
+
+            <div class="section-header">
+                Investigation Response
+            </div>
+
+            <div class="section-body">
+
+                <pre id="rawResponse"></pre>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<script>
+
+const API_BASE_URL = "http://127.0.0.1:8000";
+
+
+function setStatus(message, type) {
+
+    const status = document.getElementById("status");
+
+    status.className = "status " + type;
+
+    status.innerHTML = message;
+}
+
+
+function setText(id, value) {
+
+    const element = document.getElementById(id);
+
+    if (!element) {
+        return;
+    }
+
+    element.textContent =
+        value === undefined ||
+        value === null ||
+        value === ""
+            ? "-"
+            : value;
+}
+
+
+function formatConfidence(value) {
+
+    if (value === undefined || value === null) {
+        return "-";
+    }
+
+    const number = Number(value);
+
+    if (Number.isNaN(number)) {
+        return value;
+    }
+
+    return (number * 100).toFixed(1) + "%";
+}
+
+
+function applyRiskClass(elementId, risk) {
+
+    const element = document.getElementById(elementId);
+
+    if (!element) {
+        return;
+    }
+
+    element.classList.remove(
+        "risk-low",
+        "risk-medium",
+        "risk-high",
+        "risk-critical"
+    );
+
+    if (!risk) {
+        return;
+    }
+
+    const normalized = String(risk).toLowerCase();
+
+    if (normalized === "low") {
+        element.classList.add("risk-low");
+    } else if (normalized === "medium") {
+        element.classList.add("risk-medium");
+    } else if (normalized === "high") {
+        element.classList.add("risk-high");
+    } else if (normalized === "critical") {
+        element.classList.add("risk-critical");
+    }
+}
+
+
+function getAgentData(investigation, agentName) {
+
+    const possibleContainers = [
+        investigation,
+        investigation?.agents,
+        investigation?.debate,
+        investigation?.debate_result
+    ];
+
+    for (const container of possibleContainers) {
+
+        if (!container || typeof container !== "object") {
+            continue;
+        }
+
+        const value =
+            container[agentName] ||
+            container[agentName.toLowerCase()] ||
+            container[agentName.charAt(0).toUpperCase() + agentName.slice(1)];
+
+        if (value && typeof value === "object") {
+            return value;
+        }
+    }
+
+    return {};
+}
+
+
+async function investigateCase() {
+
+    const caseId =
+        document.getElementById("caseId").value.trim();
+
+    const rounds =
+        document.getElementById("rounds").value;
+
+    const button =
+        document.getElementById("investigateBtn");
+
+    const results =
+        document.getElementById("results");
+
+    if (!caseId) {
+
+        setStatus(
+            "Please enter a case ID.",
+            "error"
+        );
+
+        return;
+    }
+
+
+    button.disabled = true;
+
+    results.classList.remove("visible");
+
+
+    setStatus(
+        '<span class="spinner"></span>Running forensic investigation. Please wait...',
+        "loading"
+    );
+
+
+    try {
+
+        const url =
+            `${API_BASE_URL}/cases/${encodeURIComponent(caseId)}/investigate?rounds=${rounds}`;
+
+
+        const response =
+            await fetch(url, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+
+        const data =
+            await response.json();
+
+
+        if (!response.ok) {
+
+            const message =
+                data?.detail ||
+                "Investigation request failed.";
+
+            throw new Error(message);
+        }
+
+
+        renderResults(data);
+
+        setStatus(
+            "Investigation completed successfully.",
+            "success"
+        );
+
+        results.classList.add("visible");
+
+    } catch (error) {
+
+        console.error(error);
+
+        setStatus(
+            "Investigation failed: " +
+            error.message,
+            "error"
+        );
+
+    } finally {
+
+        button.disabled = false;
+    }
+}
+
+
+function renderResults(data) {
+
+    const caseData =
+        data?.case || {};
+
+    const investigation =
+        data?.investigation || {};
+
+    const finalTriage =
+        investigation?.final_triage ||
+        investigation?.finalTriage ||
+        investigation?.triage ||
+        investigation?.final ||
+        {};
+
+
+    // ========================================================
+    // FINAL TRIAGE
+    // ========================================================
+
+    const classification =
+        finalTriage.classification ||
+        investigation.classification ||
+        "-";
+
+    const confidence =
+        finalTriage.confidence ??
+        investigation.confidence;
+
+    const risk =
+        finalTriage.risk_level ||
+        finalTriage.risk ||
+        investigation.risk_level ||
+        investigation.risk ||
+        "-";
+
+
+    setText(
+        "classification",
+        classification
+    );
+
+    setText(
+        "confidence",
+        formatConfidence(confidence)
+    );
+
+    setText(
+        "riskLevel",
+        risk
+    );
+
+    setText(
+        "investigationStatus",
+        data.status || "completed"
+    );
+
+    applyRiskClass(
+        "riskLevel",
+        risk
+    );
+
+
+    // ========================================================
+    // CASE
+    // ========================================================
+
+    setText(
+        "caseIdResult",
+        caseData.case_id
+    );
+
+    setText(
+        "filename",
+        caseData.filename
+    );
+
+    setText(
+        "md5Hash",
+        caseData.md5_hash
+    );
+
+    setText(
+        "evidenceFile",
+        caseData.evidence_file
+    );
+
+
+    // ========================================================
+    // AGENTS
+    // ========================================================
+
+    const prosecutor =
+        getAgentData(
+            investigation,
+            "prosecutor"
+        );
+
+    const defender =
+        getAgentData(
+            investigation,
+            "defender"
+        );
+
+    const judge =
+        getAgentData(
+            investigation,
+            "judge"
+        );
+
+
+    setText(
+        "prosecutorClassification",
+        prosecutor.classification
+    );
+
+    setText(
+        "prosecutorConfidence",
+        formatConfidence(
+            prosecutor.confidence
+        )
+    );
+
+    setText(
+        "prosecutorRisk",
+        prosecutor.risk_level ||
+        prosecutor.risk
+    );
+
+
+    setText(
+        "defenderClassification",
+        defender.classification
+    );
+
+    setText(
+        "defenderConfidence",
+        formatConfidence(
+            defender.confidence
+        )
+    );
+
+    setText(
+        "defenderRisk",
+        defender.risk_level ||
+        defender.risk
+    );
+
+
+    setText(
+        "judgeClassification",
+        judge.classification
+    );
+
+    setText(
+        "judgeConfidence",
+        formatConfidence(
+            judge.confidence
+        )
+    );
+
+    setText(
+        "judgeRisk",
+        judge.risk_level ||
+        judge.risk
+    );
+
+
+    // ========================================================
+    // SECURITY
+    // ========================================================
+
+    const security =
+        investigation?.security ||
+        {};
+
+    setText(
+        "evidenceMode",
+        security.evidence_mode
+    );
+
+    setText(
+        "dataClassification",
+        security.data_classification
+    );
+
+    setText(
+        "isolationStatus",
+        security.isolation_status
+    );
+
+    setText(
+        "analysisMode",
+        security.analysis_mode
+    );
+
+    setText(
+        "toolExecution",
+        security.tool_execution === undefined
+            ? "-"
+            : String(security.tool_execution)
+    );
+
+    const findings =
+        security.injection_findings;
+
+    setText(
+        "injectionFindings",
+        Array.isArray(findings)
+            ? findings.length
+            : findings
+    );
+
+
+    // ========================================================
+    // DETERMINISTIC EVIDENCE
+    // ========================================================
+
+    const deterministic =
+        investigation?.deterministic_evidence ||
+        investigation?.deterministicEvidence ||
+        {};
+
+    setText(
+        "detScore",
+        deterministic.score
+    );
+
+    setText(
+        "detStrength",
+        deterministic.strength
+    );
+
+    setText(
+        "urlCount",
+        deterministic.url_count
+    );
+
+    setText(
+        "suspiciousUrls",
+        deterministic.suspicious_url_count
+    );
+
+    setText(
+        "externalHops",
+        deterministic.external_hops
+    );
+
+    setText(
+        "indicatorCount",
+        deterministic.indicator_count
+    );
+
+
+    const authentication =
+        deterministic.observed_authentication ||
+        {};
+
+    setText(
+        "spf",
+        authentication.spf
+    );
+
+    setText(
+        "dkim",
+        authentication.dkim
+    );
+
+    setText(
+        "dmarc",
+        authentication.dmarc
+    );
+
+
+    const flags =
+        deterministic.forensic_flags;
+
+    setText(
+        "forensicFlags",
+        Array.isArray(flags)
+            ? (
+                flags.length
+                    ? flags.join(", ")
+                    : "None"
+            )
+            : flags
+    );
+
+
+    // ========================================================
+    // RAW RESPONSE
+    // ========================================================
+
+    document.getElementById(
+        "rawResponse"
+    ).textContent =
+        JSON.stringify(
+            data,
+            null,
+            2
+        );
+}
+
+
+// ============================================================
+// ENTER KEY SUPPORT
+// ============================================================
+
+document
+    .getElementById("caseId")
+    .addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter") {
+            investigateCase();
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
