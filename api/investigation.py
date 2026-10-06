@@ -2,7 +2,7 @@
 AI Email Forensics
 Investigation API
 
-Production investigation flow:
+Investigation flow:
 
 Case
     ↓
@@ -19,6 +19,7 @@ Final Triage
 API Response
 
 Security principles:
+
 - Original forensic evidence is never modified.
 - RAG retrieval is read-only.
 - Raw retrieved text is not returned by this API layer.
@@ -136,16 +137,13 @@ def _load_case_evidence(
         )
 
     try:
-
         with evidence_path.open(
             "r",
             encoding="utf-8",
         ) as handle:
-
             evidence = json.load(handle)
 
     except json.JSONDecodeError as exc:
-
         raise HTTPException(
             status_code=500,
             detail=(
@@ -155,7 +153,6 @@ def _load_case_evidence(
         ) from exc
 
     except OSError as exc:
-
         raise HTTPException(
             status_code=500,
             detail=(
@@ -168,7 +165,6 @@ def _load_case_evidence(
         evidence,
         dict,
     ):
-
         raise HTTPException(
             status_code=500,
             detail=(
@@ -240,28 +236,24 @@ def _build_rag_query(
         forensic_flags,
         list,
     ):
-
         for flag in forensic_flags[:10]:
-
             if isinstance(
                 flag,
                 str,
             ):
-
                 parts.append(
                     f"forensic flag {flag}"
                 )
 
     urls = evidence.get(
         "urls",
-        []
+        [],
     )
 
     if isinstance(
         urls,
         list,
     ):
-
         if urls:
             parts.append(
                 f"urls {len(urls)}"
@@ -269,14 +261,13 @@ def _build_rag_query(
 
     attachments = evidence.get(
         "attachments",
-        []
+        [],
     )
 
     if isinstance(
         attachments,
         list,
     ):
-
         if attachments:
             parts.append(
                 f"attachments {len(attachments)}"
@@ -287,7 +278,6 @@ def _build_rag_query(
     # --------------------------------------------------------
 
     if not parts:
-
         parts.append(
             "email forensic investigation"
         )
@@ -325,14 +315,12 @@ def _retrieve_rag_context(
     )
 
     try:
-
         results = semantic_search(
             query=query,
             top_k=top_k,
         )
 
     except Exception as exc:
-
         raise RuntimeError(
             "RAG semantic retrieval failed."
         ) from exc
@@ -418,7 +406,6 @@ def _retrieve_rag_context(
             private_vector,
             list,
         ):
-
             safe_result[
                 "private_vector"
             ] = private_vector
@@ -465,7 +452,6 @@ def _validate_rag_context(
     if rag_context.get(
         "raw_text_released"
     ) is not False:
-
         raise ValueError(
             "RAG security violation: "
             "raw retrieved text must not be released."
@@ -480,7 +466,6 @@ def _validate_rag_context(
         results,
         list,
     ):
-
         raise ValueError(
             "RAG results must be a list."
         )
@@ -498,7 +483,6 @@ def _validate_rag_context(
         if result.get(
             "raw_text_released"
         ) is True:
-
             raise ValueError(
                 "RAG security violation: "
                 "individual result released raw text."
@@ -550,7 +534,6 @@ def investigate_case(
     )
 
     if case is None:
-
         raise HTTPException(
             status_code=404,
             detail=(
@@ -574,7 +557,6 @@ def investigate_case(
     # ========================================================
 
     try:
-
         rag_context = (
             _retrieve_rag_context(
                 case,
@@ -588,13 +570,17 @@ def investigate_case(
         )
 
     except ValueError as exc:
-
         raise HTTPException(
             status_code=422,
             detail=str(exc),
         ) from exc
 
     except Exception as exc:
+        print(
+            "RAG INVESTIGATION ERROR:",
+            type(exc).__name__,
+            str(exc),
+        )
 
         raise HTTPException(
             status_code=500,
@@ -627,28 +613,73 @@ def investigate_case(
 
     try:
 
+        print(
+            "STARTING MULTI-AGENT DEBATE"
+        )
+
+        print(
+            "CASE ID:",
+            case_id
+        )
+
+        print(
+            "DEBATE ROUNDS:",
+            rounds
+        )
+
         debate_result = run_debate(
             investigation_evidence,
             rounds=rounds,
         )
 
+        print(
+            "MULTI-AGENT DEBATE COMPLETED"
+        )
+
     except ValueError as exc:
+
+        print(
+            "DEBATE VALUE ERROR:",
+            type(exc).__name__,
+            str(exc),
+        )
 
         raise HTTPException(
             status_code=422,
-            detail=str(exc),
+            detail=(
+                "Multi-agent debate validation failed: "
+                f"{str(exc)}"
+            ),
         ) from exc
 
     except Exception as exc:
 
-        # Keep internal model/agent exception details
-        # outside the public API response.
+        # TEMPORARY DEBUGGING
+        #
+        # This exposes the actual internal exception so
+        # we can identify the problem during development.
+        # Remove the exception detail before production.
+
+        print(
+            "MULTI-AGENT DEBATE ERROR:"
+        )
+
+        print(
+            "ERROR TYPE:",
+            type(exc).__name__
+        )
+
+        print(
+            "ERROR MESSAGE:",
+            str(exc)
+        )
 
         raise HTTPException(
             status_code=500,
             detail=(
                 "Investigation engine failed "
-                "to complete the case."
+                "to complete the case. "
+                f"Error: {type(exc).__name__}: {str(exc)}"
             ),
         ) from exc
 
