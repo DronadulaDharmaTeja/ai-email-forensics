@@ -1,0 +1,6 @@
+[run]
+omit =
+    *_backup_*
+    *_before_*
+    */backups/*
+    tests/*

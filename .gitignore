@@ -30,3 +30,5 @@ node_modules/
 *_before_*.py
 *_restore*.py
 run_debate_restore.txt
+
+.coverage
