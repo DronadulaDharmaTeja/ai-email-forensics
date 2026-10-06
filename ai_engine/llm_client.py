@@ -341,7 +341,7 @@ def _call_model(request_kwargs: Dict[str, Any]):
 def generate_response(
     prompt: str,
     json_mode: bool = False,
-    max_tokens: int = 4096,
+    max_tokens: int = 1024,
     temperature: float = 0.2,
 ) -> Union[str, Dict[str, Any]]:
     """
@@ -374,6 +374,7 @@ def generate_response(
     )
 
     completion = _call_model(request_kwargs)
+    print("DEBUG PAIR COMPLETION:", completion)
 
     if not completion.choices:
         raise RuntimeError(
@@ -384,6 +385,7 @@ def generate_response(
     content = message.content
 
     if content is None or not str(content).strip():
+        
         raise RuntimeError(
             f"{AI_PROVIDER} returned an empty message content."
         )
