@@ -2793,13 +2793,12 @@ def build_isolation_aware_debate_context(
 
 
 
-    isolated_evidence = isolated.get(
+    isolated_evidence = isolated.get("evidence")
 
-        "isolated_evidence",
-
-        evidence
-
-    )
+    if not isinstance(isolated_evidence, dict):
+        raise ValueError(
+            "Isolation boundary violation: guard returned no isolated evidence."
+        )
 
 
 
